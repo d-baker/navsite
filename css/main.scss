@@ -152,9 +152,11 @@ nav a:before {
 
 footer {
     text-align: right;
+	text-transform: uppercase;
     font-family: NotCourierSans, "Source Code Pro";
     padding-top: 30px;
     span.logo {
+		text-transform: lowercase;
         font-family: "Source Code Pro";
         color: $highlight;
         position: relative;
@@ -162,6 +164,10 @@ footer {
         display: inline-block;
         width: 70px;
     }
+	p.sitelink a {
+		font-size: 16px;
+		color: $highlight;
+	}
 }
 
 /* mechanisms page */

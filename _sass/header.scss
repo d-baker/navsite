@@ -53,12 +53,12 @@ a#logo {
 
 }
 
-nav a:hover, .current {
+.dropdown:hover > a, nav a:hover, .current {
     background: rgba(255, 255, 255, 0.9);
-    padding-bottom: 5px;
+    padding-bottom: 3px;
 }
 
-div.dropdown {
+.dropdown {
 	display: inline-block;
 }
 
@@ -70,6 +70,7 @@ div.dropdown {
     z-index: 100;
 
     a {
+		background: none;
 		display: block;
         font-size: 13px;
         font-family: NotCourierSans, "Source Code Pro";
@@ -83,6 +84,7 @@ div.dropdown {
 
         &:hover {
             color: $highlight;
+			background: none;
             text-decoration: underline;
         }
 
@@ -103,3 +105,14 @@ div.dropdown {
     font-size: 13px; 
     color: $batcolor;
 }
+
+.dropdown .nav-list {
+	display: none;
+}
+
+.dropdown:hover {
+	.nav-list {
+		display: block;
+	}
+}
+
