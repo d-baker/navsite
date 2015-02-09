@@ -1,29 +1,35 @@
 <header>
+
     <nav>
-        <ul>
-            <li id="homelink"><a href="http://memoriata.com/">{MEMORIATA}</a></li>
+        <div class="nav-list">
 
-            <li class="dropdown">MUSIC<ul id="music-menu">
-                    <li>
-                    <a href="https://dbaker.bandcamp.com/">BANDCAMP</a>
-                    </li>
-                    <li><a href="http://memoriata.com/audio">AUDIO</a></li>
-                    <li><a href="http://memoriata.com/video">VIDEO</a></li>
-                    <li><a href="http://memoriata.com/mechanisms.html">MECHANISMS</a></li>
-                    <li><a href="http://memoriata.com/scores.html">SCORES</a></li>
-                </ul></li>
+            <div class="dropdown">
+                <a id="music-dropdown">music</a>
+                <div class="nav-list" id="music-menu">
+                    <a class="external" href="https://dbaker.bandcamp.com/">bandcamp</a>
+                    <a href="http://memoriata.com/audio">audio</a>
+                    <a href="http://memoriata.com/video">video</a>
+                    <a href="http://memoriata.com/mechanisms.html">mechanisms</a>
+                    <a href="http://memoriata.com/scores.html">scores</a>
+                </div>
+            </div>
 
-            <li class="dropdown">GEEKERY<ul id="geek-menu">
-                    <li><a href="http://memoriata.com/bots.html">TWITTER BOTS</a></li>
-                    <li><a href="http://memoriata.com/botlang">BOTLANG</a></li>
-                    <li><a href="https://github.com/d-baker/NaNoGenMo-2014"</a>NANOGENMO 2014</li>
-                </ul></li>
+            <div class="dropdown">
+                <a id="geekery-dropdown">geekery</a>
+                <div class="nav-list" id="geek-menu">
+                    <a href="http://memoriata.com/bots.html">twitter bots</a>
+                    <a class="external" href="{{ "botlang" | prepend: site.baseurl }}">botlang</a>
+                    <a class="external" href="https://github.com/d-baker/NaNoGenMo-2014">nanogenmo 2014</a>
+                </div>
+            </div>
 
-            <li><a href="http://memoriata.com/blog">BLOG</a></li>
+            <a href="http://memoriata.com/blog">blog</a>
 
-            <li><a href="http://memoriata.com/links.html">LINKS</a></li>
+            <a href="http://memoriata.com/links.html">links</a>
 
-        </ul>
+            <a id="logo" href="http://memoriata.com/">memoriata</a>
+
+        </div>
     </nav>
 
     <p id="breadcrumb">~/</p>

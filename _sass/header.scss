@@ -1,20 +1,16 @@
  header {
+	text-transform: uppercase;
+
     position: relative;
     margin: 0px;
     padding: 0px;
     width: 100%;
     height: $header-height;
-    //border-bottom: 1px solid $comment + #222;
 
-    ul {
-        max-width: 900px;
-        margin: 0px;
-    }
-
-    li {
+    a {
         font-size: 20px;
         font-family: NotCourierSans, "Source Code Pro";
-        margin-right: 20px;
+        margin-right: 10px;
         cursor: pointer;
         display: inline;
 
@@ -25,121 +21,85 @@
             content: "}";
         }
 
-        a {
-            &:before {
-                content: none;
-            }
-            &:visited {
-                color: $fg;
-            }
-            &:hover {
-				color: $fg;
-                //color: $highlight;
-                text-decoration: none;
-            }
+        &:visited {
+            color: $fg;
         }
-		a.current {
+        &:hover {
+			color: $fg;
+            text-decoration: none;
+        }
+
+		&.current {
 			text-decoration: underline;
 		}
 
-        //&:hover {
-        //    color: $highlight;
-        //}
-
-
     }
 
 }
 
-li#homelink {
-    a {
+a#logo {
+    color: $fg;
+    font-size: 30px;
+    line-height: 0.6em;
+    text-align: right;
+    position: absolute;
+    right: 0px;
+
+    &:hover {
+        text-decoration: none;
         color: $fg;
-        font-size: 30px;
-        line-height: 0.6em;
-        text-align: right;
-        position: absolute;
-        right: 0px;
-
-        &:hover {
-            text-decoration: none;
-            color: $fg;
-        }
-
-        &:before {
-            content: none;
-        }
-
+		background: none;
     }
 
-    &:after, &:before {
-        content: none;
-    }
 }
 
-
-
-/* thanks to this jsfiddle for solving the menu positioning mystery: http://jsfiddle.net/xgXXN/
-*/
-
-nav ul {
-    li {
-        float: left;
-    }
-}
-
-nav li:hover, .current {
+nav a:hover, .current {
     background: rgba(255, 255, 255, 0.9);
     padding-bottom: 5px;
 }
 
-nav li.dropdown ul {
-    position: absolute;
+div.dropdown {
+	display: inline-block;
+}
+
+.dropdown .nav-list {
+	position: absolute;
     background: rgba(255, 255, 255, 0.9);
     padding: 10px 0px;
     margin-top: 5px;
     z-index: 100;
 
-    li {
-	float: none;
-	display: block;
-
+    a {
+		display: block;
         font-size: 13px;
         font-family: NotCourierSans, "Source Code Pro";
         color: $fg;
         padding: 0px 10px;
         margin-right: 0px;
-
-        a{
-            &:visited {
-                color: $batcolor;
-            }
-
-            &:hover {
-                color: $highlight;
-                text-decoration: underline;
-            }
-
-            &:before {
-                content: "> ";
-            }
-            &:after {
-                content: none;
-            }
+        
+        &:visited {
+            color: $batcolor;
         }
 
-        &:before, &:after {
+        &:hover {
+            color: $highlight;
+            text-decoration: underline;
+        }
+
+        &:before {
+            content: "> ";
+        }
+        &:after {
             content: none;
         }
-
+		
+		&.current {
+			text-decoration: underline;
+		}
     }
-	li.current {
-		text-decoration: underline;
-	}
 }
 
 #breadcrumb {
     font-size: 13px; 
     color: $batcolor;
 }
-
-

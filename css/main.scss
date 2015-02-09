@@ -2,6 +2,7 @@
 ---
 
 @import "normalize";
+@import "fontface";
 
 $fg: #131313;
 $bg: #eee;
@@ -138,13 +139,12 @@ p.tooltiptext {
     font-style: italic;
 }
 
-ul {
+.nav-list {
     list-style-type: none;
-    //margin-left: 25px;
     padding: 0;
 }
 
-li a:before {
+nav a:before {
     content: "> ";
 }
 
@@ -157,7 +157,6 @@ footer {
     span.logo {
         font-family: "Source Code Pro";
         color: $highlight;
-        cursor: pointer;
         position: relative;
         bottom: 1px;
         display: inline-block;
