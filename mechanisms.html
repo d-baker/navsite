@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+<meta name="viewport" content="width=device-width">
+<title>Dorothea Baker | mechanisms</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=screen-width">
+
+<meta name="author" content="Dorothea Baker">
+<meta name="description" content="attempting to put all my stuff in one place">
+
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+<!-- FONTS -->
+<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,300,200,500,600,900,700' rel='stylesheet' type='text/css'>
+<link href="css/fontface.css" rel="stylesheet" type="text/css">
+
+<!-- JS -->
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/tooltip.js"></script>
+<script type="text/javascript" src="js/copyright-tooltip.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+
+</head>
+
+
+
+<div id="container">
+<header>
+    <ul>
+        <!-- TODO cheating with the brs -->
+        <li class="dropdown">MUSIC<ul id="music-menu">
+                <li>
+                <a href="https://dbaker.bandcamp.com/">BANDCAMP</a>
+                </li>
+                <br>
+                <li><a href="http://memoriata.com/audio">AUDIO</a></li>
+                <br>
+                <li><a href="http://memoriata.com/video">VIDEO</a></li>
+                <br>
+                <li><a href="http://memoriata.com/mechanisms.html">MECHANISMS</a></li>                               <br>
+                <li><a href="http://memoriata.com/scores.html">SCORES</a></li>
+            </ul></li>
+
+        <li class="dropdown">GEEKERY<ul id="geek-menu">
+                <li><a href="http://memoriata.com/bots.html">TWITTER BOTS</a></li>
+                <br>
+                <li><a href="http://memoriata.com/botlang">BOTLANG</a></li>
+                <br>
+                <li><a href="https://github.com/d-baker/NaNoGenMo-2014"</a>NANOGENMO 2014</li>
+            </ul></li>
+        <li><a href="http://memoriata.com/blog">BLOG</a></li>
+        <li><a href="http://memoriata.com/links.html">LINKS</a></li>
+
+        <li id="homelink"><a href="http://memoriata.com/">{MEMORIATA}</a></li>
+    </ul>
+    <br>
+    <p id="breadcrumb">~/music/mechanisms</p>
+</header>
+
+<div class="sidebar" id="mechanisms">
+    <h3>mechanisms</h3>
+    <ul>
+        <li><a class="tooltip" title="polyrhythm" href="http://memoriata.com/mechanisms/1.html">no. 1</a></li>
+        <li><a class="tooltip" title="polymelody" href="http://memoriata.com/mechanisms/2.html">no. 2</a></li>
+    </ul>
+</div>
+
+<div class="textblock" id="intro">
+<h3>background</h3>
+<p>In 2012/2013 I composed two pieces of music for percussion ensemble, <span class="musictitle">Mechanism No. 1</span> and <span class="musictitle">Mechanism No. 2</span>. It was never really my intention to write music for humans to play - I was more interested in the possibilities of computer performance, and only partially due to my refusal to compromise in order to write music that's physically playable.
+</p>
+<p>
+I wrote the Mechanisms in the music notation software Sibelius, which has a mixing panel. Each Mechanism consists of 12 "lines" (where a line is a single stave), and during the composition process I always had the mixer open, listening to different combinations of lines and making sure it sounded perfect <em>from every angle</em>. I discovered it was possible to create an entirely new piece of music just by soloing, muting and adjusting the volume of the 12 different lines, and this was an experience I wanted listeners to have access to. So I started dreaming of a way to make it happen.
+</p>
+<p>
+In late 2013, I implemented a tiny prototype of a web-based multitrack audio player and mixer as part of a university assignment. It was very limited, but it served as a starting point for a fully-functioning version, which I recently rediscovered and refactored after initially abandoning the project.
+</p>
+</div>
+
+<div class="textblock" id="tech">
+<h3>technology</h3>
+<p>
+The audio player is implemented using HTML5 <code>audio</code> elements and Javascript. Each track consists of a single stave from the entire piece, exported from Sibelius using the default sound library. Tracks belonging to a single instrument with more than one stave are labelled with letters (a, b) and tracks belonging to separate instruments of the same kind are labelled with numbers (1, 2).
+</p>
+<p>
+Unfortunately none of the audio formats available are universally compatible across <em>all</em> browsers, and they each have disadvantages. I've settled on .ogg until a better solution (probably something involving multiple source formats) can be found, but IE and Safari users will have to switch browsers :(
+</p>
+</div>
+
+<div class="textblock" id="instructions">
+<h3>instructions</h3>
+<ul>
+<li>
+Depending on the speed of your internet, you may have to wait a few minutes for all the tracks to load before hitting play. If you don't wait, freshly-loaded tracks might start playing from the beginning without a care for what the other tracks are doing (I suspect this is browser-dependant behaviour). If things go awry, just pause and then play again.
+</li>
+<li>
+If too many tracks are set to a volume too high, you'll probably experience distortion as the overall volume will overwhelm your headphones/speakers. To avoid this problem, all tracks are set to 50% volume by default. I'm sure there's a mathematical formula that describes the ratio needed to prevent distortion, but due to cross-browser discrepancies in volume it probably wouldn't be much use. For now, you'll just have to rely on trial and error when experimenting with different combinations of tracks and volumes.
+</li>
+<li>
+Tracks may get out of sync as you check and uncheck them (for some reason this seems to be more problematic with Mechanism #1). There is no evidence that pausing and playing again helps with this issue. It is a mystery.
+</li>
+<li>
+Finally, remember this is fairly new technology being appropriated for purposes it was never designed for. It may or may not work in your browser. It may or may not cause your browser to freeze and crash. It may or may not eat your CPU. You have been warned. Have fun!
+</li>
+</ul>
+</div>
+
+<footer>
+    <p>&#169; DOROTHEA BAKER 2014 <span class="logo">/\o_o/\</span></p>
+</footer>
+
+</div>
+
+</body></html>

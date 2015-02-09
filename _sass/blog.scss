@@ -1,0 +1,63 @@
+.posttitle {
+    display: inline-block;
+    font-weight: normal;
+    color: $highlight;
+}
+
+// this is awful due to css limitations
+#backtotop {
+	position: fixed;
+	bottom: 0px;
+	height: 30px;
+	right: 0px;
+	margin: 0px 20px;
+	padding: 10px;
+	background: rgba(255, 255, 255, 0.9);
+	z-index: 2;
+	a {
+		font-size: 20px;
+		text-decoration: underline;
+		color: $highlight;
+	}
+}
+
+.timestamp {
+    display: inline;
+    font-weight: normal;
+    color: $batcolor;
+    //&:before {
+    //    content: "> ";
+    //}
+    &:after {
+        content: " > ";
+    }
+	a {
+		color: $batcolor;
+	}
+}
+
+.year {
+    color: $highlight;
+    font-weight: normal;
+    &:after {
+        content: " <";
+    }
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+.months {
+    display: none;
+}
+
+#pagination a {
+	display: inline-block;
+	color: $highlight;
+	padding: 0px 10px;
+	&:hover {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+}

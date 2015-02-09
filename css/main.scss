@@ -1,0 +1,260 @@
+---
+---
+
+@import "normalize";
+
+$fg: #131313;
+$bg: #eee;
+
+//$highlight: #1f7a7a;
+$highlight: #027185;
+$contrast: #d05503;
+//$contrast: #63a615;
+
+$header-height: 60px;
+$batcolor: #839496;
+
+#container {
+    display: block;
+    margin: auto;
+    max-width: 900px;
+    height: 100%;
+}
+
+body {
+    padding: 0px 20px 0px 20px;
+    background: $bg;
+    line-height: 1.5em;
+    color: $fg;
+    font-family: "Source Code Pro";
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+h2 {
+    font-family: NotCourierSans, "Source Code Pro";
+    font-size: 20px;
+    text-align: right;
+    color: $bg;
+    padding: 0px 20px;
+}
+
+h3 {
+    font-size: 20px;
+    color: $highlight;
+    padding-top: 20px;
+}
+
+hr {
+	color: $bg;
+}
+
+a {
+    text-decoration: none;
+    color: $fg;
+    
+    h1 {
+        color: $bg;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &:visited { 
+        color: $batcolor;
+        h1 {
+            color: $bg;
+        }
+    }
+    
+    &:hover { 
+        color: $highlight;
+        text-decoration: underline; 
+    }
+
+}
+
+#assorted, #music, #geekery {
+    padding-bottom: 10px;
+}
+
+#assorted, #lang {
+    width: 650px;
+}
+
+#music, #art {
+    width: 600px;   
+    position: relative;
+    left: 200px;
+}
+
+#geekery, #ebooks {
+    width: 470px;
+    position: relative;
+    left: 400px;
+}
+
+
+
+p.copyright {
+    &:before {
+        color: $batcolor;
+        font-style: italic;
+        content: "Dorothea Baker 2014 ";
+        position: relative;
+        top: 1px; //tweak 
+    }
+}
+
+#copyright {
+    position: relative;
+    width: 500px;
+}
+
+#scores {
+    width: 500px;
+}
+
+#downloads {
+    width: 410px;
+}
+
+#copyright {
+    left: 200px;
+    padding-bottom: 10px;
+    a {
+        text-decoration: underline;
+    }
+}
+
+
+p.tooltiptext {
+    display: inline;
+    color: $batcolor;
+    font-style: italic;
+}
+
+ul {
+    list-style-type: none;
+    //margin-left: 25px;
+    padding: 0;
+}
+
+li a:before {
+    content: "> ";
+}
+
+/**************************************************************/
+
+footer {
+    text-align: right;
+    font-family: NotCourierSans, "Source Code Pro";
+    padding-top: 30px;
+    span.logo {
+        font-family: "Source Code Pro";
+        color: $highlight;
+        cursor: pointer;
+        position: relative;
+        bottom: 1px;
+        display: inline-block;
+        width: 70px;
+    }
+}
+
+/* mechanisms page */
+
+.sidebar {
+    float: right;
+    text-align: right;
+	//max-height: 450px;
+	overflow-y: auto;
+
+	a {
+		color: $fg;
+		&:hover {
+			color: $highlight;
+		}
+	}
+
+    li a:before {
+        content: "";
+    }
+    li a:after {
+        content: " <";
+    }
+}
+
+#mechanisms {
+    width: 180px;
+}
+
+#intro, #tech, #instructions, #scores, #copyright {
+    max-width: 500px;
+    position: relative;
+}
+
+#tech {
+    left: 190px;
+}
+
+#instructions {
+    left: 400px;
+    ul {
+        margin: 0px;
+    }
+
+    li {
+        margin-bottom: 1em;
+        &:before {
+            content: "- ";
+        }
+    }
+}
+
+
+#bat {
+    color: $batcolor;
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 155px;
+    margin: 0px;
+	font-size: 150px;
+}
+
+#bio {
+    p {
+        position: relative;
+        margin-top: 2em;
+    }
+}
+
+p#one {
+    max-width: 550px;
+}
+
+p#two {
+    max-width: 550px;
+    left: 250px;
+}
+p#three {
+    max-width: 380px;
+    left: 500px;
+}
+
+.blogpost {
+	width: 500px;
+}
+
+p a {
+	color: $highlight;
+	text-decoration: underline;
+}
+
+@import "header";
+@import "av";
+@import "blog";
+@import "responsive";
