@@ -1,5 +1,5 @@
  header {
-	text-transform: uppercase;
+    text-transform: uppercase;
 
     position: relative;
     margin: 0px;
@@ -25,13 +25,13 @@
             color: $fg;
         }
         &:hover {
-			color: $fg;
+            color: $fg;
             text-decoration: none;
         }
 
-		&.current {
-			text-decoration: underline;
-		}
+        &.current {
+            text-decoration: underline;
+        }
 
     }
 
@@ -48,7 +48,7 @@ a#logo {
     &:hover {
         text-decoration: none;
         color: $fg;
-		background: none;
+        background: none;
     }
 
 }
@@ -59,19 +59,19 @@ a#logo {
 }
 
 .dropdown {
-	display: inline-block;
+    display: inline-block;
 }
 
 .dropdown .nav-list {
-	position: absolute;
+    position: absolute;
     background: rgba(255, 255, 255, 0.9);
     padding: 10px 0px;
     margin-top: 5px;
     z-index: 100;
 
     a {
-		background: none;
-		display: block;
+        background: none;
+        display: block;
         font-size: 13px;
         font-family: NotCourierSans, "Source Code Pro";
         color: $fg;
@@ -84,7 +84,7 @@ a#logo {
 
         &:hover {
             color: $highlight;
-			background: none;
+            background: none;
             text-decoration: underline;
         }
 
@@ -94,10 +94,10 @@ a#logo {
         &:after {
             content: none;
         }
-		
-		&.current {
-			text-decoration: underline;
-		}
+        
+        &.current {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -107,12 +107,18 @@ a#logo {
 }
 
 .dropdown .nav-list {
-	display: none;
+    display: none;
 }
 
 .dropdown:hover {
-	.nav-list {
-		display: block;
-	}
+    .nav-list {
+        display: block;
+    }
+}
+
+.dropdown .nav-list a.external {
+    background: url("/assets/external-link.svg") no-repeat right;
+    padding-right: 34px;
+    background-position: right 10px top 5px;
 }
 
