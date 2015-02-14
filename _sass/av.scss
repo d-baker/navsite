@@ -30,17 +30,23 @@
 
 .avblock {
     max-width: 550px;
-	display: none;
+	
+	h2 {
+		font-size: 14px;
+	    padding: 0px;
+	    margin: 0px;
+	    font-weight: normal;
+	}
+	li {
+		&:before {
+			content: "";
+		}
+	}
 }
 
-h4 {
-    padding: 0px;
-    margin: 0px;
-    font-weight: normal;
-}
-
-.tracktitle {
+a.tracktitle {
     color: $fg;
+
     &:hover {
         cursor: pointer;
         color: $highlight!important;
@@ -49,30 +55,16 @@ h4 {
     &:visited {
         color: $batcolor;
     }
-    //color: $highlight;
+
+	&:before {
+		content: "> ";
+	}
 }
-
-/*
-.trackdate {
-    color: $fg;
-    font-style: italic;
-    color: $batcolor;
-    margin-left: 10px;
-
-    &:before {
-        content: "";
-    }
-
-    &:visited {
-        color: $batcolor;
-        //color: $fg;
-    }
-}
-*/
 
 .descrip {
+	display: none;
     //color: $batcolor - #111;
-    //font-style: italic;
+    font-style: italic;
     margin: 15px 0px 30px 15px;
 
     a {
@@ -87,20 +79,13 @@ h4 {
     }
 }
 
-#loading {
-    margin-bottom: 0px;
-	margin-top: 40px;
-}
-
 /**********************************************************/
-#pianorecs {
+#piano-recordings {
     position: relative;
     left: 200px;
 }
 
 .avblock {
-    width: 550px;
-
 
     li {
         margin-bottom: 10px;

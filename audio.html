@@ -1,0 +1,28 @@
+---
+layout: default
+title: audio
+permalink: /music/audio/
+---
+
+{% for category in site.data.audio %}
+
+    <div class="avblock" id="{{ category[0] }}">
+        <h1>{{ category[0] | replace: "-", " " }}</h1>
+
+        <ul class="playlist">
+        {% for audio in category[1] %}
+            <li>
+                <h2>
+                    <a class="tracktitle" href="{{ audio.url | prepend: "/assets/audio/" }}">{{ audio.title }}</a>
+                    <span class="options">
+                        <a class="info op">info</a>
+                    </span>
+                </h2>
+                <p class="descrip">{{ audio.description }}</p>
+            </li>
+        {% endfor %}
+        </ul>
+
+    </div>
+
+{% endfor %}

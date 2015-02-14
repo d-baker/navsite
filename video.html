@@ -1,0 +1,28 @@
+---
+layout: default
+title: video
+permalink: /music/video/
+---
+
+{% for category in site.data.video %}
+
+    <div class="avblock" id="{{ category[0] }}">
+        <h1>{{ category[0] | replace: "-", " " }}</h1>
+
+        <ul class="playlist">
+        {% for video in category[1] %}
+            <li>
+                <h2>
+                    <a class="tracktitle" href="{{ video.url | prepend: "/assets/video/" }}">{{ video.title }}</a>
+                    <span class="options">
+                        <a class="info op">info</a>
+                    </span>
+                </h2>
+                <p class="descrip">{{ video.description }}</p>
+            </li>
+        {% endfor %}
+        </ul>
+
+    </div>
+
+{% endfor %}
