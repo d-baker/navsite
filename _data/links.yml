@@ -42,11 +42,11 @@ geekery:
     description: the classic tile game 2048, in binary
 
   - title: code art
-    url: http://memoriata.com/code-art
+    url: http://memoriata.com/portfolio/code-art
     description: art found in a terminal
 
   - title: fashionable metal bandname generator
-    url: http://memoriata.com/bn-generator
+    url: http://memoriata.com/portfolio/bn-generator
     description: silliness
 
   - title: batspace
