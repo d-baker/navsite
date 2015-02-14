@@ -101,7 +101,11 @@ a#logo {
         }
         
         &.current {
-            text-decoration: underline;
+			color: $fg;
+			background: $batcolor + #444;
+			&:hover {
+				color: $menuhighlight;
+			}
         }
     }
 }

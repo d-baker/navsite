@@ -112,17 +112,26 @@ a {
     padding-bottom: 10px;
 }
 
-#assorted, #lang {
+#assorted, #langbots {
     width: 650px;
 }
 
-#music, #art {
+#music, #artbots {
     width: 600px;   
     position: relative;
     left: 200px;
 }
 
-#geekery, #ebooks {
+.botlist {
+	li {
+		padding: 10px 0px;
+	}
+}
+#artbots {
+	padding-top: 30px;
+}
+
+#geekery {
     width: 470px;
     position: relative;
     left: 400px;

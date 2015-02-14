@@ -20,13 +20,13 @@
                         <a href="{{ "/video" | prepend: site.baseurl }}">video</a>
                     {% endif %}
 
-                    {% if page.url == "/mechanisms" %}
+                    {% if page.url == "/mechanisms.html" %}
                         <a class="current" href="{{ "/mechanisms.html" | prepend: site.baseurl }}">mechanisms</a>
                     {% else %}
                         <a href="{{ "/mechanisms.html" | prepend: site.baseurl }}">mechanisms</a>
                     {% endif %}
 
-                    {% if page.url == "/scores" %}
+                    {% if page.url == "/scores.html" %}
                         <a class="current" href="{{ "/scores.html" | prepend: site.baseurl }}">scores</a>
                     {% else %}
                         <a href="{{ "/scores.html" | prepend: site.baseurl }}">scores</a>
@@ -39,7 +39,7 @@
                 <a id="geekery-dropdown">geekery</a>
                 <div class="nav-list" id="geek-menu">
                     {% if page.url == "/bots.html" %}
-                        <a href="{{ "bots.html" | prepend: site.baseurl }}">twitter bots</a>
+                        <a class="current" href="{{ "bots.html" | prepend: site.baseurl }}">twitter bots</a>
                     {% else %}
                         <a href="{{ "bots.html" | prepend: site.baseurl }}">twitter bots</a>
                     {% endif %}
