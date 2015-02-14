@@ -55,26 +55,6 @@ a#logo {
 	margin: 0px;
 	padding: 0px;
 	list-style-type: none;
-
-	.tooltip {
-		display: none;
-	}
-
-	li {
-		&:before {
-			content: "> ";
-		}
-
-		&:hover {
-			.tooltip {
-    			display: inline;
-    			color: $batcolor;
-   				font-style: italic;
-			}
-		}
-
-	}
-
 }
 
 .dropdown:hover > a, nav a:hover, .current {
