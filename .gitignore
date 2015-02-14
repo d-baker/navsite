@@ -1,4 +1,8 @@
-*assets/audio
-*assets/video
+_site/assets/audio
+_site/assets/video
+_site/assets/fonts
+assets/audio
+assets/video
+assets/fonts
 .sass-cache
 .directory
