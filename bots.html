@@ -1,124 +1,22 @@
 ---
-title: bots
+title: twitter bots
 layout: default
 ---
-<div class="textblock" id="langbots">
-<h3>textbots</h3>
-<ul class="botlist">
+{% for category in site.data.bots %}
 
-<li>
-    <a href="https://twitter.com/tempntime_bot">unconfusion bot</a>
-    <p class="tooltip">international time &amp; temperature demystifier</p>
+    <div class="textblock" id="{{ category[0] }}">
+        <h3>{{ category[0] }}</h3>
 
-    <blockquote class="twitter-tweet" data-conversation="none" lang="en">
-    <p><a href="https://twitter.com/inky">@inky</a> Llanfairpwllgwyngyll: 2014-09-28, 12:41 PM / 18°C</p>&mdash; unconfusion bot (@tempntime_bot) <a href="https://twitter.com/tempntime_bot/status/516190889509523456">September 28, 2014</a></blockquote>
+        <ul class="botlist">
+        {% for bot in category[1] %}
+            <li>
+                <a href="{{ bot.url }}">{{ bot.title }}</a>
+                <p class="tooltip">{{ bot.description }}</p>
+                {{ bot.embed }}
+            </li>
+        {% endfor %}
+        </ul>
 
-</li>
+    </div>
 
-<li>
-    <a href="https://twitter.com/onceuponaquine">once upon a quine</a>
-    <p class="tooltip">a bot that very slowly tweets itself line by line</p>
-    
-    <blockquote class="twitter-tweet" lang="en"><p>import twitter</p>&mdash; once upon a quine (@onceuponaquine) <a href="https://twitter.com/onceuponaquine/status/547408790547480576">December 23, 2014</a></blockquote>
-</li>
-
-<li>
-    <a href="https://twitter.com/botlang">botlang</a>
-    <p class="tooltip">computer-generated conlang</p> 
-    
-    <blockquote class="twitter-tweet" lang="en"><p>luni (noun): journey</p>&mdash; botlang (@botlang) <a href="https://twitter.com/botlang/status/535023347206090752">November 19, 2014</a></blockquote>
-</li>
-
-<li>
-    <a href="https://twitter.com/realdinogenera">real dino genera</a>
-    <p class="tooltip">totally legit dinosaur names</p>
-
-    <blockquote class="twitter-tweet" lang="en"><p>Crocodon</p>&mdash; real dinosaur genera (@realdinogenera) <a href="https://twitter.com/realdinogenera/status/546711704076165120">December 21, 2014</a></blockquote>
-</li>
-
-<li>
-    <a href="https://twitter.com/drow_yreve">drow yreve</a>
-    <p class="tooltip">every word in the English language...backwards</p>
-    
-    <blockquote class="twitter-tweet" lang="en"><p>msinairatnemhsilbatsesiditna</p>&mdash; droW yrevE (@drow_yreve) <a href="https://twitter.com/drow_yreve/status/511144845247664128">September 14, 2014</a></blockquote>
-</li>
-
-<li>
-    <a href="https://twitter.com/bot_things">botbot</a>
-    <p class="tooltip">metabot</p>
-
-    <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/dbaker_h">@dbaker_h</a> bot crash</p>&mdash; botbot (@bot_things) <a href="https://twitter.com/bot_things/status/511665319987798016">September 15, 2014</a></blockquote>
-</li>
-
-
-<li>
-    <a href="https://twitter.com/howxisthatybot">how X is that Y</a>
-    <p class="tooltip">inspired by a peculiarity of Australian English</p>
-    
-    <blockquote class="twitter-tweet" lang="en"><p>how outstanding is that misfeature</p>&mdash; how X is that Y (@howxisthatybot) <a href="https://twitter.com/howxisthatybot/status/512390551216222208">September 18, 2014</a></blockquote>
-</li>
-
-<li>
-    <a href="https://twitter.com/bandname_exe">bandname.exe</a>
-    <p class="tooltip">new and improved(?) fashionable metal bandname generator</p>
-    
-    <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/include?src=hash">#include</a> the evident cat</p>&mdash; bandname.exe (@bandname_exe) <a href="https://twitter.com/bandname_exe/status/513236392793493504">September 20, 2014</a></blockquote>
-</li>
-
-<li>
-    <a href="https://twitter.com/shkspr_ebooks">ǝɹɐǝdsǝʞɐɥs ɯɐıןןıʍ</a>
-    <p class="tooltip">shakespeare remixed</p>
-    
-    <blockquote class="twitter-tweet" lang="en"><p>So shall thou feed on Death, that which it fears to lose.</p>&mdash; ǝɹɐǝdsǝʞɐɥs ɯɐıןןıʍ (@shkspr_ebooks) <a href="https://twitter.com/shkspr_ebooks/status/503079281744809984">August 23, 2014</a></blockquote>
-</li>
-
-</ul>
-</div>
-
-<div class="textblock" id="artbots">
-<h3>artbots</h3>
-<ul class="botlist">
-
-<li>
-    <a href="https://twitter.com/snailify">snailify</a>
-    <p class="tooltip">adds a slimy touch to your tweets</p>
-    
-    <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/dbaker_h">@dbaker_h</a>  random.choice() is hitting the 🐌 a lot atm</p>&mdash; هة (@snailify) <a href="https://twitter.com/snailify/status/548010969121566720">December 25, 2014</a></blockquote>
-</li>
-
-<li>
-    <a href="https://twitter.com/unicodifier">unicodifier</a>
-    <p class="tooltip">text glitcher</p>
-    
-    <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/inky">@inky</a>  õოǥ ħɆ℄łơ</p>&mdash; unicodifier (@unicodifier) <a href="https://twitter.com/unicodifier/status/518303920100085760">October 4, 2014</a></blockquote>
-</li>
-
-<li>
-    <a href="https://twitter.com/winter_py">winter.py</a>
-    <p class="tooltip">dreamy winter scenes</p>
-    
-    <blockquote class="twitter-tweet" lang="en"><p>❅         ·            ❅       &#10;          &#10;       ❅        &#10;   ·             ❅           &#10;&#10;        ❅         &#10;                       🌲</p>&mdash; ❄ winter.py ❄ (@winter_py) <a href="https://twitter.com/winter_py/status/512810689727959040">September 19, 2014</a></blockquote>
-</li>
-
-<li>
-    <a href="https://twitter.com/everygothcolor">everygothcolor</a>
-    <p class="tooltip">every shade of black</p>
-    
-    <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/0b0508?src=hash">#0b0508</a> <a href="http://t.co/fkm9W6AnBL">pic.twitter.com/fkm9W6AnBL</a></p>&mdash; every goth color (@everygothcolor) <a href="https://twitter.com/everygothcolor/status/538343209277988864">November 28, 2014</a></blockquote>
-</li>
-
-<li>
-    <a href="https://twitter.com/evryshadeofgray">evryshadeofgray</a>
-    <p class="tooltip">every shade of gray</p>
-    
-    <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/47494d?src=hash">#47494d</a> <a href="http://t.co/jJDi7Hdr7B">pic.twitter.com/jJDi7Hdr7B</a></p>&mdash; every shade of gray (@evryshadeofgray) <a href="https://twitter.com/evryshadeofgray/status/538406980209999872">November 28, 2014</a></blockquote>
-</li>
-
-<li>
-    <a href="https://twitter.com/everymoonAU">every moon</a>
-    <p class="tooltip">highly inaccurate moon phases</p>
-    
-    <blockquote class="twitter-tweet" lang="en"><p>🌔</p>&mdash; Every Moon (@everymoonAU) <a href="https://twitter.com/everymoonAU/status/512058364172316672">September 17, 2014</a></blockquote>
-</li>
-</ul>
-</div>
+{% endfor %}

@@ -1,0 +1,91 @@
+textbots:
+  - title: unconfusion bot
+    url: https://twitter.com/tempntime_bot
+    description: international time & temperature demystifier
+    embed: !xml |
+           <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/inky">@inky</a> Llanfairpwllgwyngyll: 2014-09-28, 12:41 PM / 18°C</p>&mdash; unconfusion bot (@tempntime_bot)<a href="https://twitter.com/tempntime_bot/status/516190889509523456">September 28, 2014</a></blockquote>
+
+  - title: once upon a quine
+    url: https://twitter.com/onceuponaquine
+    description: a bot that very slowly tweets itself line by line
+    embed: !xml |
+           <blockquote class="twitter-tweet" lang="en"><p>import twitter</p>&mdash; once upon a quine (@onceuponaquine) <a href="https://twitter.com/onceuponaquine/status/547408790547480576">December 23, 2014</a></blockquote>
+
+  - title: botlang
+    url: https://twitter.com/botlang
+    description: computer-generated conlang
+    embed: !xml |
+           <blockquote class="twitter-tweet" lang="en"><p>luni (noun): journey</p>&mdash; botlang (@botlang) <a href="https://twitter.com/botlang/status/535023347206090752">November 19, 2014</a></blockquote>
+
+  - title: real dino genera
+    url: https://twitter.com/realdinogenera
+    description: totally legit dinosaur names
+    embed: !xml |
+           <blockquote class="twitter-tweet" lang="en"><p>Crocodon</p>&mdash; real dinosaur genera (@realdinogenera) <a href="https://twitter.com/realdinogenera/status/546711704076165120">December 21, 2014</a></blockquote>
+
+  - title: drow yreve
+    url: https://twitter.com/realdinogenera
+    description: every word in the English language...backwards
+    embed: !xml |
+           <blockquote class="twitter-tweet" lang="en"><p>msinairatnemhsilbatsesiditna</p>&mdash; droW yrevE (@drow_yreve) <a href="https://twitter.com/drow_yreve/status/511144845247664128">September 14, 2014</a></blockquote>
+
+  - title: botbot
+    url: https://twitter.com/bot_things
+    description: metabot
+    embed: !xml |
+           <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/dbaker_h">@dbaker_h</a> bot crash</p>&mdash; botbot (@bot_things) <a href="https://twitter.com/bot_things/status/511665319987798016">September 15, 2014</a></blockquote>
+
+  - title: how X is that Y
+    url: https://twitter.com/howxisthatybot
+    description: inspired by a peculiarity of Australian English
+    embed: !xml |
+           <blockquote class="twitter-tweet" lang="en"><p>how outstanding is that misfeature</p>&mdash; how X is that Y (@howxisthatybot) <a href="https://twitter.com/howxisthatybot/status/512390551216222208">September 18, 2014</a></blockquote>
+
+  - title: bandname.exe
+    url: https://twitter.com/bandname_exe
+    description: new and improved(?) fashionable metal bandname generator
+    embed: !xml |
+           <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/include?src=hash">#include</a> the evident cat</p>&mdash; bandname.exe (@bandname_exe) <a href="https://twitter.com/bandname_exe/status/513236392793493504">September 20, 2014</a></blockquote>
+
+  - title: ǝɹɐǝdsǝʞɐɥs ɯɐıןןıʍ
+    url: https://twitter.com/shkspr_ebooks
+    description: shakespeare remixed
+    embed: !xml |
+           <blockquote class="twitter-tweet" lang="en"><p>So shall thou feed on Death, that which it fears to lose.</p>&mdash; ǝɹɐǝdsǝʞɐɥs ɯɐıןןıʍ (@shkspr_ebooks) <a href="https://twitter.com/shkspr_ebooks/status/503079281744809984">August 23, 2014</a></blockquote>
+
+artbots:
+  - title: snailify
+    url: https://twitter.com/snailify
+    description: adds a slimy touch to your tweets
+    embed: !xml |
+           <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/dbaker_h">@dbaker_h</a>  random.choice() is hitting the 🐌 a lot atm</p>&mdash; هة (@snailify) <a href="https://twitter.com/snailify/status/548010969121566720">December 25, 2014</a></blockquote>
+
+  - title: unicodifier
+    url: https://twitter.com/unicodifier
+    description: text glitcher
+    embed: !xml |
+           <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/inky">@inky</a>  õოǥ ħɆ℄łơ</p>&mdash; unicodifier (@unicodifier) <a href="https://twitter.com/unicodifier/status/518303920100085760">October 4, 2014</a></blockquote>
+
+  - title: winter.py
+    url: https://twitter.com/winter_py
+    description: dreamy winter scenes
+    embed: !xml |
+           <blockquote class="twitter-tweet" lang="en"><p>❅         ·            ❅       &#10;          &#10;       ❅        &#10;   ·             ❅           &#10;&#10;        ❅         &#10;                       🌲</p>&mdash; ❄ winter.py ❄ (@winter_py) <a href="https://twitter.com/winter_py/status/512810689727959040">September 19, 2014</a></blockquote>
+
+  - title: every goth color
+    url: https://twitter.com/everygothcolor
+    description: every shade of black
+    embed: !xml |
+           <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/0b0508?src=hash">#0b0508</a> <a href="http://t.co/fkm9W6AnBL">pic.twitter.com/fkm9W6AnBL</a></p>&mdash; every goth color (@everygothcolor) <a href="https://twitter.com/everygothcolor/status/538343209277988864">November 28, 2014</a></blockquote>
+
+  - title: every shade of gray
+    url: https://twitter.com/evryshadeofgray
+    description: ...every shade of gray.
+    embed: !xml |
+           <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/47494d?src=hash">#47494d</a> <a href="http://t.co/jJDi7Hdr7B">pic.twitter.com/jJDi7Hdr7B</a></p>&mdash; every shade of gray (@evryshadeofgray) <a href="https://twitter.com/evryshadeofgray/status/538406980209999872">November 28, 2014</a></blockquote>
+
+  - title: every moon
+    url: https://twitter.com/everymoonAU
+    description: highly innacurate moon phases
+    embed: !xml |
+          <blockquote class="twitter-tweet" lang="en"><p>🌔</p>&mdash; Every Moon (@everymoonAU) <a href="https://twitter.com/everymoonAU/status/512058364172316672">September 17, 2014</a></blockquote>
