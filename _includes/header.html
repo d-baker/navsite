@@ -56,7 +56,7 @@
             {% endif %}
 
             {% if page.url == "/links.html" %}
-                <a href="{{ "links.html" | prepend: site.baseurl }}">links</a>
+                <a class="current" href="{{ "links.html" | prepend: site.baseurl }}">links</a>
             {% else %}
                 <a href="{{ "links.html" | prepend: site.baseurl }}">links</a>
             {% endif %}
@@ -65,6 +65,7 @@
 
         </div>
     </nav>
+
 
     <p id="breadcrumb">~/</p>
 

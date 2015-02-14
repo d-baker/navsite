@@ -76,14 +76,11 @@
         display: none;
     }
 
-    li a:before {
-        content: none !important;
-    }
-	li a:after {
-        content: none !important;
-    }
-
-    a, #header li, #header li.dropdown {
+	.nav-list a {
+		margin: 0px;
+		padding: 0px 10px;
+	}
+	.nav-list a, .dropdown .nav-list a, .nav-list a:hover {
         text-decoration: underline;		
 		&:after {
 			content: none;
@@ -93,16 +90,18 @@
 		}
     }
 
-	#header li.dropdown ul a {
-		font-size: 14px;
-	}
-
     blockquote {
         display: none;
     }
 
-	#header li#homelink a {
+	a#logo {
 		text-decoration: none;
+		&:after {
+			content: "}";
+		}
+		&:before {
+			content: "{";
+		}
 	}	
 
 }

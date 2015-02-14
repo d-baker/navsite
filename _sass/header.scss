@@ -13,6 +13,7 @@
         margin-right: 10px;
         cursor: pointer;
         display: inline;
+		color: $menufg;
 
         &:before {
             content: "{";
@@ -27,10 +28,6 @@
         &:hover {
             color: $fg;
             text-decoration: none;
-        }
-
-        &.current {
-            text-decoration: underline;
         }
 
     }
@@ -53,8 +50,36 @@ a#logo {
 
 }
 
+
+.links {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+
+	.tooltip {
+		display: none;
+	}
+
+	li {
+		&:before {
+			content: "> ";
+		}
+
+		&:hover {
+			.tooltip {
+    			display: inline;
+    			color: $batcolor;
+   				font-style: italic;
+			}
+		}
+
+	}
+
+}
+
 .dropdown:hover > a, nav a:hover, .current {
-    background: rgba(255, 255, 255, 0.9);
+	color: $menufg;
+    background: $menubg;
     padding-bottom: 3px;
 }
 
@@ -64,7 +89,7 @@ a#logo {
 
 .dropdown .nav-list {
     position: absolute;
-    background: rgba(255, 255, 255, 0.9);
+    background: $menubg;
     padding: 10px 0px;
     margin-top: 5px;
     z-index: 100;
@@ -72,18 +97,18 @@ a#logo {
     a {
         background: none;
         display: block;
-        font-size: 13px;
+        font-size: 14px;
         font-family: NotCourierSans, "Source Code Pro";
-        color: $fg;
-        padding: 0px 10px;
+        color: $menufg;
+        padding: 2px 10px;
         margin-right: 0px;
         
         &:visited {
-            color: $batcolor;
+            color: $menubatcolor;
         }
 
         &:hover {
-            color: $highlight;
+            color: $menuhighlight;
             background: none;
             text-decoration: underline;
         }
@@ -118,7 +143,7 @@ a#logo {
 
 .dropdown .nav-list a.external {
     background: url("/assets/external-link.svg") no-repeat right;
-    padding-right: 34px;
-    background-position: right 10px top 5px;
+    padding-right: 30px;
+    background-position: right 10px top 7px;
 }
 

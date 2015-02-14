@@ -1,138 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
+---
+layout: default
+title: links
+---
+{% for category in site.data.links %}
 
-<!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
-<![endif]-->
-<meta name="viewport" content="width=device-width">
-<title>Dorothea Baker | links</title>
+    <div class="textblock" id="{{ category[0] }}">
+        <h3>{{ category[0] }}</h3>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=screen-width">
+        <ul class="links">
+        {% for link in category[1] %}
+            <li>
+                <a href="{{ link.url }}">{{ link.title }}</a>
+                <p class="tooltip">{{ link.description }}</p>
+            </li>
+        {% endfor %}
+        </ul>
 
-<meta name="author" content="Dorothea Baker">
-<meta name="description" content="attempting to put all my stuff in one place">
+    </div>
 
-<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-
-<!-- FONTS -->
-<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,300,200,500,600,900,700' rel='stylesheet' type='text/css'>
-<link href="css/fontface.css" rel="stylesheet" type="text/css">
-
-<!-- JS -->
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/tooltip.js"></script>
-<script type="text/javascript" src="js/copyright-tooltip.js"></script>
-<script type="text/javascript" src="js/menu.js"></script>
-
-</head>
-
-
-
-<div id="container">
-
-<header>
-    <ul>
-        <!-- TODO cheating with the brs -->
-        <li class="dropdown">MUSIC<ul id="music-menu">
-                <li>
-                <a href="https://dbaker.bandcamp.com/">BANDCAMP</a>
-                </li>
-                <br>
-                <li><a href="http://memoriata.com/audio">AUDIO</a></li>
-                <br>
-                <li><a href="http://memoriata.com/video">VIDEO</a></li>
-                <br>
-                <li><a href="http://memoriata.com/mechanisms.html">MECHANISMS</a></li>                               <br>
-                <li><a href="http://memoriata.com/scores.html">SCORES</a></li>
-            </ul></li>
-
-        <li class="dropdown">GEEKERY<ul id="geek-menu">
-                <li><a href="http://memoriata.com/bots.html">TWITTER BOTS</a></li>
-                <br>
-
-                <li><a href="http://memoriata.com/botlang">BOTLANG</a></li>
-                <br>
-                <li><a href="https://github.com/d-baker/NaNoGenMo-2014"</a>NANOGENMO 2014</li>
-            </ul></li>
-
-        <li><a href="http://memoriata.com/blog">BLOG</a></li>
-
-        <li class="current"><a href="http://memoriata.com/links.html">LINKS</a></li>
-
-        <li id="homelink"><a href="http://memoriata.com/">{MEMORIATA}</a></li>
-    </ul>
-
-    <br>
-    <p id="breadcrumb">~/links</p>
-
-</header>
-
-<div class="textblock" id="assorted">
-<h3>assorted</h3>
-<ul>
-<li>
-<a title="me talking to myself, mostly...oh, and to bots" class="tooltip" href="https://twitter.com/dbaker_h">twitter</a>
-</li>
-<li>
-<a title="books I've read" class="tooltip" href="http://www.librarything.com/profile/dorotheabaker">libraryThing</a>
-</li>
-<li>
-<a title="illustration, photography, etc" class="tooltip" href="http://www.redbubble.com/people/fleurfleming">redbubble</a>
-</li>
-<li>
-<a title="a place I go mainly to look at cat pictures" class="tooltip" href="https://www.pinterest.com/dorotheabaker/">pinterest</a>
-</li>
-<li>
-<a title="a link blog of sorts" class="tooltip" href="http://tilde.club/~dbaker">tilde.club</a>
-</li>
-</ul>
-</div>
-
-<div class="textblock" id="music">
-<h3>music</h3>
-<ul>
-
-<li>
-<a title="mostly piano-related things" class="tooltip" href="http://dorotheabaker.weebly.com/">professional music website</a>
-</li>
-<li>
-<a title="original music & piano recordings" class="tooltip" href="https://soundcloud.com/dorotheabaker">soundcloud</a>
-</li>
-<li>
-<a title="practise videos, choral compositions, kittens" class="tooltip" href="http://www.youtube.com/user/dorotheabaker">youtube</a>
-</li>
-</ul>
-</div>
-
-<div class="textblock" id="geekery">
-<h3>geekery</h3>
-<ul>
-<li>
-<a title="nerd projects" class="tooltip" href="https://github.com/d-baker">github</a>
-</li>
-<li>
-<a title="the classic tile game 2048, in binary" class="tooltip" href="http://d-baker.github.io/100000000000/">100000000000</a>
-</li>
-<li><a class="tooltip" title="art found in a terminal" href="http://memoriata.com/code-art">code art</a></li>
-<li><a class="tooltip" title="silliness" href="http://memoriata.com/bn-generator">fashionable metal bandname generator</a>
-</li>
-<li><a class="tooltip" title="retro web magic" href="http://www.tilde.club/~dbaker/batspace.html">batspace</a>
-</li>
-<li><a class="tooltip" title="marquee art" href="http://www.tilde.club/~dbaker/snow.html">snow</a>
-</li>
-<!--
-<li>
-<a title="tumblr bot playground" class="tooltip" href="http://displaced-bot.tumblr.com"/>Displaced Bot</a>
-</li>
--->
-</ul>
-</div>
-<footer>
-    <p>&#169; DOROTHEA BAKER 2014 <span class="logo">/\o_o/\</span></p>
-</footer>
-
-</div>
-
-</body></html>
+{% endfor %}

@@ -6,14 +6,15 @@
 
 $fg: #131313;
 $bg: #eee;
-
-//$highlight: #1f7a7a;
 $highlight: #027185;
-$contrast: #d05503;
-//$contrast: #63a615;
+$batcolor: #839496;
+
+$menufg: $fg - #333;
+$menubg: rgba(255, 255, 255, 0.9);
+$menuhighlight: $highlight - #401A05;
+$menubatcolor: $batcolor - #333;
 
 $header-height: 60px;
-$batcolor: #839496;
 
 #container {
     display: block;
@@ -73,7 +74,7 @@ a {
     }
     
     &:hover { 
-        color: $highlight;
+        color: $batcolor;
         text-decoration: underline; 
     }
 
@@ -132,44 +133,32 @@ p.copyright {
     }
 }
 
-
-p.tooltiptext {
-    display: inline;
-    color: $batcolor;
-    font-style: italic;
-}
-
-.nav-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav a:before {
-    content: "> ";
-}
-
 /**************************************************************/
 
 footer {
+	color: $menufg;
     text-align: right;
 	text-transform: uppercase;
     font-family: NotCourierSans, "Source Code Pro";
     padding-top: 30px;
+	p.sitelink a {
+		color: $menuhighlight;
+		&:hover {
+			color: $menubatcolor;
+		}
+	}
     span.logo {
 		text-transform: lowercase;
         font-family: "Source Code Pro";
-        color: $highlight;
         position: relative;
         bottom: 1px;
         width: 70px;
 
 		a {
+			color: $highlight;
 			text-decoration: none;
 		}
     }
-	p.sitelink a {
-		color: $highlight;
-	}
 }
 
 /* mechanisms page */

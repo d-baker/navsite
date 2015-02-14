@@ -1,0 +1,58 @@
+assorted:
+  - title: twitter
+    url: https://twitter.com/dbaker_h
+    description: me talking to myself, mostly...oh, and to bots
+
+  - title: librarything
+    url: http://www.librarything.com/profile/dorotheabaker
+    description: books I've read
+
+  - title: redbubble
+    url: http://www.redbubble.com/people/fleurfleming
+    description: illustration, photography, etc.
+
+  - title: pinterest
+    url: https://www.pinterest.com/dorotheabaker/
+    description: a place I go mainly to look at cat pictures
+
+  - title: tilde.club
+    url: http://tilde.club/~dbaker
+    description: a link blog of sorts
+
+music:
+  - title: professional music website
+    url: http://dorotheabaker.weebly.com/
+    description: mostly piano-related things
+
+  - title: soundcloud
+    url: https://soundcloud.com/dorotheabaker
+    description: original music & piano recordings
+
+  - title: youtube
+    url: http://www.youtube.com/user/dorotheabaker
+    description: practise videos, choral compositions, kittens
+
+geekery:
+  - title: github
+    url: https://github.com/d-baker
+    description: nerd projects
+
+  - title: 100000000000
+    url: http://d-baker.github.io/100000000000/
+    description: the classic tile game 2048, in binary
+
+  - title: code art
+    url: http://memoriata.com/code-art
+    description: art found in a terminal
+
+  - title: fashionable metal bandname generator
+    url: http://memoriata.com/bn-generator
+    description: silliness
+
+  - title: batspace
+    url: http://www.tilde.club/~dbaker/batspace.html
+    description: retro web magic
+
+  - title: snow
+    url: http://www.tilde.club/~dbaker/snow.html
+    description: marquee art
