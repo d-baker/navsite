@@ -1,0 +1,15 @@
+<div class="sidebar">
+    <h1>archive</h1>
+    <ul>
+        {% for post in site.posts %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <div class="sidebar-extra">
+        {% if page.url != "/blog/" %}
+            <a href="/blog">all posts</a>
+        {% endif %}
+        <a href="http://dorotheabaker.blogspot.com">posts on my old blog</a>
+    </div>
+</div>

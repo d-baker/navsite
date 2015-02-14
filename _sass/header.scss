@@ -1,4 +1,4 @@
- header {
+#main-header {
     position: relative;
     margin: 0px;
     padding: 0px;
@@ -31,102 +31,97 @@
 
     }
 
-}
 
-a#logo {
-    color: $fg;
-    font-size: 30px;
-    line-height: 0.6em;
-    text-align: right;
-    position: absolute;
-    right: 0px;
+	a#logo {
+	    color: $fg;
+	    font-size: 30px;
+	    line-height: 0.6em;
+	    text-align: right;
+	    position: absolute;
+	    right: 0px;
+		margin: 0px;
+	
+	    &:hover {
+	        text-decoration: none;
+	        color: $fg;
+	        background: none;
+	    }
+	
+	}
+	
+	.dropdown:hover > a, nav a:hover, .current {
+		color: $menufg;
+	    background: $menubg;
+	    padding-bottom: 3px;
+	}
+	
+	.dropdown {
+	    display: inline-block;
+	
+		&:hover {
+		    .nav-list {
+		        display: block;
+		    }
+		}
+		
+		.nav-list {
+			display: none;
+	    	position: absolute;
+	    	background: $menubg;
+	    	padding: 10px 0px;
+	    	margin-top: 5px;
+	    	z-index: 100;
 
-    &:hover {
-        text-decoration: none;
-        color: $fg;
-        background: none;
-    }
+	    	a {
+	    	    background: none;
+	    	    display: block;
+	    	    font-size: 14px;
+	    	    font-family: NotCourierSans, "Source Code Pro";
+	    	    color: $menufg;
+	    	    padding: 2px 10px;
+	    	    margin-right: 0px;
+	    	    
+	    	    &:visited {
+	    	        color: $menubatcolor;
+	    	    }
+	
+	    	    &:hover {
+	    	        color: $menuhighlight;
+	    	        background: none;
+	    	        text-decoration: underline;
+	    	    }
+	
+	    	    &:before {
+	    	        content: "> ";
+	    	    }
+	    	    &:after {
+	    	        content: none;
+	    	    }
+	    	    
+	    	    &.current {
+					color: $fg;
+					background: $bg;
+					&:hover {
+						color: $menuhighlight;
+					}
+	    	    }
 
-}
+				&.external {
+				    background: url("/assets/external-link.svg") no-repeat right;
+				    padding-right: 30px;
+				    background-position: right 10px top 7px;
+				}
 
+	    	} //end a
 
-.links {
-	margin: 0px;
-	padding: 0px;
-	list-style-type: none;
-}
+		} // end navlist
 
-.dropdown:hover > a, nav a:hover, .current {
-	color: $menufg;
-    background: $menubg;
-    padding-bottom: 3px;
-}
-
-.dropdown {
-    display: inline-block;
-}
-
-.dropdown .nav-list {
-    position: absolute;
-    background: $menubg;
-    padding: 10px 0px;
-    margin-top: 5px;
-    z-index: 100;
-
-    a {
-        background: none;
-        display: block;
-        font-size: 14px;
-        font-family: NotCourierSans, "Source Code Pro";
-        color: $menufg;
-        padding: 2px 10px;
-        margin-right: 0px;
-        
-        &:visited {
-            color: $menubatcolor;
-        }
-
-        &:hover {
-            color: $menuhighlight;
-            background: none;
-            text-decoration: underline;
-        }
-
-        &:before {
-            content: "> ";
-        }
-        &:after {
-            content: none;
-        }
-        
-        &.current {
-			color: $fg;
-			background: $bg;
-			&:hover {
-				color: $menuhighlight;
-			}
-        }
-    }
-}
-
-#breadcrumb {
-    font-size: 13px; 
-    color: $batcolor;
-}
-
-.dropdown .nav-list {
-    display: none;
-}
-
-.dropdown:hover {
-    .nav-list {
-        display: block;
-    }
-}
-
-.dropdown .nav-list a.external {
-    background: url("/assets/external-link.svg") no-repeat right;
-    padding-right: 30px;
-    background-position: right 10px top 7px;
-}
+	} // end dropdown
+	
+	#breadcrumb {
+	    font-size: 13px; 
+	    color: $batcolor;
+	}
+	
+} // end main-header
 

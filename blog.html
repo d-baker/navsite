@@ -1,0 +1,24 @@
+---
+title: blog
+layout: default
+permalink: /blog/
+---
+
+{% include blog-sidebar.html %}
+
+{% for post in site.posts %}
+
+    <div class="blogpost">
+        <header class="post-header">
+          <a class="timestamp" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%Y-%m-%d" }}</a>
+          <h1 class="post-title">{{ post.title }}</h1>
+        </header>
+
+        <article class="post-content">
+          {{ post.content }}
+        </article>
+    </div>
+
+{% endfor %}
+
+

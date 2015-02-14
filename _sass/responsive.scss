@@ -1,6 +1,6 @@
 @media screen and (max-width: 900px) {
 
-	.sidebar a {
+	.sidebar li {
 		&:after {
 			content: "";
 		}
@@ -32,15 +32,12 @@
 
     .sidebar {		
 		ul {
-			margin-left: 20px;
+			margin-left: 0px;
 		}
 
         text-align: left;
         float: none;
         li a {
-            &:before {
-                content: "> ";
-            }
             &:after {
                 content: none;
             }
@@ -114,12 +111,12 @@
         left: 0px !important;
     }
 
-	#header li, #header li.dropdown, #header li#homelink a {
+	#main-header li, #main-header li.dropdown, #main-header li#homelink a {
 		font-size: 3.8vw !important;
 		line-height: 1em;
 	}
 
-	#header li {
+	#main-header li {
 		margin-right: 3vw;
 	}
 

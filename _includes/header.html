@@ -1,4 +1,4 @@
-<header>
+<header id="main-header">
 
     <!-- TODO current page code -->
     <nav>
@@ -8,28 +8,28 @@
                 <div class="nav-list" id="music-menu">
                     <a class="external" href="https://dbaker.bandcamp.com/">bandcamp</a>
 
-                    {% if page.url == "/audio" %}
-                        <a class="current" href="{{ "/audio" | prepend: site.baseurl }}">audio</a>
+                    {% if page.url == "/music/audio/" %}
+                        <a class="current" href="{{ page.url | prepend: site.baseurl }}">audio</a>
                     {% else %}
-                        <a href="{{ "/audio" | prepend: site.baseurl }}">audio</a>
+                        <a href="{{ "/music/audio" | prepend: site.baseurl }}">audio</a>
                     {% endif %}
 
-                    {% if page.url == "/video" %}
-                        <a class="current" href="{{ "/video" | prepend: site.baseurl }}">video</a>
+                    {% if page.url == "/music/video/" %}
+                        <a class="current" href="{{ page.url | prepend: site.baseurl }}">video</a>
                     {% else %}
-                        <a href="{{ "/video" | prepend: site.baseurl }}">video</a>
+                        <a href="{{ "/music/video" | prepend: site.baseurl }}">video</a>
                     {% endif %}
 
-                    {% if page.url == "/mechanisms.html" %}
-                        <a class="current" href="{{ "/mechanisms.html" | prepend: site.baseurl }}">mechanisms</a>
+                    {% if page.url == "/music/mechanisms/" %}
+                        <a class="current" href="{{ page.url | prepend: site.baseurl }}">mechanisms</a>
                     {% else %}
-                        <a href="{{ "/mechanisms.html" | prepend: site.baseurl }}">mechanisms</a>
+                        <a href="{{ "/music/mechanisms" | prepend: site.baseurl }}">mechanisms</a>
                     {% endif %}
 
-                    {% if page.url == "/scores.html" %}
-                        <a class="current" href="{{ "/scores.html" | prepend: site.baseurl }}">scores</a>
+                    {% if page.url == "/music/scores/" %}
+                        <a class="current" href="{{ page.url | prepend: site.baseurl }}">scores</a>
                     {% else %}
-                        <a href="{{ "/scores.html" | prepend: site.baseurl }}">scores</a>
+                        <a href="{{ "/music/scores" | prepend: site.baseurl }}">scores</a>
                     {% endif %}
 
                 </div>
@@ -39,9 +39,9 @@
                 <a id="geekery-dropdown">geekery</a>
                 <div class="nav-list" id="geek-menu">
                     {% if page.url == "/bots.html" %}
-                        <a class="current" href="{{ "bots.html" | prepend: site.baseurl }}">twitter bots</a>
+                        <a class="current" href="{{ page.url | prepend: site.baseurl }}">twitter bots</a>
                     {% else %}
-                        <a href="{{ "bots.html" | prepend: site.baseurl }}">twitter bots</a>
+                        <a href="{{ "/bots.html" | prepend: site.baseurl }}">twitter bots</a>
                     {% endif %}
 
                     <a class="external" href="{{ "/botlang" | prepend: site.baseurl }}">botlang</a>
@@ -49,19 +49,19 @@
                 </div>
             </div>
 
-            {% if page.url == "/blog" %}
-                <a class="current" href="{{ "/blog" | prepend: site.baseurl }}">blog</a>
+            {% if page.url == "/blog/" %}
+                <a class="current" href="{{ page.url | prepend: site.baseurl }}">blog</a>
             {% else %}
                 <a href="{{ "/blog" | prepend: site.baseurl }}">blog</a>
             {% endif %}
 
             {% if page.url == "/links.html" %}
-                <a class="current" href="{{ "links.html" | prepend: site.baseurl }}">links</a>
+                <a class="current" href="{{ page.url | prepend: site.baseurl }}">links</a>
             {% else %}
-                <a href="{{ "links.html" | prepend: site.baseurl }}">links</a>
+                <a href="{{ "/links.html" | prepend: site.baseurl }}">links</a>
             {% endif %}
 
-            <a id="logo" href="{{ "index.html" | prepend: site.baseurl }}">memoriata</a>
+            <a id="logo" href="{{ "/index.html" | prepend: site.baseurl }}">memoriata</a>
 
         </div>
     </nav>

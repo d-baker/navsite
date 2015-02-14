@@ -1,4 +1,4 @@
-.posttitle {
+.post-title {
     display: inline-block;
     font-weight: normal;
     color: $highlight;
@@ -21,18 +21,41 @@
 	}
 }
 
-.timestamp {
-    display: inline;
-    font-weight: normal;
-    color: $batcolor;
-    //&:before {
-    //    content: "> ";
-    //}
-    &:after {
-        content: " > ";
-    }
+.sidebar-extra {
+	margin-top: 10px;
 	a {
-		color: $batcolor;
+		display: block;
+	}
+}
+
+.blogpost {
+
+	header {
+		height: 50px;
+	}
+
+	a.timestamp {
+		font-family: "Source Code Pro";
+	    display: inline;
+	    font-weight: normal;
+	    color: $batcolor;
+		font-size: 20px;
+	
+	    &:before, &:after {
+	        content: "";
+	    }
+	
+		&:hover {
+			color: $batcolor;
+			text-decoration: underline;
+		}
+	}
+	
+	.post-title {
+		&:before {
+			content: " > ";
+			color: $batcolor;
+		}
 	}
 }
 
