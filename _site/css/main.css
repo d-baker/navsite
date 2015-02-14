@@ -695,7 +695,6 @@ a.tracktitle {
     content: "> "; }
 
 .descrip {
-  display: none;
   font-style: italic;
   margin: 15px 0px 30px 15px; }
   .descrip a {
