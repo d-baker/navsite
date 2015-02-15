@@ -403,9 +403,6 @@ p#three {
   max-width: 380px;
   left: 500px; }
 
-.blogpost {
-  width: 500px; }
-
 p a {
   color: #027185;
   text-decoration: underline; }
@@ -582,22 +579,24 @@ a.tracktitle {
   .sidebar-extra a {
     display: block; }
 
-.blogpost header {
-  height: initial; }
-.blogpost a.timestamp {
-  font-family: "Source Code Pro";
-  display: inline;
-  font-weight: normal;
-  color: #839496;
-  font-size: 20px; }
-  .blogpost a.timestamp:before, .blogpost a.timestamp:after {
-    content: ""; }
-  .blogpost a.timestamp:hover {
+.blogpost {
+  max-width: 500px; }
+  .blogpost header {
+    height: initial; }
+  .blogpost a.timestamp {
+    font-family: "Source Code Pro";
+    display: inline;
+    font-weight: normal;
     color: #839496;
-    text-decoration: underline; }
-.blogpost .post-title:before {
-  content: " > ";
-  color: #839496; }
+    font-size: 20px; }
+    .blogpost a.timestamp:before, .blogpost a.timestamp:after {
+      content: ""; }
+    .blogpost a.timestamp:hover {
+      color: #839496;
+      text-decoration: underline; }
+  .blogpost .post-title:before {
+    content: " > ";
+    color: #839496; }
 
 .year {
   color: #027185;
@@ -665,14 +664,14 @@ a.tracktitle {
 
   .nav-list a {
     margin: 0px;
-    padding: 0px 10px; }
+    padding: 0px 5px; }
 
-  .nav-list a, .dropdown .nav-list a, .nav-list a:hover {
+  #main-header a, .nav-list a, .dropdown.nav-list a, .nav-list a:hover {
     text-decoration: underline; }
-    .nav-list a:after, .dropdown .nav-list a:after, .nav-list a:hover:after {
-      content: none; }
-    .nav-list a:before, .dropdown .nav-list a:before, .nav-list a:hover:before {
-      content: none; }
+    #main-header a:after, .nav-list a:after, .dropdown.nav-list a:after, .nav-list a:hover:after {
+      content: ""; }
+    #main-header a:before, .nav-list a:before, .dropdown.nav-list a:before, .nav-list a:hover:before {
+      content: ""; }
 
   blockquote {
     display: none; }

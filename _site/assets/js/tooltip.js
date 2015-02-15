@@ -1,18 +1,18 @@
+// falls back to pure css implementation
+
 $(document).ready(function(){
+    
+    $("p.tooltip").hide();
 
-    $(".tooltip").on("mouseenter mouseleave", function(e){
-        var $target = $(e.currentTarget);
-        var text = $target.attr("title");
+    $("li a").on("mouseenter mouseleave", function(e){
+        var $tooltip = $(this).siblings("p.tooltip")
 
-		if ($target.css("text-align") == "right") {
-        	$("<p class=\"tooltiptext\"> "+text+" </p>").insertBefore($target);
-		} else {
-			$("<p class=\"tooltiptext\"> "+text+" </p>").insertAfter($target);
-
-		}
-            
-        if (e.type == "mouseleave") {
-            $(".tooltiptext").remove();
+        if ($tooltip != null) { 
+            if (e.type == "mouseleave") {
+                $tooltip.hide();
+            } else {
+                $tooltip.show();
+            }
         }
 
     });

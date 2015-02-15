@@ -1,13 +1,13 @@
 @media screen and (max-width: 900px) {
 
-	.sidebar li {
-		&:after {
-			content: "";
-		}
-		&:before {
-			content: "- ";
-		}
-	}
+    .sidebar li {
+        &:after {
+            content: "";
+        }
+        &:before {
+            content: "- ";
+        }
+    }
 
     #bio p {
         width: 60vw;
@@ -24,16 +24,16 @@
 
     #bat {
         font-size: 15vw;
-		padding-bottom: 15vw;
-		padding-top: 12vw;
+        padding-bottom: 15vw;
+        padding-top: 12vw;
     }
 
 
 
-    .sidebar {		
-		ul {
-			margin-left: 0px;
-		}
+    .sidebar {      
+        ul {
+            margin-left: 0px;
+        }
 
         text-align: left;
         float: none;
@@ -44,62 +44,62 @@
         }
 
     }    
-	
-	// UGH
+    
+    // UGH
     .textblock {
         width: 100% !important;
     }
 
-	.textblock, .avblock {
+    .textblock, .avblock {
         left: 0px !important;
     }
 
 }
 
 @media screen and (max-width: 700px) {
-	.sidebar {
-		a {
-			&:before {
-				content: "";
-			}
-		}
-	}
+    .sidebar {
+        a {
+            &:before {
+                content: "";
+            }
+        }
+    }
 
-	.descrip {
-		margin-left: 0px;
-	}
+    .descrip {
+        margin-left: 0px;
+    }
 
     p.tooltiptext {
         display: none;
     }
 
-	.nav-list a {
-		margin: 0px;
-		padding: 0px 10px;
-	}
-	.nav-list a, .dropdown .nav-list a, .nav-list a:hover {
-        text-decoration: underline;		
-		&:after {
-			content: none;
-		}
-		&:before {
-			content: none;
-		}
+    .nav-list a {
+        margin: 0px;
+        padding: 0px 5px;
+    }
+    #main-header a, .nav-list a, .dropdown.nav-list a, .nav-list a:hover {
+        text-decoration: underline;     
+        &:after {
+            content: "";
+        }
+        &:before {
+            content: "";
+        }
     }
 
     blockquote {
         display: none;
     }
 
-	a#logo {
-		text-decoration: none;
-		&:after {
-			content: "}";
-		}
-		&:before {
-			content: "{";
-		}
-	}	
+    a#logo {
+        text-decoration: none;
+        &:after {
+            content: "}";
+        }
+        &:before {
+            content: "{";
+        }
+    }   
 
 }
 
@@ -111,26 +111,26 @@
         left: 0px !important;
     }
 
-	#main-header li, #main-header li.dropdown, #main-header li#homelink a {
-		font-size: 3.8vw !important;
-		line-height: 1em;
-	}
+    #main-header li, #main-header li.dropdown, #main-header li#homelink a {
+        font-size: 3.8vw !important;
+        line-height: 1em;
+    }
 
-	#main-header li {
-		margin-right: 3vw;
-	}
+    #main-header li {
+        margin-right: 3vw;
+    }
 
-	input[type="range"] {
-		width: 58vw;
-	}
+    input[type="range"] {
+        width: 58vw;
+    }
 
-	.avblock, video {
-		width: 90vw;
+    .avblock, video {
+        width: 90vw;
         left: 0px !important;
     }
 
-	video {
-		height: 50vw;
-	}
+    video {
+        height: 50vw;
+    }
 
 }
