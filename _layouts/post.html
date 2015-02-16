@@ -6,11 +6,18 @@ layout: default
 
 <div class="blogpost">
     <header class="post-header">
+
       <a class="timestamp" href="{{ page.url | prepend: site.baseurl }}">{{ page.date | date: "%Y-%m-%d" }}</a>
-      <h1 class="post-title">{{ page.title }}</h1>
+          <span class="arrow">&gt;</span>
+          <h1 class="post-title">
+            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          </h1>
+
     </header>
     
     <article class="post-content">
       {{ page.content | markdown }}
     </article>
 </div>
+
+{% include back-to-top.html %}

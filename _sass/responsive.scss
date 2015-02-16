@@ -31,12 +31,15 @@
 
 
     .sidebar {      
-        ul {
-            margin-left: 0px;
+		margin-bottom: 40px;
+
+        ul, .sidebar-extra {
+            margin-left: 20px;
         }
 
         text-align: left;
         float: none;
+
         li a {
             &:after {
                 content: none;
@@ -44,6 +47,10 @@
         }
 
     }    
+
+	.post-title {
+		margin-top: 0px;
+	}
     
     // UGH
     .textblock {

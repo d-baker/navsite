@@ -182,11 +182,15 @@ footer {
     padding-top: 30px;
     padding-bottom: 10px;
 
-    p.sitelink a {
-        color: $menuhighlight;
-        &:hover {
-            color: $menubatcolor;
-        }
+    p.sitelink {
+		padding-bottom: 0px;
+
+		a {
+        	color: $menuhighlight;
+        	&:hover {
+            	color: $menubatcolor;
+        	}
+		}
     }
     span.logo {
         text-transform: lowercase;
@@ -301,7 +305,6 @@ p a {
     padding: 0px;
     list-style-type: none;
 }
-
 @import "header";
 @import "av";
 @import "blog";

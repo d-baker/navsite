@@ -110,7 +110,8 @@
 	    	    }
 
 				&.external {
-				    background: url("/assets/external-link.svg") no-repeat right;
+					// svg icon from the awesome http://iconmelon.com/, thankyou
+				    background: url("/assets/icons/external-link.svg") no-repeat right;
 				    padding-right: 30px;
 				    background-position: right 10px top 7px;
 				}
@@ -129,3 +130,24 @@
 	
 } // end main-header
 
+// this shouldn't even be here but I can't get the relative image url to work otherwise
+#backtotop {
+	position: fixed;
+	bottom: 0px;
+	height: 40px;
+	right: 0px;
+	margin: 0px 20px;
+	//background: rgba(255, 255, 255, 0.9);
+	z-index: 2;
+	margin-bottom: 40px;
+
+	a {
+		font-size: 20px;
+		text-decoration: underline;
+		color: $highlight;
+
+		// svg icon from the awesome http://iconmelon.com/, thankyou
+		background: url("/assets/icons/arrow.svg") no-repeat center;
+		padding: 30px;
+	}
+}

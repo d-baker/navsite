@@ -328,10 +328,12 @@ footer {
   font-family: NotCourierSans, "Source Code Pro";
   padding-top: 30px;
   padding-bottom: 10px; }
-  footer p.sitelink a {
-    color: #005780; }
-    footer p.sitelink a:hover {
-      color: #728385; }
+  footer p.sitelink {
+    padding-bottom: 0px; }
+    footer p.sitelink a {
+      color: #005780; }
+      footer p.sitelink a:hover {
+        color: #728385; }
   footer span.logo {
     text-transform: lowercase;
     font-family: "Source Code Pro";
@@ -488,13 +490,28 @@ p a {
           #main-header .dropdown .nav-list a.current:hover {
             color: #005780; }
         #main-header .dropdown .nav-list a.external {
-          background: url("/assets/external-link.svg") no-repeat right;
+          background: url("/assets/icons/external-link.svg") no-repeat right;
           padding-right: 30px;
           background-position: right 10px top 7px; }
   #main-header #breadcrumb {
     font-size: 13px;
     color: #839496;
     margin-top: 20px; }
+
+#backtotop {
+  position: fixed;
+  bottom: 0px;
+  height: 40px;
+  right: 0px;
+  margin: 0px 20px;
+  z-index: 2;
+  margin-bottom: 40px; }
+  #backtotop a {
+    font-size: 20px;
+    text-decoration: underline;
+    color: #027185;
+    background: url("/assets/icons/arrow.svg") no-repeat center;
+    padding: 30px; }
 
 .options {
   display: inline-block;
@@ -557,22 +574,11 @@ a.tracktitle {
 
 .post-title {
   display: inline-block;
-  font-weight: normal;
-  color: #027185; }
-
-#backtotop {
-  position: fixed;
-  bottom: 0px;
-  height: 30px;
-  right: 0px;
-  margin: 0px 20px;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.9);
-  z-index: 2; }
-  #backtotop a {
-    font-size: 20px;
-    text-decoration: underline;
+  font-weight: normal; }
+  .post-title a {
     color: #027185; }
+    .post-title a:hover {
+      text-decoration: none; }
 
 .sidebar-extra {
   margin-top: 10px; }
@@ -594,8 +600,8 @@ a.tracktitle {
     .blogpost a.timestamp:hover {
       color: #839496;
       text-decoration: underline; }
-  .blogpost .post-title:before {
-    content: " > ";
+  .blogpost .arrow {
+    font-size: 20px;
     color: #839496; }
 
 .year {
@@ -640,12 +646,16 @@ a.tracktitle {
     padding-top: 12vw; }
 
   .sidebar {
+    margin-bottom: 40px;
     text-align: left;
     float: none; }
-    .sidebar ul {
-      margin-left: 0px; }
+    .sidebar ul, .sidebar .sidebar-extra {
+      margin-left: 20px; }
     .sidebar li a:after {
       content: none; }
+
+  .post-title {
+    margin-top: 0px; }
 
   .textblock {
     width: 100% !important; }
