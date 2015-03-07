@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	$("nav").hide();
+	$(".dropdown .nav-list").hide();
 
 	$("#menubutton").click(function() {
 
@@ -13,4 +14,21 @@ $(document).ready(function() {
 		}
 
 	});
+
+	$(".dropdown > a").click(function(e) {
+		$target = $(e.currentTarget);
+
+		if ( $("#menubutton").css("display") != "none" ) {
+
+			if ( $target.siblings(".nav-list").css("display") != "none" ) {
+				$target.siblings(".nav-list").hide();
+
+			} else {
+				$target.siblings(".nav-list").show();
+
+			}
+		}
+
+	});
+
 });

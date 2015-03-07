@@ -665,7 +665,7 @@ a.tracktitle {
   header#main-header nav a, header#main-header nav a:hover {
     padding: 25px 0px 25px 20px !important; }
   header#main-header .dropdown > a, header#main-header .dropdown > a:hover {
-    background: url("/assets/icons/dropdown-arrow.svg") no-repeat scroll right 25px top 33px transparent !important; }
+    background: url("/assets/icons/dropdown-open.svg") no-repeat scroll right 25px top 33px transparent !important; }
   header#main-header nav a, header#main-header .dropdown, header#main-header .dropdown .nav-list, header#main-header .dropdown .nav-list a {
     margin: 0px;
     display: block;
