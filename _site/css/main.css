@@ -653,6 +653,20 @@ a.tracktitle {
 
   .avblock {
     margin-bottom: 35px; }
+    .avblock p.descrip {
+      font-size: 16px;
+      margin-left: 20px; }
+    .avblock ul {
+      margin-top: 25px; }
+    .avblock li {
+      margin-bottom: 20px; }
+    .avblock h2 {
+      font-size: 18px; }
+      .avblock h2 .options {
+        margin-top: 5px;
+        margin-left: 10px;
+        display: block;
+        position: relative; }
 
   p.tooltip {
     display: none !important; }
@@ -660,48 +674,50 @@ a.tracktitle {
   .post-content {
     margin-bottom: 30px; }
 
-  header#main-header #menubutton {
-    display: block; }
-  header#main-header a#logo {
-    font-size: 40px;
-    line-height: 0.5em; }
-  header#main-header #breadcrumb {
-    display: none; }
-  header#main-header nav {
-    margin-top: 5px;
-    margin-left: 0px;
-    background-color: white !important;
-    position: relative;
-    width: 100%;
-    margin-bottom: 30px;
-    vertical-align: middle; }
-  header#main-header nav a, header#main-header nav a:hover {
-    padding: 25px 0px 25px 20px !important; }
-  header#main-header .dropdown > a, header#main-header .dropdown > a:hover {
-    background: url("/assets/icons/dropdown-open.svg") no-repeat scroll right 25px top 33px transparent !important; }
-  header#main-header nav a, header#main-header .dropdown, header#main-header .dropdown .nav-list, header#main-header .dropdown .nav-list a {
-    margin: 0px;
-    display: block;
-    position: relative;
-    text-decoration: none !important; }
-    header#main-header nav a:after, header#main-header .dropdown:after, header#main-header .dropdown .nav-list:after, header#main-header .dropdown .nav-list a:after {
-      content: ""; }
-    header#main-header nav a:before, header#main-header .dropdown:before, header#main-header .dropdown .nav-list:before, header#main-header .dropdown .nav-list a:before {
-      content: ""; }
-  header#main-header .nav-list a {
-    font-size: 35px; }
-  header#main-header .nav-list {
-    padding: 10px 0px; }
-  header#main-header .dropdown .nav-list a {
-    font-size: 25px;
-    margin-left: 30px;
-    padding: 15px !important; }
-    header#main-header .dropdown .nav-list a:hover {
-      padding: 15px; }
-    header#main-header .dropdown .nav-list a:before {
-      content: "> "; }
-    header#main-header .dropdown .nav-list a.external {
-      background: url("/assets/icons/external-link-larger.svg") no-repeat scroll right 25px top 20px transparent; }
+  header#main-header {
+    height: 30px; }
+    header#main-header #menubutton {
+      display: block; }
+    header#main-header a#logo {
+      font-size: 40px;
+      line-height: 0.5em; }
+    header#main-header #breadcrumb {
+      display: none; }
+    header#main-header nav {
+      margin-top: 5px;
+      margin-left: 0px;
+      background-color: white !important;
+      position: relative;
+      width: 100%;
+      margin-bottom: 30px;
+      vertical-align: middle; }
+    header#main-header nav a, header#main-header nav a:hover {
+      padding: 25px 0px 25px 20px !important; }
+    header#main-header .dropdown > a, header#main-header .dropdown > a:hover {
+      background: url("/assets/icons/dropdown-open.svg") no-repeat scroll right 25px top 33px transparent !important; }
+    header#main-header nav a, header#main-header .dropdown, header#main-header .dropdown .nav-list, header#main-header .dropdown .nav-list a {
+      margin: 0px;
+      display: block;
+      position: relative;
+      text-decoration: none !important; }
+      header#main-header nav a:after, header#main-header .dropdown:after, header#main-header .dropdown .nav-list:after, header#main-header .dropdown .nav-list a:after {
+        content: ""; }
+      header#main-header nav a:before, header#main-header .dropdown:before, header#main-header .dropdown .nav-list:before, header#main-header .dropdown .nav-list a:before {
+        content: ""; }
+    header#main-header .nav-list a {
+      font-size: 35px; }
+    header#main-header .nav-list {
+      padding: 10px 0px; }
+    header#main-header .dropdown .nav-list a {
+      font-size: 25px;
+      margin-left: 30px;
+      padding: 15px !important; }
+      header#main-header .dropdown .nav-list a:hover {
+        padding: 15px; }
+      header#main-header .dropdown .nav-list a:before {
+        content: "> "; }
+      header#main-header .dropdown .nav-list a.external {
+        background: url("/assets/icons/external-link-larger.svg") no-repeat scroll right 25px top 20px transparent; }
 
   .sidebar {
     clear: both; }
@@ -712,12 +728,14 @@ a.tracktitle {
 
   #bio p {
     width: 100% !important;
-    left: 0px !important; }
+    left: 0px !important;
+    margin-top: 5vw;
+    max-width: 100%; }
 
   #bat {
-    font-size: 15vw;
-    padding-bottom: 20vw;
-    padding-top: 12vw;
+    font-size: 20vw;
+    padding-bottom: 15vw;
+    padding-top: 8vw;
     clear: both; }
 
   .sidebar {

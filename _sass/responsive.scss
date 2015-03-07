@@ -10,6 +10,29 @@
 	
 	.avblock {
 		margin-bottom: 35px;
+
+		p.descrip {
+			font-size: 16px;
+			margin-left: 20px;
+		}
+
+		ul {
+			margin-top: 25px;
+		}
+
+		li {
+			margin-bottom: 20px;
+		}
+
+		h2 {
+			font-size: 18px;
+			.options {
+				margin-top: 5px;
+				margin-left: 10px;
+				display: block;
+				position: relative;
+			}
+		}
 	}
 	
 	p.tooltip {
@@ -22,6 +45,8 @@
 	}
 
 	header#main-header {
+		height: 30px;
+
 		#menubutton {
 			display: block;
 		}
@@ -107,12 +132,14 @@
     #bio p {
         width: 100% !important;
         left: 0px !important;
+		margin-top: 5vw;
+		max-width: 100%;
     }
 
     #bat {
-        font-size: 15vw;
-        padding-bottom: 20vw;
-        padding-top: 12vw;
+        font-size: 20vw;
+        padding-bottom: 15vw;
+        padding-top: 8vw;
 		clear: both;
     }
 
