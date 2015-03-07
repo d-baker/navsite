@@ -29,7 +29,6 @@ $header-height: 60px;
 }
 
 body {
-    padding: 0px 20px 0px 20px;
     background: $bg;
     line-height: 1.5em;
     color: $fg;
@@ -38,8 +37,9 @@ body {
     margin-top: 30px;
 }
 
-main {
-    padding-top: 20px;
+
+main, footer {
+    padding: 0px 20px;
 }
 
 h1, h2, h3 {

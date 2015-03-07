@@ -5,6 +5,7 @@ _site/assets/icons
 assets/audio
 assets/video
 assets/fonts
+assets/icons
 assets/js/jquery*
 _site/assets/js/jquery*
 .sass-cache

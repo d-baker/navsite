@@ -5,6 +5,23 @@
     width: 100%;
     height: $header-height;
 
+	#menubutton {
+		cursor: pointer;
+		background: url("/assets/icons/menu.svg") no-repeat;
+		width: 30px;
+		height: 30px;
+		float: left;
+		margin-bottom: 20px;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+
+	nav {
+		display: block;
+		float: left;
+		line-height: 1.7em;
+	}
+
     a {
 	    text-transform: uppercase;
         font-size: 20px;
@@ -33,12 +50,12 @@
 
 
 	a#logo {
+		padding-right: 20px;
 	    color: $fg;
 	    font-size: 30px;
-	    line-height: 0.6em;
+	    line-height: 0.8em;
 	    text-align: right;
-	    position: absolute;
-	    right: 0px;
+		float: right;
 		margin: 0px;
 	
 	    &:hover {
@@ -123,9 +140,10 @@
 	} // end dropdown
 	
 	#breadcrumb {
+		padding-left: 20px;
 	    font-size: 13px; 
 	    color: $batcolor;
-		margin-top: 20px;
+		clear: both;
 	}
 	
 } // end main-header

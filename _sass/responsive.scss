@@ -1,30 +1,120 @@
 @media screen and (max-width: 900px) {
+	body {
+		font-size: 18px;
+	}
 
-    .sidebar li {
-        &:after {
-            content: "";
-        }
-        &:before {
-            content: "- ";
-        }
-    }
+	h1 {
+		font-size: 25px;
+	}
+	
+	p.tooltip {
+		display: none!important;
+	}
 
-    #bio p {
-        width: 60vw;
-    }
 
-    #bio p#two {
-        left: 28vw;
-    }
-    
-    #bio p#three {
-        left: 55vw;
-        width: 30vw;
-    }
+	.post-content {
+		margin-bottom: 30px;
+	}
+
+	header#main-header {
+		a#logo {
+			font-size: 40px;
+			line-height: 0.5em;
+		}
+
+		#breadcrumb {
+			display: none;
+		}
+
+		nav {
+			margin-top: 5px;
+			background-color: white!important;
+			position: relative;
+			width: 100%;
+			margin-bottom: 30px;
+			vertical-align: middle;
+		}
+
+		nav a, nav a:hover {
+			padding: 25px 0px 25px 20px!important;
+		}
+
+		.dropdown > a, .dropdown > a:hover {
+			background: url("/assets/icons/dropdown-arrow.svg") no-repeat scroll right 25px top 33px transparent!important;
+		}
+
+		nav a, .dropdown, .dropdown .nav-list, .dropdown .nav-list a {
+			margin: 0px;
+			display: block;
+			position: relative;
+			text-decoration: none!important;
+        	&:after {
+           		content: "";
+       		}
+        	&:before {
+            	content: "";
+        	}
+		}
+
+		.nav-list a {
+			font-size: 35px;
+		}
+
+		.nav-list {
+			padding: 10px 0px;
+		}
+
+		.dropdown .nav-list a {
+			font-size: 25px;
+			margin-left: 30px;
+			padding: 15px!important;
+			&:hover {
+				padding: 15px;
+			}
+			&:before {
+				content: "> ";
+			}
+			&.external {
+				background: url("/assets/icons/external-link-larger.svg") no-repeat scroll right 25px top 15px transparent;
+			}
+		}
+
+	}
+
+    .sidebar {
+		clear: both;
+
+		li {
+        	&:after {
+        	    content: "";
+        	}
+       		&:before {
+        	    content: "- ";
+        	}
+    	}
+	}
+	
+	#bio {
+		p {
+			margin-top: 0em!important;
+			padding-bottom: 6vw;
+    	    width: 60vw;
+		}
+
+    	#two {
+    	    left: 28vw;
+    	}
+    	
+    	#three {
+    	    left: 55vw;
+    	    width: 30vw;
+    	}
+
+	}
 
     #bat {
         font-size: 15vw;
-        padding-bottom: 15vw;
+        padding-bottom: 20vw;
         padding-top: 12vw;
     }
 
@@ -61,6 +151,11 @@
         left: 0px !important;
     }
 
+	footer {
+		font-size: 18px;
+		padding-top: 15px;
+	}
+
 }
 
 @media screen and (max-width: 700px) {
@@ -84,29 +179,11 @@
         margin: 0px;
         padding: 0px 5px;
     }
-    #main-header a, .nav-list a, .dropdown.nav-list a, .nav-list a:hover {
-        text-decoration: underline;     
-        &:after {
-            content: "";
-        }
-        &:before {
-            content: "";
-        }
-    }
+
 
     blockquote {
         display: none;
     }
-
-    a#logo {
-        text-decoration: none;
-        &:after {
-            content: "}";
-        }
-        &:before {
-            content: "{";
-        }
-    }   
 
 }
 
