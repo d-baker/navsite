@@ -234,6 +234,9 @@ body {
 main, footer {
   padding: 0px 20px; }
 
+main {
+  padding-top: 20px; }
+
 h1, h2, h3 {
   font-weight: normal; }
 
@@ -413,13 +416,14 @@ p a {
   padding: 0px;
   list-style-type: none; }
 
-#main-header {
+header#main-header {
   position: relative;
   margin: 0px;
   padding: 0px;
   width: 100%;
   height: 60px; }
-  #main-header #menubutton {
+  header#main-header #menubutton {
+    display: none;
     cursor: pointer;
     background: url("/assets/icons/menu.svg") no-repeat;
     width: 30px;
@@ -428,11 +432,12 @@ p a {
     margin-bottom: 20px;
     margin-right: 20px;
     margin-left: 20px; }
-  #main-header nav {
+  header#main-header nav {
     display: block;
     float: left;
-    line-height: 1.7em; }
-  #main-header a {
+    line-height: 1.7em;
+    margin-left: 20px; }
+  header#main-header a {
     text-transform: uppercase;
     font-size: 20px;
     font-family: NotCourierSans, "Source Code Pro";
@@ -440,16 +445,16 @@ p a {
     cursor: pointer;
     display: inline;
     color: black; }
-    #main-header a:before {
+    header#main-header a:before {
       content: "{"; }
-    #main-header a:after {
+    header#main-header a:after {
       content: "}"; }
-    #main-header a:visited {
+    header#main-header a:visited {
       color: #131313; }
-    #main-header a:hover {
+    header#main-header a:hover {
       color: #131313;
       text-decoration: none; }
-  #main-header a#logo {
+  header#main-header a#logo {
     padding-right: 20px;
     color: #131313;
     font-size: 30px;
@@ -457,26 +462,26 @@ p a {
     text-align: right;
     float: right;
     margin: 0px; }
-    #main-header a#logo:hover {
+    header#main-header a#logo:hover {
       text-decoration: none;
       color: #131313;
       background: none; }
-  #main-header .dropdown:hover > a, #main-header nav a:hover, #main-header .current {
+  header#main-header .dropdown:hover > a, header#main-header nav a:hover, header#main-header .current {
     color: black;
     background: rgba(255, 255, 255, 0.9);
     padding-bottom: 3px; }
-  #main-header .dropdown {
+  header#main-header .dropdown {
     display: inline-block; }
-    #main-header .dropdown:hover .nav-list {
+    header#main-header .dropdown:hover .nav-list {
       display: block; }
-    #main-header .dropdown .nav-list {
+    header#main-header .dropdown .nav-list {
       display: none;
       position: absolute;
       background: rgba(255, 255, 255, 0.9);
       padding: 10px 0px;
-      margin-top: 5px;
+      margin-top: 4px;
       z-index: 100; }
-      #main-header .dropdown .nav-list a {
+      header#main-header .dropdown .nav-list a {
         background: none;
         display: block;
         font-size: 14px;
@@ -484,29 +489,30 @@ p a {
         color: black;
         padding: 2px 10px;
         margin-right: 0px; }
-        #main-header .dropdown .nav-list a:visited {
+        header#main-header .dropdown .nav-list a:visited {
           color: #728385; }
-        #main-header .dropdown .nav-list a:hover {
+        header#main-header .dropdown .nav-list a:hover {
           color: #005780;
           background: none;
           text-decoration: underline; }
-        #main-header .dropdown .nav-list a:before {
+        header#main-header .dropdown .nav-list a:before {
           content: "> "; }
-        #main-header .dropdown .nav-list a:after {
+        header#main-header .dropdown .nav-list a:after {
           content: none; }
-        #main-header .dropdown .nav-list a.current {
+        header#main-header .dropdown .nav-list a.current {
           color: #131313;
           border-top: 1px solid #839496;
           border-bottom: 1px solid #839496;
           background: #fff; }
-          #main-header .dropdown .nav-list a.current:hover {
+          header#main-header .dropdown .nav-list a.current:hover {
             color: #005780; }
-        #main-header .dropdown .nav-list a.external {
+        header#main-header .dropdown .nav-list a.external {
           background: url("/assets/icons/external-link.svg") no-repeat right;
           padding-right: 30px;
           background-position: right 10px top 7px; }
-  #main-header #breadcrumb {
+  header#main-header #breadcrumb {
     padding-left: 20px;
+    padding-top: 15px;
     font-size: 13px;
     color: #839496;
     clear: both; }
@@ -650,6 +656,8 @@ a.tracktitle {
   .post-content {
     margin-bottom: 30px; }
 
+  header#main-header #menubutton {
+    display: block; }
   header#main-header a#logo {
     font-size: 40px;
     line-height: 0.5em; }
@@ -657,6 +665,7 @@ a.tracktitle {
     display: none; }
   header#main-header nav {
     margin-top: 5px;
+    margin-left: 0px;
     background-color: white !important;
     position: relative;
     width: 100%;

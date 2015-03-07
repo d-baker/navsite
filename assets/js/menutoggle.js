@@ -1,6 +1,18 @@
 $(document).ready(function() {
-	$("nav").hide();
-	$(".dropdown .nav-list").hide();
+	if ( $("#menubutton").css("display") != "none" ) {
+		$("nav").hide();
+		$(".dropdown .nav-list").hide();
+	}
+	$(window).resize(function() {
+		if ( $("#menubutton").css("display") != "none" ) {
+			$("nav").hide();
+			$(".dropdown .nav-list").hide();
+		} else {
+			$("nav").show();
+			$(".dropdown .nav-list").css("display", "");
+		}
+	});
+
 
 	$("#menubutton").click(function() {
 

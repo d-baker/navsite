@@ -1,4 +1,4 @@
-#main-header {
+header#main-header {
     position: relative;
     margin: 0px;
     padding: 0px;
@@ -6,6 +6,7 @@
     height: $header-height;
 
 	#menubutton {
+		display: none;
 		cursor: pointer;
 		background: url("/assets/icons/menu.svg") no-repeat;
 		width: 30px;
@@ -20,6 +21,7 @@
 		display: block;
 		float: left;
 		line-height: 1.7em;
+		margin-left: 20px;
 	}
 
     a {
@@ -86,7 +88,7 @@
 	    	position: absolute;
 	    	background: $menubg;
 	    	padding: 10px 0px;
-	    	margin-top: 5px;
+	    	margin-top: 4px;
 	    	z-index: 100;
 
 	    	a {
@@ -141,6 +143,7 @@
 	
 	#breadcrumb {
 		padding-left: 20px;
+		padding-top: 15px;
 	    font-size: 13px; 
 	    color: $batcolor;
 		clear: both;

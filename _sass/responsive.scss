@@ -17,6 +17,10 @@
 	}
 
 	header#main-header {
+		#menubutton {
+			display: block;
+		}
+
 		a#logo {
 			font-size: 40px;
 			line-height: 0.5em;
@@ -28,6 +32,7 @@
 
 		nav {
 			margin-top: 5px;
+			margin-left: 0px;
 			background-color: white!important;
 			position: relative;
 			width: 100%;
