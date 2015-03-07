@@ -139,11 +139,36 @@
     #bat {
         font-size: 20vw;
         padding-bottom: 15vw;
-        padding-top: 15vw;
+        padding-top: 12vw;
 		clear: both;
     }
 
 
+	.notification {
+		text-align: left;
+	}
+
+	form {
+		width: 100%;
+
+		#antirobot {
+			input {
+				width: 80px!important;
+			}
+		}
+
+		input, textarea {
+			font-size: 16px;
+			width: 90vw!important;
+
+			&#submit {
+				padding: 10px;
+				float: none;
+			}
+		}
+
+
+	}
 
     .sidebar {      
 		margin-bottom: 40px;
