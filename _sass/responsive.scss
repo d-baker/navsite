@@ -5,6 +5,11 @@
 
 	h1 {
 		font-size: 25px;
+		padding: 5px 0px;
+	}
+	
+	.avblock {
+		margin-bottom: 35px;
 	}
 	
 	p.tooltip {
@@ -99,23 +104,10 @@
     	}
 	}
 	
-	#bio {
-		p {
-			margin-top: 0em!important;
-			padding-bottom: 6vw;
-    	    width: 60vw;
-		}
-
-    	#two {
-    	    left: 28vw;
-    	}
-    	
-    	#three {
-    	    left: 55vw;
-    	    width: 30vw;
-    	}
-
-	}
+    #bio p {
+        width: 100% !important;
+        left: 0px !important;
+    }
 
     #bat {
         font-size: 15vw;
@@ -195,11 +187,6 @@
 
 
 @media screen and (max-width: 600px) {
-
-    #bio p {
-        width: 100% !important;
-        left: 0px !important;
-    }
 
     #main-header li, #main-header li.dropdown, #main-header li#homelink a {
         font-size: 3.8vw !important;

@@ -648,7 +648,11 @@ a.tracktitle {
     font-size: 18px; }
 
   h1 {
-    font-size: 25px; }
+    font-size: 25px;
+    padding: 5px 0px; }
+
+  .avblock {
+    margin-bottom: 35px; }
 
   p.tooltip {
     display: none !important; }
@@ -707,14 +711,8 @@ a.tracktitle {
       content: "- "; }
 
   #bio p {
-    margin-top: 0em !important;
-    padding-bottom: 6vw;
-    width: 60vw; }
-  #bio #two {
-    left: 28vw; }
-  #bio #three {
-    left: 55vw;
-    width: 30vw; }
+    width: 100% !important;
+    left: 0px !important; }
 
   #bat {
     font-size: 15vw;
@@ -760,10 +758,6 @@ a.tracktitle {
   blockquote {
     display: none; } }
 @media screen and (max-width: 600px) {
-  #bio p {
-    width: 100% !important;
-    left: 0px !important; }
-
   #main-header li, #main-header li.dropdown, #main-header li#homelink a {
     font-size: 3.8vw !important;
     line-height: 1em; }
