@@ -688,7 +688,7 @@ a.tracktitle {
     header#main-header .dropdown .nav-list a:before {
       content: "> "; }
     header#main-header .dropdown .nav-list a.external {
-      background: url("/assets/icons/external-link-larger.svg") no-repeat scroll right 25px top 15px transparent; }
+      background: url("/assets/icons/external-link-larger.svg") no-repeat scroll right 25px top 20px transparent; }
 
   .sidebar {
     clear: both; }
