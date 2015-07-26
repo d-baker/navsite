@@ -796,6 +796,7 @@ footer {
         background: url("/assets/icons/external-link-larger.svg") no-repeat scroll right 25px top 20px transparent; }
 
   .sidebar {
+    width: 100%;
     clear: both; }
     .sidebar li:after {
       content: ""; }
