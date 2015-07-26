@@ -532,6 +532,9 @@ header#main-header {
     background: url("/assets/icons/up-arrow.svg") no-repeat center;
     padding: 30px; }
 
+video {
+  max-width: 600px; }
+
 .audioplayer, .videoplayer {
   margin-bottom: 10px;
   margin-top: 10px; }
