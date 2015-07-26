@@ -8,7 +8,7 @@ layout: default
 
 <div class="audioplayer">
     <audio controls>
-        <source src="{{page.src}}" type="audio/ogg">
+        <source src="{{page.src | prepend: "/assets/audio/"}}" type="audio/ogg">
     </audio>
 
     <p class="download">

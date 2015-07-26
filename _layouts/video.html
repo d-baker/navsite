@@ -8,7 +8,7 @@ layout: default
 
 <div class="videoplayer">
     <video controls>
-        <source src="{{page.src}}" type="video/mp4">
+        <source src="{{page.src | prepend: "/assets/video/"}}" type="video/mp4">
     </video>
 
     <p class="download">
