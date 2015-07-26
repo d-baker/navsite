@@ -647,8 +647,12 @@ a.tracktitle {
   background: rgba(255, 255, 255, 0.9);
   text-align: center;
   font-size: 16px;
-  border: 1px solid #027185;
-  padding: 15px; }
+  padding: 15px;
+  margin-bottom: 50px; }
+  .notification.success {
+    border: 1px solid #027185; }
+  .notification.failure {
+    border: 1px solid red; }
 
 form {
   max-width: 400px;
@@ -668,13 +672,13 @@ form {
   form #antirobot p.test {
     float: left;
     margin-right: 20px;
-    line-height: 2em; }
+    line-height: 2.6em; }
   form #antirobot input {
     width: 80px; }
   form div.formfield {
-    margin: 30px 0px;
+    margin: 20px 0px;
     position: relative; }
-  form input, form textarea {
+  form input, form textarea, form button {
     font-family: "Source Code Pro";
     padding: 10px;
     width: 400px;
@@ -682,7 +686,8 @@ form {
     background: white;
     display: block;
     border: none; }
-    form input#submit, form textarea#submit {
+    form input#submit, form textarea#submit, form button#submit {
+      color: #131313;
       padding: 3px;
       border: 1px solid #839496;
       border-radius: 3px;
