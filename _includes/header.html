@@ -67,17 +67,6 @@
         </div>
     </nav>
 
-
-
-
-    <p id="breadcrumb">
-        {% if page.url == "/index.html" %}
-            ~/
-        {% else %}
-            ~{{ page.url | replace: ".html", "" | replace: "_", " "}}
-        {% endif %}
-    </p>
-
 </header>
 
 
