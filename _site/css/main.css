@@ -562,7 +562,8 @@ header#main-header {
     content: "}"; }
 
 .avblock {
-  max-width: 550px; }
+  max-width: 550px;
+  padding-bottom: 20px; }
   .avblock h2 {
     font-size: 14px;
     padding: 0px;

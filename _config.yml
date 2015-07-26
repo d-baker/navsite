@@ -13,7 +13,19 @@ sass:
 markdown: kramdown
 
 page_gen:
-  - data: 'original_comps'
-    template: 'av'
+  - data: 'audio-originalcomps'
+    template: 'audio'
     name: 'title'
     dir: 'music/audio/originalcomps'
+  - data: 'audio-pianorecs'
+    template: 'audio'
+    name: 'title'
+    dir: 'music/audio/pianorecs'
+  - data: 'video-originalcomps'
+    template: 'video'
+    name: 'title'
+    dir: 'music/video/originalcomps'
+  - data: 'video-pianorecs'
+    template: 'video'
+    name: 'title'
+    dir: 'music/video/pianorecs'

@@ -4,25 +4,53 @@ title: video
 permalink: /music/video/
 ---
 
-{% for category in site.data.video %}
-
-    <div class="avblock" id="{{ category[0] }}">
-        <h1>{{ category[0] | replace: "-", " " }}</h1>
+    <div class="avblock" id="original-compositions">
+        <h1>original compositions</h1>
 
         <ul class="playlist">
-        {% for video in category[1] %}
+        {% for video in site.data.video-originalcomps %}
             <li>
                 <h2>
-                    <a class="tracktitle" href="{{ video.url | prepend: "/assets/video/" }}">{{ video.title }}</a>
+                    <a class="tracktitle" href="{{ (video.title | sanitize_filename) | prepend: "originalcomps" }}">{{ video.title }}</a>
                     <span class="options">
                         <a class="info op">info</a>
                     </span>
                 </h2>
-                <p class="descrip">{{ video.description }}</p>
+                <p class="descrip">
+                    {% if video.description == "" %} 
+                        no info
+                    {% else %}
+                        {{ video.description }}
+                    {% endif %}
+                </p>
             </li>
         {% endfor %}
         </ul>
 
     </div>
 
-{% endfor %}
+    <div class="avblock" id="piano-recordings">
+        <h1>piano recordings</h1>
+
+        <ul class="playlist">
+        {% for video in site.data.video-pianorecs %}
+            <li>
+                <h2>
+                    <a class="tracktitle" href="{{ (video.title | sanitize_filename) | prepend: "pianorecs" }}">{{ video.title }}</a>
+                    <span class="options">
+                        <a class="info op">info</a>
+                    </span>
+                </h2>
+                <p class="descrip">
+                    {% if video.description == "" %} 
+                        no info
+                    {% else %}
+                        {{ video.description }}
+                    {% endif %}
+                </p>
+            </li>
+        {% endfor %}
+        </ul>
+
+    </div>
+{% include back-to-top.html %}

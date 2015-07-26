@@ -4,16 +4,14 @@ title: audio
 permalink: /music/audio/
 ---
 
-{% for category in site.data.audio %}
-
-    <div class="avblock" id="{{ category[0] }}">
-        <h1>{{ category[0] }}</h1>
+    <div class="avblock" id="original-compositions">
+        <h1>original compositions</h1>
 
         <ul class="playlist">
-        {% for audio in category[1] %}
+        {% for audio in site.data.audio-originalcomps %}
             <li>
                 <h2>
-                    <a class="tracktitle" href="{{ (audio.title | sanitize_filename) | prepend: category[0] }}">{{ audio.title }}</a>
+                    <a class="tracktitle" href="{{ (audio.title | sanitize_filename) | prepend: "originalcomps" }}">{{ audio.title }}</a>
                     <span class="options">
                         <a class="info op">info</a>
                     </span>
@@ -31,6 +29,28 @@ permalink: /music/audio/
 
     </div>
 
-{% endfor %}
+    <div class="avblock" id="piano-recordings">
+        <h1>piano recordings</h1>
 
+        <ul class="playlist">
+        {% for audio in site.data.audio-pianorecs %}
+            <li>
+                <h2>
+                    <a class="tracktitle" href="{{ (audio.title | sanitize_filename) | prepend: "pianorecs" }}">{{ audio.title }}</a>
+                    <span class="options">
+                        <a class="info op">info</a>
+                    </span>
+                </h2>
+                <p class="descrip">
+                    {% if audio.description == "" %} 
+                        no info
+                    {% else %}
+                        {{ audio.description }}
+                    {% endif %}
+                </p>
+            </li>
+        {% endfor %}
+        </ul>
+
+    </div>
 {% include back-to-top.html %}
