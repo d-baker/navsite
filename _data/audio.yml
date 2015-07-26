@@ -1,11 +1,11 @@
 original-compositions:
-  - description: ""
+  - description: "no info"
     url: "originalcomps/mechanism2.ogg"
     playlist: "originalcomps"
     date: "2013-11-4"
     title: "Mechanism #2"
 
-  - description: ""
+  - description: "no info"
     url: "originalcomps/berceuse.ogg"
     playlist: "originalcomps"
     date: "2013-10-27"
@@ -54,13 +54,13 @@ original-compositions:
     date: "2014-5-3"
     title: "exponentiation"
 
-  - description: ""
+  - description: "no info"
     url: "originalcomps/minimalism2.ogg"
     playlist: "originalcomps"
     date: "2014-4-12"
     title: "Minimalism Thing #2"
 
-  - description: ""
+  - description: "no info"
     url: "originalcomps/minimalism1.ogg"
     playlist: "originalcomps"
     date: "2014-3-23"
@@ -72,7 +72,7 @@ original-compositions:
     date: "2014-1-12"
     title: "sorting"
 
-  - description: ""
+  - description: "no info"
     url: "originalcomps/mechanism1.ogg"
     playlist: "originalcomps"
     date: "2012-9-6"
@@ -108,25 +108,25 @@ original-compositions:
     date: "2012-2-19"
     title: "Piano Trio - I"
 
-  - description: ""
+  - description: "no info"
     url: "originalcomps/orchestralsuite4.ogg"
     playlist: "originalcomps"
     date: "2011-2-6"
     title: "Orchestral Suite - IV"
 
-  - description: ""
+  - description: "no info"
     url: "originalcomps/orchestralsuite3.ogg"
     playlist: "originalcomps"
     date: "2011-2-6"
     title: "Orchestral Suite - III"
 
-  - description: ""
+  - description: "no info"
     url: "originalcomps/orchestralsuite2.ogg"
     playlist: "originalcomps"
     date: "2011-2-6"
     title: "Orchestral Suite - II"
 
-  - description: ""
+  - description: "no info"
     url: "originalcomps/orchestralsuite1.ogg"
     playlist: "originalcomps"
     date: "2011-2-6"
@@ -151,13 +151,13 @@ piano-recordings:
     date: "2014-11-18"
     title: "J.S. Bach: Ebarme dich mein (BWV 721)"
 
-  - description: ""
+  - description: "no info"
     url: "pianorecs/monteverdi1.ogg"
     playlist: "pianorecs"
     date: "2014-5-27"
     title: "Monteverdi: Magnificat Secundo - Quia Respexit"
 
-  - description: ""
+  - description: "no info"
     url: "pianorecs/monteverdi2.ogg"
     playlist: "pianorecs"
     date: "2014-5-27"
@@ -175,7 +175,7 @@ piano-recordings:
     date: "2013-6-17"
     title: "Rachmaninov: Piano concerto #2, mvt 2"
 
-  - description: ""
+  - description: "no info"
     url: "pianorecs/rach-prelude.ogg"
     playlist: "pianorecs"
     date: "2013-4-27"
@@ -187,7 +187,7 @@ piano-recordings:
     date: "2012-12-2"
     title: "Ravel: Mother Goose (piano 4 hands)"
 
-  - description: ""
+  - description: "no info"
     url: "pianorecs/oiseaux-tristes.ogg"
     playlist: "pianorecs"
     date: "2012-10-10"
