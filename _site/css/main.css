@@ -543,6 +543,11 @@ video {
 
 .av.post {
   max-width: 500px; }
+  .av.post a {
+    color: #027185;
+    text-decoration: underline; }
+    .av.post a:hover {
+      color: #839496; }
 
 .options {
   display: inline-block;

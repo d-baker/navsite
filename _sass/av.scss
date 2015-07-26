@@ -13,6 +13,14 @@ video {
 
 .av.post {
 	max-width: 500px;
+
+	a {
+		color: $highlight;
+		text-decoration: underline;
+		&:hover {
+			color: $batcolor;
+		}
+	}
 }
 
 .options {
