@@ -11,3 +11,9 @@ sass:
 
 # Build settings
 markdown: kramdown
+
+page_gen:
+  - data: 'original_comps'
+    template: 'av'
+    name: 'title'
+    dir: 'music/audio/originalcomps'

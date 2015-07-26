@@ -74,7 +74,7 @@
         {% if page.url == "/index.html" %}
             ~/
         {% else %}
-            ~{{ page.url | replace: ".html", "" }}
+            ~{{ page.url | replace: ".html", "" | replace: "_", " "}}
         {% endif %}
     </p>
 

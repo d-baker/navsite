@@ -35,6 +35,12 @@ textbots:
     embed: !xml |
            <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/dbaker_h">@dbaker_h</a> bot crash</p>&mdash; botbot (@bot_things) <a href="https://twitter.com/bot_things/status/511665319987798016">September 15, 2014</a></blockquote>
 
+  - title: every umlaut
+    url: https://twitter.com/everyumlaut
+    description: umlauting every word in the English language
+    embed: !xml |
+           <blockquote class="twitter-tweet" lang="ru"><p lang="vi" dir="ltr">äl̈v̈ëöl̈är̈</p>&mdash; ëvërÿ ümläüẗ (@everyumlaut) <a href="https://twitter.com/everyumlaut/status/623394485007880192">21 июля 2015</a></blockquote>
+
   - title: how X is that Y
     url: https://twitter.com/howxisthatybot
     description: inspired by a peculiarity of Australian English

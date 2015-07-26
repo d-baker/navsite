@@ -1,14 +1,25 @@
 ---
 layout: default
 ---
-<div class="post">
 
-  <header class="post-header">
+<header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+</header>
+
+<div class="audioplayer">
+    <audio controls>
+        <source src="{{page.src}}" type="audio/ogg">
+    </audio>
+
+    <p class="download">
+        <a href="{{page.src | prepend: "/assets/audio/"}}">download</a>
+    </p>
+</div>
+
+<div class="av post">
 
   <article class="post-content">
-    {{ content }}
+    {{ page.description }}
   </article>
 
 </div>
