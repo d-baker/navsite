@@ -1,12 +1,8 @@
-_site/assets/audio
-_site/assets/video
-_site/assets/fonts
-_site/assets/icons
+_site/
 assets/audio
 assets/video
 assets/fonts
 assets/icons
 assets/js/jquery*
-_site/assets/js/jquery*
 .sass-cache
 .directory
