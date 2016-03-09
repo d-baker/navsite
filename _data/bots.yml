@@ -89,9 +89,3 @@ artbots:
     description: ...every shade of gray.
     embed: !xml |
            <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/hashtag/47494d?src=hash">#47494d</a> <a href="http://t.co/jJDi7Hdr7B">pic.twitter.com/jJDi7Hdr7B</a></p>&mdash; every shade of gray (@evryshadeofgray) <a href="https://twitter.com/evryshadeofgray/status/538406980209999872">November 28, 2014</a></blockquote>
-
-  - title: every moon
-    url: https://twitter.com/everymoonAU
-    description: highly innacurate moon phases
-    embed: !xml |
-          <blockquote class="twitter-tweet" lang="en"><p>🌔</p>&mdash; Every Moon (@everymoonAU) <a href="https://twitter.com/everymoonAU/status/512058364172316672">September 17, 2014</a></blockquote>
