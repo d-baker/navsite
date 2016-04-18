@@ -60,6 +60,11 @@ textbots:
            <blockquote class="twitter-tweet" lang="en"><p>So shall thou feed on Death, that which it fears to lose.</p>&mdash; ǝɹɐǝdsǝʞɐɥs ɯɐıןןıʍ (@shkspr_ebooks) <a href="https://twitter.com/shkspr_ebooks/status/503079281744809984">August 23, 2014</a></blockquote>
 
 artbots:
+  - title: seascape.py
+    url: https://twitter.com/seascape_py
+    description: generated seascapes
+    embed: <blockquote class="twitter-tweet" lang="en"><p>. 🌕 <br>* ✧. ✧ <br>~~〜~~~〜〜~〜~〜~~~~~~~~<br>~~~~~〜~〜~~~~~〜〜〜~~~~<br>~〜~〜~~~~〜~~🐬~~〜~~~〜~<br>〜~~🐟~~~〜~~~~~〜~~〜〜~~</p>&mdash; seascape.py (@seascape_py) <a href="https://twitter.com/seascape_py/status/721849579163889665">17 April 2016</a></blockquote>
+
   - title: snailify
     url: https://twitter.com/snailify
     description: adds a slimy touch to your tweets
