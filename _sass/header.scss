@@ -1,6 +1,7 @@
 header#main-header {
     position: relative;
     margin: 0px;
+	margin-bottom: 40px;
     padding: 0px;
     width: 100%;
     height: $header-height;
@@ -54,7 +55,7 @@ header#main-header {
 	a#logo {
 		padding-right: 20px;
 	    color: $fg;
-	    font-size: 30px;
+	    font-size: 35px;
 	    line-height: 0.8em;
 	    text-align: right;
 		float: right;
@@ -130,7 +131,7 @@ header#main-header {
 					// svg icon from the awesome http://iconmelon.com/, thankyou
 				    background: url("/assets/icons/external-link.svg") no-repeat right;
 				    padding-right: 30px;
-				    background-position: right 10px top 7px;
+				    background-position: right 10px top 10px;
 				}
 
 	    	} //end a

@@ -1,5 +1,9 @@
+.post-header {
+	margin-bottom: 25px;
+}
+
 .post-title {
-    display: inline-block;
+    display: inline;
     font-weight: normal;
 	a {
     	color: $highlight;
@@ -17,7 +21,9 @@
 }
 
 .blogpost {
-	max-width: 500px;
+	max-width: 550px;
+	margin-top: 30px;
+	margin-bottom: 40px;
 
 	header {
 		height: initial;
@@ -28,7 +34,7 @@
 	    display: inline;
 	    font-weight: normal;
 	    color: $batcolor;
-		font-size: 20px;
+		font-size: 25px;
 	
 	    &:before, &:after {
 	        content: "";
@@ -41,7 +47,7 @@
 	}
 	
 	.arrow {
-		font-size: 20px;
+		font-size: 25px;
 		color: $batcolor;
 	}
 }
