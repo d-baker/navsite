@@ -4,8 +4,14 @@
 	}
 
 	h1 {
-		font-size: 25px;
+		font-size: 20px;
 		padding: 5px 0px;
+	}
+
+	.blogpost {
+		a.timestamp, .arrow {
+			font-size: 20px;
+		}
 	}
 
 	.audioplayer, .videoplayer, audio, video {
@@ -208,7 +214,7 @@
 
 	footer {
 		font-size: 18px;
-		padding-top: 15px;
+		padding-top: 30px;
 	}
 
 }
