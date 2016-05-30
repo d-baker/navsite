@@ -77,3 +77,13 @@
 		text-decoration: underline;
 	}
 }
+
+code {
+	border-radius: 5px;
+	border: 1px solid $batcolor;
+	padding: 10px;
+	display: block;
+	margin-bottom: 10px;
+	color: $highlight;
+	background: $batcolor + #444444;
+}
