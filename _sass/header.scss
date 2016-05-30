@@ -88,7 +88,7 @@ header#main-header {
 	    	position: absolute;
 	    	background: $menubg;
 	    	padding: 10px 0px;
-	    	margin-top: 4px;
+	    	margin-top: 3px;
 	    	z-index: 100;
 
 	    	a {
@@ -122,10 +122,8 @@ header#main-header {
 
 					border-top: 1px solid $batcolor;
 					border-bottom: 1px solid $batcolor;
-					background: #fff;
-					&:hover {
-						color: $menuhighlight;
-					}
+					color: $menubg;
+					background: $highlight;
 	    	    }
 
 				&.external {
