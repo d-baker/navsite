@@ -61,7 +61,7 @@ header#main-header {
     
     }
 
-    .dropdown > a, nav > a {
+    .dropdown > a, .nav-list > a {
         padding: 0px 20px;
     }
     
@@ -84,16 +84,19 @@ header#main-header {
             display: none;
             position: absolute;
             background: $menubg;
-            padding: 15px 0px;
+            padding: 15px 20px 15px 0px;
             margin-top: 15px;
             z-index: 100;
-            line-height: 1.7em;
+            line-height: 1.5em;
 
             a {
+                margin: 20px 0px;
                 background: none;
                 display: block;
-                font-size: 16px;
-                font-family: NotCourierSans, "Source Code Pro";
+                font-size: 20px;
+                text-transform: none;
+                font-variant: normal;
+                font-family: NotCourierSans;
                 color: $menufg;
                 padding: 2px 20px;
                 margin-right: 0px;
@@ -111,9 +114,6 @@ header#main-header {
                 &:before {
                     content: "> ";
                 }
-                &:after {
-                    content: none;
-                }
                 
                 &.current {
                     color: $fg;
@@ -127,7 +127,7 @@ header#main-header {
                 &.external {
                     // svg icon from the awesome http://iconmelon.com/, thankyou
                     background: url("/assets/icons/external-link.svg") no-repeat right;
-                    padding-right: 30px;
+                    padding-right: 50px;
                     background-position: right 10px top 10px;
                 }
 
