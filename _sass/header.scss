@@ -1,10 +1,11 @@
 header#main-header {
     position: relative;
-    margin: 0px;
-    margin-bottom: 40px;
+    margin: 50px 0px 100px 0px;
     padding: 0px;
     width: 100%;
     height: $header-height;
+    border-bottom: 1px dashed $batcolor;
+    line-height: 0;
 
     #menubutton {
         display: none;
@@ -20,16 +21,15 @@ header#main-header {
 
     nav {
         display: inline-block;
-        line-height: 1.7em;
         margin-left: 20px;
         float: right;
     }
 
     a {
-        text-transform: uppercase;
-        font-size: 25px;
-        font-family: NotCourierSans, "Source Code Pro";
-        margin-right: 30px;
+        text-transform: lowercase;
+        font-variant: small-caps;
+        font-size: 40px;
+        font-family: NotCourierSans;
         cursor: pointer;
         display: inline;
         color: $menufg;
@@ -47,9 +47,9 @@ header#main-header {
 
     a#logo {
         padding-right: 20px;
-        color: $fg;
-        font-size: 35px;
-        line-height: 0.8em;
+        color: $batcolor - #222;
+        font-family: NotCourierSansBold;
+        font-size: 50px;
         text-align: right;
         margin: 0px;
     
@@ -60,11 +60,15 @@ header#main-header {
         }
     
     }
+
+    .dropdown > a, nav > a {
+        padding: 0px 20px;
+    }
     
     .dropdown:hover > a, nav a:hover, .current {
         color: $menufg;
         background: $menubg;
-        padding-bottom: 3px;
+        padding-bottom: 10px;
     }
     
     .dropdown {
@@ -81,8 +85,9 @@ header#main-header {
             position: absolute;
             background: $menubg;
             padding: 15px 0px;
-            margin-top: 5px;
+            margin-top: 15px;
             z-index: 100;
+            line-height: 1.7em;
 
             a {
                 background: none;
