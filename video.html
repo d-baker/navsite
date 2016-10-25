@@ -3,19 +3,17 @@ layout: default
 title: video
 permalink: /music/video/
 ---
+    <h1 class="pg-title avpg">Video</h1>
 
     <div class="avblock" id="original-compositions">
-        <h1>original compositions</h1>
+        <h2>original compositions</h2>
 
         <ul class="playlist">
         {% for video in site.data.video-originalcomps %}
             <li>
-                <h2>
+                <h3>
                     <a class="tracktitle" href="{{ (video.title | sanitize_filename) | prepend: "originalcomps" }}">{{ video.title }}</a>
-                    <span class="options">
-                        <a class="info op">info</a>
-                    </span>
-                </h2>
+                </h3>
                 <p class="descrip">
                     {% if video.description == "" %} 
                         no info
@@ -30,16 +28,13 @@ permalink: /music/video/
     </div>
 
     <div class="avblock" id="piano-recordings">
-        <h1>piano recordings</h1>
+        <h2>piano recordings</h2>
 
         <ul class="playlist">
         {% for video in site.data.video-pianorecs %}
             <li>
-                <h2>
+                <h3>
                     <a class="tracktitle" href="{{ (video.title | sanitize_filename) | prepend: "pianorecs" }}">{{ video.title }}</a>
-                    <span class="options">
-                        <a class="info op">info</a>
-                    </span>
                 </h2>
                 <p class="descrip">
                     {% if video.description == "" %} 
@@ -47,7 +42,7 @@ permalink: /music/video/
                     {% else %}
                         {{ video.description }}
                     {% endif %}
-                </p>
+                </h3>
             </li>
         {% endfor %}
         </ul>

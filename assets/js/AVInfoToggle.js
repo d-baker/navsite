@@ -9,6 +9,9 @@ $(document).ready(function() {
     $(".avblock li > .descrip").click(function(e) {
         e.stopPropagation();
     });
+    $(".avblock li > .permalink").click(function(e) {
+        e.stopPropagation();
+    });
 
     $(".avblock li").click(function(e) {
         var $target = $(e.currentTarget);

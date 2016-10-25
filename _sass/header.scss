@@ -6,6 +6,8 @@ header#main-header {
     height: $header-height;
     line-height: 0;
 
+    border-bottom: 1px dashed $batcolor;
+
     #menubutton {
         display: none;
         cursor: pointer;
@@ -143,7 +145,7 @@ header#main-header {
     
 } // end main-header
 
-
+/*
 #music-dropdown {
     border-bottom: 4px solid $highlightPurple;
     &.current {
@@ -164,6 +166,7 @@ header#main-header {
         border: 4px solid $highlightBlue;
     }
 }
+*/
 
 
 // this shouldn't even be here but I can't get the relative image url to work otherwise
