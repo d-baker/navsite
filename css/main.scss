@@ -110,6 +110,9 @@ a {
 }
 
 #identity-banner {
+    position: relative;
+    left: -10px; // offset to give the illusion of centrality
+
     text-align: center;
 
     h1 {
@@ -123,6 +126,8 @@ a {
     img {
         margin: 0px 50px;
         vertical-align: middle;
+        position: relative;
+        top: -12px;
     }
 }
 
@@ -190,12 +195,18 @@ p.copyright {
 /**************************************************************/
 
 footer {
+    border-top: 1px dashed $batcolor;
     color: $menufg;
     text-align: right;
     text-transform: uppercase;
     font-family: NotCourierSans, "Source Code Pro";
     margin-top: 80px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    a {
+        display: inline-block;
+    }
 
     p.sitelink {
         padding-bottom: 0px;
@@ -205,18 +216,6 @@ footer {
             &:hover {
                 color: $menubatcolor;
             }
-        }
-    }
-    span.logo {
-        text-transform: lowercase;
-        font-family: "Source Code Pro";
-        position: relative;
-        bottom: 1px;
-        width: 70px;
-
-        a {
-            color: $highlight;
-            text-decoration: none;
         }
     }
 }
