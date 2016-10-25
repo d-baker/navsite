@@ -6,12 +6,15 @@
 
 $fg: #131313;
 $bg: #eee;
-$highlight: #027185;
+$highlightBlue: #027185;
+$highlightPurple: #683996;
+$highlightGreen: #1AA80A;
 $batcolor: #839496;
 
 $menufg: $fg - #333;
 $menubg: white;
-$menuhighlight: $highlight - #401A05;
+$musicHighlight: $highlightPurple;
+$geekHighlight: $highlightGreen;
 $menubatcolor: $batcolor - #111;
 
 $header-height: 60px;
@@ -31,7 +34,7 @@ body {
     background: $bg;
     line-height: 1.5em;
     color: $fg;
-    font-family: "Source Code Pro";
+    font-family: "Source Code Pro", monospace;
     font-size: 16px;
     margin-top: 30px;
 }
@@ -47,11 +50,18 @@ h1, h2, h3 {
 h1 {
     font-size: 25px;
     margin: 25px 0px;
-    color: $highlight;
+    color: $highlightBlue;
+
+    &.pg-title {
+        text-align: center;
+        font-size: 80px;
+        padding: 70px 0px 100px 0px;
+    }
 }
 
 p {
     padding-bottom: 15px;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 hr {
@@ -212,10 +222,7 @@ footer {
         padding-bottom: 0px;
 
         a {
-            color: $menuhighlight;
-            &:hover {
-                color: $menubatcolor;
-            }
+            color: $highlightBlue;
         }
     }
 }
@@ -238,7 +245,7 @@ footer {
         a {
             color: $fg;
             &:hover {
-                color: $highlight;
+                color: $highlightBlue;
             }
         }
 
@@ -301,7 +308,7 @@ p#three {
 }
 
 p a {
-    color: $highlight;
+    color: $highlightBlue;
     text-decoration: underline;
 }
 

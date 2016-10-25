@@ -4,7 +4,6 @@ header#main-header {
     padding: 0px;
     width: 100%;
     height: $header-height;
-    border-bottom: 1px dashed $batcolor;
     line-height: 0;
 
     #menubutton {
@@ -47,7 +46,7 @@ header#main-header {
 
     a#logo {
         margin-left: 20px;
-        color: $batcolor - #222;
+        color: $fg;
         font-family: NotCourierSansBold;
         font-size: 50px;
         text-align: right;
@@ -55,7 +54,6 @@ header#main-header {
     
         &:hover {
             text-decoration: none;
-            color: $fg;
         }
     
     }
@@ -78,6 +76,7 @@ header#main-header {
                 display: block;
             }
         }
+
         
         .nav-list {
             display: none;
@@ -95,17 +94,12 @@ header#main-header {
                 font-size: 20px;
                 text-transform: none;
                 font-variant: normal;
-                font-family: NotCourierSans;
+                font-family: "Source Code Pro";
                 color: $menufg;
                 padding: 2px 20px;
                 margin-right: 0px;
                 
-                &:visited {
-                    color: $menubatcolor;
-                }
-    
                 &:hover {
-                    color: $menuhighlight;
                     background: none;
                     text-decoration: underline;
                 }
@@ -113,11 +107,10 @@ header#main-header {
                 
                 &.current {
                     color: $fg;
+                    background: $bg - #0a0a0a;
 
-                    border-top: 1px solid $batcolor;
-                    border-bottom: 1px solid $batcolor;
-                    color: $menubg;
-                    background: $highlight;
+                    border-top: 1px dashed $batcolor;
+                    border-bottom: 1px dashed $batcolor;
                 }
 
                 &.external {
@@ -130,6 +123,13 @@ header#main-header {
             } //end a
 
         } // end navlist
+        
+        #music-menu a:hover {
+            color: $musicHighlight;
+        }
+        #geek-menu a:hover {
+            color: $geekHighlight;
+        }
 
     } // end dropdown
     
@@ -142,6 +142,29 @@ header#main-header {
     }
     
 } // end main-header
+
+
+#music-dropdown {
+    border-bottom: 4px solid $highlightPurple;
+    &.current {
+        border: 4px solid $highlightPurple;
+    }
+}
+
+#geekery-dropdown {
+    border-bottom: 4px solid $highlightGreen;
+    &.current {
+        border: 4px solid $highlightGreen;
+    }
+}
+
+#blog-menu {
+    border-bottom: 4px solid $highlightBlue;
+    &.current {
+        border: 4px solid $highlightBlue;
+    }
+}
+
 
 // this shouldn't even be here but I can't get the relative image url to work otherwise
 #backtotop {
@@ -157,7 +180,7 @@ header#main-header {
     a {
         font-size: 20px;
         text-decoration: underline;
-        color: $highlight;
+        color: $highlightBlue;
 
         // svg icon from the awesome http://iconmelon.com/, thankyou
         background: url("/assets/icons/up-arrow.svg") no-repeat center;

@@ -57,16 +57,18 @@
                 </div>
 
                 {% if page.url == "/blog/" %}
-                    <a class="current" href="{{ page.url | prepend: site.baseurl }}">blog</a>
+                    <a class="current" id="blog-menu" href="{{ page.url | prepend: site.baseurl }}">blog</a>
                 {% else %}
-                    <a href="{{ "/blog" | prepend: site.baseurl }}">blog</a>
+                    <a id="blog-menu" href="{{ "/blog" | prepend: site.baseurl }}">blog</a>
                 {% endif %}
 
+                <!--
                 {% if page.url == "/links.html" %}
                     <a class="current" href="{{ page.url | prepend: site.baseurl }}">links</a>
                 {% else %}
                     <a href="{{ "/links.html" | prepend: site.baseurl }}">links</a>
                 {% endif %}
+                -->
 
             </div>
         </nav>

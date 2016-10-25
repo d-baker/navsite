@@ -3,16 +3,17 @@ layout: default
 title: audio
 permalink: /music/audio/
 ---
+    <h1 class="pg-title avpg">Audio</h1>
 
     <div class="avblock" id="original-compositions">
-        <h1>original compositions</h1>
+        <h2>original compositions</h2>
 
         <ul class="playlist">
         {% for audio in site.data.audio-originalcomps %}
             <li>
                 <a class="permalink" href="{{ (audio.title | sanitize_filename) | prepend: "originalcomps" }}""></a>
 
-                <h2 class="tracktitle">{{ audio.title }}</h2>
+                <h3 class="tracktitle">{{ audio.title }}</h3>
 
                 <div class="descrip">
                     <div class="audioplayer">
@@ -31,12 +32,12 @@ permalink: /music/audio/
     </div>
 
     <div class="avblock" id="piano-recordings">
-        <h1>piano recordings</h1>
+        <h2>piano recordings</h2>
 
         <ul class="playlist">
         {% for audio in site.data.audio-pianorecs %}
             <li>
-                <h2 class="tracktitle">{{ audio.title }}</h2>
+                <h3 class="tracktitle">{{ audio.title }}</h3>
 
                 <div class="descrip">
                     <div class="audioplayer">

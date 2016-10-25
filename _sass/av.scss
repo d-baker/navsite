@@ -1,3 +1,6 @@
+.avpg {
+    color: $highlightPurple;
+}
 
 .audioplayer, .videoplayer {
 	margin-bottom: 10px;
@@ -14,7 +17,7 @@
 	max-width: 600px;
 
 	a {
-		color: $highlight;
+		color: $highlightBlue;
 		text-decoration: underline;
 		&:hover {
 			color: $batcolor;
@@ -37,17 +40,23 @@
 .avblock {
     width: 550px;
 	padding-bottom: 20px;
+
     ul {
         border: 1px dashed $batcolor;  
     }
+
+    h2 {
+        font-size: 25px;
+        margin: 25px 0px;
+        color: $highlightPurple;
+    }
 	
-	h2 {
+	h3 {
 		font-size: 16px;
 	    padding: 0px;
-	    margin: 0px;
 	    font-weight: normal;
         &:hover {
-            color: $highlight;
+            color: $highlightPurple;
         } 
 	}
 
@@ -73,9 +82,9 @@
     font-style: italic;
 
     a {
-        color: $highlight;
+        color: $highlightBlue;
         &:hover {
-            color: $highlight;
+            color: $highlightBlue;
         }
         &:before {
             content: "";

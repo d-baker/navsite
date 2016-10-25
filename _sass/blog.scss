@@ -6,7 +6,7 @@
     display: inline;
     font-weight: normal;
 	a {
-    	color: $highlight;
+    	color: $highlightBlue;
 		&:hover {
 			text-decoration: none;
 		}
@@ -58,7 +58,7 @@
 }
 
 .year {
-    color: $highlight;
+    color: $highlightBlue;
     font-weight: normal;
     &:after {
         content: " <";
@@ -75,7 +75,7 @@
 
 #pagination a {
 	display: inline-block;
-	color: $highlight;
+	color: $highlightBlue;
 	padding: 0px 10px;
 	&:hover {
 		cursor: pointer;
@@ -90,6 +90,6 @@ code {
 	padding: 10px;
 	display: block;
 	margin-bottom: 15px;
-	color: $highlight;
+	color: $highlightBlue;
 	background: $batcolor + #444444;
 }
