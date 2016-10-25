@@ -1,74 +1,77 @@
 <header id="main-header">
-    <a id="logo" href="{{ "/index.html" | prepend: site.baseurl }}">dorothea baker</a>
-    <div id="menubutton">
-        &nbsp;
-    </div>
-
-    <nav >
-        <div class="nav-list">
-            <div class="dropdown">
-                <a id="music-dropdown">music</a>
-                <div class="nav-list" id="music-menu">
-                    <a class="external" href="https://dbaker.bandcamp.com/">bandcamp</a>
-
-                    {% if page.url == "/music/audio/" %}
-                        <a class="current" href="{{ page.url | prepend: site.baseurl }}">audio</a>
-                    {% else %}
-                        <a href="{{ "/music/audio" | prepend: site.baseurl }}">audio</a>
-                    {% endif %}
-
-                    {% if page.url == "/music/video/" %}
-                        <a class="current" href="{{ page.url | prepend: site.baseurl }}">video</a>
-                    {% else %}
-                        <a href="{{ "/music/video" | prepend: site.baseurl }}">video</a>
-                    {% endif %}
-
-                    {% if page.url == "/music/mechanisms/" %}
-                        <a class="current" href="{{ page.url | prepend: site.baseurl }}">mechanisms</a>
-                    {% else %}
-                        <a href="{{ "/music/mechanisms" | prepend: site.baseurl }}">mechanisms</a>
-                    {% endif %}
-
-                    <!--
-                    {% if page.url == "/music/scores/" %}
-                        <a class="current" href="{{ page.url | prepend: site.baseurl }}">scores</a>
-                    {% else %}
-                        <a href="{{ "/music/scores" | prepend: site.baseurl }}">scores</a>
-                    {% endif %}
-                    -->
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <a id="geekery-dropdown">geekery</a>
-                <div class="nav-list" id="geek-menu">
-                    {% if page.url == "/bots.html" %}
-                        <a class="current" href="{{ page.url | prepend: site.baseurl }}">twitter bots</a>
-                    {% else %}
-                        <a href="{{ "/bots.html" | prepend: site.baseurl }}">twitter bots</a>
-                    {% endif %}
-
-                    <a class="external" href="http://dreadedvariable.xyz/portfolio/botlang">botlang</a>
-                    <a class="external" href="http://dreadedvariable.xyz/portfolio/artgen">generated art</a>
-                    <a class="external" href="http://dreadedvariable.xyz/portfolio/visualiser" >audio visualiser</a>
-                    <a class="external" href="https://github.com/d-baker/NaNoGenMo-2014">nanogenmo 2014</a>
-                </div>
-            </div>
-
-            {% if page.url == "/blog/" %}
-                <a class="current" href="{{ page.url | prepend: site.baseurl }}">blog</a>
-            {% else %}
-                <a href="{{ "/blog" | prepend: site.baseurl }}">blog</a>
-            {% endif %}
-
-            {% if page.url == "/links.html" %}
-                <a class="current" href="{{ page.url | prepend: site.baseurl }}">links</a>
-            {% else %}
-                <a href="{{ "/links.html" | prepend: site.baseurl }}">links</a>
-            {% endif %}
-
+    <div id="container">
+        <a id="logo" href="{{ "/index.html" | prepend: site.baseurl }}">dorothea baker</a>
+        <div id="menubutton">
+            &nbsp;
         </div>
-    </nav>
+
+        <nav >
+            <div class="nav-list">
+                <div class="dropdown">
+                    <a id="music-dropdown">music</a>
+                    <div class="nav-list" id="music-menu">
+                        <a class="external" href="https://dbaker.bandcamp.com/">bandcamp</a>
+
+                        {% if page.url == "/music/audio/" %}
+                            <a class="current" href="{{ page.url | prepend: site.baseurl }}">audio</a>
+                        {% else %}
+                            <a href="{{ "/music/audio" | prepend: site.baseurl }}">audio</a>
+                        {% endif %}
+
+                        {% if page.url == "/music/video/" %}
+                            <a class="current" href="{{ page.url | prepend: site.baseurl }}">video</a>
+                        {% else %}
+                            <a href="{{ "/music/video" | prepend: site.baseurl }}">video</a>
+                        {% endif %}
+
+                        {% if page.url == "/music/mechanisms/" %}
+                            <a class="current" href="{{ page.url | prepend: site.baseurl }}">mechanisms</a>
+                        {% else %}
+                            <a href="{{ "/music/mechanisms" | prepend: site.baseurl }}">mechanisms</a>
+                        {% endif %}
+
+                        <!--
+                        {% if page.url == "/music/scores/" %}
+                            <a class="current" href="{{ page.url | prepend: site.baseurl }}">scores</a>
+                        {% else %}
+                            <a href="{{ "/music/scores" | prepend: site.baseurl }}">scores</a>
+                        {% endif %}
+                        -->
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a id="geekery-dropdown">geekery</a>
+                    <div class="nav-list" id="geek-menu">
+                        {% if page.url == "/bots.html" %}
+                            <a class="current" href="{{ page.url | prepend: site.baseurl }}">twitter bots</a>
+                        {% else %}
+                            <a href="{{ "/bots.html" | prepend: site.baseurl }}">twitter bots</a>
+                        {% endif %}
+
+                        <a class="external" href="http://dreadedvariable.xyz/portfolio/botlang">botlang</a>
+                        <a class="external" href="http://dreadedvariable.xyz/portfolio/artgen">generated art</a>
+                        <a class="external" href="http://dreadedvariable.xyz/portfolio/visualiser" >audio visualiser</a>
+                        <a class="external" href="https://github.com/d-baker/NaNoGenMo-2014">nanogenmo 2014</a>
+                    </div>
+                </div>
+
+                {% if page.url == "/blog/" %}
+                    <a class="current" href="{{ page.url | prepend: site.baseurl }}">blog</a>
+                {% else %}
+                    <a href="{{ "/blog" | prepend: site.baseurl }}">blog</a>
+                {% endif %}
+
+                {% if page.url == "/links.html" %}
+                    <a class="current" href="{{ page.url | prepend: site.baseurl }}">links</a>
+                {% else %}
+                    <a href="{{ "/links.html" | prepend: site.baseurl }}">links</a>
+                {% endif %}
+
+            </div>
+        </nav>
+
+    </div>
 
 </header>
 
