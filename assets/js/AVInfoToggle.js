@@ -14,7 +14,7 @@ $(document).ready(function() {
             desc.find(".audioplayer").prepend(sources.originalcomps[targetIndex]);
             desc.show();
         } else {
-            desc.find(".audioplayer").remove("audio");
+            desc.find("audio").remove();
             desc.hide();
             console.log("popping source and hiding");
         }
