@@ -32,6 +32,10 @@ audio, video {
 }
 
 .info {
+    audio, video {
+        width: 550px;
+    }
+
     margin-left: 10px;
     text-align: right;
     width: 100%;
@@ -56,7 +60,7 @@ audio, video {
 }
 
 .avblock {
-    width: 490px;
+    width: 550px;
 	padding-bottom: 20px;
 	
 	h2 {

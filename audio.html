@@ -16,13 +16,16 @@ permalink: /music/audio/
                         <a class="info op">info</a>
                     </span>
                 </h2>
-                <p class="descrip">
-                    {% if audio.description == "" %} 
-                        no info
-                    {% else %}
-                        {{ audio.description }}
+                <div class="descrip">
+                    <div class="audioplayer">
+                        <audio controls>
+                            <source src="{{ audio.src | prepend: "/assets/audio/" }}" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    {% if audio.description != "" %} 
+                        <p>{{ audio.description }}</p>
                     {% endif %}
-                </p>
+                </div>
             </li>
         {% endfor %}
         </ul>
@@ -41,13 +44,16 @@ permalink: /music/audio/
                         <a class="info op">info</a>
                     </span>
                 </h2>
-                <p class="descrip">
-                    {% if audio.description == "" %} 
-                        no info
-                    {% else %}
-                        {{ audio.description }}
+                <div class="descrip">
+                    <div class="audioplayer">
+                        <audio controls>
+                            <source src="{{ audio.src| prepend: "/assets/audio/" }}" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    {% if audio.description != "" %} 
+                        <p>{{ audio.description }}</p>
                     {% endif %}
-                </p>
+                </div>
             </li>
         {% endfor %}
         </ul>
