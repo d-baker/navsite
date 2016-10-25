@@ -222,9 +222,10 @@ footer {
 
 .sidebar {
         float: right;
-        text-align: right;
         overflow-y: auto;
-        width: 280px;
+        width: 350px;
+        padding: 20px;
+        border: 1px dashed $batcolor;
        
         h1 {
             margin-top: 0px;
@@ -232,22 +233,12 @@ footer {
 
         ul {
             border-top: 1px solid $batcolor;
-            border-bottom: 1px solid $batcolor;
             padding: 20px 0px;
         }
         a {
             color: $fg;
             &:hover {
                 color: $highlight;
-            }
-        }
-    
-        li {
-            &:before {
-                content: "";
-            }
-            a:after {
-                content: " <";
             }
         }
 
@@ -260,7 +251,7 @@ footer {
 /* mechanisms page */
 
 #intro, #tech, #instructions, #scores, #copyright {
-    max-width: 500px;
+    max-width: 600px;
     position: relative;
 }
 

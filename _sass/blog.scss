@@ -14,14 +14,19 @@
 }
 
 .sidebar-extra {
-	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid $batcolor;
+
 	a {
 		display: block;
+		&:before {
+			content: "> ";
+		}
 	}
 }
 
 .blogpost {
-	max-width: 550px;
+	max-width: 600px;
 	margin-top: 30px;
 	margin-bottom: 40px;
 
