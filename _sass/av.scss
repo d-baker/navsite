@@ -1,7 +1,3 @@
-audio, video {
-	width: 600px;
-    margin-bottom: 30px;
-}
 
 .audioplayer, .videoplayer {
 	margin-bottom: 10px;
@@ -24,6 +20,12 @@ audio, video {
 			color: $batcolor;
 		}
 	}
+
+    audio, video {
+        width: 600px;
+        margin-bottom: 30px;
+    }
+
 }
 
 .options {
@@ -35,6 +37,9 @@ audio, video {
 .avblock {
     width: 550px;
 	padding-bottom: 20px;
+    ul {
+        border: 1px dashed $batcolor;  
+    }
 	
 	h2 {
 		font-size: 16px;
@@ -52,7 +57,7 @@ audio, video {
 		}
 
         cursor: pointer;
-        margin: 30px 0px;
+        padding: 10px 10px;
         position: relative;
     }
 
@@ -61,7 +66,6 @@ audio, video {
 .descrip {
     cursor: auto;
     font-style: italic;
-    margin: 15px 0px 0px 15px;
 
     a {
         color: $highlight;
@@ -74,9 +78,8 @@ audio, video {
     }
 
     audio, video {
-        width: 540px;
+        margin: 20px 0px;
     }
-
 }
 
 div #original-compositions {

@@ -1,6 +1,8 @@
 $(document).ready(function() {
     var sources = popSources();
 
+    setAlternateBGs();
+
 	$(".descrip").hide();
 
     // stop li click propogating to children
@@ -50,6 +52,18 @@ $(document).ready(function() {
         $("audio").remove();
 
         return sources;
+    }
+
+    function setAlternateBGs() {
+        $.each($(".avblock"), function(i, el) {
+            var LIs = $(this).find("li");
+
+            $.each(LIs, function (j, li) {
+                if (j % 2 != 0) {
+                    $(this).css("background", "#ddd");
+                }
+            });
+        });
     }
 
 });

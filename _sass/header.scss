@@ -46,24 +46,17 @@ header#main-header {
 
 
     a#logo {
-        padding-right: 20px;
+        margin-left: 20px;
         color: $batcolor - #222;
         font-family: NotCourierSansBold;
         font-size: 50px;
         text-align: right;
-        margin: 0px;
         vertical-align: middle;
     
         &:hover {
             text-decoration: none;
             color: $fg;
         }
-
-        background: url("../assets/icons/db-logo.svg") no-repeat;
-        background-size: 50px;
-        background-position: 3px 25px;
-        padding-left: 70px;
-        margin-left: 20px;
     
     }
 
