@@ -1,5 +1,6 @@
 audio, video {
 	width: 600px;
+    margin-bottom: 30px;
 }
 
 .audioplayer, .videoplayer {
@@ -33,7 +34,7 @@ audio, video {
 
 .info {
     audio, video {
-        width: 550px;
+        width: 50px;
     }
 
     margin-left: 10px;
@@ -112,6 +113,11 @@ a.tracktitle {
             content: "";
         }
     }
+
+    audio, video {
+        width: 540px;
+    }
+
 }
 
 div #original-compositions {

@@ -13,13 +13,14 @@ $(document).ready(function() {
             $(".descrip").hide(); // hide all descrips
 
             // figure out which playlist the chosen track belongs to
+            var avBlockID = desc.closest(".avblock").attr("id");
             var playlist;
-            if (desc.closest(".avblock").attr("id") == "original-compositions") {
+            if (avBlockID == "original-compositions") {
                 playlist = sources.originalcomps;
             } else if (desc.closest(".avblock").attr("id") == "piano-recordings") {
                 playlist = sources.pianorecs;
             } else {
-                console.log("PANIC!");
+                console.log("Playlist " + avBlockID + " not found");
             }
 
             console.log("Using target index " + targetIndex + " in display conditional");
