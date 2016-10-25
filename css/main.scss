@@ -24,7 +24,7 @@ $header-height: 60px;
 #container {
     display: block;
     margin: auto;
-    max-width: 960px;
+    max-width: 1100px;
     height: 100%;
 }
 
@@ -112,6 +112,7 @@ a {
 
 #identity-banner {
     text-align: center;
+
     h1 {
         color: $batcolor - #222;
         font-size: 80px;

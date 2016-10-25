@@ -57,8 +57,13 @@ header#main-header {
         &:hover {
             text-decoration: none;
             color: $fg;
-            background: none;
         }
+
+        background: url("../assets/icons/db-logo.svg") no-repeat;
+        background-size: 50px;
+        background-position: 3px 25px;
+
+        padding-left: 70px;
     
     }
 
