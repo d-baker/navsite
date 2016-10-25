@@ -10,12 +10,8 @@ permalink: /music/audio/
         <ul class="playlist">
         {% for audio in site.data.audio-originalcomps %}
             <li>
-                <h2>
-                    <a class="tracktitle" href="{{ (audio.title | sanitize_filename) | prepend: "originalcomps" }}">{{ audio.title }}</a>
-                    <span class="options">
-                        <a class="info op">info</a>
-                    </span>
-                </h2>
+                <h2 class="tracktitle">{{ audio.title }}</h2>
+
                 <div class="descrip">
                     <div class="audioplayer">
                         <audio controls>
@@ -38,16 +34,12 @@ permalink: /music/audio/
         <ul class="playlist">
         {% for audio in site.data.audio-pianorecs %}
             <li>
-                <h2>
-                    <a class="tracktitle" href="{{ (audio.title | sanitize_filename) | prepend: "pianorecs" }}">{{ audio.title }}</a>
-                    <span class="options">
-                        <a class="info op">info</a>
-                    </span>
-                </h2>
+                <h2 class="tracktitle">{{ audio.title }}</h2>
+
                 <div class="descrip">
                     <div class="audioplayer">
                         <audio controls>
-                            <source src="{{ audio.src| prepend: "/assets/audio/" }}" type="audio/mpeg">
+                            <source src="{{ audio.src | prepend: "/assets/audio/" }}" type="audio/mpeg">
                         </audio>
                     </div>
                     {% if audio.description != "" %} 

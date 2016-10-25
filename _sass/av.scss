@@ -32,34 +32,6 @@ audio, video {
     right: 0px;
 }
 
-.info {
-    audio, video {
-        width: 50px;
-    }
-
-    margin-left: 10px;
-    text-align: right;
-    width: 100%;
-    color: $fg;
-    //display: inline-block;
-
-    &:hover {
-        cursor: pointer;
-        color: $highlight;
-    }
-
-    &:visited {
-        color: $fg;
-    }
-
-    &:before {
-        content: "{";
-    }
-    &:after {
-        content: "}";
-    }
-}
-
 .avblock {
     width: 550px;
 	padding-bottom: 20px;
@@ -69,43 +41,30 @@ audio, video {
 	    padding: 0px;
 	    margin: 0px;
 	    font-weight: normal;
+        &:hover {
+            color: $highlight;
+        } 
 	}
+
 	li {
 		&:before {
 			content: "";
 		}
 
-        margin-bottom: 10px;
+        cursor: pointer;
+        margin: 30px 0px;
         position: relative;
     }
 
 }
 
-a.tracktitle {
-    color: $fg;
-
-    &:hover {
-        cursor: pointer;
-        color: $highlight!important;
-    }   
-    
-    &:visited {
-        color: $batcolor;
-    }
-
-	&:before {
-		content: "> ";
-	}
-}
-
 .descrip {
-    //color: $batcolor - #111;
+    cursor: auto;
     font-style: italic;
     margin: 15px 0px 0px 15px;
 
     a {
         color: $highlight;
-        //color: $batcolor - #111;
         &:hover {
             color: $highlight;
         }

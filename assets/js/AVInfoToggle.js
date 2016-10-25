@@ -3,10 +3,15 @@ $(document).ready(function() {
 
 	$(".descrip").hide();
 
-    $(".info").click(function(e) {
+    // stop li click propogating to children
+    $(".avblock li > .descrip").click(function(e) {
+        e.stopPropagation();
+    });
+
+    $(".avblock li").click(function(e) {
         var $target = $(e.currentTarget);
-        var desc = $target.parents("h2").siblings(".descrip");
-        var targetIndex = desc.closest(".avblock").find("li").index(desc.closest("li"));
+        var desc = $target.find(".descrip");
+        var targetIndex = $target.closest(".avblock").find("li").index($target);
 
         if (desc.css("display") == "none") {
             $(".descrip").find("audio").remove(); // remove all audios
@@ -29,7 +34,6 @@ $(document).ready(function() {
             // add audio to and show user's chosen descrip
             desc.find(".audioplayer").prepend(playlist[targetIndex]);
             desc.show();
-
         } else {
             $(".descrip").find("audio").remove();
             $(".descrip").hide();
