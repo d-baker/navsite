@@ -43,10 +43,10 @@
                 <div class="dropdown">
                     <a id="geekery-dropdown">geekery</a>
                     <div class="nav-list" id="geek-menu">
-                        {% if page.url == "/bots.html" %}
+                        {% if page.url == "/bots" %}
                             <a class="current" href="{{ page.url | prepend: site.baseurl }}">twitter bots</a>
                         {% else %}
-                            <a href="{{ "/bots.html" | prepend: site.baseurl }}">twitter bots</a>
+                            <a href="{{ "/bots" | prepend: site.baseurl }}">twitter bots</a>
                         {% endif %}
 
                         <a class="external" href="http://dreadedvariable.xyz/portfolio/botlang">botlang</a>
