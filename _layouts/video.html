@@ -1,25 +1,24 @@
 ---
 layout: default
 ---
+<div class="avpost">
+    <h1 class="avpg post-title">{{ page.title }}</h1>
 
-<header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-</header>
+    <div class="col1">
 
-<div class="videoplayer">
-    <video controls>
-        <source src="{{page.src | prepend: "/assets/video/"}}" type="video/mp4">
-    </video>
+        <div class="videoplayer">
+            <video controls>
+                <source src="{{page.src | prepend: "/assets/video/"}}" type="video/mp4">
+            </video>
 
-    <p class="download">
-        <a href="{{page.src | prepend: "/assets/video/"}}">download</a>
-    </p>
-</div>
+            <p class="download">
+                <a href="{{page.src | prepend: "/assets/video/"}}">download</a>
+            </p>
+        </div>
+    </div>
 
-<div class="av post">
-
-  <article class="post-content">
-    {{ page.description }}
-  </article>
+    <article class="col2 textblock">
+        <p>{{ page.description }}</p>
+    </article>
 
 </div>

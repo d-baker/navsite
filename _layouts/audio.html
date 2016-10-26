@@ -2,24 +2,23 @@
 layout: default
 ---
 
-<header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-</header>
+<div class="avpost">
+    <h1 class="avpg post-title clearfix">{{ page.title }}</h1>
 
-<div class="audioplayer">
-    <audio controls>
-        <source src="{{page.src | prepend: "/assets/audio/"}}" type="audio/mpeg">
-    </audio>
+    <div class="col1">
+        <div class="audioplayer">
+            <audio controls>
+                <source src="{{page.src | prepend: "/assets/audio/"}}" type="audio/mpeg">
+            </audio>
 
-    <p class="download">
-        <a href="{{page.src | prepend: "/assets/audio/"}}">download</a>
-    </p>
-</div>
+            <p class="download">
+                <a href="{{page.src | prepend: "/assets/audio/"}}">download</a>
+            </p>
+        </div>
+    </div>
 
-<div class="av post">
-
-  <article class="post-content">
-    {{ page.description }}
-  </article>
+    <article class="col2 textblock">
+        <p>{{ page.description }}</p>
+    </article>
 
 </div>
