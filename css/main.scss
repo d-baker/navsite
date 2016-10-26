@@ -13,8 +13,11 @@ $batcolor: #839496;
 
 $menufg: $fg - #333;
 $menubg: white;
+
 $musicHighlight: $highlightPurple;
 $geekHighlight: $highlightGreen;
+$defaultHighlight: $highlightBlue;
+
 $menubatcolor: $batcolor - #111;
 
 $header-height: 60px;
@@ -50,7 +53,18 @@ h1, h2, h3 {
 h1 {
     font-size: 25px;
     margin: 25px 0px;
-    color: $highlightBlue;
+
+    &.defaultpg {
+        color: $defaultHighlight;
+    }
+
+    &.geekpg {
+        color: $geekHighlight;
+    }
+
+    &.avpg {
+        color: $musicHighlight;
+    }
 
     &.pg-title {
         text-align: center;
@@ -66,6 +80,11 @@ p {
 
 hr {
     color: $bg;
+}
+
+.textblock {
+    max-width: 700px;
+    margin-bottom: 40px;
 }
 
 ul {
@@ -105,18 +124,17 @@ a {
         }
     }
 
-    &:visited { 
-        color: $batcolor;
-        h1 {
-            color: $bg;
-        }
-    }
-    
     &:hover { 
-        color: $batcolor;
         text-decoration: underline; 
     }
 
+}
+
+.col1 {
+    float: left;
+}
+.col2 {
+    float: right;
 }
 
 #identity-banner {

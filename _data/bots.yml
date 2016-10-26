@@ -1,34 +1,36 @@
-- title: unconfusion bot
-  url: https://twitter.com/tempntime_bot
-  description: international time & temperature demystifier
-  embed: !xml |
-         <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/inky">@inky</a> Llanfairpwllgwyngyll: 2014-09-28, 12:41 PM / 18°C</p>&mdash; unconfusion bot (@tempntime_bot)<a href="https://twitter.com/tempntime_bot/status/516190889509523456">September 28, 2014</a></blockquote>
+col1:
+  - title: unconfusion bot
+    url: https://twitter.com/tempntime_bot
+    description: international time & temperature demystifier
+    embed: !xml |
+           <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/inky">@inky</a> Llanfairpwllgwyngyll: 2014-09-28, 12:41 PM / 18°C</p>&mdash; unconfusion bot (@tempntime_bot)<a href="https://twitter.com/tempntime_bot/status/516190889509523456">September 28, 2014</a></blockquote>
 
-- title: once upon a quine
-  url: https://twitter.com/onceuponaquine
-  description: a bot that very slowly tweets itself line by line
-  embed: !xml |
-         <blockquote class="twitter-tweet" lang="en"><p>import twitter</p>&mdash; once upon a quine (@onceuponaquine) <a href="https://twitter.com/onceuponaquine/status/547408790547480576">December 23, 2014</a></blockquote>
+  - title: once upon a quine
+    url: https://twitter.com/onceuponaquine
+    description: a bot that very slowly tweets itself line by line
+    embed: !xml |
+           <blockquote class="twitter-tweet" lang="en"><p>import twitter</p>&mdash; once upon a quine (@onceuponaquine) <a href="https://twitter.com/onceuponaquine/status/547408790547480576">December 23, 2014</a></blockquote>
 
-- title: botlang
-  url: https://twitter.com/botlang
-  description: computer-generated conlang
-  embed: !xml |
-         <blockquote class="twitter-tweet" lang="en"><p>luni (noun): journey</p>&mdash; botlang (@botlang) <a href="https://twitter.com/botlang/status/535023347206090752">November 19, 2014</a></blockquote>
+  - title: botlang
+    url: https://twitter.com/botlang
+    description: computer-generated conlang
+    embed: !xml |
+           <blockquote class="twitter-tweet" lang="en"><p>luni (noun): journey</p>&mdash; botlang (@botlang) <a href="https://twitter.com/botlang/status/535023347206090752">November 19, 2014</a></blockquote>
+           
+col2:
+  - title: seascape.py
+    url: https://twitter.com/seascape_py
+    description: generated seascapes
+    embed: <blockquote class="twitter-tweet" lang="en"><p>. 🌕 <br>* ✧. ✧ <br>~~〜~~~〜〜~〜~〜~~~~~~~~<br>~~~~~〜~〜~~~~~〜〜〜~~~~<br>~〜~〜~~~~〜~~🐬~~〜~~~〜~<br>〜~~🐟~~~〜~~~~~〜~~〜〜~~</p>&mdash; seascape.py (@seascape_py) <a href="https://twitter.com/seascape_py/status/721849579163889665">17 April 2016</a></blockquote>
 
-- title: seascape.py
-  url: https://twitter.com/seascape_py
-  description: generated seascapes
-  embed: <blockquote class="twitter-tweet" lang="en"><p>. 🌕 <br>* ✧. ✧ <br>~~〜~~~〜〜~〜~〜~~~~~~~~<br>~~~~~〜~〜~~~~~〜〜〜~~~~<br>~〜~〜~~~~〜~~🐬~~〜~~~〜~<br>〜~~🐟~~~〜~~~~~〜~~〜〜~~</p>&mdash; seascape.py (@seascape_py) <a href="https://twitter.com/seascape_py/status/721849579163889665">17 April 2016</a></blockquote>
+  - title: unicodifier
+    url: https://twitter.com/unicodifier
+    description: text glitcher
+    embed: !xml |
+           <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/inky">@inky</a>  õოǥ ħɆ℄łơ</p>&mdash; unicodifier (@unicodifier) <a href="https://twitter.com/unicodifier/status/518303920100085760">October 4, 2014</a></blockquote>
 
-- title: unicodifier
-  url: https://twitter.com/unicodifier
-  description: text glitcher
-  embed: !xml |
-         <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/inky">@inky</a>  õოǥ ħɆ℄łơ</p>&mdash; unicodifier (@unicodifier) <a href="https://twitter.com/unicodifier/status/518303920100085760">October 4, 2014</a></blockquote>
-
-- title: winter.py
-  url: https://twitter.com/winter_py
-  description: dreamy winter scenes
-  embed: !xml |
-         <blockquote class="twitter-tweet" lang="en"><p>❅         ·            ❅       &#10;          &#10;       ❅        &#10;   ·             ❅           &#10;&#10;        ❅         &#10;                       🌲</p>&mdash; ❄ winter.py ❄ (@winter_py) <a href="https://twitter.com/winter_py/status/512810689727959040">September 19, 2014</a></blockquote>
+  - title: winter.py
+    url: https://twitter.com/winter_py
+    description: dreamy winter scenes
+    embed: !xml |
+           <blockquote class="twitter-tweet" lang="en"><p>❅         ·            ❅       &#10;          &#10;       ❅        &#10;   ·             ❅           &#10;&#10;        ❅         &#10;                       🌲</p>&mdash; ❄ winter.py ❄ (@winter_py) <a href="https://twitter.com/winter_py/status/512810689727959040">September 19, 2014</a></blockquote>
