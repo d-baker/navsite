@@ -84,11 +84,11 @@ header#main-header {
             position: absolute;
             background: $menubg;
             margin-top: 15px;
+            padding: 10px 0px;
             z-index: 100;
             line-height: 1.5em;
 
             a {
-                margin: 20px 0px;
                 background: none;
                 display: block;
                 font-size: 20px;
@@ -96,7 +96,8 @@ header#main-header {
                 font-variant: normal;
                 font-family: "Source Code Pro";
                 color: $menufg;
-                padding: 6px 50px 10px 20px;
+                margin: 10px 0px;
+                padding: 8px 50px 12px 20px;
                 margin-right: 0px;
                 
                 &:hover {
@@ -117,7 +118,7 @@ header#main-header {
                     // svg icon from the awesome http://iconmelon.com/, thankyou
                     background: url("/assets/icons/external-link.svg") no-repeat right;
                     padding-left: 50px;
-                    background-position: left 20px top 8px;
+                    background-position: left 20px top 15px;
                 }
 
             } //end a
