@@ -229,6 +229,17 @@ p.copyright {
     }
 }
 
+.back {
+    margin-bottom: 60px;
+    display: table;
+    color: $defaultHighlight;
+    text-decoration: underline;
+
+    &:before {
+        content: "< ";
+    }
+}
+
 /**************************************************************/
 
 footer {
