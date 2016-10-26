@@ -27,10 +27,9 @@ header#main-header {
     }
 
     a {
-        text-transform: lowercase;
+        font-size: 30px;
         font-variant: small-caps;
-        font-size: 40px;
-        font-family: NotCourierSans;
+        font-family: "Source Code Pro";
         cursor: pointer;
         display: inline;
         color: $menufg;
@@ -49,8 +48,8 @@ header#main-header {
     a#logo {
         margin-left: 20px;
         color: $fg;
-        font-family: NotCourierSansBold;
-        font-size: 50px;
+        font-family: "Code Pro Demo";
+        font-size: 40px;
         text-align: right;
         vertical-align: middle;
     
@@ -84,7 +83,6 @@ header#main-header {
             display: none;
             position: absolute;
             background: $menubg;
-            padding: 15px 20px 15px 0px;
             margin-top: 15px;
             z-index: 100;
             line-height: 1.5em;
@@ -98,7 +96,7 @@ header#main-header {
                 font-variant: normal;
                 font-family: "Source Code Pro";
                 color: $menufg;
-                padding: 2px 20px;
+                padding: 6px 50px 10px 20px;
                 margin-right: 0px;
                 
                 &:hover {
