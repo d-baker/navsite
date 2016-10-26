@@ -52,7 +52,7 @@ $(document).ready(function() {
         sources.originalcomps = $("#original-compositions audio");
         sources.pianorecs = $("#piano-recordings audio");
 
-        $("audio").remove();
+        $(".descrip audio").remove();
 
         return sources;
     }
