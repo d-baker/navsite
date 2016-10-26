@@ -41,6 +41,18 @@
 
 }
 
+a.av-back {
+    display: block;
+    margin-top: 60px;
+
+    color: $defaultHighlight;
+    text-decoration: underline;
+
+    &:before {
+        content: "< ";
+    }
+}
+
 .options {
     display: inline-block;
     position: absolute;
