@@ -115,8 +115,8 @@ header#main-header {
                 }
 
                 &.external {
-                    // svg icon from the awesome http://iconmelon.com/, thankyou
-                    background: url("/assets/icons/external-link.svg") no-repeat right;
+                    // TODO credit
+                    background: url("/assets/icons/external-link.svg") no-repeat;
                     padding-left: 50px;
                     background-position: left 20px top 15px;
                 }
