@@ -5,44 +5,56 @@ permalink: /music/video/
 ---
     <h1 class="pg-title avpg">Video</h1>
 
-    <div class="avblock" id="original-compositions">
+    <div class="avblock col1" id="original-compositions">
         <h2>original compositions</h2>
 
         <ul class="playlist">
         {% for video in site.data.video-originalcomps %}
             <li>
-                <h3>
-                    <a class="tracktitle" href="{{ (video.title | sanitize_filename) | prepend: "originalcomps" }}">{{ video.title }}</a>
-                </h3>
-                <p class="descrip">
-                    {% if video.description == "" %} 
-                        no info
-                    {% else %}
-                        {{ video.description }}
+                <a class="permalink" href="{{ (video.title | sanitize_filename) | prepend: "originalcomps" }}""></a>
+
+                <h3 class="tracktitle">{{ video.title }}</h3>
+
+                <div class="descrip">
+                    <div class="videoplayer">
+                        <video controls>
+                            <source src="{{video.src | prepend: "/assets/video/"}}" type="video/mp4">
+                        </video>
+                    </div>
+
+                    {% if video.description != "" %} 
+                        <p>{{ video.description }}</p>
                     {% endif %}
-                </p>
+                </div>
+
             </li>
         {% endfor %}
         </ul>
 
     </div>
 
-    <div class="avblock" id="piano-recordings">
+    <div class="avblock col2" id="piano-recordings">
         <h2>piano recordings</h2>
 
         <ul class="playlist">
         {% for video in site.data.video-pianorecs %}
             <li>
-                <h3>
-                    <a class="tracktitle" href="{{ (video.title | sanitize_filename) | prepend: "pianorecs" }}">{{ video.title }}</a>
-                </h2>
-                <p class="descrip">
-                    {% if video.description == "" %} 
-                        no info
-                    {% else %}
-                        {{ video.description }}
+                <a class="permalink" href="{{ (video.title | sanitize_filename) | prepend: "pianorecs" }}""></a>
+
+                <h3 class="tracktitle">{{ video.title }}</h3>
+
+                <div class="descrip">
+                    <div class="videoplayer">
+                        <video controls>
+                            <source src="{{video.src | prepend: "/assets/video/"}}" type="video/mp4">
+                        </video>
+                    </div>
+
+                    {% if video.description != "" %} 
+                        <p>{{ video.description }}</p>
                     {% endif %}
-                </h3>
+                </div>
+
             </li>
         {% endfor %}
         </ul>
