@@ -91,22 +91,24 @@
 
 }
 
-.descrip {
-    cursor: auto;
-    font-style: italic;
+.avpost, .avblock {
+   .descrip {
+        cursor: auto;
+        font-style: italic;
 
-    a {
-        color: $highlightBlue;
-        &:hover {
+        a {
             color: $highlightBlue;
+            &:hover {
+                color: $highlightBlue;
+            }
+            &:before {
+                content: "";
+            }
         }
-        &:before {
-            content: "";
-        }
-    }
 
-    audio, video {
-        margin: 20px 0px;
-        width: 530px;
-    }
+        audio, video {
+            margin: 20px 0px;
+            width: 530px;
+        }
+    } 
 }

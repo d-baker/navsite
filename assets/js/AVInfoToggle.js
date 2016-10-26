@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     setAlternateBGs();
 
-	$(".descrip").hide();
+	$(".avblock .descrip").hide();
 
     // stop li click propogating to children
     $(".avblock li > .descrip").click(function(e) {
@@ -19,8 +19,8 @@ $(document).ready(function() {
         var targetIndex = $target.closest(".avblock").find("li").index($target);
 
         if (desc.css("display") == "none") {
-            $(".descrip").find("audio").remove(); // remove all audios
-            $(".descrip").hide(); // hide all descrips
+            $(".avblock .descrip").find("audio").remove(); // remove all audios
+            $(".avblock .descrip").hide(); // hide all descrips
 
             // figure out which playlist the chosen track belongs to
             var avBlockID = desc.closest(".avblock").attr("id");
@@ -40,8 +40,8 @@ $(document).ready(function() {
             desc.find(".audioplayer").prepend(playlist[targetIndex]);
             desc.show();
         } else {
-            $(".descrip").find("audio").remove();
-            $(".descrip").hide();
+            $(".avblock .descrip").find("audio").remove();
+            $(".avblock .descrip").hide();
             console.log("popping source and hiding");
         }
     });
@@ -52,7 +52,7 @@ $(document).ready(function() {
         sources.originalcomps = $("#original-compositions audio");
         sources.pianorecs = $("#piano-recordings audio");
 
-        $(".descrip audio").remove();
+        $(".avblock .descrip audio").remove();
 
         return sources;
     }
