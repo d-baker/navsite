@@ -99,16 +99,11 @@ hr {
 }
 
 ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
+    list-style-type: square;
+    padding-left: 20px;
 }
 
 li {
-    &:before {
-        content: "> ";
-    }
-    
     .tooltip {
         display: none;
     }
@@ -267,7 +262,7 @@ footer {
 
         ul {
             border-top: 1px solid $batcolor;
-            padding: 20px 0px;
+            padding: 20px 0px 20px 20px;
         }
         a {
             color: $fg;
@@ -295,13 +290,6 @@ footer {
 
 #instructions {
     left: 400px;
-
-    li {
-        margin-bottom: 1em;
-        &:before {
-            content: "- ";
-        }
-    }
 }
 
 

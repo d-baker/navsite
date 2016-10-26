@@ -16,13 +16,6 @@
 .sidebar-extra {
 	padding-top: 10px;
 	border-top: 1px solid $batcolor;
-
-	a {
-		display: block;
-		&:before {
-			content: "> ";
-		}
-	}
 }
 
 .blogpost {
