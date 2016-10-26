@@ -11,7 +11,7 @@ permalink: /music/video/
         <ul class="playlist">
         {% for video in site.data.video-originalcomps %}
             <li>
-                <a class="permalink" href="{{ (video.title | sanitize_filename) | prepend: "originalcomps" }}""></a>
+                <a class="permalink" title="permalink" href="{{ (video.title | sanitize_filename) | prepend: "originalcomps" }}""></a>
 
                 <h3 class="tracktitle">{{ video.title }}</h3>
 
@@ -39,7 +39,7 @@ permalink: /music/video/
         <ul class="playlist">
         {% for video in site.data.video-pianorecs %}
             <li>
-                <a class="permalink" href="{{ (video.title | sanitize_filename) | prepend: "pianorecs" }}""></a>
+                <a class="permalink" title="permalink" href="{{ (video.title | sanitize_filename) | prepend: "pianorecs" }}""></a>
 
                 <h3 class="tracktitle">{{ video.title }}</h3>
 

@@ -11,7 +11,7 @@ permalink: /music/audio/
         <ul class="playlist">
         {% for audio in site.data.audio-originalcomps %}
             <li>
-                <a class="permalink" href="{{ (audio.title | sanitize_filename) | prepend: "originalcomps" }}""></a>
+                <a class="permalink" title="permalink" href="{{ (audio.title | sanitize_filename) | prepend: "originalcomps" }}""></a>
 
                 <h3 class="tracktitle">{{ audio.title }}</h3>
 
