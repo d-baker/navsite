@@ -1,5 +1,5 @@
 // falls back to pure css implementation
-
+/*
 $(document).ready(function(){
     
     $("p.tooltip").hide();
@@ -18,3 +18,4 @@ $(document).ready(function(){
     });
 
 });
+*/

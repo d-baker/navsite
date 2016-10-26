@@ -104,15 +104,18 @@ ul {
 }
 
 li {
-    .tooltip {
-        display: none;
+    p.tooltip {
+       // display: none;
+        font-family: "Source Code Pro";
+        display: inline;
+        margin-left: 10px;
+        color: $batcolor;
+        font-style: italic;
     }
 
     &:hover {
         .tooltip {
             display: inline;
-            color: $batcolor;
-            font-style: italic;
         }
     }
 
@@ -256,8 +259,8 @@ footer {
         padding: 20px;
         border: 1px dashed $batcolor;
        
-        h1 {
-            margin-top: 0px;
+        h2 {
+            margin-top: 5px;
         }
 
         ul {
@@ -290,6 +293,9 @@ footer {
 
 #instructions {
     left: 400px;
+    li {
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -327,11 +333,6 @@ p a {
     text-decoration: underline;
 }
 
-.links {
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
-}
 @import "header";
 @import "av";
 @import "blog";
