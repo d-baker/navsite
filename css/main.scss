@@ -292,32 +292,44 @@ footer {
 }
 
 .sidebar {
-        float: right;
-        overflow-y: auto;
-        width: 350px;
-        padding: 20px;
-        border: 1px dashed $batcolor;
-       
-        h2 {
-            margin-top: 10px;
-        }
+    float: right;
+    overflow-y: auto;
+    width: 350px;
+    padding: 20px;
+    border: 1px dashed $batcolor;
+   
+    h2 {
+        margin-top: 10px;
+    }
 
-        ul {
-            border-top: 1px solid $batcolor;
-            padding: 20px 0px 20px 20px;
+    ul {
+        border-top: 1px solid $batcolor;
+        padding: 20px 0px 20px 20px;
+    }
+    a {
+        color: $fg;
+        &:hover {
+            color: $highlightBlue;
         }
-        a {
-            color: $fg;
-            &:hover {
-                color: $highlightBlue;
-            }
-        }
+    }
 
-        .tooltip {
-            margin-right: 10px;
-        }
+    .tooltip {
+        margin-right: 10px;
+    }
+}
+
+ul.sidebar-extra {
+    border-top: 1px solid $batcolor;
+    list-style-type: none;
+    padding-left: 0;
+
+    a.external {
+        background: url("/assets/icons/external-link.svg") no-repeat right;
+        padding-right: 30px;
+    }
 
 }
+
 
 /* mechanisms page */
 
