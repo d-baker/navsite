@@ -9,9 +9,9 @@
             <div class="nav-list">
                 <div class="dropdown">
                     {% if page.url == "/music/" %}
-                        <a class="current" href="{{ page.url | prepend: site.baseurl }}">music</a>
+                        <a class="current" id="music-landing" href="{{ page.url | prepend: site.baseurl }}">music</a>
                     {% else %}
-                        <a href="{{ page.url | prepend: site.baseurl }}">music</a>
+                        <a id="music-landing" href="{{ "/music/" | prepend: site.baseurl }}" >music</a>
                     {% endif %}
 
                     <div class="nav-list" id="music-menu">
@@ -46,7 +46,7 @@
                 </div>
 
                 <div class="dropdown">
-                    <a id="geekery-dropdown">geekery</a>
+                    <a id="geek-landing">geekery</a>
                     <div class="nav-list" id="geek-menu">
                         {% if page.url == "/bots" %}
                             <a class="current" href="{{ page.url | prepend: site.baseurl }}">twitter bots</a>
@@ -62,9 +62,9 @@
                 </div>
 
                 {% if page.url == "/blog/" %}
-                    <a class="current" id="blog-menu" href="{{ page.url | prepend: site.baseurl }}">blog</a>
+                    <a class="current" id="blog-landing" href="{{ page.url | prepend: site.baseurl }}">blog</a>
                 {% else %}
-                    <a id="blog-menu" href="{{ "/blog" | prepend: site.baseurl }}">blog</a>
+                    <a id="blog-landing" href="{{ "/blog" | prepend: site.baseurl }}">blog</a>
                 {% endif %}
 
                 <!--

@@ -24,6 +24,21 @@ header#main-header {
         display: inline-block;
         margin-left: 20px;
         float: right;
+
+        .nav-list a:hover, .nav-list .dropdown a:hover {
+            &#music-landing {
+                color: $musicHighlight;
+            }
+
+            &#geek-landing {
+                color: $geekHighlight;
+            }
+
+            &#blog-landing {
+                color: $defaultHighlight;
+            }
+        }
+
     }
 
     a {
@@ -39,22 +54,14 @@ header#main-header {
             color: $fg;
         }
         &:hover {
-            color: $fg;
             text-decoration: none;
         }
 
     }
 
-
-    .nav-list > a, .nav-list > .dropdown > a {
-        //font-family: "Code Pro Demo";
-    }
-
     a#logo {
         margin-left: 20px;
         color: $fg + #333;
-        //font-family: "Code Pro Demo";
-        //font-weight: normal;
         font-size: 40px;
         text-align: right;
         vertical-align: middle;
@@ -109,21 +116,11 @@ header#main-header {
                     text-decoration: underline;
                 }
 
-                /*
-                &.current {
-                    //color: $fg;
-                    //background: $bg - #0a0a0a;
-
-                    //border-top: 1px dashed $batcolor;
-                    //border-bottom: 1px dashed $batcolor;
-                }
-                */
-
                 &.external {
                     // TODO credit
                     background: url("/assets/icons/external-link.svg") no-repeat;
-                    padding-left: 50px;
-                    background-position: left 20px top 15px;
+                    padding-right: 50px;
+                    background-position: right 20px top 15px;
                 }
 
             } //end a
