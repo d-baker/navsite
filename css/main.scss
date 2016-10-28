@@ -41,10 +41,6 @@ body {
     font-size: 16px;
     margin-top: 30px;
 }
-main, footer {
-    padding: 0px 20px;
-}
-
 
 h1, h2, h3 {
     font-weight: normal;
@@ -78,6 +74,10 @@ h1 {
 h2 {
     font-size: 25px;
     margin: 25px 0px;
+
+    a {
+        text-decoration: underline;
+    }
 }
 
 h3 {
@@ -273,7 +273,6 @@ p.copyright {
 footer {
     border-top: 1px dashed $batcolor;
     color: $menufg;
-    text-align: right;
     margin-top: 60px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -305,6 +304,10 @@ footer {
     ul {
         border-top: 1px solid $batcolor;
         padding: 20px 0px 20px 20px;
+
+        li {
+            padding: 5px 0px;
+        }
     }
     a {
         color: $fg;
@@ -322,14 +325,13 @@ ul.sidebar-extra {
     border-top: 1px solid $batcolor;
     list-style-type: none;
     padding-left: 0;
-
-    a.external {
-        background: url("/assets/icons/external-link.svg") no-repeat right;
-        padding-right: 30px;
-    }
-
 }
 
+a.external {
+    background: url("/assets/icons/external-link.svg") no-repeat right;
+    background-position: top 4px right 0px;
+    padding-right: 25px;
+}
 
 /* mechanisms page */
 

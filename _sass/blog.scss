@@ -2,16 +2,6 @@
 	margin-bottom: 25px;
 }
 
-.post-title {
-    display: inline;
-    font-weight: normal;
-	a {
-    	color: $highlightBlue;
-		&:hover {
-			text-decoration: none;
-		}
-	}
-}
 
 .sidebar {
 	margin-top: 10px;
@@ -26,27 +16,33 @@
 		height: initial;
 	}
 
-	a.timestamp {
-		font-family: "Source Code Pro";
+	h2.post-title {
 	    display: inline;
 	    font-weight: normal;
-	    color: $batcolor;
-		font-size: 25px;
-	
-	    &:before, &:after {
-	        content: "";
-	    }
-	
-		&:hover {
-			color: $batcolor;
-			text-decoration: underline;
+
+	    a {
+	   	 	text-decoration: none;
+	    	color: $defaultHighlight;
+
+			&:hover {
+				text-decoration: underline;
+			}
+
+			.timestamp {
+				font-family: "Source Code Pro";
+			    display: inline;
+			    font-weight: normal;
+			    color: black;
+				font-size: 25px;
+			
+			    &:after {
+			        content: " > ";
+			    }
+			}
 		}
+
 	}
-	
-	.arrow {
-		font-size: 25px;
-		color: $batcolor;
-	}
+
 }
 
 .year {

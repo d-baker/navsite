@@ -12,11 +12,9 @@ permalink: /blog/
 
     <div class="blogpost">
         <header class="post-header">
-          <a class="timestamp" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%Y-%m-%d" }}</a>
-          <span class="arrow">&gt;</span>
-          <h1 class="post-title">
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h1>
+          <h2 class="post-title">
+            <a href="{{ post.url | prepend: site.baseurl }}"><span class="timestamp">{{ post.date | date: "%Y-%m-%d" }}</span>{{ post.title }}</a>
+          </h2>
         </header>
 
         <article class="post-content">
