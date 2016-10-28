@@ -51,15 +51,15 @@ h1, h2, h3 {
 }
 
 h1, h2 {
-    &.defaultpg {
+    &.defaultpg, &.defaultpg a {
         color: $defaultHighlight;
     }
 
-    &.geekpg {
+    &.geekpg, &.geekpg a {
         color: $geekHighlight;
     }
 
-    &.avpg {
+    &.avpg, &.avpg a {
         color: $musicHighlight;
     }
 }
@@ -94,6 +94,9 @@ h3 {
 p {
     padding-bottom: 15px;
     font-family: Helvetica, Arial, sans-serif;
+    &.note {
+        font-style: italic;
+    }
 }
 
 hr {
@@ -201,6 +204,10 @@ a {
     width: 600px;   
     position: relative;
     left: 200px;
+}
+
+.geeklist {
+    margin-top: 120px;
 }
 
 .botlist {

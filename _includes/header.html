@@ -15,8 +15,6 @@
                     {% endif %}
 
                     <div class="nav-list" id="music-menu">
-                        <a class="external" href="https://dbaker.bandcamp.com/">bandcamp</a>
-
                         {% if page.url == "/music/audio/" %}
                             <a class="current" href="{{ page.url | prepend: site.baseurl }}">audio</a>
                         {% else %}
@@ -42,22 +40,24 @@
                             <a href="{{ "/music/scores" | prepend: site.baseurl }}">scores</a>
                         {% endif %}
                         -->
+
+                        <a class="external" href="https://dbaker.bandcamp.com/">bandcamp</a>
                     </div>
                 </div>
 
                 <div class="dropdown">
-                    <a id="geek-landing">geekery</a>
+                    {% if page.url == "/geekery/" %}
+                        <a class="current" id="geek-landing" href="{{ page.url | prepend: site.baseurl }}">geekery</a>
+                    {% else %}
+                        <a id="geek-landing" href="{{ "/geekery/" | prepend: site.baseurl }}" >geekery</a>
+                    {% endif %}
+
                     <div class="nav-list" id="geek-menu">
-                        {% if page.url == "/bots" %}
+                        {% if page.url == "/geekery/bots/" %}
                             <a class="current" href="{{ page.url | prepend: site.baseurl }}">twitter bots</a>
                         {% else %}
-                            <a href="{{ "/bots" | prepend: site.baseurl }}">twitter bots</a>
+                            <a href="{{ "/geekery/bots/" | prepend: site.baseurl }}">twitter bots</a>
                         {% endif %}
-
-                        <a class="external" href="http://dreadedvariable.xyz/portfolio/botlang">botlang</a>
-                        <a class="external" href="http://dreadedvariable.xyz/portfolio/artgen">generated art</a>
-                        <a class="external" href="http://dreadedvariable.xyz/portfolio/visualiser" >audio visualiser</a>
-                        <a class="external" href="https://github.com/d-baker/NaNoGenMo-2014">nanogenmo 2014</a>
                     </div>
                 </div>
 
