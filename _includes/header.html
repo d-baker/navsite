@@ -5,10 +5,15 @@
             &nbsp;
         </div>
 
-        <nav >
+        <nav>
             <div class="nav-list">
                 <div class="dropdown">
-                    <a id="music-dropdown">music</a>
+                    {% if page.url == "/music/" %}
+                        <a class="current" href="{{ page.url | prepend: site.baseurl }}">music</a>
+                    {% else %}
+                        <a href="{{ page.url | prepend: site.baseurl }}">music</a>
+                    {% endif %}
+
                     <div class="nav-list" id="music-menu">
                         <a class="external" href="https://dbaker.bandcamp.com/">bandcamp</a>
 

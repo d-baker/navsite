@@ -150,11 +150,24 @@ a {
 
 }
 
+.col1, .col2 {
+    max-width: 550px;   
+}
 .col1 {
     float: left;
 }
 .col2 {
     float: right;
+}
+
+.image-col {
+    max-width: 500px;
+    .caption {
+        font-family: "Source Code Pro";
+        //font-style: italic;
+        font-weight: bold;
+        margin-top: 20px;
+    }
 }
 
 #identity-banner {
