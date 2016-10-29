@@ -1,228 +1,55 @@
 ---
 layout: default
+permalink: /contact/
 ---
 
 <h1>contact me</h1>
 
-<!--
-=================================== PHP =======================================
--->
 
-<?php
+<form action="https://www.formingo.co/submit/33a13ed7-01ba-40e1-8785-f761de39f64d"
+      method="POST">
 
-    if ( isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["subject"])
-        && isset($_POST["message"]) ) {
-
-        validateName();
-        validateEmail();
-        validateSubject();
-        validateMessage();
-        validateRobot();
-
-        if ( validateName() && validateEmail() && validateSubject() && validateMessage() && validateRobot() ) {
-            echo "<div class='notification success'>Thank you! Your message has been sent.</div>";
-
-
-            require_once "Mail.php";
-            include "smtp-conf.php";
-
-            $name    = filter_var($_POST["name"], FILTER_SANITIZE_SPECIAL_CHARS);
-            $fromEmail   = filter_var($_POST["email"], FILTER_SANITIZE_SPECIAL_CHARS);
-            $subject = filter_var($_POST["subject"], FILTER_SANITIZE_SPECIAL_CHARS);
-            $message = filter_var($_POST["message"], FILTER_SANITIZE_SPECIAL_CHARS);
-
-            $toEmail      = "dorotheabaker@gmail.com";
-
-            //TODO argh
-            // see: https://productforums.google.com/forum/#!topic/apps/l0bjS-c_5o0
-            // http://www.pear-forum.org/post-4935.html
-            // I don't know where to find the PEAR source
-
-            //$host = "ssl://smtp.gmail.com";
-            $host = "smtp.gmail.com";
-            $port = "465";
-            $username = $un;
-            $password = $pw;
-
-            $headers = array (
-                'From' => $fromEmail,
-                'To' => $toEmail,
-                'Subject' => $subject
-            );
-
-            $smtp = Mail::factory('smtp',
-              array (
-                'host' => $host,
-                'auth' => true,
-                'username' => $username,
-                'password' => $password
-              )
-            );
-
-            $smtp->SMTPAuth   = true;
-            $smpt->SMTPSecure = "tls";
-
-            $mail = $smtp->send($toEmail, $headers, $message);
-
-            // TODO
-            if (PEAR::isError($mail)) {
-                echo("<p>" . $mail->getMessage() . "</p>");
-            } else {
-                echo("<p>Message successfully sent!</p>");
-            }
-
-        } else {
-            echo "<div class='notification failure'>Sorry, couldn't send your message - please check for errors below</div>";
-        }
-
-    }
-
-    function validateName() {
-        if ($_POST["name"] === "") {
-            $_SESSION["error"]["nameError"] = "This field is required!";
-            return false;
-        }
-        return true;
-    }
-
-    function validateEmail() {
-        if ($_POST["email"] === "") {
-            $_SESSION["error"]["emailError"] = "This field is required!";
-            return false;
-        } else if (! filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) ) {
-            $_SESSION["error"]["emailError"] = "Invalid email address";
-            return false;
-        }
-        return true;
-    }
-
-    function validateSubject() {
-        if ($_POST["subject"] === "") {
-            $_SESSION["error"]["subjectError"] = "This field is required!";
-            return false;
-        }
-
-        return true;
-    }
-
-    function validateMessage() {
-        if ($_POST["message"] === "") {
-            $_SESSION["error"]["messageError"] = "This field is required!";
-            return false;
-        }
-
-        return true;
-    }
-
-    function validateRobot() {
-        if ($_POST["antirobot"] === "") {
-            $_SESSION["error"]["robotError"] = "This field is required!";
-            return false;
-        }
-
-        $robotInput = filter_var($_POST["antirobot"], FILTER_SANITIZE_STRIPPED);
-
-        if ( intval($robotInput) != 5 ) {
-            $_SESSION["error"]["robotError"] = "Excuse me, are you a robot?";
-            return false;
-        }
-
-        return true;
-    }
-
-?>
-
-<!--
-================================== FORM ======================================
--->
-
-<form action="contact.php" method="post">
+    <input type="hidden" name="__redirect" value="http://memoriata.com/contact/form-submitted/">
 
     <div class="formfield">
-
         <label for="name" class="required">Name</label>
-
-        <input type="text" name="name"
-            <?php if (isset ($_SESSION["error"]["nameError"])) echo "class='invalid'"; ?>
-        />
+        <input type="text" name="name"/>
 
         <p class="error">
-            <?php
-                if (isset ($_SESSION["error"]["nameError"])) {
-                    echo $_SESSION["error"]["nameError"];
-                }
-            ?>
         </p>
-
     </div>
 
     <div class="formfield">
         <label for="email" class="required">Email address</label>
-
-        <input type="text" name="email"
-            <?php if (isset ($_SESSION["error"]["emailError"])) echo "class='invalid'"; ?>
-        />
+		<input type="email" name="__replyto" id="__replyto">
 
         <p class="error">
-            <?php
-                if (isset ($_SESSION["error"]["emailError"])) {
-                    echo $_SESSION["error"]["emailError"];
-                }
-            ?>
         </p>
-
     </div>
 
     <div class="formfield">
         <label for="subject" class="required">Subject</label>
-
-        <input type="text" name="subject"
-            <?php if (isset ($_SESSION["error"]["subjectError"])) echo "class='invalid'"; ?>
-        />
+        <input type="text" name="subject"/>
 
         <p class="error">
-            <?php
-                if (isset ($_SESSION["error"]["subjectError"])) {
-                    echo $_SESSION["error"]["subjectError"];
-                }
-            ?>
         </p>
-
     </div>
 
     <div class="formfield">
         <label for="message" class="required">Message</label>
-
-        <textarea name="message"
-            <?php if (isset ($_SESSION["error"]["messageError"])) echo "class='invalid'"; ?>
-        ></textarea>
+        <textarea name="message"></textarea>
 
         <p class="error">
-            <?php
-                if (isset ($_SESSION["error"]["messageError"])) {
-                    echo $_SESSION["error"]["messageError"];
-                }
-            ?>
         </p>
-
     </div>
 
     <div id="antirobot" class="formfield">
         <label for="antirobot" class="required">Confirm you're not a robot</label>
         <p class="test">2 + 3 = </p>
 
-        <input type="text" name="antirobot"
-            <?php if (isset ($_SESSION["error"]["robotError"])) echo "class='invalid'"; ?>
-        />
+        <input type="text" name="antirobot"/>
 
-        <p class="error">
-            <?php
-                if (isset ($_SESSION["error"]["robotError"])) {
-                    echo $_SESSION["error"]["robotError"];
-                }
-            ?>
-        </p>
-
+        <p class="error"></p>
     </div>
 
     <input type="submit" id="submit" value="Send"/>

@@ -175,8 +175,6 @@ a {
 
 #identity-banner {
     position: relative;
-    left: -10px; // offset to give the illusion of centrality
-
     text-align: center;
 
     h1 {
@@ -185,13 +183,7 @@ a {
         display: inline;
         font-variant: small-caps;
         text-transform: lowercase;
-        font-family: NotCourierSansBold;
-    }
-    img {
-        margin: 0px 50px;
-        vertical-align: middle;
-        position: relative;
-        top: -12px;
+        font-weight: bold;
     }
 }
 
