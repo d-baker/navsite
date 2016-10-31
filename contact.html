@@ -3,54 +3,65 @@ layout: default
 permalink: /contact/
 ---
 
-<h1>contact me</h1>
+<h1 class="pg-title defaultpg">Contact</h1>
 
+<div class="col1">
+    <h2 class="defaultpg">Send me a message</h2>
 
-<form action="https://www.formingo.co/submit/33a13ed7-01ba-40e1-8785-f761de39f64d"
-      method="POST">
+    <form action="https://www.formingo.co/submit/33a13ed7-01ba-40e1-8785-f761de39f64d"
+          method="POST">
 
-    <input type="hidden" name="__redirect" value="http://memoriata.com/contact/form-submitted/">
+        <input type="hidden" name="__redirect" value="http://memoriata.com/contact/form-submitted/">
 
-    <div class="formfield">
-        <label for="name" class="required">Name</label>
-        <input type="text" name="name"/>
+        <p class="error summary-error">Errors found, please check your input</p>
 
-        <p class="error">
-        </p>
-    </div>
+        <div class="formfield">
+            <label for="name" class="required">Name</label>
+            <input type="text" name="name" required/>
 
-    <div class="formfield">
-        <label for="email" class="required">Email address</label>
-		<input type="email" name="__replyto" id="__replyto">
+            <p class="error">
+                Name is required
+            </p>
+        </div>
 
-        <p class="error">
-        </p>
-    </div>
+        <div class="formfield">
+            <label for="email" class="required">Email address</label>
+    		<input type="email" name="__replyto" id="__replyto" required>
 
-    <div class="formfield">
-        <label for="subject" class="required">Subject</label>
-        <input type="text" name="subject"/>
+            <p class="error">
+                Email address is required
+            </p>
+        </div>
 
-        <p class="error">
-        </p>
-    </div>
+        <div class="formfield">
+            <label for="subject" class="required">Subject</label>
+            <input type="text" name="subject" required/>
 
-    <div class="formfield">
-        <label for="message" class="required">Message</label>
-        <textarea name="message"></textarea>
+            <p class="error">
+                Subject is required
+            </p>
+        </div>
 
-        <p class="error">
-        </p>
-    </div>
+        <div class="formfield">
+            <label for="message" class="required">Message</label>
+            <textarea name="message" required></textarea>
 
-    <div id="antirobot" class="formfield">
-        <label for="antirobot" class="required">Confirm you're not a robot</label>
-        <p class="test">2 + 3 = </p>
+            <p class="error">
+                Message is required
+            </p>
+        </div>
 
-        <input type="text" name="antirobot"/>
+        <div id="antirobot" class="formfield">
+            <label for="antirobot" class="required">Confirm you're not a robot</label>
+            <p class="test">2 + 3 = </p>
 
-        <p class="error"></p>
-    </div>
+            <input type="text" name="antirobot" required/>
 
-    <input type="submit" id="submit" value="Send"/>
-</form>
+            <p class="error">
+                You must prove you are human
+            </p>
+        </div>
+
+        <input type="submit" id="submit" value="Send"/>
+    </form>
+</div>
