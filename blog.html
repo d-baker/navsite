@@ -6,22 +6,24 @@ permalink: /blog/
 
 <h1 class="defaultpg pg-title">Blog</h1>
 
+<div class="blogpost col1">
+  {% for post in site.posts %}
+
+      <div class="blogpost">
+          <header class="post-header">
+            <h2 class="post-title">
+              <a href="{{ post.url | prepend: site.baseurl }}"><span class="timestamp">{{ post.date | date: "%Y-%m-%d" }}</span>{{ post.title }}</a>
+            </h2>
+          </header>
+
+          <article class="post-content">
+            {{ post.content }}
+          </article>
+      </div>
+
+  {% endfor %}
+</div>
+
 {% include blog-sidebar.html %}
-
-{% for post in site.posts %}
-
-    <div class="blogpost">
-        <header class="post-header">
-          <h2 class="post-title">
-            <a href="{{ post.url | prepend: site.baseurl }}"><span class="timestamp">{{ post.date | date: "%Y-%m-%d" }}</span>{{ post.title }}</a>
-          </h2>
-        </header>
-
-        <article class="post-content">
-          {{ post.content }}
-        </article>
-    </div>
-
-{% endfor %}
 
 {% include back-to-top.html %}

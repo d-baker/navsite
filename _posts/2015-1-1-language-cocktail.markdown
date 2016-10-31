@@ -42,5 +42,5 @@ Here's a very simple example with *natural* languages (grammar is completely fak
 that is:
 russian-french-finnish-irish-russian-russian-irish-irish
 
-For some reason I find the above nonsensical phrase easier to understand than if it was all in one language. ¯\_(ツ)_/¯
+For some reason I find the above nonsensical phrase easier to understand than if it was all in one language. ¯\\_(ツ)_/¯
 

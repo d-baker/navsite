@@ -1,11 +1,9 @@
 ---
 layout: default
 ---
-{% include blog-sidebar.html %}
-
 <a class="back" href="/blog">All posts</a>
 
-<div class="blogpost">
+<div class="blogpost col1">
     <header class="post-header">
           <h2 class="post-title">
             <a href="{{ page.url | prepend: site.baseurl }}"><span class="timestamp">{{ page.date | date: "%Y-%m-%d" }}</span>{{ page.title }}</a>
@@ -16,5 +14,7 @@ layout: default
       {{ content }}
     </article>
 </div>
+
+{% include blog-sidebar.html %}
 
 {% include back-to-top.html %}
