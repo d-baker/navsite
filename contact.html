@@ -13,7 +13,6 @@ permalink: /contact/
 
         <input type="hidden" name="__redirect" value="http://memoriata.com/contact/form-submitted/">
 
-        <p class="error summary-error">Errors found, please check your input</p>
 
         <div class="formfield">
             <label for="name" class="required">Name</label>
@@ -29,7 +28,7 @@ permalink: /contact/
     		<input type="email" name="__replyto" id="__replyto" required>
 
             <p class="error">
-                Email address is required
+               Please enter a valid email address
             </p>
         </div>
 
@@ -51,17 +50,19 @@ permalink: /contact/
             </p>
         </div>
 
-        <div id="antirobot" class="formfield">
+        <div class="antirobot formfield">
             <label for="antirobot" class="required">Confirm you're not a robot</label>
             <p class="test">2 + 3 = </p>
 
-            <input type="text" name="antirobot" required/>
+            <input type="text" id="antirobot" name="antirobot" required/>
 
             <p class="error">
-                You must prove you are human
+                Please prove you are human
             </p>
         </div>
 
         <input type="submit" id="submit" value="Send"/>
+
+        <p class="error summary-error">Errors found, please check your input</p>
     </form>
 </div>
