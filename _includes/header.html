@@ -41,22 +41,23 @@
                         {% endif %}
                         -->
 
+                        <a class="external" href="http://dreadedvariable.xyz/portfolio/visualiser">audio visualiser</a>
                         <a class="external" href="https://dbaker.bandcamp.com/">bandcamp</a>
                     </div>
                 </div>
 
                 <div class="dropdown">
-                    {% if page.url == "/geekery/" %}
-                        <a class="current" id="geek-landing" href="{{ page.url | prepend: site.baseurl }}">geekery</a>
+                    {% if page.url == "/tech/" %}
+                        <a class="current" id="geek-landing" href="{{ page.url | prepend: site.baseurl }}">tech</a>
                     {% else %}
-                        <a id="geek-landing" href="{{ "/geekery/" | prepend: site.baseurl }}" >geekery</a>
+                        <a id="geek-landing" href="{{ "/tech/" | prepend: site.baseurl }}" >tech</a>
                     {% endif %}
 
                     <div class="nav-list" id="geek-menu">
-                        {% if page.url == "/geekery/bots/" %}
+                        {% if page.url == "/tech/bots/" %}
                             <a class="current" href="{{ page.url | prepend: site.baseurl }}">twitter bots</a>
                         {% else %}
-                            <a href="{{ "/geekery/bots/" | prepend: site.baseurl }}">twitter bots</a>
+                            <a href="{{ "/tech/bots/" | prepend: site.baseurl }}">twitter bots</a>
                         {% endif %}
                         <a class="external" href="https://github.com/d-baker">github</a>
                     </div>

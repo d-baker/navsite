@@ -1,40 +1,41 @@
 $(document).ready(function() {
 
-    var errorsFound = false;
+    var errorsFound = true;
     var inputs = $("input, textarea").filter("[required]");
 
     for (i = 0; i < inputs.length; i++) {
-        $(inputs[i]).focusout(function() {
-            validate(inputs[i]);
+        inp = $(inputs).get(i);
+        $(inp).change(function() {
+            validate(inp);
         });
         
     }
 
     function validate(input) {
-        if (valid( $(input).val() ) && notRobot()) {
-
+        if (invalid( $(input).val() ) || isARobot() ) {
         } else {
-            errorsFound = true;
-
-            // TODO not working
-            var errorMessage = $(input).siblings(".error");
-
-            errorMessage.show();
+            errorsFound = false;
+            //var errorMessage = $(input).siblings(".error").get(0);
+            //$(errorMessage).show();
         }
     }
 
-    function valid(input) {
-        if ($(input).val() == "") {
+    function invalid(input) {
+        if (input == undefined || input.trim() == "") {
             console.log("input " + $(input).attr("name") + " is empty");
-            return false;
+            return true;
         }
-        return true;
+        return false;
     }
 
-    function notRobot() {
+    function isARobot() {
+        console.log("robot: " + $("#antirobot").val());
+
         if ($("#antirobot").val() != "5") {
+            console.log("robot!!")
             return false;
         }
+        
         console.log("not a robot")
         return true;
     }
