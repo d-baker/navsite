@@ -9,6 +9,10 @@ permalink: /blog/:title
 sass:
     sass_dir: _sass
 
+paginate: 2
+paginate_path: "/blog/page:num/"
+gems: [jekyll-paginate]
+
 # Build settings
 markdown: kramdown
 

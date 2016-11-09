@@ -1,6 +1,6 @@
 <header id="main-header">
     <div class="container">
-        <a id="logo" href="{{ "/index.html" | prepend: site.baseurl }}">dorothea baker</a>
+        <a id="logo" href="{{ "/home/" | prepend: site.baseurl }}">dorothea baker</a>
         <div id="menubutton">
             &nbsp;
         </div>
@@ -31,10 +31,10 @@
                     </div>
                 </div>
 
-                {% if page.url == "/blog/" %}
+                {% if page.url == "/index.html" %}
                     <a class="current" id="blog-landing" href="{{ page.url | prepend: site.baseurl }}">blog</a>
                 {% else %}
-                    <a id="blog-landing" href="{{ "/blog/" | prepend: site.baseurl }}">blog</a>
+                    <a id="blog-landing" href="{{ "/index.html" | prepend: site.baseurl }}">blog</a>
                 {% endif %}
 
                 {% if page.url == "/contact/" %}
