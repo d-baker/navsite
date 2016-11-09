@@ -193,8 +193,18 @@ h1.headline {
     font-family: "Source Code Pro";
     text-align: center;
     margin: 100px 0px;
+
+    a {
+        color: $defaultHighlight;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
+.homepage .textblock {
+    line-height: 1.5em;
+}
 
 #assorted {
     width: 650px;
