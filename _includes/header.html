@@ -31,10 +31,10 @@
                     </div>
                 </div>
 
-                {% if page.url == "/index.html" %}
-                    <a class="current" id="blog-landing" href="{{ page.url | prepend: site.baseurl }}">blog</a>
+                {% if page.url == "/" %}
+                    <a class="current" id="blog-landing" href="/index.html">blog</a>
                 {% else %}
-                    <a id="blog-landing" href="{{ "/index.html" | prepend: site.baseurl }}">blog</a>
+                    <a id="blog-landing" href="/index.html">blog</a>
                 {% endif %}
 
                 {% if page.url == "/contact/" %}
