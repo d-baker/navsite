@@ -25,6 +25,11 @@ header#main-header {
         margin-left: 20px;
         float: right;
 
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
         .nav-list a:hover, .nav-list .dropdown a:hover {
             &#music-landing {
                 color: $musicHighlight;
