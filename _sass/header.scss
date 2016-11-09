@@ -102,8 +102,8 @@ header#main-header {
 
             a {
                 display: block;
-                font-size: 20px;
-                text-transform: none;
+                font-size: 16px;
+                text-transform: capitalize;
                 font-variant: normal;
                 font-weight: normal;
                 font-family: "Source Code Pro";
@@ -120,7 +120,7 @@ header#main-header {
                     display: table;
                     background: url("/assets/icons/external-link.svg") no-repeat;
                     padding-right: 45px;
-                    background-position: right 20px top 15px;
+                    background-position: right 20px top 12px;
                 }
 
             } //end a
