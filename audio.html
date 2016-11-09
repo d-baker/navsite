@@ -12,7 +12,7 @@ permalink: /music/audio/
         {% for audio in site.data.audio-originalcomps %}
             <li>
                 <a class="permalink" title="{{ " [permalink]" | prepend: audio.title }}" href="{{ (audio.title | sanitize_filename) | prepend: "originalcomps" }}">
-                    <img src="/assets/icons/infinity.svg" alt="permalink"></img>
+                    <img src="/assets/icons/infinity.svg" alt="permalink"/>
                 </a>
 
                 <h3 class="tracktitle">{{ audio.title }}</h3>
@@ -40,7 +40,7 @@ permalink: /music/audio/
         {% for audio in site.data.audio-pianorecs %}
             <li>
                 <a class="permalink" title="{{ " [permalink]" | prepend: audio.title }}" href="{{ (audio.title | sanitize_filename) | prepend: "pianorecs" }}">
-                    <img src="/assets/icons/infinity.svg" alt="permalink"></img>
+                    <img src="/assets/icons/infinity.svg" alt="permalink"/>
                 </a>
 
                 <h3 class="tracktitle">{{ audio.title }}</h3>
