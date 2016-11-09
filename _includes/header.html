@@ -15,34 +15,7 @@
                     {% endif %}
 
                     <div class="nav-list" id="music-menu">
-                        {% if page.url == "/music/audio/" %}
-                            <a class="current" href="{{ page.url | prepend: site.baseurl }}">audio</a>
-                        {% else %}
-                            <a href="{{ "/music/audio" | prepend: site.baseurl }}">audio</a>
-                        {% endif %}
-
-                        {% if page.url == "/music/video/" %}
-                            <a class="current" href="{{ page.url | prepend: site.baseurl }}">video</a>
-                        {% else %}
-                            <a href="{{ "/music/video" | prepend: site.baseurl }}">video</a>
-                        {% endif %}
-
-                        {% if page.url == "/music/mechanisms/" %}
-                            <a class="current" href="{{ page.url | prepend: site.baseurl }}">mechanisms</a>
-                        {% else %}
-                            <a href="{{ "/music/mechanisms" | prepend: site.baseurl }}">mechanisms</a>
-                        {% endif %}
-
-                        <!--
-                        {% if page.url == "/music/scores/" %}
-                            <a class="current" href="{{ page.url | prepend: site.baseurl }}">scores</a>
-                        {% else %}
-                            <a href="{{ "/music/scores" | prepend: site.baseurl }}">scores</a>
-                        {% endif %}
-                        -->
-
-                        <a target="_blank" class="external" href="http://dreadedvariable.xyz/portfolio/visualiser">audio visualiser</a>
-                        <a target="_blank" class="external" href="https://dbaker.bandcamp.com/">bandcamp</a>
+                        {% include music-submenu.html %}
                     </div>
                 </div>
 
@@ -54,13 +27,7 @@
                     {% endif %}
 
                     <div class="nav-list" id="geek-menu">
-                        {% if page.url == "/tech/bots/" %}
-                            <a class="current" href="{{ page.url | prepend: site.baseurl }}">twitter bots</a>
-                        {% else %}
-                            <a href="{{ "/tech/bots/" | prepend: site.baseurl }}">twitter bots</a>
-                        {% endif %}
-
-                        <a target="_blank" class="external" href="https://github.com/d-baker">github</a>
+                        {% include tech-submenu.html %} 
                     </div>
                 </div>
 
