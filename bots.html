@@ -6,7 +6,7 @@ permalink: /tech/bots/
 
 <h1 class="pg-title geekpg">Twitter bots</h1>
 <article class="textblock">
-	<h1 class="geekpg">What is a Twitter bot?</h1>
+	<h2 class="geekpg">What is a Twitter bot?</h2>
 	<p>A Twitter bot is an automated twitter account operated via a computer program.</p>
 	<p>Although some Twitter bots are used for spam, there is a large community of bot-makers who create Twitter bots with a humorous, artistic, political or even functional intent (an example of the last would be a bot that tells you the weather when you tweet at it).</p>
 	<p>I and many others have found making Twitter bots to be a great way to experiment with code and learn new things.</p>
@@ -14,7 +14,7 @@ permalink: /tech/bots/
 	<p>Some of these bots don't tweet anymore, as maintaining them became too difficult.</p>
 </article>
 
-<article class="botlist">
+<div class="botlist">
     {% for category in site.data.bots %}
     	<div class="{{ category[0] }}">
 
@@ -28,6 +28,6 @@ permalink: /tech/bots/
 
     	</div>
     {% endfor %}
-</article>
+</div>
 
 {% include back-to-top.html %}

@@ -16,7 +16,7 @@ permalink: /contact/
 
         <div class="formfield">
             <label for="name" class="required">Name</label>
-            <input type="text" name="name" required/>
+            <input id="name" type="text" name="name" required/>
 
             <p class="error">
                 Name is required
@@ -25,7 +25,7 @@ permalink: /contact/
 
         <div class="formfield">
             <label for="email" class="required">Email address</label>
-    		<input type="email" name="__replyto" id="__replyto" required>
+    		<input id="email" type="email" name="__replyto" id="__replyto" required>
 
             <p class="error">
                Please enter a valid email address
@@ -34,7 +34,7 @@ permalink: /contact/
 
         <div class="formfield">
             <label for="subject" class="required">Subject</label>
-            <input type="text" name="subject" required/>
+            <input id="subject" type="text" name="subject" required/>
 
             <p class="error">
                 Subject is required
@@ -43,7 +43,7 @@ permalink: /contact/
 
         <div class="formfield">
             <label for="message" class="required">Message</label>
-            <textarea name="message" required></textarea>
+            <textarea id="message" name="message" required></textarea>
 
             <p class="error">
                 Message is required
@@ -54,7 +54,7 @@ permalink: /contact/
             <label for="antirobot" class="required">Confirm you're not a robot</label>
             <p class="test">2 + 3 = </p>
 
-            <input type="text" id="antirobot" name="antirobot" required/>
+            <input id="antirobot" type="text" name="antirobot" required/>
 
             <p class="error">
                 Please prove you are human
