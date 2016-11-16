@@ -11,14 +11,13 @@ layout: default
             <audio controls>
                 <source src="{{page.src | prepend: "/assets/audio/"}}" type="audio/mpeg">
             </audio>
-
-            <p class="download">
-                <a download href="{{page.src | prepend: "/assets/audio/"}}">download</a>
-            </p>
         </div>
     </div>
 
     <article class="col2 textblock">
+        <p class="download">
+            <a download href="{{page.src | prepend: "/assets/audio/"}}">download</a>
+        </p>
         <p>{{ page.description }}</p>
     </article>
 

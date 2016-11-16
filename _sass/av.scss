@@ -1,24 +1,21 @@
-.audioplayer, .videoplayer {
-	.download {
-        text-align: center;
-        width: 100%;
+.download {
+    text-align: center;
+    background: #683996;
+    padding: 0px 10px 6px 10px;
+    font-family: "Source Code Pro";
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    display: table;
+    margin-bottom: 30px;
 
-        background: $musicHighlight;
-
-		padding: 20px 0px 30px 0px;
-        margin: 20px auto;
-
-        font-family: "Source Code Pro";
-        font-variant: small-caps;
-        font-weight: bold;
-        font-size: 30px;
-
-        a {
-            color: white;
-            text-decoration: none;
-        }
-	}
+    a {
+        color: white;
+        text-decoration: none;
+        vertical-align: middle
+    }
 }
+
 
 .avpost {
     .post-title {
@@ -26,13 +23,16 @@
         display: block;
         margin-bottom: 20px;
     }
+    .col1, .col2 {
+        margin-top: 20px;
+    }
 	.col1 {
         width: 600px;
     }
     .col2 {
         width: 520px;
     }
-    .audioplayer, .videoplayer, audio, video {
+    .videoplayer, video, .audioplayer, audio {
         width: 600px;
     }
 

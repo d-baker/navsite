@@ -12,14 +12,13 @@ layout: default
             <video controls>
                 <source src="{{page.src | prepend: "/assets/video/"}}" type="video/mp4">
             </video>
-
-            <p class="download">
-            <a download href="{{page.src | prepend: "/assets/video/"}}">download</a>
-            </p>
         </div>
     </div>
 
     <article class="col2 textblock">
+        <p class="download">
+            <a download href="{{page.src | prepend: "/assets/video/"}}">download</a>
+        </p>
         <p>{{ page.description }}</p>
     </article>
 

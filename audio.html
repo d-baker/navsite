@@ -22,7 +22,7 @@ permalink: /music/audio/
                     {% if audio.description != "" %} 
                         <p>{{ audio.description }}</p>
                     {% endif %}
-                    <p class="permalink"><a title="{{ " [permalink]" | prepend: audio.title }}" href="{{ (audio.title | sanitize_filename) | prepend: "originalcomps" }}">More details</a></p>
+                    <p class="permalink"><a target="_blank" title="{{ " [permalink]" | prepend: audio.title }}" href="{{ (audio.title | sanitize_filename) | prepend: "originalcomps" }}">More details</a></p>
                 </div>
             </li>
         {% endfor %}
@@ -47,7 +47,7 @@ permalink: /music/audio/
                     {% if audio.description != "" %} 
                         <p>{{ audio.description }}</p>
                     {% endif %}
-                    <p class="permalink"><a title="{{ " [permalink]" | prepend: audio.title }}" href="{{ (audio.title | sanitize_filename) | prepend: "pianorecs" }}">More details</a></p>
+                    <p class="permalink"><a target="_blank" title="{{ " [permalink]" | prepend: audio.title }}" href="{{ (audio.title | sanitize_filename) | prepend: "pianorecs" }}">More details</a></p>
                 </div>
             </li>
         {% endfor %}
