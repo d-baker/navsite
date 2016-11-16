@@ -73,6 +73,9 @@
 		&:before {
 			content: "";
 		}
+        &:hover button {
+            color: $highlightPurple;
+        }
         cursor: pointer;
         padding: 10px;
         position: relative;
@@ -106,10 +109,6 @@
     border: none;
     color: black;
     padding: 0;
-
-    &:hover {
-        color: $highlightPurple;
-    }
 
     &:focus {
         outline: $highlightPurple dotted 1px;

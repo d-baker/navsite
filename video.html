@@ -11,11 +11,7 @@ permalink: /music/video/
         <ul class="playlist">
         {% for video in site.data.video-originalcomps %}
             <li>
-                <a class="permalink" title="{{ " [permalink]" | prepend: video.title }}" href="{{ (video.title | sanitize_filename) | prepend: "originalcomps" }}">
-                    <img src="/assets/icons/infinity.svg" alt="permalink"/>
-                </a>
-
-                <h3 class="tracktitle">{{ video.title }}</h3>
+                <button><h3 class="tracktitle">{{ video.title }}</h3></button>
 
                 <div class="descrip">
                     <div class="videoplayer">
@@ -27,6 +23,7 @@ permalink: /music/video/
                     {% if video.description != "" %} 
                         <p>{{ video.description }}</p>
                     {% endif %}
+                    <p class="permalink"><a title="{{ " [permalink]" | prepend: video.title }}" href="{{ (video.title | sanitize_filename) | prepend: "originalcomps" }}">More details</a></p>
                 </div>
 
             </li>
@@ -42,11 +39,7 @@ permalink: /music/video/
         <ul class="playlist">
         {% for video in site.data.video-pianorecs %}
             <li>
-                <a class="permalink" title="{{ " [permalink]" | prepend: video.title }}" href="{{ (video.title | sanitize_filename) | prepend: "pianorecs" }}">
-                    <img src="/assets/icons/infinity.svg" alt="permalink"/>
-                </a>
-
-                <h3 class="tracktitle">{{ video.title }}</h3>
+                <button><h3 class="tracktitle">{{ video.title }}</h3></button>
 
                 <div class="descrip">
                     <div class="videoplayer">
@@ -58,6 +51,7 @@ permalink: /music/video/
                     {% if video.description != "" %} 
                         <p>{{ video.description }}</p>
                     {% endif %}
+                    <p class="permalink"><a title="{{ " [permalink]" | prepend: video.title }}" href="{{ (video.title | sanitize_filename) | prepend: "pianorecs" }}">More details</a></p>
                 </div>
 
             </li>
