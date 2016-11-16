@@ -93,12 +93,6 @@
 			display: block;
 			position: relative;
 			text-decoration: none!important;
-        	&:after {
-           		content: "";
-       		}
-        	&:before {
-            	content: "";
-        	}
 		}
 
 		.nav-list a {
@@ -116,9 +110,6 @@
 			&:hover {
 				padding: 15px;
 			}
-			&:before {
-				content: "> ";
-			}
 			&.external {
 				background: url("/assets/icons/external-link-larger.svg") no-repeat scroll right 25px top 20px transparent;
 			}
@@ -129,15 +120,6 @@
     .sidebar {
 		width: 100%;
 		clear: both;
-
-		li {
-        	&:after {
-        	    content: "";
-        	}
-       		&:before {
-        	    content: "- ";
-        	}
-    	}
 	}
 	
     #bio p {
@@ -219,15 +201,7 @@
 
 }
 
-@media screen and (max-width: 700px) {
-    .sidebar {
-        a {
-            &:before {
-                content: "";
-            }
-        }
-    }
-
+@media screen and (max-width: 700px) { 
     .descrip {
         margin-left: 0px;
     }

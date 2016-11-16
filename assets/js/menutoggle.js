@@ -1,14 +1,14 @@
 $(document).ready(function() {
 	if ( $("#menubutton").css("display") != "none" ) {
-		$("nav").hide();
+		$("header nav").hide();
 		$(".dropdown .nav-list").hide();
 	}
 	$(window).resize(function() {
 		if ( $("#menubutton").css("display") != "none" ) {
-			$("nav").hide();
+			$("header nav").hide();
 			$(".dropdown .nav-list").hide();
 		} else {
-			$("nav").show();
+			$("header nav").show();
 			$(".dropdown .nav-list").css("display", "");
 		}
 	});
@@ -18,10 +18,10 @@ $(document).ready(function() {
 
 		if ( $("#menubutton").css("display") != "none" ) {
 
-			if ( $("nav").css("display") != "none" ) {
-				$("nav").hide();
+			if ( $("header nav").css("display") != "none" ) {
+				$("header nav").hide();
 			} else {
-				$("nav").show();
+				$("header nav").show();
 			}
 		}
 

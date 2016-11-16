@@ -154,7 +154,7 @@ a {
 }
 
 .col1, .col2 {
-    max-width: 550px;   
+    width: 550px;   
 }
 .col1 {
     float: left;
@@ -345,6 +345,15 @@ a.external {
     background: url("/assets/icons/external-link.svg") no-repeat right;
     background-position: top 4px right 0px;
     padding-right: 25px;
+}
+
+#contact-sidebar {
+    width: 450px;
+    border: none;
+
+    a {
+        text-transform: none;
+    }
 }
 
 /* mechanisms page */
