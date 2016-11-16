@@ -5,6 +5,8 @@ layout: default
 
 <h1 class="defaultpg pg-title">Blog</h1>
 
+{% include blog-sidebar.html %}
+
 <div class="blogpost col1">
     {% for post in paginator.posts %}
 
@@ -35,7 +37,5 @@ layout: default
   </div>
 
 </div>
-
-{% include blog-sidebar.html %}
 
 {% include back-to-top.html %}
