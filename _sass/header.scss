@@ -98,13 +98,14 @@ header#main-header {
 
         &:hover {
             .nav-list {
-                opacity: 1;
+                display: block;
             }
         }
 
         
         .nav-list {
-            opacity: 0;
+            display: none;
+
             transition-duration: 0.5s;
             transition-property: opacity;
 
