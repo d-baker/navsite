@@ -1,29 +1,19 @@
-<ul>
-	<li>
-        {% if page.url == "/tech/" %}
-            <a class="current landing" href="{{ page.url | prepend: site.baseurl }}">about...</a>
-        {% else %}
-            <a class="landing" href="{{ "/tech/" | prepend: site.baseurl }}">about...</a>
-        {% endif %}
-	</li>
+<li>
+{% if page.url == "/tech/bots/" %}
+    <a class="current" href="{{ page.url | prepend: site.baseurl }}">twitter bots</a>
+{% else %}
+    <a href="{{ "/tech/bots/" | prepend: site.baseurl }}">twitter bots</a>
+{% endif %}
+</li>
 
-	<li>
-	{% if page.url == "/tech/bots/" %}
-	    <a class="current" href="{{ page.url | prepend: site.baseurl }}">twitter bots</a>
-	{% else %}
-	    <a href="{{ "/tech/bots/" | prepend: site.baseurl }}">twitter bots</a>
-	{% endif %}
-	</li>
+<li>
+	<a target="_blank" class="external" href="http://nightmare.website">dev blog</a>
+</li>
 
-	<li>
-		<a target="_blank" class="external" href="http://nightmare.website">dev blog</a>
-	</li>
+<li>
+	<a target="_blank" class="external" href="http://lunawebdesign.com.au">web design</a>
+</li>
 
-	<li>
-		<a target="_blank" class="external" href="http://lunawebdesign.com.au">web design</a>
-	</li>
-
-	<li>
-		<a target="_blank" class="external" href="https://github.com/d-baker">github</a> 
-	</li>
-</ul>
+<li>
+	<a target="_blank" class="external" href="https://github.com/d-baker">github</a> 
+</li>
