@@ -110,6 +110,9 @@
     color: black;
     padding: 0;
 
+    transition-duration: 0.2s;
+    transition-property: color;
+
     &:focus {
         outline: $highlightPurple dotted 1px;
     }

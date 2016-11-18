@@ -140,6 +140,9 @@ li {
 a {
     text-decoration: none;
     color: $fg;
+
+    transition-duration: 0.2s;
+    transition-property: color, text-decoration;
     
     h1 {
         color: $bg;
@@ -286,7 +289,7 @@ footer {
     color: $menufg;
     margin-top: 60px;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 
     a {
         display: inline-block;
@@ -349,11 +352,22 @@ a.external {
 }
 
 #contact-sidebar {
-    width: 450px;
-    border: none;
-
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        padding: 10px 0px;
+        &:before {
+            content: " - ";
+        }
+    }
     a {
-        text-transform: none;
+        font-family: Helvetica, Arial, sans-serif;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: $defaultHighlight;
     }
 }
 
