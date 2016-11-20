@@ -168,12 +168,14 @@ ul {
     a {
         color: $fg;
     }
+
+    ul.sidebar-extra {
+        border-top: 1px solid $batcolor;
+        list-style-type: none;
+        padding-left: 0;
+    }
 }
 
-ul.sidebar-extra {
-    border-top: 1px solid $batcolor;
-    list-style-type: none;
-}
 
 #contact-sidebar {
     ul {
