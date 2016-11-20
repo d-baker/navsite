@@ -12,10 +12,23 @@ header#main-header {
         cursor: pointer;
     }
 
+    .dropdown-button {
+        border: none;
+        background: none;
+    }
+
     nav {
         ul {
             list-style-type: none;
             padding: 0;
+        }
+
+        &.closed {
+            display: none;
+        }
+
+        &.open {
+            display: block;
         }
     }
     
@@ -40,9 +53,37 @@ header#main-header {
         font-size: 9vw;
     }
 
+    .dropdown a {
+        display: inline-block;
+    }
+
     .nav-list {
         margin-top: 12vw;
         margin-bottom: 6vw;
+    }
+
+    .dropdown .nav-list {
+        margin: 0;
+        margin-bottom: 6vw;
+
+        ul {
+            li {
+                padding: 20px 0px;
+                a {
+                    font-size: 18px;
+                    font-variant: normal;
+                    font-weight: normal;
+                }
+            }
+        }
+
+
+        &.closed {
+            display: none;
+        }
+        &.open {
+            display: block;
+        }
     }
     
     .nav-list > a, .dropdown > a {
@@ -87,6 +128,10 @@ header#main-header {
             margin-left: 20px;
         }
 
+        .dropdown-button img {
+            display: none;
+        }
+
         nav {
             display: inline-block;
             float: right;
@@ -104,6 +149,10 @@ header#main-header {
                 &#blog-landing, &#contact-landing {
                     color: $defaultHighlight;
                 }
+            }
+
+            &.closed {
+                display: block;
             }
 
         }
@@ -133,10 +182,6 @@ header#main-header {
             transition-property: all;
         }
 
-        .dropdown .nav-list a {
-            transition: none;
-        }
-
         a#logo {
             font-size: 40px;
         
@@ -159,16 +204,21 @@ header#main-header {
         .dropdown {
             display: inline-block;
 
+            .nav-list.open, .nav-list.closed {
+                display: none;
+            }
+            
             &:hover {
-                .nav-list {
+                .nav-list, .nav-list.open, .nav-list.closed {
                     display: block;
                 }
             }
 
-            
-            .nav-list {
-                display: none;
+            a {
+                display: inline;
+            }
 
+            .nav-list {
                 transition-duration: 0.5s;
                 transition-property: opacity;
 
@@ -178,6 +228,10 @@ header#main-header {
                 padding: 10px 0px;
                 z-index: 100;
                 line-height: 1.5em;
+
+                ul li {
+                    padding: 0;
+                }
 
                 a {
                     display: block;
@@ -199,6 +253,8 @@ header#main-header {
                         padding-right: 45px;
                         background-position: right 20px top 12px;
                     }
+
+                    transition: none;
 
                 } //end a
 

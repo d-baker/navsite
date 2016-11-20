@@ -5,17 +5,19 @@
         <div id="menubutton">
             &nbsp;
         </div>
-        
+
         <a id="logo" href="{{ "/index.html" | prepend: site.baseurl }}">dorothea baker</a>
         
         <nav>
             <div class="nav-list">
                 <div class="dropdown">
                     {% if page.url == "/music/" %}
-                        <a class="current" id="music-landing" href="{{ page.url | prepend: site.baseurl }}">music</a>
+                       <a class="current" id="music-landing" href="{{ page.url | prepend: site.baseurl }}">music</a>
                     {% else %}
-                        <a id="music-landing" href="{{ "/music/" | prepend: site.baseurl }}" >music</a>
-                    {% endif %}
+                       <a id="music-landing" href="{{ "/music/" | prepend: site.baseurl }}" >music</a>
+                   {% endif %}
+
+                    <button name="music submenu" class="dropdown-button"><img src="/assets/icons/dropdown-open.svg"></button>
 
                     <div class="nav-list" id="music-menu">
 
@@ -40,6 +42,7 @@
                     {% else %}
                         <a id="geek-landing" href="{{ "/tech/" | prepend: site.baseurl }}" >tech</a>
                     {% endif %}
+                    <button name="music submenu" class="dropdown-button"><img src="/assets/icons/dropdown-open.svg"></button>
 
                     <div class="nav-list" id="geek-menu">
 
