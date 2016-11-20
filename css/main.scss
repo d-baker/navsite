@@ -92,8 +92,14 @@ h3 {
 p {
     padding-bottom: 15px;
     font-family: Helvetica, Arial, sans-serif;
+
     &.note {
         font-style: italic;
+    }
+
+    a {
+        color: $highlightBlue;
+        text-decoration: underline;
     }
 }
 
@@ -104,6 +110,16 @@ a {
     h1 {
         color: $bg;
     }
+}
+
+a.external {
+    background: url("/assets/icons/external-link.svg") no-repeat right;
+    background-position: top 4px right 0px;
+    padding-right: 25px;
+}
+
+nav li a {
+    text-transform: capitalize;
 }
 
 .textblock, .wide.col1 {
@@ -139,6 +155,38 @@ ul {
 
     &:before {
         content: "< ";
+    }
+}
+
+.sidebar {
+    border: 1px dashed $batcolor;
+
+    ul {
+        border-top: 1px solid $batcolor;
+    }
+
+    a {
+        color: $fg;
+    }
+}
+
+ul.sidebar-extra {
+    border-top: 1px solid $batcolor;
+    list-style-type: none;
+}
+
+#contact-sidebar {
+    ul {
+        list-style-type: none;
+    }
+    li {
+        &:before {
+            content: " - ";
+        }
+    }
+    a {
+        font-family: Helvetica, Arial, sans-serif;
+        text-decoration: underline;
     }
 }
 
@@ -252,23 +300,17 @@ footer {
         padding-bottom: 15px;
     }
 
-    nav li a {
-        text-transform: capitalize;
-    }
-
     .sidebar {
         float: right;
         overflow-y: auto;
         width: 350px;
         padding: 20px;
-        border: 1px dashed $batcolor;
        
         h2 {
             margin-top: 10px;
         }
 
         ul {
-            border-top: 1px solid $batcolor;
             padding: 20px 0px 20px 20px;
 
             li {
@@ -276,43 +318,23 @@ footer {
             }
         }
         a {
-            color: $fg;
             &:hover {
                 color: $highlightBlue;
             }
-        }
-
-        .tooltip {
-            margin-right: 10px;
         }
     }
 
     ul.sidebar-extra {
         border-top: 1px solid $batcolor;
         list-style-type: none;
-        padding-left: 0;
-    }
-
-    a.external {
-        background: url("/assets/icons/external-link.svg") no-repeat right;
-        background-position: top 4px right 0px;
-        padding-right: 25px;
     }
 
     #contact-sidebar {
         ul {
-            list-style-type: none;
             padding: 0;
         }
         li {
             padding: 10px 0px;
-            &:before {
-                content: " - ";
-            }
-        }
-        a {
-            font-family: Helvetica, Arial, sans-serif;
-            text-decoration: underline;
         }
         a:hover {
             color: $defaultHighlight;
@@ -320,56 +342,10 @@ footer {
     }
 
     /* mechanisms page */
-
-    #intro, #tech, #instructions, #scores, #copyright {
-        max-width: 600px;
-        position: relative;
-    }
-
-    #tech {
-        left: 190px;
-    }
-
     #instructions {
-        left: 400px;
         li {
             margin-bottom: 20px;
         }
-    }
-
-
-    #bat {
-        color: $batcolor;
-        text-align: center;
-        padding-top: 110px;
-        padding-bottom: 155px;
-        margin: 0px;
-        font-size: 150px;
-    }
-
-    #bio {
-        p {
-            position: relative;
-            margin-top: 2em;
-        }
-    }
-
-    p#one {
-        max-width: 550px;
-    }
-
-    p#two {
-        max-width: 550px;
-        left: 250px;
-    }
-    p#three {
-        max-width: 380px;
-        left: 500px;
-    }
-
-    p a {
-        color: $highlightBlue;
-        text-decoration: underline;
     }
 
 }
