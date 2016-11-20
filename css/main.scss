@@ -142,6 +142,11 @@ ul {
     }
 }
 
+footer {
+    border-top: 1px dashed $batcolor;
+}
+
+
 
 
 @media (min-width: 1300px) {
@@ -242,23 +247,9 @@ ul {
     /**************************************************************/
 
     footer {
-        border-top: 1px dashed $batcolor;
-        color: $menufg;
         margin-top: 60px;
         padding-top: 30px;
         padding-bottom: 15px;
-
-        a {
-            display: inline-block;
-        }
-
-        p.sitelink {
-            padding-bottom: 0px;
-
-            a {
-                color: $highlightBlue;
-            }
-        }
     }
 
     nav li a {
