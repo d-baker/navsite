@@ -27,40 +27,127 @@ $header-height: 60px;
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
 .clearfix:after { clear: both; }  
 .clearfix { zoom: 1; } 
- 
-@media (min-width: 1200px) {
 
-    .container {
-        display: block;
-        margin: auto;
-        max-width: 1200px;
+
+body {
+    background: $bg;
+    line-height: 1.5em;
+    color: $fg;
+    font-family: "Source Code Pro", monospace;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.container {
+    display: block;
+    margin: auto;
+    max-width: 1200px;
+}
+
+main, .header-wrapper, footer p {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+h1, h2 {
+    &.defaultpg, &.defaultpg a {
+        color: $defaultHighlight;
     }
 
-    body {
-        background: $bg;
-        line-height: 1.5em;
-        color: $fg;
-        font-family: "Source Code Pro", monospace;
-        font-size: 16px;
-        margin-top: 30px;
+    &.geekpg, &.geekpg a {
+        color: $geekHighlight;
     }
 
-    h1, h2, h3 {
-        font-weight: normal;
+    &.avpg, &.avpg a {
+        color: $musicHighlight;
     }
+}
 
-    h1, h2 {
-        &.defaultpg, &.defaultpg a {
-            color: $defaultHighlight;
-        }
+h1.headline {
+    font-family: "Source Code Pro";
+    text-align: center;
+}
 
-        &.geekpg, &.geekpg a {
-            color: $geekHighlight;
-        }
+h2 {
+    a {
+        text-decoration: underline;
+    }
+}
 
-        &.avpg, &.avpg a {
-            color: $musicHighlight;
-        }
+h3 {
+    font-family: "Source Code Pro";
+    font-variant: small-caps;
+    font-weight: bold;
+
+    &.tracktitle {
+        font-variant: normal;
+    }
+}
+
+p {
+    padding-bottom: 15px;
+    font-family: Helvetica, Arial, sans-serif;
+    &.note {
+        font-style: italic;
+    }
+}
+
+a {
+    text-decoration: underline;
+    color: $highlightBlue;
+
+    h1 {
+        color: $bg;
+    }
+}
+
+.textblock, .wide.col1 {
+    li {
+        padding-left: 5px;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+}
+
+.homepage .textblock {
+    line-height: 1.5em;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.image-col .caption {
+    //font-style: italic;
+    font-weight: bold;
+}
+
+.botlisting .descrip {
+    font-style: italic;
+}
+
+.back {
+    margin-bottom: 60px;
+    display: table;
+    color: $defaultHighlight;
+    text-decoration: underline;
+
+    &:before {
+        content: "< ";
+    }
+}
+
+
+
+@media (min-width: 1300px) {
+    main, .header-wrapper, footer p {
+        margin-left: 0;
+        margin-right: 0;
     }
 
     h1 {
@@ -77,68 +164,16 @@ $header-height: 60px;
     h2 {
         font-size: 25px;
         margin: 25px 0px;
-
-        a {
-            text-decoration: underline;
-        }
     }
 
     h3 {
-        font-family: "Source Code Pro";
-        font-variant: small-caps;
-        font-weight: bold;
         font-size: 25px;
-
-        &.tracktitle {
-            font-variant: normal;
-        }
-    }
-
-    p {
-        padding-bottom: 15px;
-        font-family: Helvetica, Arial, sans-serif;
-        &.note {
-            font-style: italic;
-        }
-    }
-
-    hr {
-        color: $bg;
     }
 
     .textblock, .wide.col1 {
         max-width: 700px;
         margin-bottom: 40px;
-
-        li {
-            padding-left: 5px;
-            font-family: Helvetica, Arial, sans-serif;
-        }
     }
-
-    ul {
-        list-style-type: square;
-        padding-left: 20px;
-    }
-
-    li {
-        p.tooltip {
-           // display: none;
-            font-family: "Source Code Pro";
-            display: inline;
-            margin-left: 10px;
-            color: $batcolor;
-            font-style: italic;
-        }
-
-        &:hover {
-            .tooltip {
-                display: inline;
-            }
-        }
-
-    }
-
 
     a {
         text-decoration: none;
@@ -146,18 +181,14 @@ $header-height: 60px;
 
         transition-duration: 0.2s;
         transition-property: color, text-decoration;
-        
-        h1 {
-            color: $bg;
-            &:hover {
-                text-decoration: none;
-            }
-        }
 
         &:hover { 
             text-decoration: underline; 
         }
 
+        h1:hover {
+            text-decoration: none;
+        }
     }
 
     .col1, .col2 {
@@ -175,52 +206,13 @@ $header-height: 60px;
         margin: 25px 0px;
 
         .caption {
-            //font-style: italic;
-            font-weight: bold;
             margin-top: 20px;
-        }
-    }
-
-    #identity-banner {
-        position: relative;
-        text-align: center;
-
-        h1 {
-            color: $batcolor - #222;
-            font-size: 80px;
-            font-variant: small-caps;
-            text-transform: lowercase;
-            font-weight: bold;
-            margin-bottom: 100px;
         }
     }
 
     h1.headline {
         font-size: 35px;
-        font-family: "Source Code Pro";
-        text-align: center;
         margin: 100px 0px;
-
-        a {
-            color: $defaultHighlight;
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
-
-    .homepage .textblock {
-        line-height: 1.5em;
-    }
-
-    #assorted {
-        width: 650px;
-    }
-
-    #music {
-        width: 600px;   
-        position: relative;
-        left: 200px;
     }
 
     .geeklist {
@@ -239,50 +231,12 @@ $header-height: 60px;
         }
 
         .descrip {
-            font-style: italic;
             padding-bottom: 5px;
-        }
-    }
-
-    p.copyright {
-        &:before {
-            color: $batcolor;
-            font-style: italic;
-            content: "Dorothea Baker 2014 ";
-            position: relative;
-            top: 1px; //tweak 
-        }
-    }
-
-    #copyright {
-        position: relative;
-        width: 500px;
-    }
-
-    #scores {
-        width: 500px;
-    }
-
-    #downloads {
-    }
-
-    #copyright {
-        left: 200px;
-        padding-bottom: 10px;
-        a {
-            text-decoration: underline;
         }
     }
 
     .back {
         margin-bottom: 60px;
-        display: table;
-        color: $defaultHighlight;
-        text-decoration: underline;
-
-        &:before {
-            content: "< ";
-        }
     }
 
     /**************************************************************/
