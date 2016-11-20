@@ -4,7 +4,7 @@ header#main-header {
 
     #menubutton {
         background: url("/assets/icons/menu.svg") no-repeat;
-        float: left;
+        float: right;
         width: 30px;
         height: 30px;
     }
@@ -30,8 +30,8 @@ header#main-header {
     }
 
     a#logo {
+        display: block;
         color: $fg + #333;
-        text-align: right;
         text-decoration: none;
     }
     
@@ -74,8 +74,8 @@ header#main-header {
 
         nav {
             display: inline-block;
-            margin-left: 20px;
             float: right;
+            margin-left: 20px;
 
             .nav-list a:hover, .nav-list .dropdown a:hover {
                 &#music-landing {
@@ -169,7 +169,6 @@ header#main-header {
                     }
 
                     &.external {
-                        // TODO credit
                         display: table;
                         background: url("/assets/icons/external-link.svg") no-repeat;
                         padding-right: 45px;
