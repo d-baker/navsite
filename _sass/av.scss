@@ -1,14 +1,60 @@
-@media (min-width: 1200px) {
+.download {
+    text-align: center;
+    background: #683996;
+    font-family: "Source Code Pro";
+    text-transform: uppercase;
+    font-weight: bold;
+    display: table;
+
+    a {
+        color: white;
+        text-decoration: none;
+        vertical-align: middle
+    }
+}
+
+.avblock {
+    h2 {
+        color: $highlightPurple;
+    }
+
+    h3 {
+        font-weight: normal;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+}
+
+.avblock, .avpost {
+    a {
+        color: $highlightBlue;
+    }
+}
+
+.playlist button {
+    background: none;
+    border: none;
+    color: black;
+}
+
+.permalink {
+    text-align: right;
+    a {
+        text-decoration: underline;
+        font-style: normal;
+        font-family: "Source Code Pro";
+    }
+}
+
+
+
+@media (min-width: 1300px) {
 
     .download {
-        text-align: center;
-        background: #683996;
         padding: 0px 10px 6px 10px;
-        font-family: "Source Code Pro";
-        text-transform: uppercase;
-        font-weight: bold;
         font-size: 20px;
-        display: table;
         margin-bottom: 30px;
 
         a {
@@ -17,7 +63,6 @@
             vertical-align: middle
         }
     }
-
 
     .avpost {
         .post-title {
@@ -41,13 +86,6 @@
         .audioplayer, .videoplayer {
             margin-top: 5px;
         }
-
-    }
-
-    .options {
-        display: inline-block;
-        position: absolute;
-        right: 0px;
     }
 
     .avblock {
@@ -56,49 +94,35 @@
 
         ul {
             border: 1px dashed $batcolor;  
-            list-style-type: none;
             padding: 0;
         }
 
-        h2 {
-            color: $highlightPurple;
-        }
-    	
     	h3 {
     		font-size: 16px;
     	    padding: 0px;
-    	    font-weight: normal;
-            display: inline-block;
     	}
 
     	li {
-    		&:before {
-    			content: "";
-    		}
             &:hover button {
                 color: $highlightPurple;
             }
             cursor: pointer;
             padding: 10px;
-            position: relative;
+        }
+
+        .descrip {
+            font-style: italic;
         }
     }
 
     .avpost, .avblock {
        .descrip {
             cursor: auto;
-            font-style: italic;
 
-            a {
+            a:hover {
                 color: $highlightBlue;
-                &:hover {
-                    color: $highlightBlue;
-                }
-                &:before {
-                    content: "";
-                }
             }
-
+            
             audio, video {
                 margin: 20px 0px;
                 width: 530px;
@@ -107,9 +131,6 @@
     }
 
     .playlist button {
-        background: none;
-        border: none;
-        color: black;
         padding: 0;
 
         transition-duration: 0.2s;
@@ -121,13 +142,7 @@
     }
 
     .permalink {
-        text-align: right;
         margin-top: 10px;
-        a {
-            text-decoration: underline;
-            font-style: normal;
-            font-family: "Source Code Pro";
-        }
     }
 
 }
