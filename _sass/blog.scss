@@ -1,93 +1,96 @@
-.post-header {
-	margin-bottom: 25px;
-}
+@media (min-width: 1200px) {
 
-
-#blog-sidebar {
-	margin-top: 10px;
-}
-
-.col1 .blogpost, .blogpost .col1, .blogpost {
-	max-width: 600px;
-	margin-bottom: 40px;
-
-	header {
-		height: initial;
+	.post-header {
+		margin-bottom: 25px;
 	}
 
-	h2.post-title {
-	    display: inline;
+
+	#blog-sidebar {
+		margin-top: 10px;
+	}
+
+	.col1 .blogpost, .blogpost .col1, .blogpost {
+		max-width: 600px;
+		margin-bottom: 40px;
+
+		header {
+			height: initial;
+		}
+
+		h2.post-title {
+		    display: inline;
+		    font-weight: normal;
+		    line-height: 1.5em;
+
+		    a {
+		   	 	text-decoration: none;
+		    	color: $defaultHighlight;
+
+				&:hover {
+					text-decoration: underline;
+				}
+
+				.timestamp {
+					font-family: "Source Code Pro";
+				    display: inline;
+				    font-weight: normal;
+				    color: black;
+					font-size: 25px;
+				
+				    &:after {
+				        content: " > ";
+				    }
+				}
+			}
+
+		}
+
+	}
+
+	.year {
+	    color: $highlightBlue;
 	    font-weight: normal;
-	    line-height: 1.5em;
-
-	    a {
-	   	 	text-decoration: none;
-	    	color: $defaultHighlight;
-
-			&:hover {
-				text-decoration: underline;
-			}
-
-			.timestamp {
-				font-family: "Source Code Pro";
-			    display: inline;
-			    font-weight: normal;
-			    color: black;
-				font-size: 25px;
-			
-			    &:after {
-			        content: " > ";
-			    }
-			}
-		}
-
+	    &:after {
+	        content: " <";
+	    }
+	    &:hover {
+	        cursor: pointer;
+	        text-decoration: underline;
+	    }
 	}
 
-}
+	.months {
+	    display: none;
+	}
 
-.year {
-    color: $highlightBlue;
-    font-weight: normal;
-    &:after {
-        content: " <";
-    }
-    &:hover {
-        cursor: pointer;
-        text-decoration: underline;
-    }
-}
+	.pagination {
+		float: right;
+		
+		a {
+			display: inline-block;
+			color: $highlightBlue;
+			text-decoration: underline;
+			font-weight: bold;
+			text-transform: uppercase;
 
-.months {
-    display: none;
-}
+			&.previous:before {
+				content: "< ";
+			}
+			&.next:after {
+				content: " >";
+			}
+		}
+	}
 
-.pagination {
-	float: right;
-	
-	a {
-		display: inline-block;
+	code {
+		font-family: "Source Code Pro", monospace;
+		border-radius: 5px;
+		border: 1px solid $batcolor;
+		padding: 10px;
+		display: block;
+		margin-bottom: 15px;
 		color: $highlightBlue;
-		text-decoration: underline;
-		font-weight: bold;
-		text-transform: uppercase;
-
-		&.previous:before {
-			content: "< ";
-		}
-		&.next:after {
-			content: " >";
-		}
+		background: $batcolor + #444444;
 	}
-}
 
-code {
-	font-family: "Source Code Pro", monospace;
-	border-radius: 5px;
-	border: 1px solid $batcolor;
-	padding: 10px;
-	display: block;
-	margin-bottom: 15px;
-	color: $highlightBlue;
-	background: $batcolor + #444444;
 }
-

@@ -1,130 +1,133 @@
-.download {
-    text-align: center;
-    background: #683996;
-    padding: 0px 10px 6px 10px;
-    font-family: "Source Code Pro";
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 20px;
-    display: table;
-    margin-bottom: 30px;
+@media (min-width: 1200px) {
 
-    a {
-        color: white;
-        text-decoration: none;
-        vertical-align: middle
-    }
-}
-
-
-.avpost {
-    .post-title {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
-    .col1, .col2 {
-        margin-top: 20px;
-    }
-	.col1 {
-        width: 600px;
-    }
-    .col2 {
-        width: 520px;
-    }
-    .videoplayer, video, .audioplayer, audio {
-        width: 600px;
-    }
-
-    .audioplayer, .videoplayer {
-        margin-top: 5px;
-    }
-
-}
-
-.options {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-}
-
-.avblock {
-    width: 550px;
-	padding-bottom: 20px;
-
-    ul {
-        border: 1px dashed $batcolor;  
-        list-style-type: none;
-        padding: 0;
-    }
-
-    h2 {
-        color: $highlightPurple;
-    }
-	
-	h3 {
-		font-size: 16px;
-	    padding: 0px;
-	    font-weight: normal;
-        display: inline-block;
-	}
-
-	li {
-		&:before {
-			content: "";
-		}
-        &:hover button {
-            color: $highlightPurple;
-        }
-        cursor: pointer;
-        padding: 10px;
-        position: relative;
-    }
-}
-
-.avpost, .avblock {
-   .descrip {
-        cursor: auto;
-        font-style: italic;
+    .download {
+        text-align: center;
+        background: #683996;
+        padding: 0px 10px 6px 10px;
+        font-family: "Source Code Pro";
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 20px;
+        display: table;
+        margin-bottom: 30px;
 
         a {
-            color: $highlightBlue;
-            &:hover {
+            color: white;
+            text-decoration: none;
+            vertical-align: middle
+        }
+    }
+
+
+    .avpost {
+        .post-title {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .col1, .col2 {
+            margin-top: 20px;
+        }
+    	.col1 {
+            width: 600px;
+        }
+        .col2 {
+            width: 520px;
+        }
+        .videoplayer, video, .audioplayer, audio {
+            width: 600px;
+        }
+
+        .audioplayer, .videoplayer {
+            margin-top: 5px;
+        }
+
+    }
+
+    .options {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+    }
+
+    .avblock {
+        width: 550px;
+    	padding-bottom: 20px;
+
+        ul {
+            border: 1px dashed $batcolor;  
+            list-style-type: none;
+            padding: 0;
+        }
+
+        h2 {
+            color: $highlightPurple;
+        }
+    	
+    	h3 {
+    		font-size: 16px;
+    	    padding: 0px;
+    	    font-weight: normal;
+            display: inline-block;
+    	}
+
+    	li {
+    		&:before {
+    			content: "";
+    		}
+            &:hover button {
+                color: $highlightPurple;
+            }
+            cursor: pointer;
+            padding: 10px;
+            position: relative;
+        }
+    }
+
+    .avpost, .avblock {
+       .descrip {
+            cursor: auto;
+            font-style: italic;
+
+            a {
                 color: $highlightBlue;
+                &:hover {
+                    color: $highlightBlue;
+                }
+                &:before {
+                    content: "";
+                }
             }
-            &:before {
-                content: "";
+
+            audio, video {
+                margin: 20px 0px;
+                width: 530px;
             }
-        }
-
-        audio, video {
-            margin: 20px 0px;
-            width: 530px;
-        }
-    } 
-}
-
-.playlist button {
-    background: none;
-    border: none;
-    color: black;
-    padding: 0;
-
-    transition-duration: 0.2s;
-    transition-property: color;
-
-    &:focus {
-        outline: $highlightPurple dotted 1px;
+        } 
     }
-}
 
-.permalink {
-    text-align: right;
-    margin-top: 10px;
-    a {
-        text-decoration: underline;
-        font-style: normal;
-        font-family: "Source Code Pro";
+    .playlist button {
+        background: none;
+        border: none;
+        color: black;
+        padding: 0;
+
+        transition-duration: 0.2s;
+        transition-property: color;
+
+        &:focus {
+            outline: $highlightPurple dotted 1px;
+        }
     }
-}
 
+    .permalink {
+        text-align: right;
+        margin-top: 10px;
+        a {
+            text-decoration: underline;
+            font-style: normal;
+            font-family: "Source Code Pro";
+        }
+    }
+
+}

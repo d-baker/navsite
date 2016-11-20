@@ -1,191 +1,195 @@
-header#main-header {
-    position: relative;
-    margin: 50px 0px 50px 0px;
-    padding: 0px;
-    width: 100%;
-    height: $header-height;
-    line-height: 0;
+@media (min-width: 1200px) {
 
-    border-bottom: 1px dashed $batcolor;
+    header#main-header {
+        position: relative;
+        margin: 50px 0px 50px 0px;
+        padding: 0px;
+        width: 100%;
+        height: $header-height;
+        line-height: 0;
 
-    #menubutton {
-        display: none;
-        cursor: pointer;
-        background: url("/assets/icons/menu.svg") no-repeat;
-        width: 30px;
-        height: 30px;
-        float: left;
-        margin-bottom: 20px;
-        margin-right: 20px;
-        margin-left: 20px;
-    }
+        border-bottom: 1px dashed $batcolor;
 
-    nav {
-        display: inline-block;
-        margin-left: 20px;
-        float: right;
-
-        ul {
-            list-style-type: none;
-            padding: 0;
+        #menubutton {
+            display: none;
+            cursor: pointer;
+            background: url("/assets/icons/menu.svg") no-repeat;
+            width: 30px;
+            height: 30px;
+            float: left;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            margin-left: 20px;
         }
 
-        .nav-list a:hover, .nav-list .dropdown a:hover {
-            &#music-landing {
-                color: $musicHighlight;
+        nav {
+            display: inline-block;
+            margin-left: 20px;
+            float: right;
+
+            ul {
+                list-style-type: none;
+                padding: 0;
             }
 
-            &#geek-landing {
+            .nav-list a:hover, .nav-list .dropdown a:hover {
+                &#music-landing {
+                    color: $musicHighlight;
+                }
+
+                &#geek-landing {
+                    color: $geekHighlight;
+                }
+
+                &#blog-landing, &#contact-landing {
+                    color: $defaultHighlight;
+                }
+            }
+
+        }
+
+        a {
+            font-size: 30px;
+            font-variant: small-caps;
+            font-family: "Source Code Pro";
+            font-weight: bold;
+            cursor: pointer;
+            display: inline;
+            color: $menufg;
+
+            &:visited {
+                color: $fg;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        a {
+            transition-duration: 0.3s;
+            transition-property: all;
+        }
+
+        .dropdown .nav-list a {
+            transition: none;
+        }
+
+        a#logo {
+            color: $fg + #333;
+            font-size: 40px;
+            text-align: right;
+        
+            &:hover {
+                text-decoration: none;
+            }
+        
+        }
+
+        .dropdown > a, .nav-list > a {
+            padding: 0px 20px;
+        }
+        
+        .dropdown:hover > a, .nav-list a:hover, .nav-list > a.current, .dropdown > a.current {
+            color: $menufg;
+            background: $menubg;
+            padding-bottom: 10px;
+        }
+        
+        .dropdown {
+            display: inline-block;
+
+            &:hover {
+                .nav-list {
+                    display: block;
+                }
+            }
+
+            
+            .nav-list {
+                display: none;
+
+                transition-duration: 0.5s;
+                transition-property: opacity;
+
+                position: absolute;
+                background: $menubg;
+                margin-top: 15px;
+                padding: 10px 0px;
+                z-index: 100;
+                line-height: 1.5em;
+
+                a {
+                    display: block;
+                    font-size: 16px;
+                    font-variant: normal;
+                    font-weight: normal;
+                    font-family: "Source Code Pro";
+                    margin: 10px 0px;
+                    padding: 8px 30px 12px 20px;
+                    margin-right: 0px;
+                    
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    &.external {
+                        // TODO credit
+                        display: table;
+                        background: url("/assets/icons/external-link.svg") no-repeat;
+                        padding-right: 45px;
+                        background-position: right 20px top 12px;
+                    }
+
+                } //end a
+
+            } // end navlist
+            
+            #music-menu a:hover {
+                color: $musicHighlight;
+            }
+            #geek-menu a:hover {
                 color: $geekHighlight;
             }
 
-            &#blog-landing, &#contact-landing {
-                color: $defaultHighlight;
-            }
-        }
-
-    }
-
-    a {
-        font-size: 30px;
-        font-variant: small-caps;
-        font-family: "Source Code Pro";
-        font-weight: bold;
-        cursor: pointer;
-        display: inline;
-        color: $menufg;
-
-        &:visited {
-            color: $fg;
-        }
-        &:hover {
-            text-decoration: none;
-        }
-    }
-
-    a {
-        transition-duration: 0.3s;
-        transition-property: all;
-    }
-
-    .dropdown .nav-list a {
-        transition: none;
-    }
-
-    a#logo {
-        color: $fg + #333;
-        font-size: 40px;
-        text-align: right;
-    
-        &:hover {
-            text-decoration: none;
-        }
-    
-    }
-
-    .dropdown > a, .nav-list > a {
-        padding: 0px 20px;
-    }
-    
-    .dropdown:hover > a, .nav-list a:hover, .nav-list > a.current, .dropdown > a.current {
-        color: $menufg;
-        background: $menubg;
-        padding-bottom: 10px;
-    }
-    
-    .dropdown {
-        display: inline-block;
-
-        &:hover {
-            .nav-list {
-                display: block;
-            }
-        }
-
-        
-        .nav-list {
-            display: none;
-
-            transition-duration: 0.5s;
-            transition-property: opacity;
-
-            position: absolute;
-            background: $menubg;
-            margin-top: 15px;
-            padding: 10px 0px;
-            z-index: 100;
-            line-height: 1.5em;
-
-            a {
-                display: block;
-                font-size: 16px;
-                font-variant: normal;
-                font-weight: normal;
-                font-family: "Source Code Pro";
-                margin: 10px 0px;
-                padding: 8px 30px 12px 20px;
-                margin-right: 0px;
-                
+            #music-menu a.current {
+                color: white;
+                background: $highlightPurple;
                 &:hover {
-                    text-decoration: underline;
+                    color: white;
                 }
+            }
 
-                &.external {
-                    // TODO credit
-                    display: table;
-                    background: url("/assets/icons/external-link.svg") no-repeat;
-                    padding-right: 45px;
-                    background-position: right 20px top 12px;
+        #geek-menu a.current {
+                color: white;
+                background: $highlightGreen;
+                &:hover {
+                    color: white;
                 }
+            }
 
-            } //end a
 
-        } // end navlist
+        } // end dropdown
         
-        #music-menu a:hover {
-            color: $musicHighlight;
+        #breadcrumb {
+            padding-left: 20px;
+            padding-top: 15px;
+            font-size: 13px; 
+            color: $batcolor;
+            clear: both;
         }
-        #geek-menu a:hover {
-            color: $geekHighlight;
-        }
+        
+    } // end main-header
 
-        #music-menu a.current {
-            color: white;
-            background: $highlightPurple;
-            &:hover {
-                color: white;
-            }
-        }
-
-    #geek-menu a.current {
-            color: white;
-            background: $highlightGreen;
-            &:hover {
-                color: white;
-            }
-        }
-
-
-    } // end dropdown
-    
-    #breadcrumb {
-        padding-left: 20px;
-        padding-top: 15px;
-        font-size: 13px; 
-        color: $batcolor;
-        clear: both;
+    // this shouldn't even be here but I can't get the relative image url to work otherwise
+    #backtotop {
+        position: fixed;
+        bottom: 0px;
+        height: 40px;
+        right: 0px;
+        margin: 0px 20px;
+        //background: rgba(255, 255, 255, 0.9);
+        z-index: 2;
+        margin-bottom: 40px;
     }
-    
-} // end main-header
 
-// this shouldn't even be here but I can't get the relative image url to work otherwise
-#backtotop {
-    position: fixed;
-    bottom: 0px;
-    height: 40px;
-    right: 0px;
-    margin: 0px 20px;
-    //background: rgba(255, 255, 255, 0.9);
-    z-index: 2;
-    margin-bottom: 40px;
 }

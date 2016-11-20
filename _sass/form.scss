@@ -1,94 +1,97 @@
-.notification {
-	background: $menubg;
+@media (min-width: 1200px) {
+	.notification {
+		background: $menubg;
 
-	text-align: center;
-	font-size: 16px;
+		text-align: center;
+		font-size: 16px;
 
-	&.success {
-		border: 1px solid $highlightBlue;
-	}
-	&.failure {
-		border: 1px solid red;
-	}
+		&.success {
+			border: 1px solid $highlightBlue;
+		}
+		&.failure {
+			border: 1px solid red;
+		}
 
-	padding: 15px; 
-	margin-bottom: 50px;
-}
-
-form {
-	position: relative;
-
-	.error {
-		display: none;
-		margin-top: 10px;
-		color: red;
+		padding: 15px; 
+		margin-bottom: 50px;
 	}
 
-	.invalid {
- 		border: 1px solid red;
-	}
+	form {
+		position: relative;
 
-	label {
-		display: block;
-		padding-bottom: 10px;
-		font-weight: bold;
+		.error {
+			display: none;
+			margin-top: 10px;
+			color: red;
+		}
 
-		&.required {
-			&:before {
-				content: "* ";
+		.invalid {
+	 		border: 1px solid red;
+		}
+
+		label {
+			display: block;
+			padding-bottom: 10px;
+			font-weight: bold;
+
+			&.required {
+				&:before {
+					content: "* ";
+				}
 			}
 		}
-	}
 
-	div.antirobot {
-		label {
-			padding-bottom: 15px;
+		div.antirobot {
+			label {
+				padding-bottom: 15px;
+			}
+
+			p.test {
+				float: left;
+				margin-right: 20px;
+				line-height: 2.6em;
+			}
+
+			input {
+				width: 80px;
+			}
 		}
 
-		p.test {
-			float: left;
-			margin-right: 20px;
-			line-height: 2.6em;
+		div.formfield {
+			margin: 20px 0px;
+			position: relative;
 		}
 
-		input {
-			width: 80px;
-		}
-	}
-
-	div.formfield {
-		margin: 20px 0px;
-		position: relative;
-	}
-
-	input, textarea, button {
-		font-family: "Source Code Pro";
-		padding: 10px;
-		width: 550px;
-		color: $fg;
-		background: white;
-		display: block;
-		border: none;
-
-		&#submit {
-			color: white;
-			background: $defaultHighlight;
+		input, textarea, button {
+			font-family: "Source Code Pro";
 			padding: 10px;
-			width: 100px;
-			font-size: 25px;
-			font-weight: bold;
-			text-transform: uppercase;
-			float: right;
-			margin-bottom: 20px;
+			width: 550px;
+			color: $fg;
+			background: white;
+			display: block;
+			border: none;
+
+			&#submit {
+				color: white;
+				background: $defaultHighlight;
+				padding: 10px;
+				width: 100px;
+				font-size: 25px;
+				font-weight: bold;
+				text-transform: uppercase;
+				float: right;
+				margin-bottom: 20px;
+			}
 		}
+
+		textarea {
+			height: 150px;
+		}
+
 	}
 
-	textarea {
-		height: 150px;
+	footer {
+		clear: both;
 	}
 
-}
-
-footer {
-	clear: both;
 }

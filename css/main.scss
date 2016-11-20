@@ -22,407 +22,413 @@ $menubatcolor: $batcolor - #111;
 
 $header-height: 60px;
 
+
 /* let's clear some floats */
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
 .clearfix:after { clear: both; }  
 .clearfix { zoom: 1; } 
  
-.container {
-    display: block;
-    margin: auto;
-    max-width: 1200px;
-}
+@media (min-width: 1200px) {
 
-body {
-    background: $bg;
-    line-height: 1.5em;
-    color: $fg;
-    font-family: "Source Code Pro", monospace;
-    font-size: 16px;
-    margin-top: 30px;
-}
-
-h1, h2, h3 {
-    font-weight: normal;
-}
-
-h1, h2 {
-    &.defaultpg, &.defaultpg a {
-        color: $defaultHighlight;
+    .container {
+        display: block;
+        margin: auto;
+        max-width: 1200px;
     }
 
-    &.geekpg, &.geekpg a {
-        color: $geekHighlight;
+    body {
+        background: $bg;
+        line-height: 1.5em;
+        color: $fg;
+        font-family: "Source Code Pro", monospace;
+        font-size: 16px;
+        margin-top: 30px;
     }
 
-    &.avpg, &.avpg a {
-        color: $musicHighlight;
-    }
-}
-
-h1 {
-    font-size: 25px;
-    margin: 25px 0px;
-
-    &.pg-title {
-        text-align: center;
-        font-size: 80px;
-        padding: 70px 0px 100px 0px;
-    }
-}
-
-h2 {
-    font-size: 25px;
-    margin: 25px 0px;
-
-    a {
-        text-decoration: underline;
-    }
-}
-
-h3 {
-    font-family: "Source Code Pro";
-    font-variant: small-caps;
-    font-weight: bold;
-    font-size: 25px;
-
-    &.tracktitle {
-        font-variant: normal;
-    }
-}
-
-p {
-    padding-bottom: 15px;
-    font-family: Helvetica, Arial, sans-serif;
-    &.note {
-        font-style: italic;
-    }
-}
-
-hr {
-    color: $bg;
-}
-
-.textblock, .wide.col1 {
-    max-width: 700px;
-    margin-bottom: 40px;
-
-    li {
-        padding-left: 5px;
-        font-family: Helvetica, Arial, sans-serif;
-    }
-}
-
-ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-li {
-    p.tooltip {
-       // display: none;
-        font-family: "Source Code Pro";
-        display: inline;
-        margin-left: 10px;
-        color: $batcolor;
-        font-style: italic;
+    h1, h2, h3 {
+        font-weight: normal;
     }
 
-    &:hover {
-        .tooltip {
-            display: inline;
+    h1, h2 {
+        &.defaultpg, &.defaultpg a {
+            color: $defaultHighlight;
+        }
+
+        &.geekpg, &.geekpg a {
+            color: $geekHighlight;
+        }
+
+        &.avpg, &.avpg a {
+            color: $musicHighlight;
         }
     }
 
-}
-
-
-a {
-    text-decoration: none;
-    color: $fg;
-
-    transition-duration: 0.2s;
-    transition-property: color, text-decoration;
-    
     h1 {
-        color: $bg;
-        &:hover {
-            text-decoration: none;
+        font-size: 25px;
+        margin: 25px 0px;
+
+        &.pg-title {
+            text-align: center;
+            font-size: 80px;
+            padding: 70px 0px 100px 0px;
         }
     }
 
-    &:hover { 
-        text-decoration: underline; 
-    }
+    h2 {
+        font-size: 25px;
+        margin: 25px 0px;
 
-}
-
-.col1, .col2 {
-    width: 550px;   
-}
-.col1 {
-    float: left;
-}
-.col2 {
-    float: right;
-}
-
-.image-col {
-    max-width: 500px;
-    margin: 25px 0px;
-
-    .caption {
-        //font-style: italic;
-        font-weight: bold;
-        margin-top: 20px;
-    }
-}
-
-#identity-banner {
-    position: relative;
-    text-align: center;
-
-    h1 {
-        color: $batcolor - #222;
-        font-size: 80px;
-        font-variant: small-caps;
-        text-transform: lowercase;
-        font-weight: bold;
-        margin-bottom: 100px;
-    }
-}
-
-h1.headline {
-    font-size: 35px;
-    font-family: "Source Code Pro";
-    text-align: center;
-    margin: 100px 0px;
-
-    a {
-        color: $defaultHighlight;
-        &:hover {
+        a {
             text-decoration: underline;
         }
     }
-}
-
-.homepage .textblock {
-    line-height: 1.5em;
-}
-
-#assorted {
-    width: 650px;
-}
-
-#music {
-    width: 600px;   
-    position: relative;
-    left: 200px;
-}
-
-.geeklist {
-    margin-top: 80px;
-}
-
-.botlist {
-    margin-top: 60px;
-}
-
-.botlisting {
-    margin-bottom: 40px;
 
     h3 {
-        margin-bottom: 10px;
-    }
+        font-family: "Source Code Pro";
+        font-variant: small-caps;
+        font-weight: bold;
+        font-size: 25px;
 
-    .descrip {
-        font-style: italic;
-        padding-bottom: 5px;
-    }
-}
-
-p.copyright {
-    &:before {
-        color: $batcolor;
-        font-style: italic;
-        content: "Dorothea Baker 2014 ";
-        position: relative;
-        top: 1px; //tweak 
-    }
-}
-
-#copyright {
-    position: relative;
-    width: 500px;
-}
-
-#scores {
-    width: 500px;
-}
-
-#downloads {
-}
-
-#copyright {
-    left: 200px;
-    padding-bottom: 10px;
-    a {
-        text-decoration: underline;
-    }
-}
-
-.back {
-    margin-bottom: 60px;
-    display: table;
-    color: $defaultHighlight;
-    text-decoration: underline;
-
-    &:before {
-        content: "< ";
-    }
-}
-
-/**************************************************************/
-
-footer {
-    border-top: 1px dashed $batcolor;
-    color: $menufg;
-    margin-top: 60px;
-    padding-top: 30px;
-    padding-bottom: 15px;
-
-    a {
-        display: inline-block;
-    }
-
-    p.sitelink {
-        padding-bottom: 0px;
-
-        a {
-            color: $highlightBlue;
+        &.tracktitle {
+            font-variant: normal;
         }
     }
-}
 
-nav li a {
-    text-transform: capitalize;
-}
-
-.sidebar {
-    float: right;
-    overflow-y: auto;
-    width: 350px;
-    padding: 20px;
-    border: 1px dashed $batcolor;
-   
-    h2 {
-        margin-top: 10px;
+    p {
+        padding-bottom: 15px;
+        font-family: Helvetica, Arial, sans-serif;
+        &.note {
+            font-style: italic;
+        }
     }
 
-    ul {
-        border-top: 1px solid $batcolor;
-        padding: 20px 0px 20px 20px;
+    hr {
+        color: $bg;
+    }
+
+    .textblock, .wide.col1 {
+        max-width: 700px;
+        margin-bottom: 40px;
 
         li {
-            padding: 5px;
-        }
-    }
-    a {
-        color: $fg;
-        &:hover {
-            color: $highlightBlue;
+            padding-left: 5px;
+            font-family: Helvetica, Arial, sans-serif;
         }
     }
 
-    .tooltip {
-        margin-right: 10px;
-    }
-}
-
-ul.sidebar-extra {
-    border-top: 1px solid $batcolor;
-    list-style-type: none;
-    padding-left: 0;
-}
-
-a.external {
-    background: url("/assets/icons/external-link.svg") no-repeat right;
-    background-position: top 4px right 0px;
-    padding-right: 25px;
-}
-
-#contact-sidebar {
     ul {
-        list-style-type: none;
-        padding: 0;
+        list-style-type: square;
+        padding-left: 20px;
     }
+
     li {
-        padding: 10px 0px;
-        &:before {
-            content: " - ";
+        p.tooltip {
+           // display: none;
+            font-family: "Source Code Pro";
+            display: inline;
+            margin-left: 10px;
+            color: $batcolor;
+            font-style: italic;
+        }
+
+        &:hover {
+            .tooltip {
+                display: inline;
+            }
+        }
+
+    }
+
+
+    a {
+        text-decoration: none;
+        color: $fg;
+
+        transition-duration: 0.2s;
+        transition-property: color, text-decoration;
+        
+        h1 {
+            color: $bg;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        &:hover { 
+            text-decoration: underline; 
+        }
+
+    }
+
+    .col1, .col2 {
+        width: 550px;   
+    }
+    .col1 {
+        float: left;
+    }
+    .col2 {
+        float: right;
+    }
+
+    .image-col {
+        max-width: 500px;
+        margin: 25px 0px;
+
+        .caption {
+            //font-style: italic;
+            font-weight: bold;
+            margin-top: 20px;
         }
     }
-    a {
-        font-family: Helvetica, Arial, sans-serif;
+
+    #identity-banner {
+        position: relative;
+        text-align: center;
+
+        h1 {
+            color: $batcolor - #222;
+            font-size: 80px;
+            font-variant: small-caps;
+            text-transform: lowercase;
+            font-weight: bold;
+            margin-bottom: 100px;
+        }
+    }
+
+    h1.headline {
+        font-size: 35px;
+        font-family: "Source Code Pro";
+        text-align: center;
+        margin: 100px 0px;
+
+        a {
+            color: $defaultHighlight;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .homepage .textblock {
+        line-height: 1.5em;
+    }
+
+    #assorted {
+        width: 650px;
+    }
+
+    #music {
+        width: 600px;   
+        position: relative;
+        left: 200px;
+    }
+
+    .geeklist {
+        margin-top: 80px;
+    }
+
+    .botlist {
+        margin-top: 60px;
+    }
+
+    .botlisting {
+        margin-bottom: 40px;
+
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        .descrip {
+            font-style: italic;
+            padding-bottom: 5px;
+        }
+    }
+
+    p.copyright {
+        &:before {
+            color: $batcolor;
+            font-style: italic;
+            content: "Dorothea Baker 2014 ";
+            position: relative;
+            top: 1px; //tweak 
+        }
+    }
+
+    #copyright {
+        position: relative;
+        width: 500px;
+    }
+
+    #scores {
+        width: 500px;
+    }
+
+    #downloads {
+    }
+
+    #copyright {
+        left: 200px;
+        padding-bottom: 10px;
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    .back {
+        margin-bottom: 60px;
+        display: table;
+        color: $defaultHighlight;
+        text-decoration: underline;
+
+        &:before {
+            content: "< ";
+        }
+    }
+
+    /**************************************************************/
+
+    footer {
+        border-top: 1px dashed $batcolor;
+        color: $menufg;
+        margin-top: 60px;
+        padding-top: 30px;
+        padding-bottom: 15px;
+
+        a {
+            display: inline-block;
+        }
+
+        p.sitelink {
+            padding-bottom: 0px;
+
+            a {
+                color: $highlightBlue;
+            }
+        }
+    }
+
+    nav li a {
+        text-transform: capitalize;
+    }
+
+    .sidebar {
+        float: right;
+        overflow-y: auto;
+        width: 350px;
+        padding: 20px;
+        border: 1px dashed $batcolor;
+       
+        h2 {
+            margin-top: 10px;
+        }
+
+        ul {
+            border-top: 1px solid $batcolor;
+            padding: 20px 0px 20px 20px;
+
+            li {
+                padding: 5px;
+            }
+        }
+        a {
+            color: $fg;
+            &:hover {
+                color: $highlightBlue;
+            }
+        }
+
+        .tooltip {
+            margin-right: 10px;
+        }
+    }
+
+    ul.sidebar-extra {
+        border-top: 1px solid $batcolor;
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    a.external {
+        background: url("/assets/icons/external-link.svg") no-repeat right;
+        background-position: top 4px right 0px;
+        padding-right: 25px;
+    }
+
+    #contact-sidebar {
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px 0px;
+            &:before {
+                content: " - ";
+            }
+        }
+        a {
+            font-family: Helvetica, Arial, sans-serif;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: $defaultHighlight;
+        }
+    }
+
+    /* mechanisms page */
+
+    #intro, #tech, #instructions, #scores, #copyright {
+        max-width: 600px;
+        position: relative;
+    }
+
+    #tech {
+        left: 190px;
+    }
+
+    #instructions {
+        left: 400px;
+        li {
+            margin-bottom: 20px;
+        }
+    }
+
+
+    #bat {
+        color: $batcolor;
+        text-align: center;
+        padding-top: 110px;
+        padding-bottom: 155px;
+        margin: 0px;
+        font-size: 150px;
+    }
+
+    #bio {
+        p {
+            position: relative;
+            margin-top: 2em;
+        }
+    }
+
+    p#one {
+        max-width: 550px;
+    }
+
+    p#two {
+        max-width: 550px;
+        left: 250px;
+    }
+    p#three {
+        max-width: 380px;
+        left: 500px;
+    }
+
+    p a {
+        color: $highlightBlue;
         text-decoration: underline;
     }
-    a:hover {
-        color: $defaultHighlight;
-    }
+
 }
 
-/* mechanisms page */
-
-#intro, #tech, #instructions, #scores, #copyright {
-    max-width: 600px;
-    position: relative;
-}
-
-#tech {
-    left: 190px;
-}
-
-#instructions {
-    left: 400px;
-    li {
-        margin-bottom: 20px;
-    }
-}
-
-
-#bat {
-    color: $batcolor;
-    text-align: center;
-    padding-top: 110px;
-    padding-bottom: 155px;
-    margin: 0px;
-    font-size: 150px;
-}
-
-#bio {
-    p {
-        position: relative;
-        margin-top: 2em;
-    }
-}
-
-p#one {
-    max-width: 550px;
-}
-
-p#two {
-    max-width: 550px;
-    left: 250px;
-}
-p#three {
-    max-width: 380px;
-    left: 500px;
-}
-
-p a {
-    color: $highlightBlue;
-    text-decoration: underline;
-}
 
 @import "header";
 @import "av";
