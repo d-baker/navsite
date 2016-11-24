@@ -1,3 +1,7 @@
+button:focus {
+    outline: 1px dotted black;
+}
+
 header#main-header {
     border-bottom: 1px dashed $batcolor;
     width: 100%;
@@ -47,7 +51,6 @@ header#main-header {
     }
 
     a#logo {
-        display: block;
         color: $fg + #333;
         text-decoration: none;
         font-size: 9vw;
@@ -129,7 +132,6 @@ header#main-header {
         }
 
         .dropdown-button img {
-            display: none;
         }
 
         nav {
