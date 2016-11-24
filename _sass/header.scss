@@ -38,17 +38,13 @@ header#main-header {
     }
     
     a {
-        font-size: 30px;
+        font-size: 35px;
         font-variant: small-caps;
         font-family: "Source Code Pro";
         font-weight: bold;
-        color: $menufg;
+        color: $fg + #333;
         display: table;
         text-decoration: none;
-
-        &:visited {
-            color: $fg;
-        }
     }
 
     a#logo {
@@ -68,6 +64,7 @@ header#main-header {
     }
 
     .dropdown .nav-list {
+        padding-left: 30px;
         margin: 0;
         margin-bottom: 6vw;
 
@@ -75,6 +72,7 @@ header#main-header {
             li {
                 padding: 20px 0px;
                 a {
+                    color: black;
                     font-size: 18px;
                     font-variant: normal;
                     font-weight: normal;
@@ -200,7 +198,6 @@ header#main-header {
         }
         
         .dropdown:hover > a, .nav-list a:hover {
-            color: $menufg;
             background: $menubg;
             padding-bottom: 10px;
         }
