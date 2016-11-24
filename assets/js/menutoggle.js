@@ -25,4 +25,13 @@ $(document).ready(function() {
 		
 	});
 
+	$(".dropdown .nav-list").each(function() {
+        $(this).find("li").last("a").focusout(function(e) {
+    		$target = $(e.currentTarget).parents(".nav-list");
+    	    $target.removeClass("open");
+    		$target.addClass("closed");
+        });
+    });
+
+
 });

@@ -8,6 +8,7 @@ header#main-header {
     padding: 5vw 0 8vw 0;
 
     #menubutton {
+        border: none;
         background: url("/assets/icons/menu.svg") no-repeat;
         float: right;
         width: 9vw;
@@ -54,6 +55,7 @@ header#main-header {
         color: $fg + #333;
         text-decoration: none;
         font-size: 9vw;
+        display: inline;
     }
 
     .dropdown a {
@@ -206,10 +208,6 @@ header#main-header {
         .dropdown {
             display: inline-block;
 
-            .nav-list.open, .nav-list.closed {
-                display: none;
-            }
-            
             &:hover {
                 .nav-list, .nav-list.open, .nav-list.closed {
                     display: block;
@@ -277,7 +275,7 @@ header#main-header {
                 }
             }
 
-        #geek-menu a.current {
+            #geek-menu a.current {
                 color: white;
                 background: $highlightGreen;
                 &:hover {
