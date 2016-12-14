@@ -95,10 +95,9 @@ header#main-header {
 
     .nav-list > a.current, .dropdown > a.current {
         color: $menufg;
-        background: $menubg;
-        padding: 10px 15px 15px 15px;
-        position: relative;
-        left: -15px;
+        margin: 15px 0px;
+        border-bottom: 5px solid black;
+        padding: 10px 0px 15px 0px;
     }
 }
 
@@ -116,6 +115,8 @@ header#main-header {
 
 
 @media (min-width: 1300px) {
+
+
 
     header#main-header {
         position: relative;
@@ -164,9 +165,12 @@ header#main-header {
         }
 
         .nav-list > a.current, .dropdown > a.current {
+            background: white!important;
+            border-bottom: none!important;
             padding: 0px 20px;
             padding-bottom: 10px;
-            left: 0;
+            position: relative;
+            margin: 0;
         }
 
         a {
@@ -215,13 +219,15 @@ header#main-header {
                 display: inline;
             }
 
+
+
             .nav-list {
                 transition-duration: 0.5s;
                 transition-property: opacity;
 
                 position: absolute;
                 background: $menubg;
-                margin-top: 15px;
+                margin-top: 23px;
                 padding: 10px 0px;
                 z-index: 100;
                 line-height: 1.5em;
@@ -256,6 +262,7 @@ header#main-header {
                 } //end a
 
             } // end navlist
+
             
             #music-menu a:hover {
                 color: $musicHighlight;
