@@ -8,6 +8,7 @@ header#main-header {
     padding: 5vw 0 8vw 0;
 
     #menubutton {
+        border: none;
         background: url("/assets/icons/menu.svg") no-repeat;
         float: right;
         width: 9vw;
@@ -37,23 +38,20 @@ header#main-header {
     }
     
     a {
-        font-size: 30px;
+        font-size: 35px;
         font-variant: small-caps;
         font-family: "Source Code Pro";
         font-weight: bold;
-        color: $menufg;
+        color: $fg + #333;
         display: table;
         text-decoration: none;
-
-        &:visited {
-            color: $fg;
-        }
     }
 
     a#logo {
         color: $fg + #333;
         text-decoration: none;
         font-size: 9vw;
+        display: inline;
     }
 
     .dropdown a {
@@ -66,6 +64,7 @@ header#main-header {
     }
 
     .dropdown .nav-list {
+        padding-left: 30px;
         margin: 0;
         margin-bottom: 6vw;
 
@@ -73,6 +72,7 @@ header#main-header {
             li {
                 padding: 20px 0px;
                 a {
+                    color: black;
                     font-size: 18px;
                     font-variant: normal;
                     font-weight: normal;
@@ -198,7 +198,6 @@ header#main-header {
         }
         
         .dropdown:hover > a, .nav-list a:hover {
-            color: $menufg;
             background: $menubg;
             padding-bottom: 10px;
         }
@@ -206,10 +205,6 @@ header#main-header {
         .dropdown {
             display: inline-block;
 
-            .nav-list.open, .nav-list.closed {
-                display: none;
-            }
-            
             &:hover {
                 .nav-list, .nav-list.open, .nav-list.closed {
                     display: block;
@@ -277,7 +272,7 @@ header#main-header {
                 }
             }
 
-        #geek-menu a.current {
+            #geek-menu a.current {
                 color: white;
                 background: $highlightGreen;
                 &:hover {
