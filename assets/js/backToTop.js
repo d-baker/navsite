@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
 
-    	if (! window.matchMedia("(min-width: 1300px)").matches) {
+    	if (! window.matchMedia("(min-width: 900px)").matches) {
 
 			var scrollPercent = ($(window).scrollTop() / $(document).height()) * 100;
 	        if (scrollPercent > 10) {
