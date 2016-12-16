@@ -66,12 +66,22 @@ h1, h2 {
     }
 }
 
+h1 {
+    margin: 25px 0px;
+}
+
 h1.headline {
     font-family: "Source Code Pro";
     text-align: center;
     font-size: 8vw;
     margin: 15vw 0;
     line-height: 2em;
+}
+
+h1.pg-title {
+    text-align: center;
+    font-size: 12vw;
+    padding: 70px 0px 100px 0px;
 }
 
 h2 {
@@ -207,6 +217,10 @@ footer {
 
 @media (min-width: 900px) {
 
+    h1.pg-title {
+        font-size: 80px;
+    }
+
     h1.headline {
         font-size: 35px;
         padding: 100px 0px;
@@ -225,6 +239,48 @@ footer {
     }
 
 
+    .sidebar {
+        float: right;
+        overflow-y: auto;
+        width: 350px;
+        padding: 20px;
+       
+        h2 {
+            margin-top: 10px;
+        }
+
+        ul {
+            padding: 20px 0px 20px 20px;
+
+            li {
+                padding: 5px;
+            }
+        }
+        a {
+            &:hover {
+                color: $highlightBlue;
+            }
+        }
+    }
+
+    ul.sidebar-extra {
+        border-top: 1px solid $batcolor;
+        list-style-type: none;
+    }
+
+    #contact-sidebar {
+        ul {
+            padding: 0;
+        }
+        li {
+            padding: 10px 0px;
+        }
+        a:hover {
+            color: $defaultHighlight;
+        }
+    }
+
+
 }
 
 
@@ -236,13 +292,6 @@ footer {
 
     h1 {
         font-size: 25px;
-        margin: 25px 0px;
-
-        &.pg-title {
-            text-align: center;
-            font-size: 80px;
-            padding: 70px 0px 100px 0px;
-        }
     }
 
     h2 {
@@ -322,47 +371,6 @@ footer {
 
     footer {
         margin-top: 60px;
-    }
-
-    .sidebar {
-        float: right;
-        overflow-y: auto;
-        width: 350px;
-        padding: 20px;
-       
-        h2 {
-            margin-top: 10px;
-        }
-
-        ul {
-            padding: 20px 0px 20px 20px;
-
-            li {
-                padding: 5px;
-            }
-        }
-        a {
-            &:hover {
-                color: $highlightBlue;
-            }
-        }
-    }
-
-    ul.sidebar-extra {
-        border-top: 1px solid $batcolor;
-        list-style-type: none;
-    }
-
-    #contact-sidebar {
-        ul {
-            padding: 0;
-        }
-        li {
-            padding: 10px 0px;
-        }
-        a:hover {
-            color: $defaultHighlight;
-        }
     }
 
     /* mechanisms page */
