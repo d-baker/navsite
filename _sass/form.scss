@@ -41,57 +41,66 @@ form {
 			font-size: 25px;
 			font-weight: bold;
 			text-transform: uppercase;
-			float: right;
 		}
 	}
 }
 
 
-@media (min-width: 1300px) {
-	.notification {
-		font-size: 16px;
-		padding: 15px; 
-		margin-bottom: 50px;
+.notification {
+	font-size: 16px;
+	padding: 15px; 
+	margin-bottom: 50px;
+}
+
+form {
+	position: relative;
+
+	label {
+		display: block;
+		padding-bottom: 10px;
 	}
 
-	form {
-		position: relative;
-
+	div.antirobot {
 		label {
-			display: block;
-			padding-bottom: 10px;
+			padding-bottom: 15px;
 		}
 
-		div.antirobot {
-			label {
-				padding-bottom: 15px;
-			}
-
-			input {
-				width: 80px;
-			}
+		input {
+			width: 80px;
 		}
-
-		div.formfield {
-			margin: 20px 0px;
-			position: relative;
-		}
-
-		input, textarea, button {
-			padding: 10px;
-			width: 550px;
-
-			&#submit {
-				padding: 10px;
-				width: 100px;
-				margin-bottom: 20px;
-			}
-		}
-
-		textarea {
-			height: 150px;
-		}
-
 	}
+
+	div.formfield {
+		margin: 20px 0px;
+		position: relative;
+	}
+
+	input, textarea, button {
+		padding: 10px;
+		width: 100%;
+
+		&#submit {
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 100px;
+		}
+	}
+
+	textarea {
+		height: 150px;
+	}
+
+}
+
+@media (min-width: 900px) {
+	input, textarea, button {
+		width: 550px;
+	}
+
+	#submit {
+		padding: 10px;
+		width: 100px;
+		float: right;
+	}	
 
 }

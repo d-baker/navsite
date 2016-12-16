@@ -18,13 +18,16 @@ $(document).ready(function() {
 		e.preventDefault();
 		$target = $(e.currentTarget);
 
-		$(".dropdown .nav-list").removeClass("open");
-		$(".dropdown .nav-list").addClass("closed");
-
 		if ( $target.siblings(".nav-list").hasClass("closed") ) {
+			$(".dropdown .nav-list").removeClass("open");
+			$(".dropdown .nav-list").addClass("closed");
+
 			$target.siblings(".nav-list").removeClass("closed");
 			$target.siblings(".nav-list").addClass("open");
 		} else {
+			$(".dropdown .nav-list").removeClass("open");
+			$(".dropdown .nav-list").addClass("closed");
+
 			$target.siblings(".nav-list").removeClass("open");
 			$target.siblings(".nav-list").addClass("closed");
 		}
@@ -35,9 +38,15 @@ $(document).ready(function() {
 		$target = $(e.currentTarget);
 
 		if ( $target.siblings(".nav-list").hasClass("closed") ) {
+			$(".dropdown .nav-list").removeClass("open");
+			$(".dropdown .nav-list").addClass("closed");
+
 			$target.siblings(".nav-list").removeClass("closed");
 			$target.siblings(".nav-list").addClass("open");
 		} else {
+			$(".dropdown .nav-list").removeClass("open");
+			$(".dropdown .nav-list").addClass("closed");
+
 			$target.siblings(".nav-list").removeClass("open");
 			$target.siblings(".nav-list").addClass("closed");
 		}
