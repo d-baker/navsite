@@ -172,18 +172,38 @@ ul {
 }
 
 .sidebar {
-    border: 1px dashed $batcolor;
 
-    ul {
-        border-top: 1px solid $batcolor;
+
+}
+
+.sidebar {
+    border: 1px dashed $batcolor;
+    overflow-y: auto;
+    padding: 20px;
+    margin-bottom: 50px;
+   
+    h2 {
+        margin-top: 10px;
     }
 
+    ul {
+        border-top: 1px dashed $batcolor;
+        padding: 20px 0px 20px 20px;
+
+        li {
+            padding: 5px;
+        }
+    }
     a {
         color: $fg;
+
+        &:hover {
+            color: $highlightBlue;
+        }
     }
 
     ul.sidebar-extra {
-        border-top: 1px solid $batcolor;
+        border-top: 1px dashed $batcolor;
         list-style-type: none;
         padding-left: 0;
     }
@@ -241,30 +261,11 @@ footer {
 
     .sidebar {
         float: right;
-        overflow-y: auto;
         width: 350px;
-        padding: 20px;
-       
-        h2 {
-            margin-top: 10px;
-        }
-
-        ul {
-            padding: 20px 0px 20px 20px;
-
-            li {
-                padding: 5px;
-            }
-        }
-        a {
-            &:hover {
-                color: $highlightBlue;
-            }
-        }
     }
 
     ul.sidebar-extra {
-        border-top: 1px solid $batcolor;
+        border-top: 1px dashed $batcolor;
         list-style-type: none;
     }
 
