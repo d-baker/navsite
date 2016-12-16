@@ -38,6 +38,7 @@
     border: none;
     color: black;
     text-align: left;
+    width: 100%;
 }
 
 .permalink {
@@ -155,7 +156,7 @@
     }
 
     .avblock {
-        width: 550px;
+        width: 48%;
 
     	li {
             &:hover button {
@@ -170,10 +171,6 @@
 
             a:hover {
                 color: $highlightBlue;
-            }
-            
-            audio, video {
-                width: 530px;
             }
         } 
     }
@@ -190,6 +187,9 @@
 }
 
 @media (min-width: 1300px) {
+    .avblock {
+        width: 550px;
+    }
     .avpost {
         .col1 {
             width: 600px;
@@ -199,6 +199,11 @@
         }
         .videoplayer, video, .audioplayer, audio {
             width: 600px;
+        }
+    }
+    .avpost, .avblock {      
+        audio, video {
+            width: 530px;
         }
     }
 }
