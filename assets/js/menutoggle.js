@@ -13,25 +13,10 @@ $(document).ready(function() {
 		}
 	});
 
-	// Click on "link" to open dropdown menu on desktop AND mobile
-	$(".dropdown-landing").click(function(e) {
-		e.preventDefault();
-		$target = $(e.currentTarget);
-
-		if ( $target.siblings(".nav-list").hasClass("closed") ) {
-			$(".dropdown .nav-list").removeClass("open");
-			$(".dropdown .nav-list").addClass("closed");
-
-			$target.siblings(".nav-list").removeClass("closed");
-			$target.siblings(".nav-list").addClass("open");
-		} else {
-			$(".dropdown .nav-list").removeClass("open");
-			$(".dropdown .nav-list").addClass("closed");
-
-			$target.siblings(".nav-list").removeClass("open");
-			$target.siblings(".nav-list").addClass("closed");
-		}
-	});
+	// Click on top level link to open dropdown menu on mobile
+	if (! window.matchMedia("(min-width: 900px)").matches) {
+		openWithLandingLink();
+	}
 
     // Dropdown menu button handling, for mobile view
 	$(".dropdown-button").click(function(e) {
@@ -50,7 +35,6 @@ $(document).ready(function() {
 			$target.siblings(".nav-list").removeClass("open");
 			$target.siblings(".nav-list").addClass("closed");
 		}
-		
 	});
 
 
@@ -58,9 +42,37 @@ $(document).ready(function() {
         if (window.matchMedia("(min-width: 900px)").matches) {
     		// Prevent dropdown menus from staying open on desktop layout if opened in mobile layout
 			$(".dropdown .nav-list").removeClass("open");
-			$(".dropdown .nav-list").addClass("closed");	
+			$(".dropdown .nav-list").addClass("closed")
+
+        	// Remove event handler that enforces preventDefault, to ensure we get default link functionality back on desktop
+        	$(".dropdown-landing").unbind("click");
+        } else {
+        	// Bind default-preventing click handler for mobile
+        	openWithLandingLink();
         }
     });
 
+
+	function openWithLandingLink() {
+		$(".dropdown-landing").click(function(e) {
+			e.preventDefault();
+			$target = $(e.currentTarget);
+
+			if ( $target.siblings(".nav-list").hasClass("closed") ) {
+				$(".dropdown .nav-list").removeClass("open");
+				$(".dropdown .nav-list").addClass("closed");
+
+				$target.siblings(".nav-list").removeClass("closed");
+				$target.siblings(".nav-list").addClass("open");
+			} else {
+				$(".dropdown .nav-list").removeClass("open");
+				$(".dropdown .nav-list").addClass("closed");
+
+				$target.siblings(".nav-list").removeClass("open");
+				$target.siblings(".nav-list").addClass("closed");
+			}
+
+		});	
+	}
 
 });
