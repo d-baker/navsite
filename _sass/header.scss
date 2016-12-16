@@ -3,23 +3,27 @@ button:focus {
 }
 
 header#main-header {
+    background: white;
     border-bottom: 1px dashed $batcolor;
     width: 100%;
-    padding: 5vw 0 8vw 0;
+    padding: 30px 0px 30px 0px;
 
     #menubutton {
         border: none;
         background: url("/assets/icons/menu.svg") no-repeat;
         float: right;
-        width: 9vw;
-        height: 9vw;
-        background-size: 9vw;
+        width: 40px;
+        height: 40px;
+        background-size: 40px;
         cursor: pointer;
     }
 
     .dropdown-button {
         border: none;
         background: none;
+        float: right;
+        position: relative;
+        top: 25px;
     }
 
     nav {
@@ -50,7 +54,7 @@ header#main-header {
     a#logo {
         color: $fg + #333;
         text-decoration: none;
-        font-size: 9vw;
+        font-size: 40px;
         display: inline;
     }
 
@@ -59,8 +63,8 @@ header#main-header {
     }
 
     .nav-list {
-        margin-top: 12vw;
-        margin-bottom: 6vw;
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
 
     .dropdown .nav-list {
@@ -97,7 +101,7 @@ header#main-header {
         color: $menufg;
         margin: 15px 0px;
         border-bottom: 5px solid black;
-        padding: 10px 0px 15px 0px;
+        padding: 10px 0px 10px 0px;
     }
 }
 
@@ -119,7 +123,9 @@ header#main-header {
     .dropdown-button {
         display: none;
     }
+
     header#main-header {
+        background: none;
         position: relative;
         margin: 50px 0px 50px 0px;
         padding: 0px;
