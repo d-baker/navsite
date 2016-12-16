@@ -49,28 +49,109 @@
     }
 }
 
+.avblock {
+    padding-bottom: 20px;
 
+    ul {
+        border: 1px dashed $batcolor;  
+        padding: 0;
+    }
 
-@media (min-width: 1300px) {
+    h3 {
+        font-size: 16px;
+        padding: 0px;
+    }
 
-    .download {
-        padding: 0px 10px 6px 10px;
-        font-size: 20px;
-        margin-bottom: 30px;
-
-        a {
-            color: white;
-            text-decoration: none;
-            vertical-align: middle
+    li {
+        &:hover button {
+            color: $highlightPurple;
         }
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .descrip {
+        font-style: italic;
+    }
+}
+
+.download {
+    padding: 15px 0px 20px 0px;
+
+    font-size: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+
+    a {
+        color: white;
+        text-decoration: none;
+        vertical-align: middle
+    }
+}
+
+.videoplayer, video, .audioplayer, audio {
+    width: 100%;
+}
+
+.permalink {
+    margin-top: 10px;
+}
+
+
+.avpost {
+    .audioplayer, .videoplayer {
+        margin-top: 5px;
+    }
+
+    .post-title {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+}
+
+.avblock {
+    padding-bottom: 20px;
+
+    h3 {
+        font-size: 16px;
+        padding: 0px;
+    }
+
+    ul {
+        border: 1px dashed $batcolor;  
+        padding: 0;
+    }
+
+    li {
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .descrip {
+        font-style: italic;
+    }
+}
+
+.avpost, .avblock {
+    audio, video {
+        margin: 20px 0px;
+    }
+}
+
+.playlist button {
+    padding: 0;
+}
+
+@media (min-width: 900px) {
+    .download {
+        width: auto;
+        padding: 0px 10px 6px 10px;
+        margin: 20px 0px;
     }
 
     .avpost {
-        .post-title {
-            width: 100%;
-            display: block;
-            margin-bottom: 20px;
-        }
         .col1, .col2 {
             margin-top: 20px;
         }
@@ -83,36 +164,15 @@
         .videoplayer, video, .audioplayer, audio {
             width: 600px;
         }
-
-        .audioplayer, .videoplayer {
-            margin-top: 5px;
-        }
     }
 
     .avblock {
         width: 550px;
-    	padding-bottom: 20px;
-
-        ul {
-            border: 1px dashed $batcolor;  
-            padding: 0;
-        }
-
-    	h3 {
-    		font-size: 16px;
-    	    padding: 0px;
-    	}
 
     	li {
             &:hover button {
                 color: $highlightPurple;
             }
-            cursor: pointer;
-            padding: 10px;
-        }
-
-        .descrip {
-            font-style: italic;
         }
     }
 
@@ -125,15 +185,12 @@
             }
             
             audio, video {
-                margin: 20px 0px;
                 width: 530px;
             }
         } 
     }
 
     .playlist button {
-        padding: 0;
-
         transition-duration: 0.2s;
         transition-property: color;
 
@@ -142,8 +199,5 @@
         }
     }
 
-    .permalink {
-        margin-top: 10px;
-    }
 
 }

@@ -264,6 +264,10 @@ header#main-header {
                 z-index: 100;
                 line-height: 1.5em;
 
+                ul {
+                    margin-bottom: 0px;
+                }
+
                 ul li {
                     padding: 0;
                 }
