@@ -13,29 +13,14 @@ $(document).ready(function() {
 		}
 	});
 
-	// Click on top level link to open dropdown menu on mobile
+
+    // Attach listener to open dropdown menu when dropdown arrow clicked
+	openWithDropdownButton();
+
 	if (! window.matchMedia("(min-width: 900px)").matches) {
+		// if on mobile, enable clicking on top level link to open dropdown menu
 		openWithLandingLink();
 	}
-
-    // Dropdown menu button handling, for mobile view
-	$(".dropdown-button").click(function(e) {
-		$target = $(e.currentTarget);
-
-		if ( $target.siblings(".nav-list").hasClass("closed") ) {
-			$(".dropdown .nav-list").removeClass("open");
-			$(".dropdown .nav-list").addClass("closed");
-
-			$target.siblings(".nav-list").removeClass("closed");
-			$target.siblings(".nav-list").addClass("open");
-		} else {
-			$(".dropdown .nav-list").removeClass("open");
-			$(".dropdown .nav-list").addClass("closed");
-
-			$target.siblings(".nav-list").removeClass("open");
-			$target.siblings(".nav-list").addClass("closed");
-		}
-	});
 
 
     $(window).resize(function(){
@@ -52,6 +37,26 @@ $(document).ready(function() {
         }
     });
 
+
+    function openWithDropdownButton() {
+	   	$(".dropdown-button").click(function(e) {
+			$target = $(e.currentTarget);
+
+			if ( $target.siblings(".nav-list").hasClass("closed") ) {
+				$(".dropdown .nav-list").removeClass("open");
+				$(".dropdown .nav-list").addClass("closed");
+
+				$target.siblings(".nav-list").removeClass("closed");
+				$target.siblings(".nav-list").addClass("open");
+			} else {
+				$(".dropdown .nav-list").removeClass("open");
+				$(".dropdown .nav-list").addClass("closed");
+
+				$target.siblings(".nav-list").removeClass("open");
+				$target.siblings(".nav-list").addClass("closed");
+			}
+		});
+    }
 
 	function openWithLandingLink() {
 		$(".dropdown-landing").click(function(e) {
