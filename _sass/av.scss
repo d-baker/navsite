@@ -64,9 +64,6 @@
     }
 
     li {
-        &:hover button {
-            color: $highlightPurple;
-        }
         cursor: pointer;
         padding: 10px;
     }
