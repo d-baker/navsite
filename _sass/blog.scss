@@ -3,6 +3,7 @@
 	h2.post-title {
 		font-weight: normal;
 		line-height: 1.5em;
+		margin-top: 0;
 
 		a {
 	   	 	text-decoration: none;
@@ -52,6 +53,10 @@ code {
 			content: " >";
 		}
 	}
+}
+
+.col1 .blogpost, .blogpost .col1, .blogpost {
+	margin-bottom: 40px;
 }
 
 
