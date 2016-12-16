@@ -13,7 +13,24 @@ $(document).ready(function() {
 		}
 	});
 
-    // Dropdown menu button handling
+	// Click on "link" to open dropdown menu on desktop AND mobile
+	$(".dropdown-landing").click(function(e) {
+		e.preventDefault();
+		$target = $(e.currentTarget);
+
+		$(".dropdown .nav-list").removeClass("open");
+		$(".dropdown .nav-list").addClass("closed");
+
+		if ( $target.siblings(".nav-list").hasClass("closed") ) {
+			$target.siblings(".nav-list").removeClass("closed");
+			$target.siblings(".nav-list").addClass("open");
+		} else {
+			$target.siblings(".nav-list").removeClass("open");
+			$target.siblings(".nav-list").addClass("closed");
+		}
+	});
+
+    // Dropdown menu button handling, for mobile view
 	$(".dropdown-button").click(function(e) {
 		$target = $(e.currentTarget);
 
@@ -27,21 +44,12 @@ $(document).ready(function() {
 		
 	});
 
-    // Toggle desktop dropdown menu when tabbing through navigation
-	$(".dropdown .nav-list").each(function() {
-        $(this).find("li").last("a").focusout(function(e) {
-            console.log("focusout");
-    		$target = $(e.currentTarget).parents(".nav-list");
-    	    $target.removeClass("open");
-    		$target.addClass("closed");
-        });
-    });
 
-    // Prevent dropdown menus from staying open on desktop layout if opened in mobile layout
     $(window).resize(function(){
-        if (window.matchMedia("(min-width: 1300px)").matches) {
+        if (window.matchMedia("(min-width: 900px)").matches) {
+    		// Prevent dropdown menus from staying open on desktop layout if opened in mobile layout
 			$(".dropdown .nav-list").removeClass("open");
-			$(".dropdown .nav-list").addClass("closed");		
+			$(".dropdown .nav-list").addClass("closed");	
         }
     });
 

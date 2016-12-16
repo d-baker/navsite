@@ -21,9 +21,6 @@ header#main-header {
     .dropdown-button {
         border: none;
         background: none;
-        float: right;
-        position: relative;
-        top: 25px;
     }
 
     nav {
@@ -73,7 +70,7 @@ header#main-header {
 
         ul {
             margin-top: 10px;
-                    margin-bottom: 30px;
+            margin-bottom: 30px;
 
             li {
                 padding: 20px 0px;
@@ -202,6 +199,10 @@ header#main-header {
             padding-bottom: 10px;
             position: relative;
             margin: 0;
+        }
+
+        .dropdown .nav-list {
+            display: none;
         }
 
         a {
