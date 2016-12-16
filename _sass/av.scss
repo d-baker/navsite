@@ -99,9 +99,6 @@
 
 
 .avpost {
-    .audioplayer, .videoplayer {
-        margin-top: 5px;
-    }
 
     .post-title {
         width: 100%;
@@ -155,15 +152,6 @@
         .col1, .col2 {
             margin-top: 20px;
         }
-    	.col1 {
-            width: 600px;
-        }
-        .col2 {
-            width: 520px;
-        }
-        .videoplayer, video, .audioplayer, audio {
-            width: 600px;
-        }
     }
 
     .avblock {
@@ -199,5 +187,18 @@
         }
     }
 
+}
 
+@media (min-width: 1300px) {
+    .avpost {
+        .col1 {
+            width: 600px;
+        }
+        .col2 {
+            width: 520px;
+        }
+        .videoplayer, video, .audioplayer, audio {
+            width: 600px;
+        }
+    }
 }
