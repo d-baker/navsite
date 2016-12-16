@@ -98,10 +98,32 @@ header#main-header {
     }
 
     .nav-list > a.current, .dropdown > a.current {
-        color: $menufg;
         margin: 15px 0px;
-        border-bottom: 5px solid black;
         padding: 10px 0px 10px 0px;
+
+        &#music-landing {
+            color: $musicHighlight;
+            border-bottom: 5px solid $musicHighlight;
+        }
+
+        &#geek-landing {
+            color: $geekHighlight;
+            border-bottom: 5px solid $geekHighlight;
+        }
+
+        &#blog-landing, &#contact-landing {
+            color: $defaultHighlight;
+            border-bottom: 5px solid $defaultHighlight;        
+        }
+    }
+
+    #geek-menu a.current {
+        color: $geekHighlight;
+        border-bottom: 3px solid $geekHighlight;
+    }
+    #music-menu a.current {
+        color: $musicHighlight;
+        border-bottom: 3px solid $musicHighlight;
     }
 }
 
