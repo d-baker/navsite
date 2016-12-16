@@ -205,7 +205,27 @@ footer {
     }
 }
 
+@media (min-width: 900px) {
 
+    h1.headline {
+        font-size: 35px;
+        padding: 100px 0px;
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+
+    .col1, .col2 {
+        width: 48%;   
+    }
+    .col1 {
+        float: left;
+    }
+    .col2 {
+        float: right;
+    }
+
+
+}
 
 
 @media (min-width: 1300px) {
@@ -274,11 +294,6 @@ footer {
         }
     }
 
-    h1.headline {
-        font-size: 35px;
-        margin: 100px 0px;
-    }
-
     .geeklist {
         margin-top: 80px;
     }
@@ -307,8 +322,6 @@ footer {
 
     footer {
         margin-top: 60px;
-        padding-top: 30px;
-        padding-bottom: 15px;
     }
 
     .sidebar {
