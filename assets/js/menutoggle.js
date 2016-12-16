@@ -33,6 +33,7 @@ $(document).ready(function() {
         	$(".dropdown-landing").unbind("click");
         } else {
         	// Bind default-preventing click handler for mobile
+        	// TODO when called here, preventDefault is working but other actions don't appear to be rebound??!
         	openWithLandingLink();
         }
     });
