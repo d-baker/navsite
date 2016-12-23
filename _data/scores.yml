@@ -9,7 +9,7 @@ col1:
     url:
     listen:
     description: An easy-to-learn English setting of the eucharist suitable for singing in either harmony or unison, with or without a choir, and with either piano or organ accompaniment.
-    
+
   - title: 4 Berceuses
     url:
     listen: https://dbaker.bandcamp.com/album/berceuses
@@ -17,7 +17,7 @@ col1:
 
   - title: Danny Boy
     url: 
-    listen: music/audio/originalcomps/Danny_Boy.html
+    listen: /music/audio/originalcomps/Danny_Boy.html
     description: Arrangement of a traditional Irish tune for voice+piano.
 
 
@@ -35,7 +35,7 @@ col2:
 
   - title: She's like the swallow
     url: 
-    listen: music/video/originalcomps/Shes_like_the_swallow.html
+    listen: /music/video/originalcomps/Shes_like_the_swallow.html
     description: Setting of the words of a traditional folk song for SAATB+piano.
 
 
