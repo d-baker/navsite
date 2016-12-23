@@ -287,26 +287,33 @@ footer {
 }
 
 .scorelink {
-    text-transform: uppercase;
+    font-family: "Source Code Pro";
     font-weight: bold;
+    font-size: 20px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+
     color: white;
     background: $musicHighlight;
-    text-decoration: none;
+
     margin-top: 20px;
-    padding: 20px;
+    padding: 15px 0px 20px 0px;
     display: block;
-    text-align: center;
 }
 
 
 @media (min-width: 900px) {
     .scorelink {
+        font-size: 18px;
         display: inline;
-        padding: 10px;
+        padding: 3px 10px 6px 10px;
         margin-right: 10px;
 
         &:hover {
             background: $musicHighlight - #111;
+            text-decoration: none;
         }
     }
 
