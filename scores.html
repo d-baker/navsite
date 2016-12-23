@@ -25,9 +25,9 @@ permalink: /music/scores/
 			    	<h2 class="avpg">{{ score.title }}</h3>
 			    	<p class="descrip">{{ score.description }}</p>
 			    	<p class="buttons">
-				    	<a class="scorelink" href="{{score.url}}">Download score</a>
+				    	<a target="_blank" class="scorelink" href="{{score.url}}">Download score</a>
 				    	{% if score.listen %}
-				        	<a class="scorelink" href="{{score.listen}}">Listen</a>
+				        	<a target="_blank" class="scorelink" href="{{score.listen}}">Listen</a>
 				        {% endif %}
 			        </p>
 		    	</article>
