@@ -1,23 +1,36 @@
-- title: berceuse
-  url: http://memoriata.com/assets/scores/Dorothea-Baker-Berceuse.zip
-  description: minimalist piano music
+col1:
+  - title: 4 berceuses
+    url:
+    listen: https://dbaker.bandcamp.com/album/berceuses
+    description: A suite of 4 sad minimalist piano pieces.
 
-- title: trichotomy
-  url: http://memoriata.com/assets/scores/Dorothea-Baker-Trichotomy.zip
-  description: solo piano suite
+  - title: trichotomy suite
+    url:
+    listen:
+    description: Solo piano suite - mostly unplayable
 
-- title: piano trio
-  url: http://memoriata.com/assets/scores/Dorothea-Baker-E-minor-Piano-Trio.zip
-  description: minimalist chamber music
+  - title: Danny Boy
+    url: 
+    listen: music/audio/originalcomps/Danny_Boy.html
+    description: Arrangement of a traditional Irish tune for voice+piano
 
-- title: danny boy
-  url: http://memoriata.com/assets/scores/Dorothea-Baker-Danny-Boy.zip
-  description: voice+piano
+  - title: She's like the swallow
+    url: 
+    listen: music/video/originalcomps/Shes_like_the_swallow.html
+    description: Setting of the words of a traditional folk song for SAATB+piano. <a href="">Listen here.</a>
 
-- title: she's like the swallow
-  url: http://memoriata.com/assets/scores/Dorothea-Baker-She%27s-Like-The-Swallow.zip
-  description: SAATB+piano
+col2:
+  - title: Mass setting No.1
+    url:
+    listen:
+    description: For large choir and organ, probably unsingable. All movements except the Gloria (English) are in Latin.
 
-- title: mass setting
-  url: http://memoriata.com/assets/scores/Dorothea-Baker-Mass-Setting.zip
-  description: for large choir
+  - title: Mass setting No.2
+    url:
+    listen:
+    description: An easy-to-learn English setting of the eucharist suitable for singing in either harmony or unison, with or without a choir, and with either piano or organ accompaniment.
+
+  - title: Wexford Carol
+    url:
+    listen:
+    description: Arrangement of a traditional Irish christmas carol for voice+piano. Available in high and low keys for different voice types.
