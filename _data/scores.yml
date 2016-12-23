@@ -1,36 +1,41 @@
 col1:
-  - title: 4 berceuses
-    url:
-    listen: https://dbaker.bandcamp.com/album/berceuses
-    description: A suite of 4 sad minimalist piano pieces.
-
-  - title: trichotomy suite
-    url:
-    listen:
-    description: Solo piano suite - mostly unplayable
-
-  - title: Danny Boy
-    url: 
-    listen: music/audio/originalcomps/Danny_Boy.html
-    description: Arrangement of a traditional Irish tune for voice+piano
-
-  - title: She's like the swallow
-    url: 
-    listen: music/video/originalcomps/Shes_like_the_swallow.html
-    description: Setting of the words of a traditional folk song for SAATB+piano. <a href="">Listen here.</a>
-
-col2:
-  - title: Mass setting No.1
-    url:
-    listen:
-    description: For large choir and organ, probably unsingable. All movements except the Gloria (English) are in Latin.
-
-  - title: Mass setting No.2
-    url:
-    listen:
-    description: An easy-to-learn English setting of the eucharist suitable for singing in either harmony or unison, with or without a choir, and with either piano or organ accompaniment.
 
   - title: Wexford Carol
     url:
     listen:
     description: Arrangement of a traditional Irish christmas carol for voice+piano. Available in high and low keys for different voice types.
+
+  - title: Mass setting No.2
+    url:
+    listen:
+    description: An easy-to-learn English setting of the eucharist suitable for singing in either harmony or unison, with or without a choir, and with either piano or organ accompaniment.
+    
+  - title: 4 Berceuses
+    url:
+    listen: https://dbaker.bandcamp.com/album/berceuses
+    description: A suite of 4 sad minimalist piano pieces.
+
+  - title: Danny Boy
+    url: 
+    listen: music/audio/originalcomps/Danny_Boy.html
+    description: Arrangement of a traditional Irish tune for voice+piano.
+
+
+col2:
+
+  - title: Trichotomy Suite
+    url:
+    listen:
+    description: A 3 movement solo piano suite inspired by elements of the Requiem Mass. The longer middle movement meanders through different styles and is framed by two shorter, pentatonic, pattern-based movements that are mostly unplayable.
+
+  - title: Mass setting No.1
+    url:
+    listen:
+    description: For large choir and organ. Very high, very challenging, maybe even impossible. All movements except the Gloria (English) are in Latin.
+
+  - title: She's like the swallow
+    url: 
+    listen: music/video/originalcomps/Shes_like_the_swallow.html
+    description: Setting of the words of a traditional folk song for SAATB+piano.
+
+

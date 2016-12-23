@@ -262,10 +262,10 @@ footer {
     margin-top: 60px;
 }
 
-.botlisting {
+.botlisting, .scorelisting {
     margin-bottom: 40px;
 
-    h3 {
+    h2, h3 {
         margin-bottom: 10px;
     }
 
@@ -274,8 +274,42 @@ footer {
     }
 }
 
+.score {
+    margin-bottom: 60px;
+
+    .descrip {
+        font-style: italic;
+    }
+}
+
+.scorelisting .buttons {
+    margin-top: 20px;
+}
+
+.scorelink {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background: $musicHighlight;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 20px;
+    display: block;
+    text-align: center;
+}
+
 
 @media (min-width: 900px) {
+    .scorelink {
+        display: inline;
+        padding: 10px;
+        margin-right: 10px;
+
+        &:hover {
+            background: $musicHighlight - #111;
+        }
+    }
+
     .back {
         margin-top: 0px;
     }

@@ -9,23 +9,25 @@ permalink: /music/scores/
 <div class="textblock">
 	<p>Downloadable sheet music and associated files (i.e. performance notes) for some of my compositions are available on this page.</p>
 	<p>
-	<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_GB"><img alt="Creative Commons Licence" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />All scores are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_GB">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+	All scores are licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_GB">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 	</p>
 	<p>
-	If you perform/record any of these works, I would love to hear about it! You can contact me <a href="contact.html">here</a>.
+	If you perform/record any of these works, I would love to hear about it! You can contact me <a href="/contact/">here</a>.
 	</p>
 </div>
 
-<div class="scorelist">
+<div class="scorelisting">
     {% for category in site.data.scores %}
 
     	<div class="{{ category[0] }}">
 		    {% for score in category[1] %}
 		    	<article class="score">
 			    	<h2 class="avpg">{{ score.title }}</h3>
-			    	<a class="scorelink" href="{{score.url}}">Download score</a>
-			        <a class="scorelink" href="{{score.listen}}">Listen</a>
 			    	<p class="descrip">{{ score.description }}</p>
+			    	<p class="buttons">
+				    	<a class="scorelink" href="{{score.url}}">Download score</a>
+				        <a class="scorelink" href="{{score.listen}}">Listen</a>
+			        </p>
 		    	</article>
 		    {% endfor %}
 	    </div>
