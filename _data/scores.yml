@@ -21,7 +21,7 @@ col1:
 
   - title: Mass setting No.1
     url: http://dreadedvariable.xyz/scores/Baker, Dorothea - Mass No. 1.zip
-    listen: http://localhost:4000/music/video/originalcomps/Mass_setting_No_1_-_Kyrie.html
+    listen: /music/video/originalcomps/Mass_setting_No_1_-_Kyrie.html
     description: For large choir and organ. Very high, very challenging, maybe even impossible; I wrote it as pure art rather than for performance. All movements except the Gloria (English) are in Latin.
 
 col2:
@@ -42,5 +42,5 @@ col2:
 
   - title: Trichotomy Suite
     url: http://dreadedvariable.xyz/scores/Baker, Dorothea - Trichotomy Suite.zip
-    listen: http://localhost:4000/music/audio/originalcomps/Trichotomy_-_1_Requiem_Aeternam.html
+    listen: /music/audio/originalcomps/Trichotomy_-_1_Requiem_Aeternam.html
     description: A 3 movement solo piano suite inspired by elements of the Requiem Mass. The longer middle movement meanders through different styles and is framed by two shorter, pentatonic movements that are slightly unplayable.
