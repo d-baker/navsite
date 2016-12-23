@@ -1,41 +1,46 @@
 col1:
-
   - title: Wexford Carol
-    url:
+    url: http://dreadedvariable.xyz/scores/Baker, Dorothea - Wexford Carol.zip
     listen:
     description: Arrangement of a traditional Irish christmas carol for voice+piano. Available in high and low keys for different voice types.
 
   - title: Mass setting No.2
-    url:
+    url: http://dreadedvariable.xyz/scores/Baker, Dorothea - Mass No. 2.zip
     listen:
     description: An easy-to-learn English setting of the eucharist suitable for singing in either harmony or unison, with or without a choir, and with either piano or organ accompaniment.
 
+  - title: Windella
+    url: http://dreadedvariable.xyz/scores/Baker, Dorothea - Windella.pdf
+    listen:
+    description: A short hymn suitable for evensong, Lent or sombre occasions.
+
+  - title: The Lord's Prayer
+    url: http://dreadedvariable.xyz/scores/Baker, Dorothea - The Lord's Prayer.pdf
+    listen:
+    description: A simple, contemporary-style setting written for ease of singing by a congregation of non-musicians.
+
+  - title: Mass setting No.1
+    url: http://dreadedvariable.xyz/scores/Baker, Dorothea - Mass No. 1.zip
+    listen: http://localhost:4000/music/video/originalcomps/Mass_setting_No_1_-_Kyrie.html
+    description: For large choir and organ. Very high, very challenging, maybe even impossible; I wrote it as pure art rather than for performance. All movements except the Gloria (English) are in Latin.
+
+col2:
   - title: 4 Berceuses
-    url:
+    url: http://dreadedvariable.xyz/scores/Baker, Dorothea - 4 Berceuses.zip
     listen: https://dbaker.bandcamp.com/album/berceuses
     description: A suite of 4 sad minimalist piano pieces.
 
   - title: Danny Boy
-    url: 
+    url: http://dreadedvariable.xyz/scores/Baker, Dorothea - Danny Boy.pdf
     listen: /music/audio/originalcomps/Danny_Boy.html
     description: Arrangement of a traditional Irish tune for voice+piano.
 
-
-col2:
-
-  - title: Trichotomy Suite
-    url:
-    listen:
-    description: A 3 movement solo piano suite inspired by elements of the Requiem Mass. The longer middle movement meanders through different styles and is framed by two shorter, pentatonic, pattern-based movements that are mostly unplayable.
-
-  - title: Mass setting No.1
-    url:
-    listen:
-    description: For large choir and organ. Very high, very challenging, maybe even impossible. All movements except the Gloria (English) are in Latin.
-
   - title: She's like the swallow
-    url: 
+    url: http://dreadedvariable.xyz/scores/Baker, Dorothea - She's like the swallow.pdf
     listen: /music/video/originalcomps/Shes_like_the_swallow.html
     description: Setting of the words of a traditional folk song for SAATB+piano.
 
-
+  - title: Trichotomy Suite
+    url: http://dreadedvariable.xyz/scores/Baker, Dorothea - Trichotomy Suite.zip
+    listen: http://localhost:4000/music/audio/originalcomps/Trichotomy_-_1_Requiem_Aeternam.html
+    description: A 3 movement solo piano suite inspired by elements of the Requiem Mass. The longer middle movement meanders through different styles and is framed by two shorter, pentatonic movements that are slightly unplayable.
