@@ -19,7 +19,9 @@ header#main-header {
         width: 9vw;
         height: 9vw;
         border: none;
-        background: url("/assets/icons/menu.svg") no-repeat;
+        background: none;
+        background-image: url("/assets/icons/menu.png");
+        background-repeat: no-repeat;
         background-size: 9vw;
         float: right;
         cursor: pointer;
@@ -126,6 +128,9 @@ header#main-header {
     }
 }
 
+.has-svgasimg header#main-header #menubutton {
+    background-image: url("/assets/icons/menu.svg");
+}
 
 #backtotop {
     position: fixed;
@@ -302,7 +307,8 @@ header#main-header {
 
                     &.external {
                         display: table;
-                        background: url("/assets/icons/external-link.svg") no-repeat;
+                        background-image: url("/assets/icons/external-link.png");
+                        background-repeat: no-repeat;
                         padding-right: 45px;
                         background-position: right 20px top 12px;
                     }
@@ -349,6 +355,10 @@ header#main-header {
         }
         
     } // end main-header
+
+    .has-svgasimg header#mainheader .dropdown .nav-list a.external {
+        background-image: url("/assets/icons/external-link.svg");
+    }
 
     #backtotop {
         display: none;

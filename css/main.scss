@@ -133,9 +133,14 @@ a {
 }
 
 a.external {
-    background: url("/assets/icons/external-link.svg") no-repeat right;
+    background-image: url("/assets/icons/external-link.png");
+    background-repeat: no-repeat;
     background-position: top 4px right 0px;
     padding-right: 25px;
+}
+
+.has-svgasimg a.external {
+    background-image: url("/assets/icons/external-link.svg");
 }
 
 nav li a {
