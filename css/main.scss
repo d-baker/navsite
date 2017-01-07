@@ -36,6 +36,14 @@ body {
     font-size: 16px;
 }
 
+.skip-nav {
+    position: absolute;
+    top: -40px;
+    &:focus {
+        top: 0px;
+    }
+}
+
 .container {
     display: block;
     margin: auto;
