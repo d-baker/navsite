@@ -23,7 +23,27 @@ permalink: /music/video/
                     {% if video.description != "" %} 
                         <p>{{ video.description }}</p>
                     {% endif %}
-                    <p class="permalink"><a target="_blank" title="{{ " [permalink]" | prepend: video.title }}" href="{{ (video.title | sanitize_filename) | prepend: "originalcomps" }}">More details</a></p>
+
+                    <aside class="av-extra">
+
+                        {% if video.tags %} 
+                            <ul class="tags">
+                                Tags:
+                                {% for tag in video.tags %}
+                                    {{ video.tags.length }}
+                                    {% if forloop.index == video.tags.size - 1 %}
+                                        <li class="last">{{ tag }}</li>
+                                    {% else %}
+                                        <li>{{ tag }}</li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                        
+                        <p class="permalink"><a target="_blank" title="{{ " [permalink]" | prepend: video.title }}" href="{{ (video.title | sanitize_filename) | prepend: "originalcomps" }}">More details</a></p>
+
+                    </aside>
+
                 </div>
 
             </li>

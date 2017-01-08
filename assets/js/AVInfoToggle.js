@@ -13,10 +13,10 @@ $(document).ready(function() {
         e.stopPropagation();
     });
 
-    $(".avblock li").click(function(e) {
+    $(".avblock .playlist > li").click(function(e) {
         var $target = $(e.currentTarget);
         var desc = $target.find(".descrip");
-        var targetIndex = $target.closest(".avblock").find("li").index($target);
+        var targetIndex = $target.closest(".avblock").find(".playlist > li").index($target);
 
         if (desc.css("display") == "none") {
             $(".avblock .descrip").find("audio, video").remove(); // remove all multimedia
@@ -59,7 +59,7 @@ $(document).ready(function() {
 
     function setAlternateBGs() {
         $.each($(".avblock"), function(i, el) {
-            var LIs = $(this).find("li");
+            var LIs = $(this).find(".playlist > li");
 
             $.each(LIs, function (j, li) {
                 if (j % 2 != 0) {

@@ -10,6 +10,28 @@
     ul {
         list-style-type: none;
     }
+
+    ul.tags {
+        font-family: Helvetica, Arial, sans-serif;
+        font-style: normal;
+        border: none;
+        color: $batcolor;
+
+        li {
+            background: none;
+            display: inline-block;
+            padding: 0;
+            cursor: default;
+
+            &:after {
+                content: ", ";
+            }
+            &.last:after {
+                content: "";
+            }
+        }
+    }
+
 }
 
 .avblock, .avpost {
@@ -26,8 +48,17 @@
     width: 100%;
 }
 
+.av-extra {
+    padding-top: 20px;
+    padding-bottom: 13px;
+}
+
 .permalink {
     text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
     a {
         text-decoration: underline;
         font-style: normal;
@@ -55,6 +86,7 @@
 
     .descrip {
         font-style: italic;
+        position: relative;
     }
 }
 
