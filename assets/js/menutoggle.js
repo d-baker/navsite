@@ -21,6 +21,11 @@ $(document).ready(function() {
 		openWithLandingLink();
 	}
 
+	$("body").click("function") {
+			$(".dropdown .nav-list").removeClass("open");
+			$(".dropdown .nav-list").addClass("closed");
+	}
+
 
     $(window).resize(function(){
         if (window.matchMedia("(min-width: 900px)").matches) {
