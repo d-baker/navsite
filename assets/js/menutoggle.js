@@ -16,12 +16,9 @@ $(document).ready(function() {
 		}
 	});
 
-
-    // Attach listener to open dropdown menu when dropdown arrow clicked
-	openWithDropdownButton();
-
 	if (! window.matchMedia("(min-width: 900px)").matches) {
 		// if on mobile, enable clicking on top level link to open dropdown menu
+		setMobileDropdownAttributes();
 		openWithLandingLink();
 	}
 
@@ -33,33 +30,25 @@ $(document).ready(function() {
 			$(".dropdown .nav-list").addClass("closed")
 
         	// Remove event handler that enforces preventDefault, to ensure we get default link functionality back on desktop
+        	unsetMobileDropdownAttributes();
         	$(".dropdown-landing").unbind("click");
         } else {
         	// Bind default-preventing click handler for mobile
         	// TODO when called here, preventDefault is working but other actions don't appear to be rebound??!
+        	setMobileDropdownAttributes();
         	openWithLandingLink();
         }
     });
 
-
-    function openWithDropdownButton() {
-	   	$(".dropdown-button").click(function(e) {
-			$target = $(e.currentTarget);
-
-			if ( $target.siblings(".nav-list").hasClass("closed") ) {
-				$(".dropdown .nav-list").removeClass("open");
-				$(".dropdown .nav-list").addClass("closed");
-
-				$target.siblings(".nav-list").removeClass("closed");
-				$target.siblings(".nav-list").addClass("open");
-			} else {
-				$(".dropdown .nav-list").removeClass("open");
-				$(".dropdown .nav-list").addClass("closed");
-
-				$target.siblings(".nav-list").removeClass("open");
-				$target.siblings(".nav-list").addClass("closed");
-			}
-		});
+    function setMobileDropdownAttributes() {
+    	$(".dropdown-landing").attr("role", "button");
+    	$("#music-landing").attr("aria-label", "open music dropdown menu");
+        $("#geek-landing").attr("aria-label", "open tech dropdown menu");
+    }
+    function unsetMobileDropdownAttributes() {
+    	$(".dropdown-landing").removeAttr("role");
+    	$("#music-landing").removeAttr("aria-label");
+        $("#geek-landing").removeAttr("aria-label");
     }
 
 	function openWithLandingLink() {

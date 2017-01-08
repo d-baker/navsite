@@ -93,6 +93,14 @@ header#main-header {
             display: block;
         }
     }
+
+    .dropdown-landing {
+        background-image: url(/assets/icons/dropdown-open.svg);
+        background-repeat: no-repeat;
+        background-position: center right;
+        padding-right: 40px;
+        width: 100%;
+    }
     
     .nav-list > a, .dropdown > a {
         padding: 20px 0px;
@@ -160,9 +168,6 @@ header#main-header {
 
 @media (min-width: 900px) {
 
-    .dropdown-button {
-        display: none;
-    }
 
     header#main-header {
         background: none;
@@ -178,8 +183,9 @@ header#main-header {
             margin-right: 20px;
             margin-left: 20px;
         }
-
-        .dropdown-button img {
+        
+        .dropdown-landing {
+            background:none;
         }
 
         nav {
