@@ -1,15 +1,18 @@
 $(document).ready(function() {
 	$("header nav").addClass("closed");
 	$(".dropdown .nav-list").addClass("closed");
+	$("#menubutton").attr("aria-expanded", "false")
 
     // Mobile menu toggle button handling
 	$("#menubutton").click(function() {
 		if ( $("header nav").hasClass("closed") ) {
 			$("header nav").removeClass("closed");
 			$("header nav").addClass("open");
+			$("#menubutton").attr("aria-expanded", "true")
 		} else if ( $("header nav").hasClass("open") ) {
 			$("header nav").removeClass("open");
-			$("header nav").addClass("closed");		
+			$("header nav").addClass("closed");	
+			$("#menubutton").attr("aria-expanded", "false")	
 		}
 	});
 
