@@ -31,34 +31,31 @@ $(document).ready(function() {
     		// Prevent dropdown menus from staying open on desktop layout if opened in mobile layout
 			closeAllDropdowns();
         	unsetMobileDropdownAttributes();
-
-        	// Remove event handler that enforces preventDefault, to ensure we get default link functionality back on desktop
-        	$(".dropdown-landing").unbind("click");
         } else {
         	setMobileDropdownAttributes();
-
-        	// Bind default-preventing click handler for mobile
-        	openWithLandingLink();
         }
     });
 
 
 	function openWithLandingLink() {
 		$(".dropdown-landing").click(function(e) {
-			e.preventDefault();
-			$target = $(e.currentTarget);
+			if (! window.matchMedia("(min-width: 900px)").matches) {
 
-			toggleAriaExpanded();
+				e.preventDefault();
+				$target = $(e.currentTarget);
 
-			if ( $target.siblings(".nav-list").hasClass("closed") ) {
-				closeAllDropdowns();
-				openDropdown($target);
-			} else {
-				closeAllDropdowns();
-				closeDropdown($target);
-			}
+				toggleAriaExpanded();
 
-		});	
+				if ( $target.siblings(".nav-list").hasClass("closed") ) {
+					closeAllDropdowns();
+					openDropdown($target);
+				} else {
+					closeAllDropdowns();
+					closeDropdown($target);
+				}
+
+			}	
+		});
 	}
 
 	function toggleAriaExpanded(target) {
