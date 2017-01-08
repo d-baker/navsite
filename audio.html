@@ -19,10 +19,31 @@ permalink: /music/audio/
                             <source src="{{ audio.src | prepend: "/assets/audio/" }}" type="audio/mpeg">
                         </audio>
                     </div>
+
                     {% if audio.description != "" %} 
                         <p>{{ audio.description }}</p>
                     {% endif %}
-                    <p class="permalink"><a target="_blank" title="{{ " [permalink]" | prepend: audio.title }}" href="{{ (audio.title | sanitize_filename) | prepend: "originalcomps" }}">More details</a></p>
+
+                    <aside class="av-extra">
+
+                        {% if audio.tags %} 
+                            <ul class="tags">
+                                Tags:
+                                {% for tag in audio.tags %}
+                                    {{ audio.tags.length }}
+                                    {% if forloop.index == audio.tags.size - 1 %}
+                                        <li class="last">{{ tag }}</li>
+                                    {% else %}
+                                        <li>{{ tag }}</li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                        
+                        <p class="permalink"><a target="_blank" title="{{ " [permalink]" | prepend: audio.title }}" href="{{ (audio.title | sanitize_filename) | prepend: "originalcomps" }}">More details</a></p>
+
+                    </aside>
+
                 </div>
             </li>
         {% endfor %}
