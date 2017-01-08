@@ -1,7 +1,6 @@
 $(document).ready(function() {
 	$("header nav").addClass("closed");
 	$(".dropdown .nav-list").addClass("closed");
-	$("#menubutton").attr("aria-expanded", "false")
 
     // Mobile menu toggle button handling
 	$("#menubutton").click(function() {
@@ -44,17 +43,25 @@ $(document).ready(function() {
     	$(".dropdown-landing").attr("role", "button");
     	$("#music-landing").attr("aria-label", "open music dropdown menu");
         $("#geek-landing").attr("aria-label", "open tech dropdown menu");
+		$("#menubutton, .dropdown-landing").attr("aria-expanded", "false")
     }
+    
     function unsetMobileDropdownAttributes() {
     	$(".dropdown-landing").removeAttr("role");
-    	$("#music-landing").removeAttr("aria-label");
-        $("#geek-landing").removeAttr("aria-label");
+    	$(".dropdown-landing").removeAttr("aria-label");
+        $(".dropdown-landing").removeAttr("aria-expanded");
     }
 
 	function openWithLandingLink() {
 		$(".dropdown-landing").click(function(e) {
 			e.preventDefault();
 			$target = $(e.currentTarget);
+
+			if ( $target.attr("aria-expanded") == "false" ) {
+				$target.attr("aria-expanded", "true");
+			} else {
+				$target.attr("aria-expanded", "false");			
+			}
 
 			if ( $target.siblings(".nav-list").hasClass("closed") ) {
 				$(".dropdown .nav-list").removeClass("open");
