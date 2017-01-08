@@ -11,7 +11,7 @@ permalink: /music/audio/
         <ul class="playlist">
         {% for audio in site.data.audio-originalcomps %}
             <li>
-                <button><h3 class="tracktitle">{{ audio.title }}</h3></button>
+                <button><h3 aria-label="audio track: {{ audio.title }}" class="tracktitle">{{ audio.title }}</h3></button>
 
                 <div class="descrip">
                     <div class="audioplayer">
@@ -57,7 +57,7 @@ permalink: /music/audio/
         <ul class="playlist">
         {% for audio in site.data.audio-pianorecs %}
             <li>
-                <button><h3 class="tracktitle">{{ audio.title }}</h3></button>
+                <button><h3 aria-label="audio track: {{ audio.title }}" class="tracktitle">{{ audio.title }}</h3></button>
 
                 <div class="descrip">
                     <div class="audioplayer">

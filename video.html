@@ -11,7 +11,7 @@ permalink: /music/video/
         <ul class="playlist">
         {% for video in site.data.video-originalcomps %}
             <li>
-                <button><h3 class="tracktitle">{{ video.title }}</h3></button>
+                <button><h3 aria-label="video: {{ video.title }}" class="tracktitle">{{ video.title }}</h3></button>
 
                 <div class="descrip">
                     <div class="videoplayer">
@@ -59,7 +59,7 @@ permalink: /music/video/
         <ul class="playlist">
         {% for video in site.data.video-pianorecs %}
             <li>
-                <button><h3 class="tracktitle">{{ video.title }}</h3></button>
+                <button><h3 aria-label="video: {{ video.title }}" class="tracktitle">{{ video.title }}</h3></button>
 
                 <div class="descrip">
                     <div class="videoplayer">
