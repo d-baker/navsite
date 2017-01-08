@@ -21,10 +21,11 @@ $(document).ready(function() {
 		openWithLandingLink();
 	}
 
-	$("body").click("function") {
-			$(".dropdown .nav-list").removeClass("open");
-			$(".dropdown .nav-list").addClass("closed");
-	}
+	$("body").click(function() {
+		console.log('test');
+		$(".dropdown .nav-list").removeClass("open");
+		$(".dropdown .nav-list").addClass("closed");
+	})
 
 
     $(window).resize(function(){
