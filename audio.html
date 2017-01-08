@@ -68,7 +68,11 @@ permalink: /music/audio/
                     {% if audio.description != "" %} 
                         <p>{{ audio.description }}</p>
                     {% endif %}
-                    <p class="permalink"><a target="_blank" title="{{ " [permalink]" | prepend: audio.title }}" href="{{ (audio.title | sanitize_filename) | prepend: "pianorecs" }}">More details</a></p>
+
+                    <aside class="av-extra">
+                        <p class="permalink"><a target="_blank" title="{{ " [permalink]" | prepend: audio.title }}" href="{{ (audio.title | sanitize_filename) | prepend: "pianorecs" }}">More details</a></p>
+                    </aside>
+
                 </div>
             </li>
         {% endfor %}
