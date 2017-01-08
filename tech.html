@@ -6,92 +6,96 @@ permalink: /tech/
 
 <h1 class="pg-title geekpg"><a href="{{page.url}}">Tech</a></h1>
 
-<aside class="sidebar" id="geekery-sidebar">
-    <h2 class="geekpg">more</h2>
-    <nav>
-        <ul>
-        {% include tech-submenu.html %}
-        </ul>
-    </nav>
-</aside>
+<div class="content-wrapper">
 
-<div class="wide textblock col1">
-    <p>I've been fascinated by computers since I was a kid, but it wasn't until I started university that I had the opportunity to learn programming.</p>
-    <p>I'm now in my final year of a computer science degree, do some <a href="http://lunawebdesign.com.au/">freelance web design</a>, and enjoy messing around with computers on a daily basis.
-    </p>
-    <p>A selection of my projects can be found below.</p>
-</div>
-
-<div class="clearfix"></div>
-
-<div class="geeklist">
-
-    <article class="textblock col1">
-        <h2 class="geekpg"><a href="http://nightmare.website">nightmare.website</a></h2>
-
-        <p>nightmare.website is two things: a blog where I talk about my experiences as a programmer and computer nerd, and a collection of resources for fellow computer nerds.</p>
-        <p>Thought originally intended to focus on web design and development, the blog and resources have slowly been expanding to include all computer-related topics.</p>
-    </article>
-
-    <article class="textblock col2">
-        <h2 class="geekpg"><a href="http://dreadedvariable.xyz/portfolio/visualiser/">Audio visualiser</a></h2>
-
-        <p>I was inspired to do something creative with audio streaming in Javascript after reading a tutorial on using it to create waveform visualisations. This - the product of many hours of trial and error - was the result. It comes with a selection of tracks by myself and my friends.</p>
-        <p>The visualiser uses PHP for track selection to enable bookmarking/linking of the selected track, and Javascript to stream MP3s, analyse the audio data and use the results in CSS values and other things.</p>
-        <p class="note">Known bug: visualisation does not work in iOS Safari due to lack of browser support for the visualisation technology.</p>
-        <p class="note">Warning: contains flashing imagery.</p>
-    </article>
-
+    <div class="wide textblock col1">
+        <p>I've been fascinated by computers since I was a kid, but it wasn't until I started university that I had the opportunity to learn programming.</p>
+        <p>I'm now in my final year of a computer science degree, do some <a href="http://lunawebdesign.com.au/">freelance web design</a>, and enjoy messing around with computers on a daily basis.
+        </p>
+        <p>A selection of my projects can be found below.</p>
+    </div>
 
     <div class="clearfix"></div>
 
-    <article class="textblock col1">
-        <h2 class="geekpg"><a href="http://dreadedvariable.xyz/dropbox/baroque_encodings_v1.pdf">NaNoGenMo 2014</a></h2>
+    <div class="geeklist">
 
-        <p>I created this computer-generated novel for National Novel Generation Month, a project started by <a href="https://twitter.com/tinysubversions">Darius Kazemi</a>. It's written in Python and uses a corpus of hand-picked lines from novels (including some very famous ones), tied together with bigrams.</p>
-        <p>I actually wrote a blog post about the process of creating the novel, which you can read <a href="/blog/nanogenmo">here</a>.
-        <p class="note">Note: a second, longer version is available <a href="http://dreadedvariable.xyz/dropbox/baroque_encodings_v2.pdf">here</a>. You can also create your own version by <a href="https://github.com/d-baker/NaNoGenMo-2014">downloading</a> and running the code.</p>
-    </article>
+        <article class="textblock col1">
+            <h2 class="geekpg"><a href="http://nightmare.website">nightmare.website</a></h2>
 
-    <article class="textblock col2">
-        <h2 class="geekpg"><a href="http://dreadedvariable.xyz/portfolio/botlang/">Botlang</a></h2>
+            <p>nightmare.website is two things: a blog where I talk about my experiences as a programmer and computer nerd, and a collection of resources for fellow computer nerds.</p>
+            <p>Thought originally intended to focus on web design and development, the blog and resources have slowly been expanding to include all computer-related topics.</p>
+        </article>
 
-        <p>Botlang was an attempt at creating a community-driven <a href="https://en.wikipedia.org/wiki/Constructed_language">conlang</a> via a Twitter bot.</p>
-        <p>Written in Python, the bot analysed tweets sent to it and generated a "Bottish" translation for each word it found, then added the definition to a dictionary so it could look the word up in the future. This enabled the <a href="http://dreadedvariable.xyz/portfolio/botlang/translator.html">translator</a> feature on the Botlang website.</p>
-        <p>During lapses in conversation with other Twitter uses, the bot randomly pulled English words from a corpus and created Bottish translations for those in order to build up its vocabulary.</p>
-        <p>Unfortunately, I allowed Botlang and its website to fall into a state of disrepair. The Twitter bot is no longer running, but when I have time I'd like to start it up again and refactor the code using the knowledge I've gained since its creation.</p>
-        <p class="note">Known bugs: too many! I'll fix it one day.</p>
-    </article>
+        <article class="textblock col2">
+            <h2 class="geekpg"><a href="http://dreadedvariable.xyz/portfolio/visualiser/">Audio visualiser</a></h2>
 
-
-    <div class="clearfix"></div>
-
-    <article class="textblock col1">
-        <h2 class="geekpg"><a href="http://dreadedvariable.xyz/portfolio/artgen/">Art generator</a></h2>
-
-        <p>I made this simple generative "artwork" on a whim in 2015. Refresh the page to get a new design, scroll to navigate the artwork, and/or try resizing the browser window to mix things up a bit!</p>
-        <p class="note">Note: uses unicode characters.</p>
-    </article>
+            <p>I was inspired to do something creative with audio streaming in Javascript after reading a tutorial on using it to create waveform visualisations. This - the product of many hours of trial and error - was the result. It comes with a selection of tracks by myself and my friends.</p>
+            <p>The visualiser uses PHP for track selection to enable bookmarking/linking of the selected track, and Javascript to stream MP3s, analyse the audio data and use the results in CSS values and other things.</p>
+            <p class="note">Known bug: visualisation does not work in iOS Safari due to lack of browser support for the visualisation technology.</p>
+            <p class="note">Warning: contains flashing imagery.</p>
+        </article>
 
 
-    <article class="textblock col2">
-        <h2 class="geekpg"><a href="http://www.tilde.club/~dbaker/snow.html">Snow</a></h2>
+        <div class="clearfix"></div>
 
-        <p>Though hardly a great work of art, and extremely simple in construction, people seem to like this little thing I made in plain HTML with marquee tags. I hope you do too.</p>
+        <article class="textblock col1">
+            <h2 class="geekpg"><a href="http://dreadedvariable.xyz/dropbox/baroque_encodings_v1.pdf">NaNoGenMo 2014</a></h2>
 
-        <p class="note">This page was one of a number of things that came out of my time on <a href="http://tilde.club/">tilde.club</a>, a wonderful effort to recreate what could best be described as an old-school non-social-network.</p>
-    </article>
+            <p>I created this computer-generated novel for National Novel Generation Month, a project started by <a href="https://twitter.com/tinysubversions">Darius Kazemi</a>. It's written in Python and uses a corpus of hand-picked lines from novels (including some very famous ones), tied together with bigrams.</p>
+            <p>I actually wrote a blog post about the process of creating the novel, which you can read <a href="/blog/nanogenmo">here</a>.
+            <p class="note">Note: a second, longer version is available <a href="http://dreadedvariable.xyz/dropbox/baroque_encodings_v2.pdf">here</a>. You can also create your own version by <a href="https://github.com/d-baker/NaNoGenMo-2014">downloading</a> and running the code.</p>
+        </article>
 
-    <div class="clearfix"></div>
+        <article class="textblock col2">
+            <h2 class="geekpg"><a href="http://dreadedvariable.xyz/portfolio/botlang/">Botlang</a></h2>
 
-    <article class="textblock col1">
-        <h2 class="geekpg"><a href="http://dreadedvariable.xyz/portfolio/react-clock/">React Clock</a></h2>
+            <p>Botlang was an attempt at creating a community-driven <a href="https://en.wikipedia.org/wiki/Constructed_language">conlang</a> via a Twitter bot.</p>
+            <p>Written in Python, the bot analysed tweets sent to it and generated a "Bottish" translation for each word it found, then added the definition to a dictionary so it could look the word up in the future. This enabled the <a href="http://dreadedvariable.xyz/portfolio/botlang/translator.html">translator</a> feature on the Botlang website.</p>
+            <p>During lapses in conversation with other Twitter uses, the bot randomly pulled English words from a corpus and created Bottish translations for those in order to build up its vocabulary.</p>
+            <p>Unfortunately, I allowed Botlang and its website to fall into a state of disrepair. The Twitter bot is no longer running, but when I have time I'd like to start it up again and refactor the code using the knowledge I've gained since its creation.</p>
+            <p class="note">Known bugs: too many! I'll fix it one day.</p>
+        </article>
 
-        <p>I created this very minimal clock in order to teach myself the basics of React.js. At the time my analog wall clock had just broken, so I made this as a replacement, to be displayed throughout the day on a large, under-utilised desktop computer.</p>
-        <p>I still haven't got round to buying a new wall clock.</p>
-        <p class="note">I'm well aware that I had a very specific use case for this site which probably nobody else will share. But here it is anyway!</p>
-    </article>
 
+        <div class="clearfix"></div>
+
+        <article class="textblock col1">
+            <h2 class="geekpg"><a href="http://dreadedvariable.xyz/portfolio/artgen/">Art generator</a></h2>
+
+            <p>I made this simple generative "artwork" on a whim in 2015. Refresh the page to get a new design, scroll to navigate the artwork, and/or try resizing the browser window to mix things up a bit!</p>
+            <p class="note">Note: uses unicode characters.</p>
+        </article>
+
+
+        <article class="textblock col2">
+            <h2 class="geekpg"><a href="http://www.tilde.club/~dbaker/snow.html">Snow</a></h2>
+
+            <p>Though hardly a great work of art, and extremely simple in construction, people seem to like this little thing I made in plain HTML with marquee tags. I hope you do too.</p>
+
+            <p class="note">This page was one of a number of things that came out of my time on <a href="http://tilde.club/">tilde.club</a>, a wonderful effort to recreate what could best be described as an old-school non-social-network.</p>
+        </article>
+
+        <div class="clearfix"></div>
+
+        <article class="textblock col1">
+            <h2 class="geekpg"><a href="http://dreadedvariable.xyz/portfolio/react-clock/">React Clock</a></h2>
+
+            <p>I created this very minimal clock in order to teach myself the basics of React.js. At the time my analog wall clock had just broken, so I made this as a replacement, to be displayed throughout the day on a large, under-utilised desktop computer.</p>
+            <p>I still haven't got round to buying a new wall clock.</p>
+            <p class="note">I'm well aware that I had a very specific use case for this site which probably nobody else will share. But here it is anyway!</p>
+        </article>
+
+
+    </div>
+
+    <aside class="sidebar" id="geekery-sidebar">
+        <h2 class="geekpg">more</h2>
+        <nav>
+            <ul>
+            {% include tech-submenu.html %}
+            </ul>
+        </nav>
+    </aside>
 
 </div>
 
