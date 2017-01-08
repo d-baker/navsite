@@ -21,13 +21,6 @@ $(document).ready(function() {
 		openWithLandingLink();
 	}
 
-	$("body").click(function() {
-		console.log('test');
-		$(".dropdown .nav-list").removeClass("open");
-		$(".dropdown .nav-list").addClass("closed");
-	})
-
-
     $(window).resize(function(){
         if (window.matchMedia("(min-width: 900px)").matches) {
     		// Prevent dropdown menus from staying open on desktop layout if opened in mobile layout
