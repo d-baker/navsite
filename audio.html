@@ -15,7 +15,7 @@ permalink: /music/audio/
 
                 <div class="descrip">
                     <div class="audioplayer">
-                        <audio controls>
+                        <audio controls preload="none">
                             <source src="{{ audio.src | prepend: "/assets/audio/" }}" type="audio/mpeg">
                         </audio>
                     </div>
@@ -41,7 +41,7 @@ permalink: /music/audio/
                         {% endif %}
                         
                         <p class="permalink"><a target="_blank" title="{{ " [permalink]" | prepend: audio.title }}" href="{{ (audio.title | sanitize_filename) | prepend: "originalcomps" }}">More details</a></p>
-                        
+
                     </aside>
 
                 </div>
@@ -61,7 +61,7 @@ permalink: /music/audio/
 
                 <div class="descrip">
                     <div class="audioplayer">
-                        <audio controls>
+                        <audio controls preload="none">
                             <source src="{{ audio.src | prepend: "/assets/audio/" }}" type="audio/mpeg">
                         </audio>
                     </div>
