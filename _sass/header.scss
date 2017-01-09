@@ -78,9 +78,10 @@ header#main-header {
                 padding: 20px 0px;
                 a {
                     color: black;
-                    font-size: 18px;
+                    font-size: 20px;
                     font-variant: normal;
                     font-weight: normal;
+                    width: 100%;
                 }
             }
         }
@@ -91,6 +92,11 @@ header#main-header {
         }
         &.open {
             display: block;
+        }
+
+        a.current {
+            padding-bottom: 10px;
+            font-weight: bold;
         }
     }
 
@@ -113,11 +119,11 @@ header#main-header {
 
     #geek-menu a.current {
         color: $geekHighlight;
-        border-bottom: 3px solid $geekHighlight;
+        border-bottom: 5px solid $geekHighlight;
     }
     #music-menu a.current {
         color: $musicHighlight;
-        border-bottom: 3px solid $musicHighlight;
+        border-bottom: 5px solid $musicHighlight;
     }
 
     a.current {
@@ -303,9 +309,18 @@ header#main-header {
 
                 ul li {
                     padding: 0;
+
+                    a {
+                        font-size: 18px;
+                    }
+                    a.current {
+                        font-weight: normal;
+                        padding-bottom: 5px;
+                    }
                 }
 
                 a {
+                    width: auto;
                     display: block;
                     font-size: 16px;
                     font-variant: normal;
