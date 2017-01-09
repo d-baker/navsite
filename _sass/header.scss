@@ -334,12 +334,10 @@ header#main-header {
                         text-decoration: underline;
                     }
 
-                    &.external {
+                    &.external .content {
                         display: table;
                         background-image: url("/assets/icons/external-link.png");
                         background-repeat: no-repeat;
-                        padding-right: 45px;
-                        background-position: right 20px top 12px;
                     }
 
                     transition: none;
@@ -385,7 +383,7 @@ header#main-header {
         
     } // end main-header
 
-    .has-svgasimg header#mainheader .dropdown .nav-list a.external {
+    .has-svgasimg header#mainheader .dropdown .nav-list a.external .content {
         background-image: url("/assets/icons/external-link.svg");
     }
 

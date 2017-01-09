@@ -145,14 +145,14 @@ a {
     }
 }
 
-a.external {
+a.external .content {
     background-image: url("/assets/icons/external-link.png");
     background-repeat: no-repeat;
     background-position: top 4px right 0px;
     padding-right: 25px;
 }
 
-.has-svgasimg a.external {
+.has-svgasimg a.external .content {
     background-image: url("/assets/icons/external-link.svg");
 }
 
