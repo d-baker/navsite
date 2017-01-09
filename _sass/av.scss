@@ -134,6 +134,10 @@
 
     .descrip {
         font-style: italic;
+
+        > p {
+            padding-bottom: 30px;
+        }
     }
 }
 
