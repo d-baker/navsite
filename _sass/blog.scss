@@ -59,19 +59,19 @@ code {
 	margin-bottom: 40px;
 }
 
-
-
-@media (min-width: 1300px) {
-
-	.post-header {
-		margin-bottom: 25px;
-	}
-
+@media (min-width: 900px) {
 
 	#blog-sidebar {
 		margin-top: 10px;
 		position: relative;
 		float: right;
+	}
+}
+
+@media (min-width: 1300px) {
+
+	.post-header {
+		margin-bottom: 25px;
 	}
 
 	.col1 .blogpost, .blogpost .col1, .blogpost {
