@@ -109,21 +109,6 @@ header#main-header {
     .nav-list > a.current, .dropdown > a.current {
         margin: 15px 0px;
         padding: 10px 0px 10px 0px;
-
-        &#music-landing {
-            color: $musicHighlight;
-            border-bottom: 5px solid $musicHighlight;
-        }
-
-        &#geek-landing {
-            color: $geekHighlight;
-            border-bottom: 5px solid $geekHighlight;
-        }
-
-        &#blog-landing, &#contact-landing {
-            color: $defaultHighlight;
-            border-bottom: 5px solid $defaultHighlight;        
-        }
     }
 
     #geek-menu a.current {
@@ -133,6 +118,14 @@ header#main-header {
     #music-menu a.current {
         color: $musicHighlight;
         border-bottom: 3px solid $musicHighlight;
+    }
+
+    a.current {
+        &#blog-landing, &#contact-landing {
+            border-bottom: none;
+            color: $defaultHighlight;
+            border-bottom: 5px solid $defaultHighlight;        
+        }
     }
 }
 
@@ -187,6 +180,21 @@ header#main-header {
         .dropdown-landing {
             background:none;
         }
+
+        a.current {
+            &#music-landing {
+                color: $musicHighlight;
+            }
+
+            &#geek-landing {
+                color: $geekHighlight;
+            }
+
+            &#blog-landing, &#contact-landing {
+                border-bottom: none;       
+            }
+        }
+
 
         nav {
             display: inline-block;
