@@ -14,6 +14,8 @@ $(document).ready(function() {
     });
 
     $(".avblock .playlist > li").click(function(e) {
+        setAlternateBGs();
+
         var $target = $(e.currentTarget);
         var desc = $target.find(".descrip");
         var targetIndex = $target.closest(".avblock").find(".playlist > li").index($target);
@@ -38,6 +40,7 @@ $(document).ready(function() {
 
             // add audio to and show user's chosen descrip
             desc.find(".audioplayer, .videoplayer").prepend(playlist[targetIndex]);
+            desc.closest("li").css('background', "white");
             desc.show();
         } else {
             $(".avblock .descrip").find("audio, video").remove();
@@ -64,6 +67,8 @@ $(document).ready(function() {
             $.each(LIs, function (j, li) {
                 if (j % 2 != 0) {
                     $(this).css("background", "#ddd");
+                } else {
+                    $(this).css("background", "none")
                 }
             });
         });
