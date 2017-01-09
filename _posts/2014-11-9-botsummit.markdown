@@ -8,7 +8,7 @@ tags:
 ---
 I spent 4 hours today hanging around on IRC and watching a livestream of nerds discussing twitter bots. It was fabulous.
 
-[Bot Summit 2014](http://www.youtube.com/watch?v=3FdqRII2occ) has reminded me to write down some of my own thoughts on bots. If it had occurred to me at the time (and I hadn't lost my voice), I might have given a talk, but oh well...maybe next year.
+[Bot Summit 2014](http://www.youtube.com/watch?v=3FdqRII2occ) has reminded me to write down some of my own thoughts on bots. If it had occurred to me at the time (and I hadn't lost my voice), I might have <!--break--> given a talk, but oh well...maybe next year.
 
 I made my first bot in June this year, around the time when [@everyword](https://twitter.com/everyword) ended, but the @everyword tribute-making party that ensued was only indirectly responsible. It's mostly [@inky](https://twitter.com/inky)'s fault I'm even making bots at all.
 

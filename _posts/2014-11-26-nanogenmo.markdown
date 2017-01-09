@@ -7,7 +7,7 @@ tags:
 - code
 - writing
 ---
-My NaNoGenMo project started out as an attempt at parodying bad literature, inspired in part by the [Bulwer-Lytton Fiction Contest](http://www.bulwer-lytton.com/). I planned to take extremely cliched sentences like "It was a dark and stormy night" and use Python string formatting to generate a sentence with the same structure but with all or most of the nouns, adjectives, verbs and so on replaced with random selections from a wordlist. 
+My NaNoGenMo project started out as an attempt at parodying bad literature, inspired in part by the [Bulwer-Lytton Fiction Contest](http://www.bulwer-lytton.com/). I planned to take extremely cliched sentences like "It was a dark and stormy night" and use Python string formatting to <!--break--> generate a sentence with the same structure but with all or most of the nouns, adjectives, verbs and so on replaced with random selections from a wordlist. 
 Anything rich in description, comparisons and metaphors could easily be broken down into parts of speech, which could then be substituted in this manner. Despite my original intentions, good writing featured prominently.
 
 Until today, my code consisted of

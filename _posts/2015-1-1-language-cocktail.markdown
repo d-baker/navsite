@@ -7,7 +7,7 @@ tags:
 ---
 For a long time I've been meaning to write something about my language learning process and never really managed it. Rather than talking about my procrastination I think I'll just cut straight to the point this time.
 
-I'm kind of in love with languages of all kinds, natural, programming, musical...every time I discover a new one, I want to learn it. I was developing a ridiculously long list of languages I wanted to learn, so a year ago, out of desperation, I recklessly decided to start learning 5 at once (vocabulary only; grammar would have been too difficult). I chose Russian, Irish, Finnish, Norwegian and French.
+I'm kind of in love with languages of all kinds, natural, programming, musical...every time I discover a new one, I want to learn it. I was developing a ridiculously long list of languages I wanted to learn, so a year ago <!--break-->, out of desperation, I recklessly decided to start learning 5 at once (vocabulary only; grammar would have been too difficult). I chose Russian, Irish, Finnish, Norwegian and French.
 
 Although far from my first foray into language learning - in the past I've dabbled in Latin, Greek and French, and I spent quite a lot of time in 2013 learning Russian - I'd never been very good at committing to anything for more than a short period of time. I'd tried language kits, Anki, textbooks and foreign language book translations without managing to stick with any for very long. I figured it was time to take matters into my own hands and formulate my own way of doing things. Here follows a very much simplified explanation of what I came up with.
 

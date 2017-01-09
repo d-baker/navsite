@@ -18,7 +18,10 @@ layout: default
           </header>
 
           <div class="post-content">
-            {{ post.content }}
+            {{ post.content | split:'<!--break-->' | first | strip | append: "..."}}
+
+            {% if post.content contains '<!--break-->' %} <a class='readmore' href="{{ post.url | prepend: site.baseurl }}">read entire post</a> 
+            {% endif %}
           </div>
       </article>
 

@@ -8,7 +8,7 @@ tags:
 ---
 I have a thing for memorising strings of numbers. I've committed numerous card/account/phone numbers to memory, and that's useful as it saves having to check every time the number is needed for something. But recently I embarked on an exercise in numerical memorisation which has no practical application whatsoever.
 
-I've read about people memorising so-and-so digits of pi and it always struck me as one of those signature nerd things to do. I guess that's what appealed to me, in the end. I wanted to be one of *those* nerds. Plus, memorising numbers is just fun, and I wanted to challenge myself. 
+I've read about people memorising so-and-so digits of pi and it always struck me as one of those <!--break--> signature nerd things to do. I guess that's what appealed to me, in the end. I wanted to be one of *those* nerds. Plus, memorising numbers is just fun, and I wanted to challenge myself. 
 So, a few months I added a card to Anki that had "recite pi" on the front and 3.14159265358 on the back. I used the [pi command](http://packages.ubuntu.com/lucid/math/pi) to get the digits, and I plan on stopping when I reach the end of the default number of decimal places printed (since the precision determines the digits anyway, I can't exactly increase it now).
 
 I can't remember what I did to start with, but I've fallen into a pattern of learning 4 new digits at a time, appending them to the rest of the digits I already know. I highlight the newly-added digits in bold so I know which ones I need to be committing ot memory. This technique has had an interesting consequence.
