@@ -24,7 +24,7 @@ permalink: /music/audio/
                         <p>{{ audio.description }}</p>
                     {% endif %}
 
-                    <aside class="av-extra">
+                    <aside class="av-extra clearfix">
 
                         {% if audio.tags %} 
                             <ul class="tags">
@@ -41,7 +41,7 @@ permalink: /music/audio/
                         {% endif %}
                         
                         <p class="permalink"><a target="_blank" title="{{ " [permalink]" | prepend: audio.title }}" href="{{ (audio.title | sanitize_filename) | prepend: "originalcomps" }}">More details</a></p>
-
+                        
                     </aside>
 
                 </div>
@@ -69,7 +69,7 @@ permalink: /music/audio/
                         <p>{{ audio.description }}</p>
                     {% endif %}
 
-                    <aside class="av-extra">
+                    <aside class="av-extra clearfix">
                         <p class="permalink"><a target="_blank" title="{{ " [permalink]" | prepend: audio.title }}" href="{{ (audio.title | sanitize_filename) | prepend: "pianorecs" }}">More details</a></p>
                     </aside>
 

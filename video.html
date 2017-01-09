@@ -24,7 +24,7 @@ permalink: /music/video/
                         <p>{{ video.description }}</p>
                     {% endif %}
 
-                    <aside class="av-extra">
+                    <aside class="av-extra clearfix">
 
                         {% if video.tags %} 
                             <ul class="tags">
@@ -72,7 +72,7 @@ permalink: /music/video/
                         <p>{{ video.description }}</p>
                     {% endif %}
 
-                    <aside class="av-extra">
+                    <aside class="av-extra clearfix">
                         <p class="permalink"><a target="_blank" title="{{ " [permalink]" | prepend: video.title }}" href="{{ (video.title | sanitize_filename) | prepend: "pianorecs" }}">More details</a></p>
                     </aside>
 
