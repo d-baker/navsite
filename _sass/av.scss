@@ -50,15 +50,9 @@
 
 .av-extra {
     padding-top: 20px;
-    padding-bottom: 13px;
 }
 
 .permalink {
-    text-align: right;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
     a {
         text-decoration: underline;
         font-style: normal;
@@ -92,10 +86,6 @@
 
 .videoplayer, video, .audioplayer, audio {
     width: 100%;
-}
-
-.permalink {
-    margin-top: 10px;
 }
 
 
@@ -159,6 +149,19 @@
 
 .playlist button {
     padding: 0;
+}
+
+@media (min-width: 430px) {
+    .av-extra {
+        padding-bottom: 13px;
+    }
+    
+    ul.tags {
+        display: inline-block;
+    }
+    p.permalink {
+        float: right;
+    }
 }
 
 @media (min-width: 900px) {
