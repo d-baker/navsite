@@ -45,5 +45,26 @@ $(document).ready(function() {
         });
     }
 
+
+    /**** Prevent simultaneous playing of 2 or more media els ****/
+
+    var avEls = $("audio, video");
+
+    $(avEls).each(function() {
+        var chosenMedia = this;
+
+        // when the user chooses to play a new media item...
+        this.onplay = function() {
+            // pause all other media
+            $(avEls).each(function() {
+                if (this !== chosenMedia) {
+                    this.pause();
+                }
+            });
+
+        }
+    });
+
+
 });
 
