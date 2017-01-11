@@ -111,7 +111,7 @@
       - electronic
       - piano
 
-- description: ""
+- description: "You can experiment with an <a href='http://dreadedvariable.xyz/portfolio/mechanisms/1.html'>interactive version of this piece here</a>."
   src: "originalcomps/mechanism1.mp3"
   playlist: "originalcomps"
   date: "2012-9-6"
@@ -120,7 +120,7 @@
       - orchestral
       - minimalism
 
-- description: ""
+- description: "You can experiment with an <a href='http://dreadedvariable.xyz/portfolio/mechanisms/2.html'>interactive version of this piece here</a>."
   src: "originalcomps/mechanism2.mp3"
   playlist: "originalcomps"
   date: "2013-11-4"
