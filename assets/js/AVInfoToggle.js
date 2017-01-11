@@ -58,7 +58,10 @@ $(document).ready(function() {
             // pause all other media
             $(avEls).each(function() {
                 if (this !== chosenMedia) {
+                    $(this).closest(".descrip").siblings("button").find("h3").removeClass("playing");
                     this.pause();
+                } else {
+                    $(this).closest(".descrip").siblings("button").find("h3").addClass("playing");
                 }
             });
 

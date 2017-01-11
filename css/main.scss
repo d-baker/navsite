@@ -119,6 +119,11 @@ h3 {
 
     &.tracktitle {
         font-variant: normal;
+        
+        &.playing {
+            font-weight: bold;
+            color: $highlightPurple;
+        }
     }
 }
 
