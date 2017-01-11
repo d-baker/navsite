@@ -1,6 +1,7 @@
 $(document).ready(function() {
     setAlternateBGs();
 
+    $(".playlist button").attr("aria-expanded", "false");
 	$(".avblock .descrip").hide();
 
 
@@ -20,12 +21,15 @@ $(document).ready(function() {
         var desc = $target.find(".descrip");
 
         if (desc.css("display") == "none") {
+            $(".playlist button").attr("aria-expanded", "false");
             $(".avblock .descrip").hide(); // hide all descrips
 
             // set user's chosen track bg to white and display
             desc.closest("li").css('background', "white");
+            desc.siblings("button").first().attr("aria-expanded", "true");
             desc.show();
         } else {
+            $(".playlist button").attr("aria-expanded", "false");
             $(".avblock .descrip").hide();
         }
     });
