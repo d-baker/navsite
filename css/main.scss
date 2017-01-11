@@ -136,6 +136,16 @@ p {
     }
 }
 
+aside.note {
+    padding-bottom: 15px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: italic;
+    a {
+        color: $highlightBlue;
+        text-decoration: underline;
+    }
+}
+
 a {
     text-decoration: underline;
     color: $highlightBlue;
