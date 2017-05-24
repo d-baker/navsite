@@ -1,4 +1,12 @@
 - description: ""
+  src: "originalcomps/2017-5-24.mp3"
+  playlist: "originalcomps"
+  date: "2017-05-24"
+  title: "2017-05-24"
+  tags:
+     - electronic
+
+- description: ""
   src: "originalcomps/2017-3-1.mp3"
   playlist: "originalcomps"
   date: "2017-03-1"
