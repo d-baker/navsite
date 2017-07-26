@@ -8,10 +8,10 @@ permalink: /contact/
 <div class="col1">
     <h2 class="defaultpg">Send me a message</h2>
 
-    <form action="https://www.formingo.co/submit/33a13ed7-01ba-40e1-8785-f761de39f64d"
-          method="POST">
+    <form action="https://formspree.io/mvzddvym" method="POST">
+        <input type="text" name="_gotcha" style="display: none">
 
-        <input type="hidden" name="__redirect" value="http://memoriata.com/contact/form-submitted/">
+          <input type="hidden" name="_next" value="http://memoriata.com/contact/form-submitted/" />
 
 
         <div class="formfield">
@@ -24,8 +24,8 @@ permalink: /contact/
         </div>
 
         <div class="formfield">
-            <label for="__replyto" class="required">Email address</label>
-    		<input id="__replyto" type="email" name="__replyto" required>
+            <label for="_replyto" class="required">Email address</label>
+            <input id="_replyto" type="email" name="_replyto" required>
 
             <p class="error">
                Please enter a valid email address
@@ -33,8 +33,8 @@ permalink: /contact/
         </div>
 
         <div class="formfield">
-            <label for="subject" class="required">Subject</label>
-            <input id="subject" type="text" name="subject" required/>
+            <label for="_subject" class="required">Subject</label>
+            <input id="_subject" type="text" name="_subject" required/>
 
             <p class="error">
                 Subject is required
@@ -47,17 +47,6 @@ permalink: /contact/
 
             <p class="error">
                 Message is required
-            </p>
-        </div>
-
-        <div class="antirobot formfield">
-            <label for="antirobot" class="required">Confirm you're not a robot</label>
-            <p class="test">2 + 3 = </p>
-
-            <input id="antirobot" type="text" name="antirobot" required/>
-
-            <p class="error">
-                Please prove you are human
             </p>
         </div>
 
@@ -79,6 +68,4 @@ permalink: /contact/
     </nav>
 </aside>
 
-<!-- TODO local jquery UI -->
 <script src="{{ '/assets/js/jquery-ui.js' | prepend: site.baseurl }}"></script>
-<script src="{{ '/assets/js/form-validation.js' | prepend: site.baseurl }}"></script>
