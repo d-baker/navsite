@@ -13,14 +13,14 @@ layout: default
       <article class="blogpost">
           <header class="post-header">
             <h2 class="post-title">
-              <a href="{{ post.url | prepend: site.baseurl }}"><span class="timestamp">{{ post.date | date: "%Y-%m-%d" }}</span>{{ post.title }}</a>
+              <a href="{{ post.url | prepend: site.baseurl }}.html"><span class="timestamp">{{ post.date | date: "%Y-%m-%d" }}</span>{{ post.title }}</a>
             </h2>
           </header>
 
           <div class="post-content">
             {{ post.content | split:'<!--break-->' | first | strip | append: "..."}}
 
-            {% if post.content contains '<!--break-->' %} <a class='readmore' href="{{ post.url | prepend: site.baseurl }}">read entire post</a> 
+            {% if post.content contains '<!--break-->' %} <a class='readmore' href="{{ post.url | prepend: site.baseurl }}.html">read entire post</a> 
             {% endif %}
           </div>
       </article>
