@@ -1,3 +1,35 @@
+- description: "This is an electronic version of a traditional Irish love song, arranged and performed by me. Lyrics (slightly modified from the original by me):
+  <br/><br/>
+  <em>
+    Tá mé mo shuí ó d'éirigh an ghealach aréir<br/>
+    Ag cur tine síos gan scíth 's á fadú go géar<br/>
+    Tá bunadh an tí 'na luí 's tá mise liom fhéin <br/>
+    Tá na coiligh ag glaoch ‘s tá an saol ina gcodladh ach mé <br/>
+    <br/>
+    mo Sheacht mh'anam déag do bhéal do mhalaí 's do ghrua <br/>
+    Do shúil liath ghlé fá'r thréig mé aiteas is suairc <br/>
+    Le cumha do dhiaidh ní léir dom an *bealach* a shiúl <br/>
+    is a chara mo chléibh, tá na farraigí 'dir mise is tú<br/>
+    <br/>
+    Deireann lucht léinn gur cloíte an galar an grá <br/>
+    ní admhaigh mé go raibh sé 'ndiaidh mo chroí 'stigh a chrá <br/>
+    Aicíd ró-ghéar, faraor nár sheachnaigh mé í <br/>
+    Chuir sé arraing is céad go géar fríd cheartlár mo chroí <br/>
+    <br/>
+    Casadh bean-tsí domh thíos ag Lios Bhéal an Áth' <br/>
+    is d'fhiafraigh mé díthe an scaoilfeadh glais ar bith grá <br/>
+    is dúirt sí os íseal i mbriathra soineanta sámh<br/>
+    Nuair a théann sé fán chroí ní scaoiltear as é go brách<br/>
+    </em>
+  "
+  src: "originalcomps/2017-8-29.mp3"
+  playlist: "originalcomps"
+  date: "2017-08-29"
+  title: "Tá mé mo shuí/2017-08-29"
+  tags:
+     - electronic
+     - irish
+
 - description: ""
   src: "originalcomps/2017-5-24.mp3"
   playlist: "originalcomps"
