@@ -7,12 +7,12 @@ permalink: /music/audio/
 
     <div class="avblock col1" id="original-compositions">
         <h2>original compositions</h2>
-        {% include playlist.html playlist_data=site.data.audio-originalcomps %}
+        {% include playlist.html playlist_data=site.data.audio-originalcomps permalink_dir="originalcomps" %}
     </div>
 
     <div class="avblock col2" id="piano-recordings">
         <h2>piano recordings</h2>
-        {% include playlist.html playlist_data=site.data.audio-pianorecs %}
+        {% include playlist.html playlist_data=site.data.audio-pianorecs permalink_dir="pianorecs" %}
     </div>
 {% include back-to-top.html %}
 

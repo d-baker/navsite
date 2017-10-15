@@ -30,7 +30,7 @@
                     </ul>
                 {% endif %}
                 
-                <p class="permalink"><a target="_blank" title="{{ " [permalink]" | prepend: audio.title }}" href="{{ (audio.title | sanitize_filename) | prepend: "originalcomps" }}">More details</a></p>
+                <p class="permalink"><a target="_blank" title="{{ " [permalink]" | prepend: audio.title }}" href="{{ (audio.title | sanitize_filename) | prepend: include.permalink_dir }}">More details</a></p>
 
             </aside>
 
