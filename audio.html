@@ -7,77 +7,12 @@ permalink: /music/audio/
 
     <div class="avblock col1" id="original-compositions">
         <h2>original compositions</h2>
-
-        <ul class="playlist">
-        {% for audio in site.data.audio-originalcomps %}
-            <li>
-                <button><h3 aria-label="audio track: {{ audio.title }}" class="tracktitle">{{ audio.title }}</h3></button>
-
-                <div class="descrip">
-                    <div class="audioplayer">
-                        <audio controls preload="none">
-                            <source src="{{ audio.src | prepend: "/assets/audio/" }}" type="audio/mpeg">
-                        </audio>
-                    </div>
-
-                    {% if audio.description != "" %} 
-                        <p>{{ audio.description }}</p>
-                    {% endif %}
-
-                    <aside class="av-extra clearfix">
-
-                        {% if audio.tags %} 
-                            <ul class="tags">
-                                Tags:
-                                {% for tag in audio.tags %}
-                                    {{ audio.tags.length }}
-                                    {% if forloop.index == audio.tags.size - 1 %}
-                                        <li class="last">{{ tag }}</li>
-                                    {% else %}
-                                        <li>{{ tag }}</li>
-                                    {% endif %}
-                                {% endfor %}
-                            </ul>
-                        {% endif %}
-                        
-                        <p class="permalink"><a target="_blank" title="{{ " [permalink]" | prepend: audio.title }}" href="{{ (audio.title | sanitize_filename) | prepend: "originalcomps" }}">More details</a></p>
-
-                    </aside>
-
-                </div>
-            </li>
-        {% endfor %}
-        </ul>
-
+        {% include playlist.html playlist_data=site.data.audio-originalcomps %}
     </div>
 
     <div class="avblock col2" id="piano-recordings">
         <h2>piano recordings</h2>
-
-        <ul class="playlist">
-        {% for audio in site.data.audio-pianorecs %}
-            <li>
-                <button><h3 aria-label="audio track: {{ audio.title }}" class="tracktitle">{{ audio.title }}</h3></button>
-
-                <div class="descrip">
-                    <div class="audioplayer">
-                        <audio controls preload="none">
-                            <source src="{{ audio.src | prepend: "/assets/audio/" }}" type="audio/mpeg">
-                        </audio>
-                    </div>
-                    {% if audio.description != "" %} 
-                        <p>{{ audio.description }}</p>
-                    {% endif %}
-
-                    <aside class="av-extra clearfix">
-                        <p class="permalink"><a target="_blank" title="{{ " [permalink]" | prepend: audio.title }}" href="{{ (audio.title | sanitize_filename) | prepend: "pianorecs" }}">More details</a></p>
-                    </aside>
-
-                </div>
-            </li>
-        {% endfor %}
-        </ul>
-
+        {% include playlist.html playlist_data=site.data.audio-pianorecs %}
     </div>
 {% include back-to-top.html %}
 
