@@ -3,5 +3,6 @@ _site/
 assets/audio
 assets/video
 assets/fonts
+assets/js/jquery*
 .sass-cache
 .directory
