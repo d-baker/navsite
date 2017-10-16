@@ -14,7 +14,7 @@ $(document).ready(function() {
             desc.siblings("button").first().attr("aria-expanded", "true");
             desc.show();
 
-            $(nextSong).trigger("play");
+            $(nextSong).prop("currentTime", 0).trigger("play");
         }
     });
 
