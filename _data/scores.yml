@@ -1,37 +1,57 @@
 col1:
-  - title: Wexford Carol
-    url: http://dreadedvariable.xyz/scores/Baker, Dorothea - Wexford Carol.zip
-    listen:
-    description: Arrangement of a traditional Irish christmas carol for voice+piano. Available in high and low keys for different voice types.
-
   - title: Mass setting No.2
-    url: http://dreadedvariable.xyz/scores/Baker, Dorothea - Mass No. 2.zip
+    url: Baker, Dorothea - Mass No. 2.zip
     listen:
     description: An easy-to-learn English setting of the eucharist suitable for singing in either harmony or unison, with or without a choir, and with either piano or organ accompaniment.
 
+  - title: The Lord's Prayer
+    url: Baker, Dorothea - The Lord's Prayer.pdf
+    listen:
+    description: A simple, contemporary-sounding setting written for ease of singing by a congregation of non-musicians.
+  - title: Bunessan
+    url: Baker_Dorothea_Bunessan_arrangement.pdf
+    listen: "http://dreadedvariable.xyz/dropbox/music/morning-has-broken.mp3"
+    description: "Modern, slightly wistful arrangement of the much-loved hymn 'Morning has broken', suitable for singing in 4 parts and accompanying on keyboard."
+
+  - title: Picardy
+    url: Baker_Dorothea_Picardy_last_verse_harmonisation.pdf
+    listen:
+    description: "Last verse harmonisation of 'Let all mortal flesh keep silence' for church organ"
+
+  - title: Slane
+    url: Baker_Dorothea_Slane_descant.pdf
+    listen:
+    description: "Descant & last verse harmonisation of 'Be thou my vision' for organ, congregation/choir and soprano/s"
+
   - title: Windella
-    url: http://dreadedvariable.xyz/scores/Baker, Dorothea - Windella.pdf
+    url: Baker, Dorothea - Windella.pdf
     listen:
     description: A short hymn suitable for evensong, Lent or sombre occasions.
 
-  - title: The Lord's Prayer
-    url: http://dreadedvariable.xyz/scores/Baker, Dorothea - The Lord's Prayer.pdf
+  - title: Three in One
+    url: Baker_Dorothea_Three_in_One
     listen:
-    description: A simple, contemporary-sounding setting written for ease of singing by a congregation of non-musicians.
+    description: "Short, 3 verse SATB anthem written for Trinity Sunday."
 
-  - title: Mass setting No.1
-    url: http://dreadedvariable.xyz/scores/Baker, Dorothea - Mass No. 1.zip
-    listen: /music/video/originalcomps/Mass_setting_No_1_-_Kyrie.html
-    description: For large choir and organ. Very high, very challenging, maybe even impossible; I wrote it as pure art rather than for performance. All movements except the Gloria (English) are in Latin.
+  - title: Erbarm dich mein - chorale
+    url: Baker_Dorothea_Erbarm_dich_mein_arrangement.pdf
+    listen:
+    description: "SATB setting of 3 verses of Psalm 51, in German. Based on a chorale tune, the harmony is sparse and pure, intended to convey a sense of ancientness. Suitable for Lent and sombre occasions."
+
 
 col2:
+  - title: Wexford Carol
+    url: Baker_Dorothea_Wexford_Carol.zip
+    listen:
+    description: Arrangement of a traditional Irish christmas carol for voice+piano. Available in high and low keys for different voice types.
+
   - title: Berceuses
-    url: http://dreadedvariable.xyz/scores/Baker, Dorothea - Berceuses.zip
+    url: Baker, Dorothea - Berceuses.zip
     listen: https://dbaker.bandcamp.com/album/berceuses
     description: A suite of sad minimalist piano pieces.
 
   - title: Danny Boy
-    url: http://dreadedvariable.xyz/scores/Baker, Dorothea - Danny Boy.pdf
+    url: Baker, Dorothea - Danny Boy.pdf
     listen: /music/audio/originalcomps/Danny_Boy.html
     description: Arrangement of a traditional Irish tune for voice+piano.
 
@@ -41,6 +61,12 @@ col2:
     description: Setting of the words of a traditional folk song for SAATB+piano.
 
   - title: Trichotomy Suite
-    url: http://dreadedvariable.xyz/scores/Baker, Dorothea - Trichotomy Suite.zip
+    url: Baker, Dorothea - Trichotomy Suite.zip
     listen: /music/audio/originalcomps/Trichotomy_-_1_Requiem_Aeternam.html
-    description: A 3 movement solo piano suite inspired by elements of the Requiem Mass. The longer middle movement meanders through different styles and is framed by two shorter, pentatonic movements that are slightly unplayable.
+    description: "A 3 movement solo piano suite inspired by elements of the Requiem Mass. The longer middle movement meanders through different styles and is framed by two shorter, pentatonic movements that are slightly unplayable."
+
+  - title: Mass setting No.1
+    url: Baker, Dorothea - Mass No. 1.zip
+    listen: /music/video/originalcomps/Mass_setting_No_1_-_Kyrie.html
+    description: For large choir and organ. Very high, very challenging, maybe even impossible; I wrote it as pure art rather than for performance. All movements except the Gloria (English) are in Latin.
+
