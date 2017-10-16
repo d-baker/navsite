@@ -73,6 +73,10 @@ $(document).ready(function() {
         this.onpause = function() {
             $(this).closest(".descrip").siblings("button").find("h3").removeClass("playing");
         }
+
+        this.onended = function() {
+            $(this).closest(".descrip").siblings("button").find("h3").removeClass("playing");
+        }
     });
 
 });
