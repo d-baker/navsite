@@ -1,29 +1,53 @@
+#- description: ""
+#  src: "pianorecs/concert2017-10-15/Clara_Wieck_Piece_Fugitive_1.mp3"
+#  date: "2017-10-15"
+#  title: "Clara Wieck: Piece Fugitive No. 1"
+
 - description: ""
-  src: "pianorecs/concert2017-10-15/Clara Wieck: Piece Fugitive No. 1.mp3"
-  playlist: "Piano recital - 15th October 2017"
+  src: "Dorothea_Baker_Berceuse_1.mp3"
   date: "2017-10-15"
-  title: "Clara Wieck: Piece Fugitive No. 1"
+  title: "Dorothea Baker - Berceuse No. 1"
+  playlist: "pianorecs/concert2017-10-15"
+  isInPlaylist: true
+
+- description: ""
+  src: "Dorothea_Baker_Berceuse_2.mp3"
+  date: "2017-10-15"
+  title: "Dorothea Baker - Berceuse No. 2"
+  playlist: "pianorecs/concert2017-10-15"
+  isInPlaylist: true
+
+- description: ""
+  src: "Dorothea_Baker_Berceuse_3.mp3"
+  date: "2017-10-15"
+  title: "Dorothea Baker - Berceuse No. 3"
+  playlist: "pianorecs/concert2017-10-15"
+  isInPlaylist: true
 
 - description: "Inspired by Rachmaninov's own recording of this piece, and played on a period instrument."
   src: "pianorecs/concert2017-10-15/Rachmaninov: Prelude Op. 32 No. 5.mp3"
-  playlist: "Piano recital - 15th October 2017"
   date: "2017-10-15"
   title: "Rachmaninov: Prelude Op. 32 No. 5"
+  playlist: "pianorecs/concert2017-10-15"
+  isInPlaylist: true
 
 - description: ""
   src: "pianorecs/concert2017-10-15/Chopin: Nocturne No. 20.mp3"
-  playlist: "Piano recital - 15th October 2017"
   date: "2017-10-15"
   title: "Chopin: Nocturne No. 20"
+  playlist: "pianorecs/concert2017-10-15"
+  isInPlaylist: true
 
 - description: ""
   src: "pianorecs/concert2017-10-15/Chopin: Nocturne No. 21.mp3"
-  playlist: "Piano recital - 15th October 2017"
   date: "2017-10-15"
   title: "Chopin: Nocturne No. 21"
-- description: "Primo: Dorothea Baker, Secondo: Stephen Kerr"
+  playlist: "pianorecs/concert2017-10-15"
+  isInPlaylist: true
 
+- description: "Primo: Dorothea Baker, Secondo: Stephen Kerr"
   src: "pianorecs/concert2017-10-15/Ravel: Mother Goose Suite - Laideronette, imperatrice des pagodas.mp3"
-  playlist: "Piano recital - 15th October 2017"
   date: "2017-10-15"
   title: "Ravel: Mother Goose Suite - Laideronette, imperatrice des pagodas"
+  playlist: "pianorecs/concert2017-10-15"
+  isInPlaylist: true

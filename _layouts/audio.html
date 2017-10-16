@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
+{% if page.isInPlaylist %}
+<a class="back" href="{{ page.playlist | prepend: '/music/audio/' }}">Return to playlist</a>
+{% else %}
 <a class="back" href="/music/audio">All audio</a>
+{% endif %}
 
 <div class="avpost">
     <h1 class="avpg post-title clearfix">{{ page.title }}</h1>
@@ -9,7 +13,7 @@ layout: default
     <div class="col1">
         <div class="audioplayer">
             <audio controls>
-                <source src="{{page.src | prepend: "/assets/audio/"}}" type="audio/mpeg">
+                <source src="{{ '/assets/audio/' | append: page.playlist | append: '/' | append: page.src }}" type="audio/mpeg">
             </audio>
         </div>
     </div>
