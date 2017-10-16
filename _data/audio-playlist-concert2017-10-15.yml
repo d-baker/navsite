@@ -1,8 +1,3 @@
-#- description: ""
-#  src: "pianorecs/concert2017-10-15/Clara_Wieck_Piece_Fugitive_1.mp3"
-#  date: "2017-10-15"
-#  title: "Clara Wieck: Piece Fugitive No. 1"
-
 - description: "A studio recording of this work can be heard <a href='https://dbaker.bandcamp.com/track/berceuse-1'>here</a>."
   src: "Dorothea_Baker_Berceuse_1.mp3"
   date: "2017-10-15"
@@ -35,6 +30,13 @@
   src: "Dorothea_Baker_Berceuse_5.mp3"
   date: "2017-10-15"
   title: "Dorothea Baker - Berceuse No. 5"
+  playlist: "pianorecs/concert2017-10-15"
+  isInPlaylist: true
+
+- description: ""
+  src: "clara_wieck.mp3"
+  date: "2017-10-15"
+  title: "Clara Wieck: Piece Fugitive No. 1"
   playlist: "pianorecs/concert2017-10-15"
   isInPlaylist: true
 
