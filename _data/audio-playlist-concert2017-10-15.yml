@@ -3,28 +3,42 @@
 #  date: "2017-10-15"
 #  title: "Clara Wieck: Piece Fugitive No. 1"
 
-- description: ""
+- description: "A studio recording of this work can be heard <a href='https://dbaker.bandcamp.com/track/berceuse-1'>here</a>."
   src: "Dorothea_Baker_Berceuse_1.mp3"
   date: "2017-10-15"
   title: "Dorothea Baker - Berceuse No. 1"
   playlist: "pianorecs/concert2017-10-15"
   isInPlaylist: true
 
-- description: ""
+- description: "A studio recording of this work can be heard <a href='https://dbaker.bandcamp.com/track/berceuse-   2'>here</a>."
   src: "Dorothea_Baker_Berceuse_2.mp3"
   date: "2017-10-15"
   title: "Dorothea Baker - Berceuse No. 2"
   playlist: "pianorecs/concert2017-10-15"
   isInPlaylist: true
 
-- description: ""
+- description: "A studio recording of this work can be heard <a href='https://dbaker.bandcamp.com/track/berceuse-      3'>here</a>."
   src: "Dorothea_Baker_Berceuse_3.mp3"
   date: "2017-10-15"
   title: "Dorothea Baker - Berceuse No. 3"
   playlist: "pianorecs/concert2017-10-15"
   isInPlaylist: true
 
-- description: "Inspired by Rachmaninov's own recording of this piece, and played on a period instrument."
+- description: "A studio recording of this work can be heard <a href='https://dbaker.bandcamp.com/track/berceuse-     4'>here</a>."
+  src: "Dorothea_Baker_Berceuse_4.mp3"
+  date: "2017-10-15"
+  title: "Dorothea Baker - Berceuse No. 4"
+  playlist: "pianorecs/concert2017-10-15"
+  isInPlaylist: true
+
+- description: "A studio recording of this work can be heard <a href='https://dbaker.bandcamp.com/track/berceuse-     5'>here</a>. The live performance features an ossia stave at 3:55, which is not present on the studio recording."
+  src: "Dorothea_Baker_Berceuse_5.mp3"
+  date: "2017-10-15"
+  title: "Dorothea Baker - Berceuse No. 5"
+  playlist: "pianorecs/concert2017-10-15"
+  isInPlaylist: true
+
+- description: "I am a huge admirer of Rachmaninov's playing and aspire to the same crystal clarity and dextrous navigation of texture that can be heard in his playing. To prepare for this performance I listened to Rachmaninov's own recording of this piece on repeat for several days before the concert. I was particularly eager to perform this piece on an instrument built during Rachmaninov's lifetime, as it produces a tone similar to that of the pianos Rachmaninov would have played."
   src: "pianorecs/concert2017-10-15/Rachmaninov: Prelude Op. 32 No. 5.mp3"
   date: "2017-10-15"
   title: "Rachmaninov: Prelude Op. 32 No. 5"
@@ -45,7 +59,7 @@
   playlist: "pianorecs/concert2017-10-15"
   isInPlaylist: true
 
-- description: "Primo: Dorothea Baker, Secondo: Stephen Kerr"
+- description: "Piano 4 hands duet. Primo: Dorothea Baker, Secondo: Stephen Kerr"
   src: "pianorecs/concert2017-10-15/Ravel: Mother Goose Suite - Laideronette, imperatrice des pagodas.mp3"
   date: "2017-10-15"
   title: "Ravel: Mother Goose Suite - Laideronette, imperatrice des pagodas"
