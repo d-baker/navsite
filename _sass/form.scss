@@ -61,12 +61,17 @@ form {
 	}
 
 	div.antirobot {
+        p.test {
+            display: inline;
+        }
+
 		label {
 			padding-bottom: 15px;
 		}
 
 		input {
 			width: 80px;
+            display: inline;
 		}
 	}
 
