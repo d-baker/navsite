@@ -6,8 +6,9 @@ col1:
 
   - title: The Lord's Prayer
     url: Baker, Dorothea - The Lord's Prayer.pdf
-    listen:
+    listen: "http://dreadedvariable.xyz/dropbox/music/lords_prayer.mp3"
     description: A simple, contemporary-sounding setting written for ease of singing by a congregation of non-musicians.
+
   - title: Bunessan
     url: Baker_Dorothea_Bunessan_arrangement.pdf
     listen: "http://dreadedvariable.xyz/dropbox/music/morning-has-broken.mp3"
@@ -15,7 +16,7 @@ col1:
 
   - title: Picardy
     url: Baker_Dorothea_Picardy_last_verse_harmonisation.pdf
-    listen:
+    listen: "http://dreadedvariable.xyz/dropbox/music/picardy_lv.mp3"
     description: "Last verse harmonisation of 'Let all mortal flesh keep silence' for church organ"
 
   - title: Slane
@@ -25,11 +26,11 @@ col1:
 
   - title: Windella
     url: Baker, Dorothea - Windella.pdf
-    listen:
+    listen: "http://dreadedvariable.xyz/dropbox/music/windella.mp3"
     description: A short hymn suitable for evensong, Lent or sombre occasions.
 
   - title: Three in One
-    url: Baker_Dorothea_Three_in_One
+    url: Baker_Dorothea_Three_in_One.pdf
     listen:
     description: "Short, 3 verse SATB anthem written for Trinity Sunday."
 
@@ -42,7 +43,7 @@ col1:
 col2:
   - title: Wexford Carol
     url: Baker_Dorothea_Wexford_Carol.zip
-    listen:
+    listen: "http://dreadedvariable.xyz/dropbox/music/wexford_carol.mp3"
     description: Arrangement of a traditional Irish christmas carol for voice+piano. Available in high and low keys for different voice types.
 
   - title: Berceuses
