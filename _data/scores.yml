@@ -15,14 +15,14 @@ col1:
     description: "Modern, slightly wistful arrangement of the much-loved hymn 'Morning has broken', suitable for singing in 4 parts and accompanying on keyboard."
 
   - title: Picardy
-    url: Baker_Dorothea_Picardy_last_verse_harmonisation.pdf
-    listen: "http://dreadedvariable.xyz/dropbox/music/picardy_lv.mp3"
-    description: "Last verse harmonisation of 'Let all mortal flesh keep silence' for church organ"
+    url: Dorothea Baker - Picardy descant.pdf
+    listen:
+    description: "Last verse harmonisation and descant for 'Let all mortal flesh keep silence'"
 
   - title: Slane
     url: Baker_Dorothea_Slane_descant.pdf
     listen:
-    description: "Descant & last verse harmonisation of 'Be thou my vision' for organ, congregation/choir and soprano/s"
+    description: "Descant & last verse harmonisation of 'Be thou my vision'"
 
   - title: Windella
     url: Baker, Dorothea - Windella.pdf
@@ -41,6 +41,16 @@ col1:
 
 
 col2:
+  - title: The Prophecy
+    url: Dorothea Baker - The Prophecy.pdf
+    listen: "http://memoriata.com/music/video/originalcomps/The_Prophecy.html"
+    description: "Grand 8-part choral anthem for Christmas day, a setting of Isaiah 9:2. SSAATTBB with organ accompaniment."
+
+  - title: I wonder as I wander
+    url: Dorothea Baker - I wonder as I wander.pdf
+    listen: "http://dreadedvariable.xyz/dropbox/music/I wonder as I wander.mp4"
+    description: Arrangement of a traditional Appalachian tune for SATB choir and piano. Please note the recording is provided only to give a rough idea of how the piece sounds - it is not representative, as it's just me singing and this work is intended for a full choir with men's and women's voices alternating.
+
   - title: Wexford Carol
     url: Baker_Dorothea_Wexford_Carol.zip
     listen: "http://dreadedvariable.xyz/dropbox/music/wexford_carol.mp3"
