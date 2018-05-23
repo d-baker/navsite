@@ -5,70 +5,8 @@ permalink: /contact/
 
 <h1 class="pg-title defaultpg">Contact</h1>
 
-<div class="col1">
-    <h2 class="defaultpg">Send me a message</h2>
-
-    <form action="https://formspree.io/mvzddvym" method="POST">
-        <p class="error summary-error">Errors found, please check your input</p>
-        <input type="text" name="_gotcha" style="display: none">
-
-          <input type="hidden" name="_next" value="http://memoriata.com/contact/form-submitted/" />
-          <input type="hidden" name="_format" value="plain" />
-
-
-        <div class="formfield">
-            <label for="name" class="required">Name</label>
-            <input id="name" type="text" name="name" required/>
-
-            <p class="error">
-                Name is required
-            </p>
-        </div>
-
-        <div class="formfield">
-            <label for="email" class="required">Email address</label>
-            <input id="email" type="email" name="email" required>
-
-            <p class="error">
-               Please enter a valid email address
-            </p>
-        </div>
-
-        <div class="formfield">
-            <label for="_subject" class="required">Subject</label>
-            <input id="_subject" type="text" name="_subject" required/>
-
-            <p class="error">
-                Subject is required
-            </p>
-        </div>
-
-        <div class="formfield">
-            <label for="message" class="required">Message</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <p class="error">
-                Message is required
-            </p>
-        </div>
-        <div class="antirobot formfield">
-            <label for="antirobot" class="required">Confirm you're not a robot</label>
-            <p class="test">2 + 3 = </p>
-        
-            <input id="antirobot" type="text" name="antirobot" required/>
-        
-            <p class="error">
-                Please prove you are human
-            </p>
-        </div>
-
-        <input type="submit" id="submit" value="Send"/>
-
-    </form>
-</div>
-
-<aside id="contact-sidebar" class="col2">
-    <h2 class="defaultpg">You can also find me on...</h2>
+<dev id="contact-sidebar">
+    <h2 class="defaultpg">You can find me on</h2>
     <nav>
         <ul>
             <li><a href="https://twitter.com/dbaker_h">Twitter</a></li>
