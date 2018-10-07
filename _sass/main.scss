@@ -254,20 +254,40 @@ ul {
 
 #contact-sidebar {
     text-align: center;
-    ul {
-        padding: 0;
-        list-style-type: none;
-    }
-    li {
-        padding: 10px 0px;
-        &:before {
-            content: " - ";
+
+    nav {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+
+        a {
+            font-family: Helvetica, Arial, sans-serif;
+            display: inline-block;
+            width: 10rem;
+            padding: 1.5rem;
+            color: white;
+            &:hover {
+                color: white;
+                text-decoration: none;
+            }
+
+            &#bandcamp-link {
+                background-image: url("../assets/icons/bandcamp.svg");
+                background-repeat: no-repeat;
+                background-color: #408294;
+            }
+            &#twitter-link {
+                background-image: url("../assets/icons/twitter.svg");
+                background-repeat: no-repeat;
+                background-color: #1DA1F2;
+            }
+            &#github-link{
+                background-image: url("../assets/icons/github.svg");
+                background-repeat: no-repeat;
+                background-color: #181717;
+            }
         }
     }
-    a {
-        font-family: Helvetica, Arial, sans-serif;
-        text-decoration: underline;
-    }
+
 }
 
 footer {
