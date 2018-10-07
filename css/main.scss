@@ -10,6 +10,14 @@ $highlightPurple: #683996;
 $highlightGreen: #1AA80A;
 $batcolor: #839496;
 
+.music-page, .tech-page {
+    $fg: #dfdfdf;
+    $bg: #2f2f2f;
+    $highlightBlue: #027185 + #222;
+    $highlightPurple: #683996 + #222;
+    $highlightGreen: #1AA80A + #222;
+}
+
 $menufg: $fg - #333;
 $menubg: white;
 
