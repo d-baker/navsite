@@ -1,22 +1,5 @@
----
----
 @import "reset";
 @import "fontface";
-
-$fg: #131313;
-$bg: #eee;
-$highlightBlue: #027185;
-$highlightPurple: #683996;
-$highlightGreen: #1AA80A;
-$batcolor: #839496;
-
-.music-page, .tech-page {
-    $fg: #dfdfdf;
-    $bg: #2f2f2f;
-    $highlightBlue: #027185 + #222;
-    $highlightPurple: #683996 + #222;
-    $highlightGreen: #1AA80A + #222;
-}
 
 $menufg: $fg - #333;
 $menubg: white;
@@ -24,7 +7,7 @@ $menubg: white;
 $musicHighlight: $highlightPurple;
 $geekHighlight: $highlightGreen;
 $defaultHighlight: $highlightBlue;
-
+$batcolor: #839496;
 $menubatcolor: $batcolor - #111;
 
 $header-height: 60px;
