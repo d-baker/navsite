@@ -1,5 +1,6 @@
 ---
 ---
+/*
 $fg: #dfdfdf;
 $bg: #2B3C29;
 $headerFg: $fg;
@@ -8,5 +9,15 @@ $timestampColor: $fg;
 $highlightBlue: #027185 + #222;
 $highlightPurple: #683996 + #222;
 $highlightGreen: #1AA80A + #222;
+*/
+
+$fg: #131313;
+$bg: #eee;
+$headerFg: $fg + #333;
+$timestampColor: black;
+
+$highlightBlue: #027185;
+$highlightPurple: #683996;
+$highlightGreen: #1AA80A;
 
 @import "main";
