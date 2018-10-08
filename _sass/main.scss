@@ -259,33 +259,52 @@ ul {
         margin-top: 5rem;
         margin-bottom: 5rem;
 
-        a {
-            font-family: Helvetica, Arial, sans-serif;
+        .nav-button {
+            font-family: "Source Code Pro";
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: white;
+
+            width: 12rem;
             display: inline-block;
-            width: 10rem;
             padding: 1.5rem;
             color: white;
+            text-decoration: none;
+
             &:hover {
                 color: white;
                 text-decoration: none;
             }
 
             &#bandcamp-link {
-                background-image: url("../assets/icons/bandcamp.svg");
-                background-repeat: no-repeat;
                 background-color: #408294;
+
+                &:hover {
+                    background-color: #408294 - #111;
+                }
             }
             &#twitter-link {
-                background-image: url("../assets/icons/twitter.svg");
-                background-repeat: no-repeat;
                 background-color: #1DA1F2;
+                &:hover {
+                    background-color: #1DA1F2 - #111;
+                }
             }
             &#github-link{
-                background-image: url("../assets/icons/github.svg");
-                background-repeat: no-repeat;
-                background-color: #181717;
+                background-color: #444;
+                &:hover {
+                    background-color: #444 - #111;
+                }
+            }
+
+            svg {
+                width: 1.5rem;
+                fill: white;
+                vertical-align: middle;
             }
         }
+
+
     }
 
 }
