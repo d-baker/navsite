@@ -1,83 +1,95 @@
-col1:
-  - title: Mass setting No.2
-    url: Baker, Dorothea - Mass No. 2.zip
-    listen:
-    description: An easy-to-learn English setting of the eucharist suitable for singing in either harmony or unison, with or without a choir, and with either piano or organ accompaniment.
+- title: Mass setting No.2
+  url: Baker, Dorothea - Mass No. 2.zip
+  listen:
+  description: An easy-to-learn English setting of the eucharist suitable for singing in either harmony or unison, with or without a choir, and with either piano or organ accompaniment.
+  category: col1
 
-  - title: The Lord's Prayer
-    url: Baker, Dorothea - The Lord's Prayer.pdf
-    listen: "http://dreadedvariable.xyz/dropbox/music/lords_prayer.mp3"
-    description: A simple, contemporary-sounding setting written for ease of singing by a congregation of non-musicians.
+- title: The Lord's Prayer
+  url: Baker, Dorothea - The Lord's Prayer.pdf
+  listen: "http://dreadedvariable.xyz/dropbox/music/lords_prayer.mp3"
+  description: A simple, contemporary-sounding setting written for ease of singing by a congregation of non-musicians.
+  category: col2
 
-  - title: Bunessan
-    url: Baker_Dorothea_Bunessan_arrangement.pdf
-    listen: "http://dreadedvariable.xyz/dropbox/music/morning-has-broken.mp3"
-    description: "Modern, slightly wistful arrangement of the much-loved hymn 'Morning has broken', suitable for singing in 4 parts and accompanying on keyboard."
+- title: Bunessan
+  url: Baker_Dorothea_Bunessan_arrangement.pdf
+  listen: "http://dreadedvariable.xyz/dropbox/music/morning-has-broken.mp3"
+  description: "Modern, slightly wistful arrangement of the much-loved hymn 'Morning has broken', suitable for singing in 4 parts and accompanying on keyboard."
+  category: col1
 
-  - title: Picardy
-    url: Dorothea Baker - Picardy descant.pdf
-    listen:
-    description: "Last verse harmonisation and descant for 'Let all mortal flesh keep silence'"
+- title: Picardy
+  url: Dorothea Baker - Picardy descant.pdf
+  listen:
+  description: "Last verse harmonisation and descant for 'Let all mortal flesh keep silence'"
+  category: col2
 
-  - title: Slane
-    url: Baker_Dorothea_Slane_descant.pdf
-    listen:
-    description: "Descant & last verse harmonisation of 'Be thou my vision'"
+- title: Slane
+  url: Baker_Dorothea_Slane_descant.pdf
+  listen:
+  description: "Descant & last verse harmonisation of 'Be thou my vision'"
+  category: col1
 
-  - title: Windella
-    url: Baker, Dorothea - Windella.pdf
-    listen: "http://dreadedvariable.xyz/dropbox/music/windella.mp3"
-    description: A short hymn suitable for evensong, Lent or sombre occasions.
+- title: Windella
+  url: Baker, Dorothea - Windella.pdf
+  listen: "http://dreadedvariable.xyz/dropbox/music/windella.mp3"
+  description: A short hymn suitable for evensong, Lent or sombre occasions.
+  category: col2
 
-  - title: Three in One
-    url: Baker_Dorothea_Three_in_One.pdf
-    listen:
-    description: "Short, 3 verse SATB anthem written for Trinity Sunday."
+- title: Three in One
+  url: Baker_Dorothea_Three_in_One.pdf
+  listen:
+  description: "Short, 3 verse SATB anthem written for Trinity Sunday."
+  category: col1
 
-  - title: Erbarm dich mein - chorale
-    url: Baker_Dorothea_Erbarm_dich_mein_arrangement.pdf
-    listen:
-    description: "SATB setting of 3 verses of Psalm 51, in German. Based on a chorale tune, the harmony is sparse and pure, intended to convey a sense of ancientness. Suitable for Lent and sombre occasions."
+- title: Erbarm dich mein - chorale
+  url: Baker_Dorothea_Erbarm_dich_mein_arrangement.pdf
+  listen:
+  description: "SATB setting of 3 verses of Psalm 51, in German. Based on a chorale tune, the harmony is sparse and pure, intended to convey a sense of ancientness. Suitable for Lent and sombre occasions."
+  category: col2
 
+- title: The Prophecy
+  url: Dorothea Baker - The Prophecy.pdf
+  listen: "http://memoriata.com/music/video/originalcomps/The_Prophecy.html"
+  description: "Grand 8-part choral anthem for Christmas day, a setting of Isaiah 9:2. SSAATTBB with organ accompaniment."
+  category: col1
 
-col2:
-  - title: The Prophecy
-    url: Dorothea Baker - The Prophecy.pdf
-    listen: "http://memoriata.com/music/video/originalcomps/The_Prophecy.html"
-    description: "Grand 8-part choral anthem for Christmas day, a setting of Isaiah 9:2. SSAATTBB with organ accompaniment."
+- title: I wonder as I wander
+  url: Dorothea Baker - I wonder as I wander.pdf
+  listen: "http://dreadedvariable.xyz/dropbox/music/I wonder as I wander.mp4"
+  description: Arrangement of a traditional Appalachian tune for SATB choir and piano. Please note the recording is provided only to give a rough idea of how the piece sounds - it is not representative, as it's just me singing and this work is intended for a full choir with men's and women's voices alternating.
+  category: col2
 
-  - title: I wonder as I wander
-    url: Dorothea Baker - I wonder as I wander.pdf
-    listen: "http://dreadedvariable.xyz/dropbox/music/I wonder as I wander.mp4"
-    description: Arrangement of a traditional Appalachian tune for SATB choir and piano. Please note the recording is provided only to give a rough idea of how the piece sounds - it is not representative, as it's just me singing and this work is intended for a full choir with men's and women's voices alternating.
+- title: Wexford Carol
+  url: Baker_Dorothea_Wexford_Carol.zip
+  listen: "http://dreadedvariable.xyz/dropbox/music/wexford_carol.mp3"
+  description: Arrangement of a traditional Irish christmas carol for voice+piano. Available in high and low keys for different voice types.
+  category: col1
 
-  - title: Wexford Carol
-    url: Baker_Dorothea_Wexford_Carol.zip
-    listen: "http://dreadedvariable.xyz/dropbox/music/wexford_carol.mp3"
-    description: Arrangement of a traditional Irish christmas carol for voice+piano. Available in high and low keys for different voice types.
+- title: Berceuses
+  url: Baker, Dorothea - Berceuses.zip
+  listen: https://dbaker.bandcamp.com/album/berceuses
+  description: A suite of sad minimalist piano pieces.
+  category: col2
 
-  - title: Berceuses
-    url: Baker, Dorothea - Berceuses.zip
-    listen: https://dbaker.bandcamp.com/album/berceuses
-    description: A suite of sad minimalist piano pieces.
+- title: Danny Boy
+  url: Baker, Dorothea - Danny Boy.pdf
+  listen: /music/audio/originalcomps/Danny_Boy.html
+  description: Arrangement of a traditional Irish tune for voice+piano.
+  category: col1
 
-  - title: Danny Boy
-    url: Baker, Dorothea - Danny Boy.pdf
-    listen: /music/audio/originalcomps/Danny_Boy.html
-    description: Arrangement of a traditional Irish tune for voice+piano.
+- title: She's like the swallow
+  url: http://dreadedvariable.xyz/scores/Baker, Dorothea - She's like the swallow.pdf
+  listen: /music/video/originalcomps/Shes_like_the_swallow.html
+  description: Setting of the words of a traditional folk song for SAATB+piano.
+  category: col2
 
-  - title: She's like the swallow
-    url: http://dreadedvariable.xyz/scores/Baker, Dorothea - She's like the swallow.pdf
-    listen: /music/video/originalcomps/Shes_like_the_swallow.html
-    description: Setting of the words of a traditional folk song for SAATB+piano.
+- title: Trichotomy Suite
+  url: Baker, Dorothea - Trichotomy Suite.zip
+  listen: /music/audio/originalcomps/Trichotomy_-_1_Requiem_Aeternam.html
+  description: "A 3 movement solo piano suite inspired by elements of the Requiem Mass. The longer middle movement meanders through different styles and is framed by two shorter, pentatonic movements that are slightly unplayable."
+  category: col1
 
-  - title: Trichotomy Suite
-    url: Baker, Dorothea - Trichotomy Suite.zip
-    listen: /music/audio/originalcomps/Trichotomy_-_1_Requiem_Aeternam.html
-    description: "A 3 movement solo piano suite inspired by elements of the Requiem Mass. The longer middle movement meanders through different styles and is framed by two shorter, pentatonic movements that are slightly unplayable."
-
-  - title: Mass setting No.1
-    url: Baker, Dorothea - Mass No. 1.zip
-    listen: /music/video/originalcomps/Mass_setting_No_1_-_Kyrie.html
-    description: For large choir and organ. Very high, very challenging, maybe even impossible; I wrote it as pure art rather than for performance. All movements except the Gloria (English) are in Latin.
-
+- title: Mass setting No.1
+  url: Baker, Dorothea - Mass No. 1.zip
+  listen: /music/video/originalcomps/Mass_setting_No_1_-_Kyrie.html
+  description: For large choir and organ. Very high, very challenging, maybe even impossible; I wrote it as pure art rather than for performance. All movements except the Gloria (English) are in Latin.
+  category: col2

@@ -17,22 +17,25 @@ permalink: /music/scores/
 </div>
 
 <div class="scorelisting">
-    {% for category in site.data.scores %}
+    {% for score in site.data.scores %}
 
-    	<div class="{{ category[0] }}">
-		    {% for score in category[1] %}
-		    	<article class="score">
-			    	<h2 class="avpg">{{ score.title }}</h3>
-			    	<p class="descrip">{{ score.description }}</p>
-			    	<p class="buttons">
-				    	<a target="_blank" class="scorelink" href="{{score.url | prepend: 'http://dreadedvariable.xyz/scores/' }}">Download score</a>
-				    	{% if score.listen %}
-				        	<a target="_blank" class="scorelink" href="{{score.listen}}">Listen</a>
-				        {% endif %}
-			        </p>
-		    	</article>
-		    {% endfor %}
+    	<div class="{{ score.category }}">
+	    	<article class="score">
+		    	<h2 class="avpg">{{ score.title }}</h3>
+		    	<p class="descrip">{{ score.description }}</p>
+		    	<p class="buttons">
+			    	<a target="_blank" class="scorelink" href="{{score.url | prepend: 'http://dreadedvariable.xyz/scores/' }}">Download score</a>
+			    	{% if score.listen %}
+			        	<a target="_blank" class="scorelink" href="{{score.listen}}">Listen</a>
+			        {% endif %}
+		        </p>
+	    	</article>
 	    </div>
+
+	    {% if score.category == "col2" %}
+			<div class="clearfix">
+			</div>
+		{% endif %}
 
 	{% endfor %}
 </div>
