@@ -7,6 +7,13 @@
 </li>
  -->
 <li>
+{% if page.url == "/tech/projects/" %}
+    <a class="current" href="{{ page.url | prepend: site.baseurl }}">projects</a>
+{% else %}
+    <a href="{{ "/tech/projects/" | prepend: site.baseurl }}">projects</a>
+{% endif %}
+</li>
+<li>
 	<a target="_blank" class="external" href="http://nightmare.website"><span class="content">dev blog</span></a>
 </li>
 
