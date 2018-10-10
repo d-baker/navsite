@@ -186,6 +186,27 @@ nav li a {
     line-height: 1.5em;
 }
 
+.homepage a.button {
+    padding: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+
+    width: 100%;
+    display: block;
+
+    &#music-cta {
+        background: $highlightPurple;
+    }
+
+    &#tech-cta {
+        background: $highlightGreen;
+    }
+}
+
 ul {
     list-style-type: square;
     padding-left: 20px;
