@@ -313,9 +313,24 @@ footer {
     border-top: 1px dashed $batcolor;
     padding: 20px 0px;
     margin-top: 60px;
-    
-    p {
-        padding-bottom: 0;
+
+    .container {
+        display: flex;
+        align-items: center;
+
+        #copyright {
+            padding-bottom: 0;
+
+            flex: 1;
+        }
+
+        #webring {
+            padding-bottom: 0;
+
+            img {
+                width: 2rem;
+            }
+        }
     }
 }
 
