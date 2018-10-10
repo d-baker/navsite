@@ -6,27 +6,39 @@ permalink: /tech/bots/
 
 <h1 class="pg-title geekpg">Twitter bots</h1>
 
-<article class="textblock">
-	<h2 class="geekpg">What is a Twitter bot?</h2>
-	<p>A Twitter bot is an automated twitter account operated via a computer program.</p>
-	<p>Although some Twitter bots are used for spam, there is a large community of bot-makers who create Twitter bots with a humorous, artistic, political or even functional intent (an example of the last would be a bot that tells you the weather when you tweet at it).</p>
-	<p>I and many others have found making Twitter bots to be a great way to experiment with code and learn new things.</p>
-	<p>Some of my favorite bots that I've made are listed below. You can find a full list of my bots <a href="https://twitter.com/dbaker_h/lists/bot-family">here.</a></p>
-	<p>Some of these bots don't tweet anymore, as maintaining them became too difficult.</p>
-</article>
+<div class="content-wrapper">
 
-<div class="botlist">
-    {% for category in site.data.bots %}
+	<article class="textblock">
+		<h2 class="geekpg">What is a Twitter bot?</h2>
+		<p>A Twitter bot is an automated twitter account operated via a computer program.</p>
+		<p>Although some Twitter bots are used for spam, there is a large community of bot-makers who create Twitter bots with a humorous, artistic, political or even functional intent (an example of the last would be a bot that tells you the weather when you tweet at it).</p>
+		<p>I and many others have found making Twitter bots to be a great way to experiment with code and learn new things.</p>
+		<p>Some of my favorite bots that I've made are listed below. You can find a full list of my bots <a href="https://twitter.com/dbaker_h/lists/bot-family">here.</a></p>
+		<p>Some of these bots don't tweet anymore, as maintaining them became too difficult.</p>
+	</article>
 
-    	{% for bot in category[1] %}
-    		<section class="botlisting">
-	        	<h3 class="geekpg">{{ bot.title }}</h3>
-	        	<p class="descrip">{{ bot.description }}</p>
-	        	{{ bot.embed }}
-	        </section>
-    	{% endfor %}
+	<div class="botlist">
+	    {% for category in site.data.bots %}
 
-    {% endfor %}
+	    	{% for bot in category[1] %}
+	    		<section class="botlisting">
+		        	<h3 class="geekpg">{{ bot.title }}</h3>
+		        	<p class="descrip">{{ bot.description }}</p>
+		        	{{ bot.embed }}
+		        </section>
+	    	{% endfor %}
+
+	    {% endfor %}
+	</div>
+
+    <aside class="sidebar" id="geekery-sidebar">
+        <h2 class="geekpg">related links</h2>
+        <nav>
+            <ul>
+            {% include tech-submenu.html %}
+            </ul>
+        </nav>
+    </aside>
 </div>
 
 {% include back-to-top.html %}
