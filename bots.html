@@ -17,17 +17,15 @@ permalink: /tech/bots/
 
 <div class="botlist">
     {% for category in site.data.bots %}
-    	<div class="{{ category[0] }}">
 
-	    	{% for bot in category[1] %}
-	    		<section class="botlisting">
-		        	<h3 class="geekpg">{{ bot.title }}</h3>
-		        	<p class="descrip">{{ bot.description }}</p>
-		        	{{ bot.embed }}
-		        </section>
-	    	{% endfor %}
+    	{% for bot in category[1] %}
+    		<section class="botlisting">
+	        	<h3 class="geekpg">{{ bot.title }}</h3>
+	        	<p class="descrip">{{ bot.description }}</p>
+	        	{{ bot.embed }}
+	        </section>
+    	{% endfor %}
 
-    	</div>
     {% endfor %}
 </div>
 
