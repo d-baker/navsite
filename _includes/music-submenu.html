@@ -1,12 +1,4 @@
 <li>
-	{% if page.url == "/music/scores/" %}
-	    <a class="current" href="{{ page.url | prepend: site.baseurl }}">scores</a>
-	{% else %}
-	    <a href="{{ "/music/scores" | prepend: site.baseurl }}">scores</a>
-	{% endif %}
-</li>
-
-<li>
 	{% if page.url == "/music/audio/" %}
 	    <a class="current" href="{{ page.url | prepend: site.baseurl }}">audio</a>
 	{% else %}
@@ -19,6 +11,14 @@
 	    <a class="current" href="{{ page.url | prepend: site.baseurl }}">video</a>
 	{% else %}
 	    <a href="{{ "/music/video" | prepend: site.baseurl }}">video</a>
+	{% endif %}
+</li>
+
+<li>
+	{% if page.url == "/music/scores/" %}
+	    <a class="current" href="{{ page.url | prepend: site.baseurl }}">scores</a>
+	{% else %}
+	    <a href="{{ "/music/scores" | prepend: site.baseurl }}">scores</a>
 	{% endif %}
 </li>
 
