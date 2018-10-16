@@ -25,7 +25,7 @@ I had made a small dent in the twitter bot universe.
 
 -----------------------------------------------------------------
 
-One of the things I struggle with the most when trying to create stuff is that I can't create anything worthwhile if I'm not sufficiently inspired/motivated, and so my creative output has always been slow and fraught with periods of unproductivity. But - as evidenced by the [number I've managed to make so far](http://memoriata.com/bots.html) - I don't seem to have this problem with bots. It's got me thinking about what, exactly, is so appealing about botmaking as a creative outlet.
+One of the things I struggle with the most when trying to create stuff is that I can't create anything worthwhile if I'm not sufficiently inspired/motivated, and so my creative output has always been slow and fraught with periods of unproductivity. But - as evidenced by the [number I've managed to make so far](/tech/bots/) - I don't seem to have this problem with bots. It's got me thinking about what, exactly, is so appealing about botmaking as a creative outlet.
 
 Firstly, bots are a very easy way to be prolific creatively. There are endless things that can be automated in a way suitable for distribution on twitter, and it doesn't matter if the concept is extremely simple - in fact, some of the simplest concepts have become the most popular bots. Consider @everyword.
 So coming up with the idea for a bot may well be the easiest part.
