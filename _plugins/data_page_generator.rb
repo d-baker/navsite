@@ -57,7 +57,7 @@ module Jekyll
     # use it like this: {{input | datapage_url: dir}}
     # output: dir / input .html
     def datapage_url(input, dir)
-      dir + "/" + sanitize_filename(input) + ".html"
+      dir + "/" + sanitize_filename(input) + "/"
     end
 
     private
