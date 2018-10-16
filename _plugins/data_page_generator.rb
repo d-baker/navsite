@@ -9,7 +9,7 @@ module Jekyll
       @site = site
       @base = base
       @dir = dir
-      @name = sanitize_filename(data[name]) + "/"
+      @name = sanitize_filename(data[name]) + ".html"
 
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), template + ".html")
@@ -57,7 +57,7 @@ module Jekyll
     # use it like this: {{input | datapage_url: dir}}
     # output: dir / input .html
     def datapage_url(input, dir)
-      dir + "/" + sanitize_filename(input) + "/"
+      dir + "/" + sanitize_filename(input) + ".html"
     end
 
     private
