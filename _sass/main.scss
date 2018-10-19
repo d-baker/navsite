@@ -27,6 +27,10 @@ body {
     font-size: 16px;
 }
 
+.hide {
+    display: none;
+}
+
 .skip-nav {
     position: absolute;
     top: -40px;
@@ -563,3 +567,4 @@ footer {
 @import "av";
 @import "blog";
 @import "form";
+@import "error-page";

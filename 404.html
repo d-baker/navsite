@@ -1,0 +1,38 @@
+---
+title: 404 - Page not found
+layout: default
+permalink: /404.html
+---
+
+<div class="http-error">
+	<div class="error-code">404</div>
+	<div class="error-description">
+		<p>Sorry, that page could not be found.</p>
+	</div>
+	<div class="error-help">
+		<p class="hide">The page may have been moved. You could try this URL instead:</p>
+		<p class="url"><a id="newUrl"></a></p>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function() {
+		var pageUrl = window.location.href;
+
+		if (! pageUrl.endsWith('.html')) {
+			var endsWithSlash = /\/$/;
+			var newUrl = '';
+
+			if (pageUrl.endsWith('/')) {
+				newUrl = pageUrl.replace(endsWithSlash, '.html');
+			} else {
+				newUrl = pageUrl + '.html';
+			}
+
+			$("#newUrl").attr("href", newUrl);
+			$("#newUrl").text(newUrl);
+			$(".http-error p.hide").removeClass('hide');
+		}
+
+	});
+</script>
