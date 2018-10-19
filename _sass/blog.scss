@@ -29,10 +29,11 @@
 }
 
 .readmore {
-	font-weight: bold;
-	display: block;
 	text-align: right;
-	margin-top: 10px;
+	a {
+		font-weight: bold;
+		margin-top: 10px;	
+	}
 }
 
 
