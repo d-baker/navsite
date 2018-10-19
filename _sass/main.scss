@@ -301,8 +301,8 @@ ul {
             text-transform: uppercase;
             color: white;
 
-            width: 12rem;
-            display: inline-block;
+            display: block;
+            margin-bottom: 2rem;
             padding: 1.5rem;
             color: white;
             text-decoration: none;
@@ -435,6 +435,11 @@ footer {
 
 
 @media (min-width: 900px) {
+    #contact-sidebar nav .nav-button {
+        width: 12rem;
+        display: inline-block;
+    }
+
     .scorelink {
         font-size: 18px;
         display: inline;
