@@ -51,8 +51,8 @@ body {
 
 
 main, .header-wrapper, footer p {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 
@@ -431,6 +431,11 @@ footer {
 
 
 @media (min-width: 900px) {
+    main, .header-wrapper, footer p {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
     #contact-sidebar nav .nav-button {
         width: 12rem;
         display: inline-block;
