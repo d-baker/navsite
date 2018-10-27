@@ -72,12 +72,11 @@ main, .header-wrapper, footer p {
         padding: .5rem 0 .5rem 0;
         font-size: 1rem;
         &.big {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             font-weight: bold;
         }
         &.medium {
-            font-size: 1rem;
-            font-weight: bold;
+            font-size: 0.75rem;
         }
         .emoji {
             font-weight: normal;
