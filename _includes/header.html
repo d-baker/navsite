@@ -4,50 +4,49 @@
     <div class="container">
         <div class="header-wrapper">
 
-        <a id="logo" href="{{ "/index.html" | prepend: site.baseurl }}">dorothea baker</a>
- 
-        <button id="menubutton" aria-label="toggle navigation">
-        </button>
+            <a id="logo" href="{{ "/index.html" | prepend: site.baseurl }}">dorothea baker</a>
+     
+            <button id="menubutton" aria-label="toggle navigation">
+            </button>
 
-       
-        <nav>
-            <div class="nav-list">
-                <div class="dropdown">
+           
+            <nav id="top-level-nav" class="nav-list closed">
+                <nav class="dropdown">
                     {% if page.url == "/music/audio/" %}
                        <a class="current dropdown-landing" id="music-landing" href="{{ page.url | prepend: site.baseurl }}">music</a>
                     {% else %}
                        <a class="dropdown-landing" id="music-landing" href="{{ "/music/audio/" | prepend: site.baseurl }}" >music</a>
                    {% endif %}
 
-                    <div class="nav-list" id="music-menu">
+                    <nav class="nav-list" id="music-menu">
 
                         <ul>
                             {% include music-submenu.html %}
                         </ul>
 
-                    </div>
-                </div>
+                    </nav>
+                </nav>
 
-                <div class="dropdown">
+                <nav class="dropdown">
                     {% if page.url == "/tech/projects/" %}
                         <a class="current dropdown-landing" id="geek-landing" href="{{ page.url | prepend: site.baseurl }}">tech</a>
                     {% else %}
                         <a class="dropdown-landing" id="geek-landing" href="{{ "/tech/projects/" | prepend: site.baseurl }}" >tech</a>
                     {% endif %}
 
-                    <div class="nav-list" id="geek-menu">
+                    <nav class="nav-list" id="geek-menu">
 
                         <ul>
                             {% include tech-submenu.html %} 
                         </ul>
 
-                    </div>
-                </div>
+                    </nav>
+                </nav>
 
-                {% if page.url == "/blog/index.html" %}
-                    <a class="current" id="blog-landing" href="/blog/index.html">blog</a>
+                {% if page.url == "/blog/" %}
+                    <a class="current" id="blog-landing" href="/blog/">blog</a>
                 {% else %}
-                    <a id="blog-landing" href="/blog/index.html">blog</a>
+                    <a id="blog-landing" href="/blog/">blog</a>
                 {% endif %}
 
                 {% if page.url == "/contact/" %}
@@ -55,13 +54,9 @@
                 {% else %}
                     <a id="contact-landing" href="{{ "/contact/" | prepend: site.baseurl }}">contact</a>
                 {% endif %}
-
-
-            </div>
-        </nav>
+            </nav>
 
         </div>
-
     </div>
 
 </header>
