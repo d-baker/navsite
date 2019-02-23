@@ -101,6 +101,9 @@ $(document).ready(function() {
     	$dropdownHeadings.removeAttr("aria-label");
         $dropdownHeadings.removeAttr("aria-expanded");
 
+    	$("#music-landing").attr("aria-label", "music dropdown menu");
+        $("#geek-landing").attr("aria-label", "tech dropdown menu");
+
         $dropdownHeadings.removeClass("closed");
         $dropdownHeadings.addClass("open");
     }
