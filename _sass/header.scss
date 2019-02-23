@@ -245,7 +245,7 @@ header#main-header {
                 }
             }
 
-            &.dropdown.closed, &.dropdown.open {
+            &.dropdown, &.dropdown.closed, &.dropdown.open {
                 .nav-list {
                     display: block;
                     margin-top: -1000rem;            
