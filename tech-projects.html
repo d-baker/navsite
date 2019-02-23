@@ -60,9 +60,8 @@ permalink: /tech/projects/
         <article class="textblock col2">
             <h2 class="geekpg"><a href="https://github.com/d-baker/clevo-keyboard-backlight-control" target="_blank">Clevo keyboard backlight CLI</a></h2>
 
-            <p>This is one of those things that arose out of very specific circumstances and needs I had at the time. I had just purchased a fancy new laptop with an RGB backlit keyboard, which I couldn't wait to customise. After installing Linux, however, I had some difficulty with the drivers and got frustrated.</p>
-            <p>The end result was this little command-line utility which let me generate and apply my own colorschemes to the keyboard. It had a number of caveats, the main one being that any time I updated my OS, I had to recompile the utility's dependencies, because there was no DKMS module.</p>
-            <p>I had been intending to fix this issue, but the last time I looked, the driver my utility depends on is no longer maintained and isn't compatible with the current Linux kernel. I'm holding out for the day the Clevo kernel module gets built into Ubuntu, because I currently can't even turn my backlight OFF, let alone change the color.</p> 
+            <p>This is one of those things that arose out of very specific circumstances and needs I had at the time. I had just purchased a fancy new laptop with an RGB backlit keyboard, which I couldn't wait to customise. After installing Linux, however, I had some difficulty with the drivers and got frustrated, so I wrote this little command-line utility which let me generate and apply my own colorschemes to the keyboard.</p> 
+            <p>I'm currently in the process of updating it to be compatible with changes to the underlying kernel module, so it might not be fully functional right now.</p>
         </article>
 
     <div class="clearfix"></div>
