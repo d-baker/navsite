@@ -55,6 +55,16 @@ header#main-header {
         }
     }
 
+    #top-level-nav {
+        &.open {
+            display: block;
+        }
+
+        &.closed {
+            display: none;
+        }
+    }
+
     a {
         font-size: 35px;
         font-variant: small-caps;
@@ -200,6 +210,21 @@ header#main-header {
         #top-level-nav {
             float: right;
             margin-left: 20px;
+            margin-top: 0;
+
+            &.open {
+                display: block;
+            }
+
+            &.closed {
+                display: block;
+            }
+
+            a:hover {
+                &#blog-landing, &#contact-landing {
+                    color: $defaultHighlight;
+                }
+            }
         }
 
         nav {
@@ -210,10 +235,6 @@ header#main-header {
 
                 &#geek-landing {
                     color: $geekHighlight;
-                }
-
-                &#blog-landing, &#contact-landing {
-                    color: $defaultHighlight;
                 }
             }
             &.nav-list {

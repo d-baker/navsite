@@ -9,7 +9,7 @@ $(document).ready(function() {
 			$topLevelNav.addClass("open");
 
 			$("#menubutton").attr("aria-expanded", "true")
-		} else if ( $("header .nav-list").hasClass("open") ) {
+		} else if ( $topLevelNav.hasClass("open") ) {
 			$topLevelNav.removeClass("open");
 			$topLevelNav.addClass("closed");	
 
