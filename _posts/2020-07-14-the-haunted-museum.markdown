@@ -22,7 +22,7 @@ During the day they are sleepy and placid. Oh, they can still wreak havoc, alrig
 
 After sunset, though…
 
-They become strong. Horribly strong. Flailing and flapping, screeching and wailing, they descend on me in great spectral flocks of darkness. I cannot see them in the pitch blackness, but I can hear them. Feel them.
+They become strong. Horribly strong. Flailing and flapping, screeching and wailing, they descend on me in great spectral flocks of darkness. I cannot see them in the pitch blackness, but I can hear them. *Feel* them.
 
 There is no escape. 
 
