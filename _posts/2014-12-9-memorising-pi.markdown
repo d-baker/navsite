@@ -1,10 +1,7 @@
 ---
 layout: post
-title: "Memorising pi"
-date: 2014-12-9
-tags:
-- math
-- memorisation
+title: "Memorising Pi"
+date: 2014-12-19
 ---
 I have a thing for memorising strings of numbers. I've committed numerous card/account/phone numbers to memory, and that's useful as it saves having to check every time the number is needed for something. But recently I embarked on an exercise in numerical memorisation which has no practical application whatsoever.
 
