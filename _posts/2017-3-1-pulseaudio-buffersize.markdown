@@ -7,7 +7,7 @@ tags:
 - audio
 ---
 
-Back when I dual booted Linux on my HP Pavilion laptop, I experienced a problem with glitchy audio which I documented the solution to <a href="http://nightmare.website/blog/horrorstory">here</a>.
+Back when I dual booted Linux on my HP Pavilion laptop, I experienced a problem with glitchy audio which I documented the solution to <a target="blank" href="/blog/horrorstory">here</a>.
 
 During the process I encountered a second audio glitch, which I didn't address at the time. This post is an attempt to remedy that.
 <!--break--> 
