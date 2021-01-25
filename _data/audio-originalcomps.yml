@@ -1,15 +1,58 @@
-# - description: "While spring cleaning my computer recently, I discovered a short loop I created long ago as part of the soundtrack for my game,<a href='https://memoriata.itch.io/glade'>Glade</a>. The loop lasted for about 20 seconds and I had given the Ableton Live file for it the temporary name of 'treesong', because this was the loop that would be played when you approached the strange alien trees in my game. I ended up never using it because I had too many other, conflicting layers of sound in the game.<br/>
+- description: "Words, tune and arrangement by me
+<br/><br/>
+<em>
+Brigid shield of fire and water<br/>
+Healing well, perpetual light<br/>
+Threefold sister, Dagda's daughter<br/>
+Guard me with your flame so bright<br/>
+<br/>
+Tig an éirí na gréine tar éis an oiche fada<br/>
+After the long winter comes the spring<br/>
+<br/>
+Níl aon bhealach amach ach tríd<br/>
+Níl aon bhealach amach ach tríd an tine<br/>
+Níl aon bhealach amach ach tríd<br/>
+Níl aon bhealach amach ach Bríd<br/>
+<br/>
+Brigid spark of hope in darkness<br/>
+Brigid of the forge of life<br/>
+Smith of transformation, Goddess<br/>
+Guide me safely through all strife<br/>
+<br/>
+Tig an earrach tar éis an gheimhreadh fada<br/>
+After the long night comes the dawn<br/>
+<br/>
+Níl aon bhealach amach ach tríd<br/>
+Níl aon bhealach amach ach tríd an tine<br/>
+Níl aon bhealach amach ach tríd<br/>
+Níl aon bhealach amach ach Bríd<br/>
+<br/>
+Keep the darkness from me<br/>
+lantern in my chest<br/>
+Light the way before me<br/>
+lead me to my rest<br/>
+<br/>
+Coinnigh an dorchadas uaim<br/>
+lóchrann i mo chroí<br/>
+Soilsigh an bhealach ar aghaidh dom<br/>
+treoraigh mé do mo críoch<br/>
+<br/>
+Níl aon bhealach amach ach tríd<br/>
+Níl aon bhealach amach ach tríd an tine<br/>
+Níl aon bhealach amach ach tríd<br/>
+Níl aon bhealach amach ach Bríd<br/>
+</em>"
+  src: "Song to Brigid.mp3"
+  playlist: "originalcomps"
+  date: "2021-01-24"
+  title: "Song to Brigid"
+  tags:
+    - irish
+    - electronic
 
-#   On rediscovering this loop, I was inspired to turn it into something more. The result is a little different to my usual work, as I normally stick to synthesised sounds, quantise everything to digitally aligned perfection and avoid vocals outside of Irish trad.<br/>
-#   However, for this piece, I decided to go for something more raw and analog. Parts of the percussion were sampled from sounds made with bits of local trees, bringing the idea full circle to the original 'treesong' from my game. This was unplanned, as I just picked up whatever objects were close at hand and started banging them together. <br/> If you listen closely to the lyrics you'll noticed it's also a moonsong, which is oddly fitting to the otherwordly, spacey landscape of Glade."
-#   src: "2018-05-19.mp3"
-#   playlist: "originalcomps"
-#   date: "2018-5-19"
-#   title: "2018-05-19"
-#   tags:
-#     - electronic
-
-- description: "Gabhaim molta Bríde<br/>
+- description: "Words and tune: traditional, arranged by me<br/><br/>
+<em>
+Gabhaim molta Bríde<br/>
 ionmhain í le hÉireann<br/>
 ionmhain le gach tír í<br/>
 molaimis go léir í<br/>
@@ -22,7 +65,8 @@ ceann na mban ar míne<br/>
 Tig an gheimhreadh dian dubh<br/>
 gearradh lena ghéire<br/>
 ach ar lá le Bríde<br/>
-gar dúinn Earrach Éireann"
+gar dúinn Earrach Éireann
+</em>"
   src: "gabhaim-molta-bride.mp3"
   playlist: "originalcomps"
   date: "2020-08-21"
@@ -30,7 +74,7 @@ gar dúinn Earrach Éireann"
   tags:
      - irish
 
-- description: "This is an electronic version of a traditional Irish love song, arranged and performed by me. Lyrics (slightly modified from the original by me):
+- description: "Words and tune: traditional, arranged by me (words slightly modified)
   <br/><br/>
   <em>
     Tá mé mo shuí ó d'éirigh an ghealach aréir<br/>
